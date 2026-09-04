@@ -201,7 +201,7 @@ Distinct states enumerated in Execution Protocol（Execution Started … Project
 | No Runtime/DB/assets | **PASS** |
 | DEC-012/016/017/019 respected | **PASS** |
 | Impact-based updates only | **PASS** |
-| Git commit / push / remote | Filled after Git closure |
+| Git commit / push / remote | **PASS** — see Final Verdict |
 
 ---
 
@@ -222,8 +222,13 @@ ENTRY_077 = NOT_STARTED
 PRIMARY_HARDENING = PASS
 NO_NEW_CORE_FILE = PASS
 NO_NEW_DEC = PASS
-GIT_VERSIONED_CLOSURE = PENDING_UNTIL_PUSH
-REMOTE_VERIFICATION = PENDING_UNTIL_PUSH
+GIT_COMMIT = 36412badc463a8d2394999878948d4267995f37d
+GIT_MESSAGE = docs: formalize collaboration continuity workflow
+PUSH = SUCCESS
+REMOTE_VERIFICATION = PASS
+LOCAL = 36412badc463a8d2394999878948d4267995f37d
+REMOTE = 36412badc463a8d2394999878948d4267995f37d
+MATCH = TRUE
 ```
 
 **STOP.** Do not start Entry 077.
