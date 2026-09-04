@@ -469,9 +469,9 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 |-------|-------|
 | **ACTIVE_TASK** | **`NONE`** |
 | **STATUS** | 无正在进行的正式多步骤治理任务 |
-| **NOTE** | 商业最高原则硬化（DEC-033）已落盘并收口；不得当作正在执行的开发 Entry |
-| **LAST GOVERNANCE CHAIN（证据指针，非当前任务）** | Continuity Hardening → Collaboration → PHASE 1/2 → History Repair → Final Governance Closure → **Commercial Principles Hardening（DEC-033）** |
-| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_FINAL_GOVERNANCE_CLOSURE_2026-09-04.md`；`docs/07_AUDIT/AI_FACTORY_OS_COMMERCIAL_PRINCIPLES_HARDENING_2026-09-04.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_DECISION_LOG.md`（DEC-033） |
+| **NOTE** | 商业最高原则硬化（DEC-033）已落盘；First Xianyu Experiment Preparation 已完成对象准备（NOT_PRODUCED）；不得当作正在执行的 CF/发布任务 |
+| **LAST GOVERNANCE / COMMERCIAL PREP（证据指针，非当前任务）** | Continuity → PHASE 1/2 → Closure → DEC-033 → **exp_20260904_pmgantt / preq_20260904_pmgantt preparation** |
+| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_COMMERCIAL_PRINCIPLES_HARDENING_2026-09-04.md`；`docs/07_AUDIT/AI_FACTORY_OS_FIRST_XIANYU_PRODUCT_EXPERIMENT_PREPARATION_2026-09-04.md`；DEC-033 |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **NOT_STARTED** |
 | **PROJECT_DEVELOPMENT** | **PAUSED** |

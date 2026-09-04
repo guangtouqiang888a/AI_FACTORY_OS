@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-04（Commercial Principles Hardening / DEC-033；**ACTIVE_TASK = NONE**；**Entry 077 = NOT_STARTED**；**PROJECT_DEVELOPMENT = PAUSED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-04（First Xianyu Experiment Preparation；**NOT_PRODUCED**；**Entry 077 = NOT_STARTED**）
 
 ---
 
@@ -2668,6 +2668,42 @@
 **Core Documentation Continuity Check：**
 - Modified：Constitution；Business Strategy；Execution Protocol；KUP；Decision Log；Control Center（Active Task 证据指针）；Execution History；Audit
 - Reviewed but Not Modified：Authority Model；Current State（开发仍暂停；Audit≠State）；UA；Module Registry；Doc Map；Architecture Evolution Context；Work Principles（当前路径不存在）；Runtime/DB/`commercial_assets`
+
+---
+
+### FIRST XIANYU PRODUCT EXPERIMENT PREPARATION — 2026-09-04（NOT Entry 077）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Objective** | 建立第一个低成本闲鱼 Excel 产品假设并完成 Experiment/PR 准备（不生产、不发布） |
+| **Original Objective** | 以最低合理成本尽快跑通第一个真实闲鱼商业闭环并获得真实收入/成交证据 |
+| **Current Objective** | 基于 076 `prod_a0638789fc2b` 建立 HYPOTHESIS 产品假设 + Experiment + Review + Production Request |
+| **Current Phase** | 商业验证恢复 / Product Definition → Experiment Preparation |
+| **Current Step** | Hypothesis → Experiment/Review/PR 准备 → Audit → Git |
+| **Scope** | commercial_assets experiment/PR 链；Current State/Control Center 事实；History；Audit |
+| **Out of Scope** | CF 生产；Product Asset；闲鱼发布；DB migration；复用考勤 Pilot；伪造销量；Entry 077 |
+| **Completed** | `exp_20260904_pmgantt`；`erev_20260904_pmgantt`；`sel_20260904_pmgantt`；`preq_20260904_pmgantt`；`appr_20260904_pmgantt`（prepared≠approved）；Loader 验证；Gate 拦截确认 |
+| **Findings** | ApprovalGate whitelist 仍仅 legacy pilot；本任务故意不 approved CF |
+| **Decisions** | 无新 DEC；不执行生产 |
+| **Pending** | 授权 production Entry；闲鱼 Human Publish；真实观察指标 |
+| **Next Step** | ChatGPT Closure Review → 另开生产授权；**STOP** |
+| **Stop Conditions** | CF/发布/DB/伪造证据/范围扩张 → STOP |
+| **Final Completion Criteria** | 假设+对象+provenance+成本/质量/单位经济字段+Audit+Git；无生产 |
+| **Evidence** | `docs/07_AUDIT/AI_FACTORY_OS_FIRST_XIANYU_PRODUCT_EXPERIMENT_PREPARATION_2026-09-04.md` |
+| **Product Hypothesis** | 小微团队项目计划 + 任务进度 + 甘特图 Excel 模板（HYPOTHESIS） |
+| **Cost Estimate** | prod ≤¥3；AI ≈¥0；price hypothesis ¥9.9 |
+| **Quality Floor** | SELLABLE_QUALITY_FLOOR |
+| **Git Commit** | （提交后回填） |
+| **GitHub Push** | （提交后核验） |
+| **Remote Verification** | （提交后核验） |
+| **Final Status** | NOT_PRODUCED / NOT_PUBLISHED；ENTRY_077=NOT_STARTED |
+| **Entry 077** | **NOT_STARTED** |
+| **Project Development** | **PAUSED for CF/Publish**（prep objects exist） |
+
+**Core Documentation Continuity Check：**
+- Modified：Current State；Control Center（指针）；Execution History；Audit；commercial_assets experiment/PR JSONs
+- Reviewed but Not Modified：Constitution；Business Strategy；EP；KUP；Decision Log；UA；Module Registry；PD JSON（076 保持）；CF Python（复用未改）
 
 ---
 

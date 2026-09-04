@@ -8,7 +8,7 @@
   "experiment_method": "human_assisted",
   "experiment_note": "Human Assisted ≠ Automation — 无自动 Experiment Engine、无 2_COGNITION 参与；Experiment Object 为人工辅助设计登记，不代表产品已生产、未创建 artifact / product / publish。 Entry 047: enriched exp_20260708_005 with commercial_observation_prep. No market data fabricated. Observation not started. Entry 048: publish prep + human decision pack; still not published.",
   "created_at": "2026-07-08T14:51:00+08:00",
-  "experiment_count": 5,
+  "experiment_count": 6,
   "summary": {
     "category_a": 4,
     "status_draft": 4,
@@ -478,8 +478,159 @@
       "next_action": "production_request",
       "created_at": "2026-08-30T16:38:33+08:00",
       "legacy_pilot_note": "HISTORICAL / LEGACY PILOT exp_20260708_005 is unrelated"
+    },
+    {
+      "experiment_id": "exp_20260904_pmgantt",
+      "object_type": "experiment",
+      "contract_version": "1.0",
+      "entry": "NEXT_COMMERCIAL_EXPERIMENT_PREPARATION_2026-09-04",
+      "source_product_definition_id": "prod_a0638789fc2b",
+      "source_opportunity_id": "aoc_19399677b7ba",
+      "source_selection_id": "sel_53e7c414624f",
+      "source_hypothesis_selection_id": "sel_20260904_pmgantt",
+      "source_candidate_id": "aoc_19399677b7ba",
+      "experiment_name": "First Xianyu Commercial — 小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "category": "A",
+      "keyword": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "product_type": "excel",
+      "product_type_declared": "digital_template",
+      "working_name": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "hypothesis": "【HYPOTHESIS / DERIVED DESIGN】小微团队负责人/项目负责人/个体经营者需要管理多任务、截止日期、负责人与进度，但缺少低成本、无需复杂项目管理软件的工具。一个轻量 Excel 模板（任务录入、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、项目总体进度摘要）可在闲鱼以可接受成本验证真实付费意愿。上游 prod_a0638789fc2b 仅证明 Excel 模板市场存在需求信号（含工作计划/甘特图观察），不证明本具体产品已被市场验证。≠ DIRECT_EVIDENCE。",
+      "hypothesis_status": "HYPOTHESIS",
+      "evidence_classification": {
+        "076_product_definition": "UPSTREAM_EVIDENCE_MARKET_CLASS",
+        "specific_pm_gantt_product": "HYPOTHESIS_DERIVED_DESIGN",
+        "not_direct_evidence": true,
+        "want_count_is_not_sales": true
+      },
+      "provenance_chain": [
+        "exp_20260904_pmgantt",
+        "product_hypothesis:小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+        "prod_a0638789fc2b",
+        "aoc_19399677b7ba",
+        "sel_53e7c414624f",
+        "073_signals",
+        "070_candidate_set",
+        "069B_REAL_MANUAL_VERIFIED_observations"
+      ],
+      "validation_goal": "验证一个具体、低成本、自有生产的 Excel 产品能否以可接受生产成本进入闲鱼，并获得真实商业反馈。NOT validating Excel market existence (069B→076).",
+      "target_customer": "小微团队负责人、项目负责人、个体经营者、需要管理多个任务的小团队（HYPOTHESIS）",
+      "customer_problem_hypothesis": [
+        "项目任务分散",
+        "截止日期难跟踪",
+        "负责人和任务状态不清晰",
+        "缺少简单、低成本、无需学习复杂项目管理软件的工具"
+      ],
+      "product_concept": "【HYPOTHESIS】轻量 Excel 模板：录入项目任务；指定负责人；开始/截止日期；任务状态；完成进度；基础进度展示；简单甘特图/时间轴；项目总体进度摘要。单文件 xlsx + 使用说明。",
+      "feature_list_hypothesis": [
+        "录入项目任务",
+        "指定负责人",
+        "设置开始日期 / 截止日期",
+        "记录任务状态",
+        "记录完成进度",
+        "自动形成基础进度展示",
+        "提供简单甘特图/时间轴",
+        "提供项目总体进度摘要"
+      ],
+      "validation_method": "Prepare Experiment → Review → Production Request → (future authorized) low-AI CF production → Quality Floor → Human publish to 闲鱼 → Observation. THIS TASK DOES NOT PRODUCE OR PUBLISH.",
+      "success_metrics": {
+        "production_metric": {
+          "production_cost": "UNKNOWN",
+          "ai_cost": "UNKNOWN",
+          "packaging_cost": "UNKNOWN",
+          "publish_cost": "UNKNOWN",
+          "target_production_cost_cny_max": 3.0,
+          "target_ai_cost_cny_max": 0.0,
+          "ai_cost_target": "0 or near-zero; prefer deterministic Excel generator",
+          "target_production_time_minutes_max": 45,
+          "target_first_pass": true,
+          "note": "Targets are design constraints, not measured costs"
+        },
+        "market_metric": {
+          "inquiry_count": "NOT_STARTED",
+          "order_count": "NOT_STARTED",
+          "refund_count": "NOT_STARTED",
+          "paid_price": "NOT_STARTED",
+          "revenue": "NOT_STARTED",
+          "conversion_rate": "NOT_STARTED",
+          "note": "No fabricated sales"
+        },
+        "commercial_metric": {
+          "unit_revenue": "UNKNOWN",
+          "production_cost": "UNKNOWN",
+          "ai_cost": "UNKNOWN",
+          "packaging_cost": "UNKNOWN",
+          "other_variable_cost": "UNKNOWN",
+          "contribution_margin": "UNKNOWN",
+          "price_hypothesis_cny": 9.9,
+          "price_role": "PRICE_HYPOTHESIS",
+          "price_note": "Not validated. Paid Price awaits real transaction.",
+          "note": "Unit economics defined; values UNKNOWN"
+        },
+        "system_metric": {
+          "reuse_priority": "templates_rules_python_excel > CF > cache > low-cost AI > high-cost AI",
+          "creator_agent_must_not_choose_direction": true
+        }
+      },
+      "unit_economics_definition": {
+        "formula": "Unit Revenue - Production Cost - AI Cost - Packaging Cost - Other Variable Cost = Contribution Margin",
+        "fields": {
+          "unit_revenue": "UNKNOWN",
+          "production_cost": "UNKNOWN",
+          "ai_cost": "UNKNOWN",
+          "packaging_cost": "UNKNOWN",
+          "other_variable_cost": "UNKNOWN",
+          "contribution_margin": "UNKNOWN"
+        }
+      },
+      "quality_floor": {
+        "level": "SELLABLE_QUALITY_FLOOR",
+        "not": "PERFECT_QUALITY",
+        "excel_checks": [
+          "file_opens",
+          "not_corrupted",
+          "formulas_correct",
+          "basic_calculations_correct",
+          "date_logic_correct",
+          "gantt_consistent_with_task_dates",
+          "input_areas_clear",
+          "instructions_clear",
+          "no_obvious_garbled_text",
+          "no_obvious_empty_shell_sheets",
+          "immediately_usable"
+        ]
+      },
+      "cost_first_policy": {
+        "ai_calls_target": "0_or_near_zero",
+        "prefer_deterministic_generator": true,
+        "priority_order": [
+          "existing_templates_rules_python_excel_formulas",
+          "existing_content_factory_capability",
+          "cache_reuse",
+          "necessary_low_cost_ai",
+          "high_cost_ai"
+        ]
+      },
+      "expected_cost": 3.0,
+      "expected_cost_note": "Ceiling estimate CNY; NOT incurred. AI target 0.",
+      "expected_ai_cost_cny": 0.0,
+      "expected_cycle": "14 days_after_publish",
+      "publish_channel_planned": "xianyu",
+      "human_external_action_required": true,
+      "status": "prepared",
+      "production_status": "NOT_PRODUCED",
+      "publish_status": "NOT_PUBLISHED",
+      "experiment_method": "human_assisted_076_lineage",
+      "legacy_exclusion": {
+        "do_not_reuse_experiment": "exp_20260708_005",
+        "do_not_reuse_production_request": "preq_20260712_005",
+        "do_not_auto_select_attendance_product": true
+      },
+      "next_action": "production_request_prepared_await_authorized_cf_execution",
+      "created_at": "2026-09-04T23:28:18+08:00"
     }
   ],
   "entry_055_note": "Autonomous bridge experiments appended; human_assisted experiments retained.",
-  "updated_at": "2026-08-30 16:38:33"
+  "updated_at": "2026-09-04T23:28:18+08:00",
+  "entry_20260904_note": "First Xianyu PM/Gantt Excel experiment preparation from 076 lineage; HYPOTHESIS only; no production."
 }

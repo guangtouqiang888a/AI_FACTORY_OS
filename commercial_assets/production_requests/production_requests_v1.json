@@ -284,8 +284,138 @@
         "no_external_publish": true
       },
       "created_at": "2026-08-30T16:38:33+08:00"
+    },
+    {
+      "production_request_id": "preq_20260904_pmgantt",
+      "object_type": "production_request",
+      "contract_version": "1.0",
+      "entry": "NEXT_COMMERCIAL_EXPERIMENT_PREPARATION_2026-09-04",
+      "source_experiment_id": "exp_20260904_pmgantt",
+      "source_review_id": "erev_20260904_pmgantt",
+      "source_product_definition_id": "prod_a0638789fc2b",
+      "source_opportunity_id": "aoc_19399677b7ba",
+      "source_selection_id": "sel_53e7c414624f",
+      "source_hypothesis_selection_id": "sel_20260904_pmgantt",
+      "source_candidate_id": "aoc_19399677b7ba",
+      "keyword": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "experiment_category": "A",
+      "product_type": "excel",
+      "product_type_declared": "digital_template",
+      "product_name": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "product_hypothesis": "【HYPOTHESIS / DERIVED DESIGN】小微团队负责人/项目负责人/个体经营者需要管理多任务、截止日期、负责人与进度，但缺少低成本、无需复杂项目管理软件的工具。一个轻量 Excel 模板（任务录入、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、项目总体进度摘要）可在闲鱼以可接受成本验证真实付费意愿。上游 prod_a0638789fc2b 仅证明 Excel 模板市场存在需求信号（含工作计划/甘特图观察），不证明本具体产品已被市场验证。≠ DIRECT_EVIDENCE。",
+      "hypothesis_status": "HYPOTHESIS",
+      "target_customer": "小微团队负责人、项目负责人、个体经营者、需要管理多个任务的小团队（HYPOTHESIS）",
+      "business_goal": "以最低合理成本完成第一个可进入闲鱼真实市场验证的自有 Excel 产品，并最终获得真实收入/成交证据",
+      "validation_goal": "验证具体 PM/进度/甘特图 Excel 能否低成本生产、达到可销售质量、在闲鱼获得真实商业反馈。NOT proving Excel market existence (076).",
+      "hypothesis": "【HYPOTHESIS / DERIVED DESIGN】小微团队负责人/项目负责人/个体经营者需要管理多任务、截止日期、负责人与进度，但缺少低成本、无需复杂项目管理软件的工具。一个轻量 Excel 模板（任务录入、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、项目总体进度摘要）可在闲鱼以可接受成本验证真实付费意愿。上游 prod_a0638789fc2b 仅证明 Excel 模板市场存在需求信号（含工作计划/甘特图观察），不证明本具体产品已被市场验证。≠ DIRECT_EVIDENCE。",
+      "production_priority": "P0",
+      "status": "draft_prepared_awaiting_cf_authorization",
+      "creation_method": "human_assisted_076_lineage",
+      "production_status": "NOT_PRODUCED",
+      "publish_status": "NOT_PUBLISHED",
+      "human_publish_required": true,
+      "asset_requirements": {
+        "product_name": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+        "product_concept": "轻量 Excel：任务、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、总体进度摘要；附使用说明；可编辑 xlsx",
+        "deliverable_format": "xlsx",
+        "deliverable_count": 1,
+        "structure_outline": [
+          "使用说明",
+          "任务明细（任务/负责人/开始/截止/状态/进度）",
+          "项目总体进度摘要",
+          "简单甘特图或时间轴",
+          "示例数据（可选少量）"
+        ],
+        "content_constraints": {
+          "language": "zh-CN",
+          "include_instructions": true,
+          "editable": true,
+          "formulas_required": true,
+          "prefer_deterministic_generator": true,
+          "max_ai_calls_target": 0
+        },
+        "publish_channel_planned": "xianyu",
+        "expected_price_cny": 9.9,
+        "price_role": "PRICE_HYPOTHESIS",
+        "reference_from_experiment": {
+          "hypothesis_summary": "【HYPOTHESIS / DERIVED DESIGN】小微团队负责人/项目负责人/个体经营者需要管理多任务、截止日期、负责人与进度，但缺少低成本、无需复杂项目管理软件的工具。一个轻量 Excel 模板（任务录入、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、项目总体进度摘要）可在闲鱼以可接受成本验证真实付费意愿。上游 prod_a0638789fc2b 仅证明 Excel 模板市场存在需求信号（含工作计划/甘特图观察），不证明本具体产品已被市场验证。≠ DIRECT_EVIDENCE。",
+          "validation_goal": "低成本自有 Excel → 闲鱼真实商业反馈",
+          "source_product_definition_id": "prod_a0638789fc2b",
+          "evidence_note": "076 = market class evidence; specific product = HYPOTHESIS"
+        }
+      },
+      "quality_requirements": {
+        "min_quality_score": 0.8,
+        "quality_level": "SELLABLE_QUALITY_FLOOR",
+        "first_pass_required": true,
+        "category_a_threshold": {
+          "production_time_minutes_max": 45,
+          "production_cost_cny_max": 3.0,
+          "ai_cost_cny_max": 0.0
+        },
+        "checklist": [
+          "file_opens",
+          "not_corrupted",
+          "formulas_correct",
+          "basic_calculations_correct",
+          "date_logic_correct",
+          "gantt_consistent_with_task_dates",
+          "input_areas_clear",
+          "instructions_clear",
+          "no_obvious_garbled_text",
+          "no_obvious_empty_shell_sheets",
+          "immediately_usable"
+        ],
+        "reject_conditions": [
+          "cannot_open",
+          "formula_errors",
+          "gantt_date_mismatch",
+          "empty_shell_only",
+          "ai_cost_exceeds_near_zero_without_justification",
+          "quality_below_sellable_floor"
+        ]
+      },
+      "cost_constraints": {
+        "production_cost_cny_max": 3.0,
+        "ai_cost_cny_max": 0.0,
+        "ai_policy": "prefer_deterministic_excel_generator; record any forced AI call reason/cost/alternative",
+        "reuse_priority": [
+          "existing_templates_rules_python_excel_formulas",
+          "existing_content_factory_capability",
+          "cache_reuse",
+          "necessary_low_cost_ai",
+          "high_cost_ai"
+        ]
+      },
+      "unit_economics_observation": {
+        "unit_revenue": "UNKNOWN",
+        "production_cost": "UNKNOWN",
+        "ai_cost": "UNKNOWN",
+        "packaging_cost": "UNKNOWN",
+        "other_variable_cost": "UNKNOWN",
+        "contribution_margin": "UNKNOWN",
+        "formula": "Unit Revenue - Production Cost - AI Cost - Packaging Cost - Other Variable Cost = Contribution Margin"
+      },
+      "required_output": "可打开的 xlsx + 使用说明 + publish_package（仅在未来授权生产后）",
+      "production_constraints": {
+        "phase1_virtual_materials_only": true,
+        "no_future_media_runtime": true,
+        "no_external_publish": true,
+        "no_cf_execution_in_this_task": true,
+        "do_not_reuse_preq_20260712_005": true,
+        "creator_agent_must_not_choose_direction": true
+      },
+      "adapter_reuse": {
+        "production_request_loader": "11_CONTENT_FACTORY/adapter/production_request_loader.py",
+        "approval_gate": "11_CONTENT_FACTORY/adapter/approval_gate.py",
+        "input_mapper": "11_CONTENT_FACTORY/adapter/input_mapper.py",
+        "adapter_runner": "11_CONTENT_FACTORY/adapter/adapter_runner.py",
+        "note": "Reuse existing adapter. Do not rebuild."
+      },
+      "created_at": "2026-09-04T23:28:18+08:00"
     }
   ],
   "entry_055_note": "Autonomous bridge PRs appended; human_assisted retained.",
-  "updated_at": "2026-08-30 16:38:33"
+  "updated_at": "2026-09-04T23:28:18+08:00",
+  "entry_20260904_note": "Prepared preq for first Xianyu PM/Gantt Excel; NOT produced; NOT published."
 }

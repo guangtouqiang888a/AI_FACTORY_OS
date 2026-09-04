@@ -5,7 +5,7 @@
   "review_method": "human_assisted",
   "approval_note": "Human Assisted ≠ Automation — 无 3_DECISION Runtime 自动审批；Approval 为人工辅助资产登记。Approval Completed ≠ Content Factory Execution — 本任务不触发生产、不创建 artifact / product。production_requests_v1.json 未修改 — Approval 与 Production Request 为独立实体。",
   "created_at": "2026-07-13T17:43:00+08:00",
-  "approval_count": 4,
+  "approval_count": 5,
   "summary": {
     "approved": 3,
     "rejected": 0,
@@ -107,7 +107,38 @@
       },
       "created_at": "2026-08-30T16:38:33+08:00",
       "approved_at": "2026-08-30T16:38:33+08:00"
+    },
+    {
+      "approval_id": "appr_20260904_pmgantt",
+      "object_type": "production_request_review",
+      "contract_version": "1.0",
+      "entry": "NEXT_COMMERCIAL_EXPERIMENT_PREPARATION_2026-09-04",
+      "source_production_request_id": "preq_20260904_pmgantt",
+      "source_experiment_id": "exp_20260904_pmgantt",
+      "source_product_definition_id": "prod_a0638789fc2b",
+      "product_name": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "product_type": "excel",
+      "production_priority": "P0",
+      "review_method": "human_assisted_076_lineage",
+      "decision": "prepared_awaiting_production_authorization",
+      "review_reason": "PR complete for preparation. Decision is NOT approved for CF execution. Future production Entry must set approved + update ApprovalGate whitelist if needed. THIS TASK DID NOT INVOKE CF. NOT_PRODUCED / NOT_PUBLISHED.",
+      "approved_by": null,
+      "approval_checks": {
+        "asset_requirements_complete": true,
+        "quality_requirements_complete": true,
+        "experiment_review_prepared": true,
+        "category_a_cost_within_budget": true,
+        "ai_cost_near_zero_policy_recorded": true,
+        "content_factory_not_invoked": true,
+        "hypothesis_not_marked_direct_evidence": true,
+        "076_provenance_preserved": true,
+        "legacy_attendance_pilot_not_reused": true,
+        "cf_execution_authorized": false
+      },
+      "gate_blocker_note": "ApprovalGate pilot_only whitelist={preq_20260712_005} AND this review decision != approved → CF blocked until future authorized production Entry.",
+      "created_at": "2026-09-04T23:28:18+08:00",
+      "approved_at": null
     }
   ],
-  "updated_at": "2026-08-30 16:38:33"
+  "updated_at": "2026-09-04T23:28:18+08:00"
 }

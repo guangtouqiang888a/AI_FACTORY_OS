@@ -375,12 +375,17 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 - **GitHub sync：** `main` 已建立为版本化 / 协作连续载体（infrastructure only）— **未改变** Runtime / 产品方向 / 商业方向 / 架构；GitHub docs ≠ Reality Authority  
 - **Collaboration Continuity：** ChatGPT ↔ Cursor ↔ GitHub 闭环规则已落入 Execution Protocol（docs-only）；**不**启动 Entry 077；**不**改变 Product Definition Reality  
 - Product Definition `prod_a0638789fc2b` = **draft only** ≠ Product Asset / Listing / Published / Market Validated
+- **2026-09-04 Experiment Preparation（docs + commercial_assets objects only）：**  
+  - Hypothesis：小微团队项目计划 + 任务进度 + 甘特图 Excel 模板 = **HYPOTHESIS / DERIVED DESIGN**（≠ DIRECT_EVIDENCE）  
+  - `exp_20260904_pmgantt` / `erev_20260904_pmgantt` / `sel_20260904_pmgantt` / `preq_20260904_pmgantt` / `appr_20260904_pmgantt`  
+  - Status：**NOT_PRODUCED** / **NOT_PUBLISHED**；Approval decision = `prepared_awaiting_production_authorization`（≠ CF approved）  
+  - **Entry 077 = NOT_STARTED**；CF / Product Asset / 闲鱼发布 = **未执行**
 
 ---
 
 ## Blocked
 
-- Product content / CF asset / Publish — **未授权**（Definition 已生成；止于 draft）  
+- Product content / CF asset / Publish — **未授权**（Definition 已生成；Experiment/PR **已准备**；止于 draft_prepared；ApprovalGate 仍会拦截）  
 - Cost-aware Model Router — **NOT_BUILT**  
 - PUBLIC_WEB_READ headless — **BLOCKED_BY_ACCESS_CONTROL**（060）  
 - LIVE_API — **NOT_AVAILABLE_CURRENTLY**  

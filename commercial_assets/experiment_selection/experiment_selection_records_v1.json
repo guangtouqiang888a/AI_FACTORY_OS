@@ -5,7 +5,7 @@
   "selection_method": "human_assisted",
   "selection_note": "Human Assisted ≠ Automation — 无自动 Selection Engine；criteria 与 selection_score 为人工辅助应用 Framework v1 公式计算，非 Runtime 执行。",
   "created_at": "2026-07-08T10:41:00+08:00",
-  "record_count": 5,
+  "record_count": 6,
   "summary": {
     "selected": 4,
     "watch": 1,
@@ -26,7 +26,7 @@
         "market_potential": 0.756,
         "validation_cost": 0.65,
         "production_difficulty": 0.65,
-        "competition_risk": 0.50,
+        "competition_risk": 0.5,
         "feedback_value": 0.56
       },
       "criteria_note": "production_difficulty 字段存 production_ease（1 − difficulty_score），值越高表示生产越容易。competition_risk 字段存 competition_ease（1 − competition_score），值越高表示竞争风险越低。",
@@ -48,8 +48,8 @@
       "experiment_priority_score": 0.618,
       "criteria": {
         "market_potential": 0.722,
-        "validation_cost": 0.70,
-        "production_difficulty": 0.70,
+        "validation_cost": 0.7,
+        "production_difficulty": 0.7,
         "competition_risk": 0.45,
         "feedback_value": 0.44
       },
@@ -71,7 +71,7 @@
       "selection_score": 59,
       "experiment_priority_score": 0.588,
       "criteria": {
-        "market_potential": 0.760,
+        "market_potential": 0.76,
         "validation_cost": 0.68,
         "production_difficulty": 0.68,
         "competition_risk": 0.25,
@@ -98,7 +98,7 @@
         "market_potential": 0.752,
         "validation_cost": 0.67,
         "production_difficulty": 0.67,
-        "competition_risk": 0.50,
+        "competition_risk": 0.5,
         "feedback_value": 0.544
       },
       "criteria_note": "production_difficulty / competition_risk 同上 ease 语义。",
@@ -132,6 +132,39 @@
       "conversion_status": "pending_experiment",
       "selection_method": "human_assisted",
       "selected_at": "2026-07-08T10:41:00+08:00"
+    },
+    {
+      "selection_id": "sel_20260904_pmgantt",
+      "opportunity_id": "aoc_19399677b7ba",
+      "source_candidate_id": "aoc_19399677b7ba",
+      "source_product_definition_id": "prod_a0638789fc2b",
+      "source_opportunity_selection_id": "sel_53e7c414624f",
+      "keyword": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "selection_version": "1.0",
+      "category": "A",
+      "selection_score": null,
+      "experiment_priority_score": null,
+      "criteria": {
+        "market_potential": null,
+        "validation_cost": null,
+        "production_difficulty": null,
+        "competition_risk": null,
+        "feedback_value": null,
+        "note": "Scores NOT invented — opportunity already selected via sel_53e7c414624f; this record selects PRODUCT HYPOTHESIS for experiment preparation only"
+      },
+      "decision": "selected",
+      "reason": "Based on Entry 076 prod_a0638789fc2b + REAL/MANUAL_VERIFIED Excel模板/工作计划/甘特图 observations. Selects DERIVED product hypothesis for first low-cost Xianyu experiment preparation. Does NOT claim specific product market-validated. Does NOT reuse exp_20260708_005 / preq_20260712_005.",
+      "next_action": "create_experiment",
+      "conversion_status": "experiment_prepared",
+      "selection_method": "human_assisted_076_lineage",
+      "evidence_classification": {
+        "product_definition": "DIRECT_EVIDENCE_FOR_MARKET_CLASS_ONLY",
+        "specific_product": "HYPOTHESIS_DERIVED_DESIGN"
+      },
+      "selected_at": "2026-09-04T23:28:18+08:00",
+      "entry": "NEXT_COMMERCIAL_EXPERIMENT_PREPARATION_2026-09-04"
     }
-  ]
+  ],
+  "updated_at": "2026-09-04T23:28:18+08:00",
+  "entry_20260904_note": "Hypothesis selection for first Xianyu Excel PM/Gantt experiment; provenance via 076 PD."
 }

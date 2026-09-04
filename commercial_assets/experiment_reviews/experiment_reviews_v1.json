@@ -5,14 +5,15 @@
   "review_method": "human_assisted",
   "review_note": "Human Assisted ≠ Automation — 无自动 Review Engine；四类 Checklist 与 decision 为人工辅助审核，非 Runtime 执行。Review Completed ≠ Production Started — 本资产不触发 Content Factory、不修改 Experiment Object 原始定义。",
   "created_at": "2026-07-09T17:30:00+08:00",
-  "review_count": 4,
+  "review_count": 5,
   "summary": {
-    "prepared": 3,
+    "prepared": 4,
     "rejected": 1,
     "experiment_ids_prepared": [
       "exp_20260708_001",
       "exp_20260708_004",
-      "exp_20260708_005"
+      "exp_20260708_005",
+      "exp_20260904_pmgantt"
     ],
     "experiment_ids_rejected": [
       "exp_20260708_002"
@@ -48,7 +49,7 @@
           "production_metric": {
             "target_production_cost_cny": 2.5,
             "target_production_time_minutes": 30,
-            "target_quality_score": 0.80
+            "target_quality_score": 0.8
           },
           "market_metric": {
             "target_views": 50,
@@ -61,7 +62,7 @@
             "target_profit_cny": 5.0
           },
           "system_metric": {
-            "target_data_completeness": 0.80
+            "target_data_completeness": 0.8
           }
         },
         "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
@@ -123,7 +124,7 @@
             "target_profit_cny": 3.0
           },
           "system_metric": {
-            "target_data_completeness": 0.80
+            "target_data_completeness": 0.8
           }
         },
         "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
@@ -172,7 +173,7 @@
           "production_metric": {
             "target_production_cost_cny": 2.5,
             "target_production_time_minutes": 25,
-            "target_quality_score": 0.80
+            "target_quality_score": 0.8
           },
           "market_metric": {
             "target_views": 50,
@@ -185,7 +186,7 @@
             "target_profit_cny": 5.0
           },
           "system_metric": {
-            "target_data_completeness": 0.80
+            "target_data_completeness": 0.8
           }
         },
         "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
@@ -247,7 +248,7 @@
             "target_profit_cny": 4.0
           },
           "system_metric": {
-            "target_data_completeness": 0.80
+            "target_data_completeness": 0.8
           }
         },
         "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
@@ -266,6 +267,77 @@
       "reviewer_note": "首批 Category A 优先实验项。",
       "created_at": "2026-07-09T17:30:00+08:00",
       "completed_at": "2026-07-09T17:30:00+08:00"
+    },
+    {
+      "object_type": "experiment_review",
+      "contract_version": "1.0",
+      "review_id": "erev_20260904_pmgantt",
+      "experiment_id": "exp_20260904_pmgantt",
+      "source_opportunity_id": "aoc_19399677b7ba",
+      "source_selection_id": "sel_53e7c414624f",
+      "source_product_definition_id": "prod_a0638789fc2b",
+      "source_hypothesis_selection_id": "sel_20260904_pmgantt",
+      "keyword": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "review_status": "prepared",
+      "entry": "NEXT_COMMERCIAL_EXPERIMENT_PREPARATION_2026-09-04",
+      "business_review": {
+        "target_customer": "小微团队负责人、项目负责人、个体经营者、需要管理多个任务的小团队（HYPOTHESIS）",
+        "customer_problem": "任务分散、截止日期难跟踪、负责人/状态不清、不愿使用复杂项目管理软件（HYPOTHESIS）",
+        "market_reason": "076 PD evidences Excel模板 market class + 工作计划/甘特图 REAL observations; specific product remains HYPOTHESIS",
+        "expected_value": 9.9,
+        "price_role": "PRICE_HYPOTHESIS",
+        "business_pass": true
+      },
+      "product_review": {
+        "product_type": "excel",
+        "asset_format": "xlsx",
+        "production_complexity": "low",
+        "content_factory_compatibility": true,
+        "prefer_deterministic_generation": true,
+        "product_pass": true
+      },
+      "validation_review": {
+        "hypothesis": "【HYPOTHESIS / DERIVED DESIGN】小微团队负责人/项目负责人/个体经营者需要管理多任务、截止日期、负责人与进度，但缺少低成本、无需复杂项目管理软件的工具。一个轻量 Excel 模板（任务录入、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、项目总体进度摘要）可在闲鱼以可接受成本验证真实付费意愿。上游 prod_a0638789fc2b 仅证明 Excel 模板市场存在需求信号（含工作计划/甘特图观察），不证明本具体产品已被市场验证。≠ DIRECT_EVIDENCE。",
+        "hypothesis_status": "HYPOTHESIS",
+        "success_metrics": {
+          "production_metric": {
+            "target_production_cost_cny_max": 3.0,
+            "target_ai_cost_cny_max": 0.0,
+            "target_quality_floor": "SELLABLE_QUALITY_FLOOR"
+          },
+          "market_metric": {
+            "inquiry_count": "NOT_STARTED",
+            "order_count": "NOT_STARTED",
+            "paid_price": "NOT_STARTED"
+          },
+          "commercial_metric": {
+            "price_hypothesis_cny": 9.9,
+            "contribution_margin": "UNKNOWN"
+          }
+        },
+        "failure_condition": "After authorized publish: 14 days zero inquiries AND zero orders, OR cannot meet SELLABLE_QUALITY_FLOOR within cost ceiling, OR unjustified AI cost",
+        "validation_period": "14 days_after_publish",
+        "validation_pass": true
+      },
+      "commercial_review": {
+        "price_estimate": 9.9,
+        "price_role": "PRICE_HYPOTHESIS",
+        "distribution_channel": "xianyu",
+        "commercial_potential": "Category A low-cost Excel; first real Xianyu loop candidate; unit economics TBD",
+        "commercial_pass": true
+      },
+      "cost_review": {
+        "ai_cost_target": "0_or_near_zero",
+        "prefer_deterministic": true,
+        "cost_pass": true
+      },
+      "decision": "prepared",
+      "decision_reason": "Preparation review pass. Specific product is HYPOTHESIS under 076 provenance. Allows Production Request creation. Does NOT authorize CF execution in this task.",
+      "review_method": "human_assisted_076_lineage",
+      "reviewer_note": "Want count ≠ sales. Historical attendance pilot excluded.",
+      "created_at": "2026-09-04T23:28:18+08:00",
+      "completed_at": "2026-09-04T23:28:18+08:00"
     }
-  ]
+  ],
+  "updated_at": "2026-09-04T23:28:18+08:00"
 }
