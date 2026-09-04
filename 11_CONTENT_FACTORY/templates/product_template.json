@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "category": "",
+  "target_customer": "",
+  "problem": "",
+  "content": "",
+  "market_score": 0.0,
+  "quality_score": 0.0,
+  "profit_score": 0.0,
+  "price": 0.0,
+  "platform": "xianyu",
+  "status": "draft",
+  "packaging": {
+    "listing_title": "",
+    "selling_points": [],
+    "description": "",
+    "keywords": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "entry": "071",
+  "completed_at": "2026-09-03T17:53:29+08:00",
+  "preflight": {
+    "db_path": "D:\\AI_FACTORY_OS\\data\\ai_factory.db",
+    "market_observations": 20,
+    "REAL_locked_candidates_found": 7,
+    "locked_ids_requested": [
+      "mobs_48d5a1daa0ee",
+      "mobs_4eeed83520dc",
+      "mobs_77abed5da432",
+      "mobs_558206dd2057",
+      "mobs_2198f9db4742",
+      "mobs_217cd4886838",
+      "mobs_a28b1bc7faca"
+    ],
+    "candidate_ids_from_070": [
+      "mobs_48d5a1daa0ee",
+      "mobs_4eeed83520dc",
+      "mobs_77abed5da432",
+      "mobs_558206dd2057",
+      "mobs_2198f9db4742",
+      "mobs_217cd4886838",
+      "mobs_a28b1bc7faca"
+    ],
+    "candidate_set_match_070": true,
+    "all_locked_REAL": true,
+    "all_locked_MANUAL_VERIFIED": true,
+    "all_session": true,
+    "all_collection_run": true,
+    "products_count": 0,
+    "market_signals_before": 0,
+    "selection_results_before": 0
+  },
+  "signal_runtime": {
+    "status": "PARTIAL",
+    "meaning": "Implemented for products-table keyword groups (Entry 054); NOT wired from MarketObservation / Filter Candidate Set",
+    "entry_point_official": "market_signal_core.derive_signals_from_product_group + load_products_grouped_by_keyword",
+    "candidate_to_signal_entry": "NOT_IMPLEMENTED",
+    "api_surface": {
+      "derive_signals_from_product_group": true,
+      "persist_signals": true,
+      "load_products_grouped_by_keyword": true,
+      "derive_signals_from_observations": false,
+      "derive_signals_from_candidates": false,
+      "from_market_observations": false
+    },
+    "product_groups_available": [],
+    "product_group_count": 0
+  },
+  "opportunity_runtime": {
+    "status": "PARTIAL",
+    "meaning": "discover_opportunities() reads SQLite products → signals → candidates → selection",
+    "entry_point_official": "opportunity_discovery.discover_opportunities",
+    "observation_to_opportunity_entry": "NOT_IMPLEMENTED",
+    "api_surface": {
+      "discover_opportunities": true,
+      "score_opportunity_from_signals": true,
+      "discover_from_observations": false,
+      "discover_from_candidates": false
+    },
+    "dry_run_persist_false": {
+      "status": "INSUFFICIENT_DATA",
+      "reason": "no_keyword_groups_meeting_min_listings",
+      "candidate_count": null,
+      "fake_opportunities_created": false
+    }
+  },
+  "execution": {
+    "signal_from_7_candidates": "NOT_EXECUTED",
+    "reason": "No existing Candidate/Observation → Signal entry; inventing adapter or writing products would violate Entry 071 scope",
+    "opportunity": "NOT_EXECUTED",
+    "opportunity_reason": "Blocked at Signal path for this input lineage"
+  },
+  "db_integrity": {
+    "market_observations_before": 20,
+    "market_observations_after": 20,
+    "obs_delta": 0,
+    "market_signals_before": 0,
+    "market_signals_after": 0,
+    "signals_delta": 0,
+    "selection_results_before": 0,
+    "selection_results_after": 0,
+    "selection_delta": 0
+  },
+  "next_capability_gap": {
+    "gap": "Filter Candidate Set (MarketObservation MATCH) → Signal Runtime bridge",
+    "existing": "products → derive_signals_from_product_group → discover_opportunities",
+    "required": "Authorized Entry to wire Observation/Candidate provenance into Signal without inventing commercial outcomes"
+  },
+  "code_modification": "NONE",
+  "schema_modification": "NONE",
+  "external_commercial_action": "NONE",
+  "commercial_learning": "NOT_EXECUTED",
+  "final_status": "BLOCKED_AT_SIGNAL"
+}

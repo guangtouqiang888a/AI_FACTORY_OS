@@ -1,0 +1,2 @@
+2026-09-03T14:09:09+08:00 preflight069_probe VALIDATION_FAILED ['missing_session_id', 'missing_source', 'missing_platform']
+2026-09-03T15:10:21+08:00 run_292e65f4ecca VALIDATION_FAILED ['contract_version_mismatch:None', 'invalid_message_type', 'missing_run_id', 'missing_session_id', 'missing_source', 'missing_platform', 'records_not_list']

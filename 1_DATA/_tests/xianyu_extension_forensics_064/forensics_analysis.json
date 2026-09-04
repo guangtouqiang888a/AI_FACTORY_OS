@@ -1,0 +1,148 @@
+{
+  "entry": "064",
+  "plugin_identity": {
+    "name": "闲鱼全自动高热度采集器",
+    "internal_folder": "my-xianyu-scraper",
+    "manifest_version": 3,
+    "extension_version": "1.3",
+    "zip_source": "D:\\闲鱼全自动采集插件1.zip"
+  },
+  "file_inventory": {
+    "core_files": [
+      "manifest.json",
+      "content.js",
+      "popup.html",
+      "popup.js",
+      "1 部署插件.png",
+      "2 使用插件.png"
+    ],
+    "missing": [
+      "background.js",
+      "service_worker",
+      "options.js",
+      "utils/",
+      "external_libraries"
+    ]
+  },
+  "permissions": {
+    "declared": ["activeTab", "scripting", "storage"],
+    "host_permissions": "none explicit (content_scripts matches only)",
+    "matches": ["*://*.goofish.com/*", "*://*.2yuanbao.com/*"],
+    "ai_factory_minimal_recommendation": [
+      "activeTab",
+      "scripting",
+      "storage (optional for session prefs only)"
+    ],
+    "remove_for_aifo": ["2yuanbao.com match unless needed"]
+  },
+  "workflow": {
+    "steps": [
+      "User manually opens Xianyu search results in normal Chrome",
+      "User clicks extension popup",
+      "User sets minWant (default 50) and maxPages (default 3)",
+      "popup.js queries active tab and sendMessage start_auto_scrape",
+      "content.js loop: autoScrollToBottom → scrapeCurrentPage → goToNextPage",
+      "content.js returns {data: [...]} to popup",
+      "popup renders preview table and offers CSV download via Blob"
+    ],
+    "search_control": "USER_MANUAL — plugin does NOT type query or navigate to search",
+    "depends_on_dom": true,
+    "depends_on_hidden_api": false
+  },
+  "field_extraction": {
+    "title": {"source": "[class*=\"title\"] innerText", "fallback": "未知标题", "class": "REALITY"},
+    "price": {"source": "[class*=\"price\"] innerText", "fallback": "面议", "class": "REALITY"},
+    "want_count": {"source": "regex /(\\d+)\\s*人想要/ on card innerText", "class": "REALITY"},
+    "source_url": {"source": "card a.href or window.location.href", "class": "REALITY"},
+    "image_url": {"source": "img src or dataset.src", "class": "REALITY"},
+    "source_item_id": {"source": "not extracted", "class": "MISSING"},
+    "category": {"class": "MISSING"},
+    "seller": {"class": "MISSING"}
+  },
+  "want_count_behavior": {
+    "regex": "(\\d+)\\s*人想要",
+    "location": "card.innerText",
+    "missing_behavior": "card skipped entirely — not included in results",
+    "threshold": "minWant in scrapeCurrentPage (collector-side filter)",
+    "threshold_source": "popup input default 50",
+    "null_vs_zero": "cards without match never reach output; explicit 0 would pass if matched"
+  },
+  "deduplication": {
+    "key": "title only (seenTitles Set)",
+    "issues": [
+      "duplicate titles collapse different items",
+      "href/item_id not used"
+    ],
+    "aifo_recommendation": "source + source_item_id primary; content hash fallback"
+  },
+  "pagination": {
+    "selector": "[class*=\"search-pagination-page-box\"]",
+    "logic": "find active index, click next numeric or > or 下一页",
+    "max_pages": "request.maxPages from popup",
+    "wait_after_page": "5000ms hardcoded",
+    "hardcoded": true
+  },
+  "scrolling": {
+    "step_px": 400,
+    "interval_ms": 300,
+    "bottom_wait_ms": 2000,
+    "assumption": "lazy-load images/listings on scroll",
+    "reusable": "pattern yes; constants should be bounded-wait config"
+  },
+  "export": {
+    "format": "CSV UTF-8 BOM",
+    "method": "Blob + URL.createObjectURL + anchor download",
+    "columns": ["想要人数", "商品标题", "价格", "图片链接", "商品链接"],
+    "aifo_layer": "debug/export only — core = MarketRecord → Raw → Observation"
+  },
+  "keep_rewrite_remove": {
+    "KEEP": [
+      "Browser-native content script on visible goofish page",
+      "DOM-only extraction (no hidden API)",
+      "feeds-item-wrap-like card iteration pattern (needs selector update)",
+      "scroll-then-extract for lazy load",
+      "pagination click pattern",
+      "popup → content message bridge",
+      "want_count regex on visible 人想要 text"
+    ],
+    "REWRITE": [
+      "minWant filter inside scrape → Filter layer after full card capture",
+      "title-only dedupe → source_item_id + dedupe_key",
+      "broad [class*=item/card] selectors → Xianyu adapter versioned selectors",
+      "fixed sleep(5000) → bounded page readiness wait",
+      "CSV as core output → MarketRecord batch + Local Bridge",
+      "no result_origin → SEARCH_RESULT vs RECOMMENDED classification",
+      "no want_count_status → VISIBLE/MISSING/DETAIL states",
+      "assume user on search page → SearchSession + optional Search Controller"
+    ],
+    "REMOVE": [
+      "Collector-side discard of cards without want_count",
+      "Excel/CSV as system of record",
+      "2yuanbao.com match unless product requires",
+      "hotness framing in extension name/UI for AIFO production"
+    ]
+  },
+  "integration_blueprint": {
+    "recommended_bridge": "Localhost HTTP (POST /acquisition/v1/market-record-batch)",
+    "alternatives_considered": {
+      "websocket": "already in project (061); viable for streaming",
+      "native_messaging": "higher complexity; defer",
+      "local_file_queue": "simple but race-prone",
+      "extension_only_storage": "no Engine integration"
+    },
+    "market_record_contract_version": "064.1.0",
+    "message_types": [
+      "MARKET_RECORD_BATCH",
+      "RUN_STATUS",
+      "ACCESS_BLOCKED",
+      "PAGE_STRUCTURE_CHANGED"
+    ]
+  },
+  "why_plugin_works_vs_058e_060": [
+    "Runs inside user's normal logged-in Chrome tab — not Python headless",
+    "User manually reaches search page with real results before scrape",
+    "Content script reads post-render DOM — not urllib CSR shell",
+    "Not subject to headless ACCESS_DENIED path (060)"
+  ],
+  "current_db_impact": "none — forensics only"
+}

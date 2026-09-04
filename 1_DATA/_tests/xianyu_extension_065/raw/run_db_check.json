@@ -1,0 +1,60 @@
+{
+  "acquisition_run_id": "run_db_check",
+  "raw_record_id": "raw_dc89af9050da",
+  "source": "xianyu",
+  "timestamp": "2026-09-03T15:10:54+08:00",
+  "payload": {
+    "contract_version": "064.1.0",
+    "message_type": "MARKET_RECORD_BATCH",
+    "request_id": "req_test_001",
+    "run_id": "run_db_check",
+    "session_id": "sess_test_001",
+    "source": "xianyu",
+    "platform": "xianyu",
+    "query": "Excel模板",
+    "result_origin": "SEARCH_RESULT",
+    "page_state": "SEARCH_RESULT",
+    "observed_at": "2026-08-30T12:00:00+08:00",
+    "collector_version": "065.1.0",
+    "adapter_version": "065.1.0",
+    "status": "SUCCESS",
+    "filter_metadata": {
+      "min_want_count": null
+    },
+    "records": [
+      {
+        "source": "xianyu",
+        "platform": "xianyu",
+        "source_item_id": "900001",
+        "source_url": "https://www.goofish.com/item?id=900001",
+        "title": "Excel模板合集",
+        "price": 9.9,
+        "currency": "CNY",
+        "want_count": 61,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "result_origin": "SEARCH_RESULT",
+        "observed_at": "2026-08-30T12:00:01+08:00",
+        "query": "Excel模板",
+        "session_id": "sess_test_001",
+        "collector_version": "065.1.0"
+      },
+      {
+        "source": "xianyu",
+        "platform": "xianyu",
+        "source_item_id": "900002",
+        "source_url": "https://www.goofish.com/item?id=900002",
+        "title": "PPT模板无想要",
+        "price": 5.0,
+        "currency": "CNY",
+        "want_count": null,
+        "want_count_status": "MISSING_ON_CARD",
+        "result_origin": "SEARCH_RESULT",
+        "observed_at": "2026-08-30T12:00:02+08:00",
+        "query": "Excel模板",
+        "session_id": "sess_test_001",
+        "collector_version": "065.1.0"
+      }
+    ]
+  },
+  "collector_version": "065.1.0"
+}

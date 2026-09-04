@@ -1,0 +1,13 @@
+{
+  "search_state": "EMPTY_SEARCH_RESULT",
+  "secondary_feed": "RECOMMENDED_FEED",
+  "search_result_count": 0,
+  "recommended_count": 20,
+  "evidence": {
+    "empty_text": true,
+    "guess_you_like": true,
+    "url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+    "url_is_search": true,
+    "note": "URL /search alone does not imply SEARCH_RESULT"
+  }
+}

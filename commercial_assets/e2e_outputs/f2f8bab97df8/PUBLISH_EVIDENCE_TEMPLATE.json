@@ -1,0 +1,34 @@
+{
+  "schema": "publish_evidence_template_v1",
+  "entry": "056",
+  "status": "TEMPLATE_ONLY_NOT_RECORDED",
+  "note": "Human fills AFTER real platform publish. AI must NOT invent listing_reference / URL / published_at. Call publish_queue.record_publish_evidence() only with real values.",
+  "fields_to_fill": {
+    "queue_id": "pq_auto_f2f8bab97df8",
+    "platform": "xianyu",
+    "listing_reference": "",
+    "published_at": "",
+    "source": "human_manual_entry",
+    "verification_status": "MANUAL_VERIFIED",
+    "human_operator": "",
+    "notes": "",
+    "screenshot_path_or_ref": ""
+  },
+  "forbidden": [
+    "ai_generated_listing_id",
+    "ai_generated_listing_url",
+    "ai_force_queue_published_without_evidence",
+    "fabricated_market_event",
+    "commercial_success_claim"
+  ],
+  "after_accepted_evidence": {
+    "queue_becomes": "PUBLISHED",
+    "observation_eligible": true,
+    "observation_started": false,
+    "commercial_success": false,
+    "observation_start": "NEXT_ENTRY_ONLY"
+  },
+  "commercial_product_id": "cp_auto_f2f8bab97df8",
+  "listing_id": "lst_auto_f2f8bab97df8",
+  "product_asset_id": "f2f8bab97df8"
+}

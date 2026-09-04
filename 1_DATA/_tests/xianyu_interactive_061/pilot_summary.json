@@ -1,0 +1,43 @@
+{
+  "entry": "061",
+  "result_status": "OK",
+  "ok": true,
+  "records_extracted": 20,
+  "FIRST_REAL_XIANYU_CANDIDATE_BATCH": true,
+  "current_db_before": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0
+  },
+  "current_db_after": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0
+  },
+  "current_db_unchanged": true,
+  "collector_registry_proposal": {
+    "collector_id": "col_xianyu_browser_interactive",
+    "source_id": "src_xianyu_marketplace",
+    "mode": "PUBLIC_WEB_READ",
+    "version": "061.1.0",
+    "status": "LIMITED",
+    "supported_fields": {
+      "title": "AVAILABLE",
+      "price": "AVAILABLE",
+      "want_count": "PARTIAL",
+      "source_url": "AVAILABLE",
+      "source_item_id": "AVAILABLE",
+      "view_count": "UNAVAILABLE",
+      "comment_count": "UNAVAILABLE",
+      "share_count": "UNAVAILABLE",
+      "published_at": "UNAVAILABLE"
+    },
+    "notes": "Entry 061 interactive visible browser; first pass test-dir only"
+  },
+  "artifact_dir": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_interactive_061",
+  "login_used": false,
+  "bypass_attempted": false,
+  "hidden_api_called": false
+}

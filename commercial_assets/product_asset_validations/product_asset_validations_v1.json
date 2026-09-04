@@ -1,0 +1,171 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_PRODUCT_ASSET_VALIDATION_GATE.md",
+  "validation_method": "human_assisted",
+  "creation_note": "Entry 033-B1 Pilot validation record.",
+  "created_at": "2026-07-13T18:37:11+08:00",
+  "validation_count": 1,
+  "product_asset_validations": [
+    {
+      "validation_id": "pval_20260713_ac223d",
+      "object_type": "product_asset_validation",
+      "contract_version": "1.0",
+      "source_production_request_id": "preq_20260712_005",
+      "source_product_asset_id": "8523329941d4",
+      "source_experiment_id": "exp_20260708_005",
+      "source_approval_id": "appr_20260713_005",
+      "validation_method": "human_assisted",
+      "validation_status": "passed",
+      "validation_result": {
+        "overall": "passed",
+        "artifact_validation": {
+          "passed": true,
+          "failed_checks": []
+        },
+        "contract_validation": {
+          "passed": true,
+          "failed_checks": []
+        },
+        "quality_validation": {
+          "passed": true,
+          "failed_checks": []
+        },
+        "commercial_validation": {
+          "passed": true,
+          "failed_checks": []
+        },
+        "summary": "All blocker checks passed; eligible for product_assets persistence (Runtime does not write)",
+        "blockers": [],
+        "warnings": []
+      },
+      "review_items": [
+        {
+          "check_id": "artifact.path_valid",
+          "category": "artifact_validation",
+          "description": "artifact_path exists on disk",
+          "expected": "valid directory path",
+          "actual": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "artifact.files_non_empty",
+          "category": "artifact_validation",
+          "description": "artifact file list is not empty",
+          "expected": "at least one artifact file",
+          "actual": [
+            "templates\\8523329941d4.xlsx",
+            "documents\\product_manual.pdf",
+            "images\\cover_placeholder.txt"
+          ],
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "artifact.file_type_match",
+          "category": "artifact_validation",
+          "description": "file_type matches deliverable",
+          "expected": "file_type=xlsx",
+          "actual": [
+            "templates\\8523329941d4.xlsx",
+            "documents\\product_manual.pdf",
+            "images\\cover_placeholder.txt"
+          ],
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "contract.product_asset_id",
+          "category": "contract_validation",
+          "description": "product_asset_id present",
+          "expected": "non-empty product_asset_id",
+          "actual": "8523329941d4",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "contract.production_request_id",
+          "category": "contract_validation",
+          "description": "source_production_request_id present",
+          "expected": "non-empty production_request_id",
+          "actual": "preq_20260712_005",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "contract.contract_version",
+          "category": "contract_validation",
+          "description": "contract_version is 1.0",
+          "expected": "1.0",
+          "actual": "1.0",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "contract.creation_method",
+          "category": "contract_validation",
+          "description": "creation_method allowed",
+          "expected": "one of ['adapter_generated', 'automated', 'human_assisted']",
+          "actual": "adapter_generated",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "contract.object_type",
+          "category": "contract_validation",
+          "description": "object_type is product_asset",
+          "expected": "product_asset",
+          "actual": "product_asset",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "quality.score_present",
+          "category": "quality_validation",
+          "description": "quality_score present",
+          "expected": "numeric quality_score",
+          "actual": 0.89,
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "quality.threshold_met",
+          "category": "quality_validation",
+          "description": "quality_score >= 0.85",
+          "expected": ">= 0.85",
+          "actual": 0.89,
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "commercial.validation_goal",
+          "category": "commercial_validation",
+          "description": "validation_goal present",
+          "expected": "non-empty validation_goal",
+          "actual": "验证低竞争细分「小团队考勤 Excel」是否有稳定长尾需求与首单转化；本批次 selection_score 最高（69）优先实验候选。",
+          "passed": true,
+          "severity": "blocker"
+        },
+        {
+          "check_id": "commercial.requirements",
+          "category": "commercial_validation",
+          "description": "asset_requirements and quality_requirements present",
+          "expected": "both requirement objects",
+          "actual": {
+            "asset_requirements": true,
+            "quality_requirements": true
+          },
+          "passed": true,
+          "severity": "blocker"
+        }
+      ],
+      "validated_by": "system",
+      "created_at": "2026-07-13T18:37:11+08:00",
+      "completed_at": "2026-07-13T18:37:11+08:00",
+      "validation_context_ref": {
+        "validation_goal_present": true,
+        "requirements_present": true
+      }
+    }
+  ]
+}

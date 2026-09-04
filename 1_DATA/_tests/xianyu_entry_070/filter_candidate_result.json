@@ -1,0 +1,433 @@
+{
+  "entry": "070",
+  "completed_at": "2026-09-03T17:47:34+08:00",
+  "preflight": {
+    "db_path": "D:\\AI_FACTORY_OS\\data\\ai_factory.db",
+    "input_extension_run_id": "run_1788419997563",
+    "input_session_id": "sess_1788419997563",
+    "input_collection_run_id": "crun_378745ca45e0",
+    "observation_count": 20,
+    "REAL": 20,
+    "MANUAL_VERIFIED": 20,
+    "SEARCH_RESULT": 20,
+    "session_match": 20,
+    "collection_run_match": 20,
+    "want_null": 6,
+    "want_zero": 0,
+    "market_signals_before": 0
+  },
+  "filter_mechanism": {
+    "entry_point": "connectors.xianyu_entry_068_pipeline.apply_filter_to_observation_candidates",
+    "engine": "acquisition_engine.apply_observation_filters",
+    "pipeline_version": "068.1.0",
+    "filters_applied": {
+      "min_want_count": 50,
+      "min_price": null,
+      "max_price": null
+    },
+    "DEFAULT_FILTER_source": "xianyu_entry_068_pipeline.DEFAULT_FILTER"
+  },
+  "filter_result": {
+    "observations_input": 20,
+    "observations_retained": 20,
+    "filter_deleted_observations": false,
+    "counts": {
+      "MATCH": 7,
+      "BELOW_THRESHOLD": 7,
+      "ABOVE_THRESHOLD": 0,
+      "UNKNOWN": 6
+    },
+    "Passed_MATCH": 7,
+    "Rejected_non_MATCH": 13,
+    "Passed_plus_Rejected": 20,
+    "engine_counts_match": true,
+    "note": "Collector retains all facts; Filter only classifies. NULL≠0."
+  },
+  "candidate_set": {
+    "definition": "classified rows with filter_status=MATCH",
+    "size": 7,
+    "PERSISTENCE": "NONE",
+    "candidates": [
+      {
+        "observation_id": "mobs_48d5a1daa0ee",
+        "source_item_id": "805580867741",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 1082,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      },
+      {
+        "observation_id": "mobs_4eeed83520dc",
+        "source_item_id": "1028751421655",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 2245,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      },
+      {
+        "observation_id": "mobs_77abed5da432",
+        "source_item_id": "1008483525701",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 660,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      },
+      {
+        "observation_id": "mobs_558206dd2057",
+        "source_item_id": "733931849575",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 1930,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      },
+      {
+        "observation_id": "mobs_2198f9db4742",
+        "source_item_id": "1040306099626",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 436,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      },
+      {
+        "observation_id": "mobs_217cd4886838",
+        "source_item_id": "1033698667594",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 186,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      },
+      {
+        "observation_id": "mobs_a28b1bc7faca",
+        "source_item_id": "1013101172377",
+        "collection_run_id": "crun_378745ca45e0",
+        "session_id": "sess_1788419997563",
+        "extension_run_id": "run_1788419997563",
+        "want_count": 642,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "price": 1.0,
+        "filter_status": "MATCH"
+      }
+    ]
+  },
+  "null_want_outcomes": [
+    {
+      "observation_id": "mobs_bd53d83bfdb0",
+      "source_item_id": "1070164035510",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.28,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_323a58773bb0",
+      "source_item_id": "1059831024586",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_b2ee45a1a3ac",
+      "source_item_id": "990468976473",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_d9208eb6a2fc",
+      "source_item_id": "1016975143527",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_accc1cee7846",
+      "source_item_id": "1075495541333",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_b547afe58be5",
+      "source_item_id": "1074182993597",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    }
+  ],
+  "observation_integrity": {
+    "market_observations_before": 20,
+    "market_observations_after": 20,
+    "delta": 0,
+    "want_values_unchanged": true,
+    "want_null_after": 6,
+    "want_zero_after": 0,
+    "market_signals_before": 0,
+    "market_signals_after": 0,
+    "signals_delta": 0
+  },
+  "provenance_ok": true,
+  "classified_summary": [
+    {
+      "observation_id": "mobs_48d5a1daa0ee",
+      "source_item_id": "805580867741",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 1082,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_22792ee63629",
+      "source_item_id": "1073857662447",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 26,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "BELOW_THRESHOLD"
+    },
+    {
+      "observation_id": "mobs_4eeed83520dc",
+      "source_item_id": "1028751421655",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 2245,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_d1fa80a1d593",
+      "source_item_id": "1036095216365",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 25,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "BELOW_THRESHOLD"
+    },
+    {
+      "observation_id": "mobs_7d89f980a99f",
+      "source_item_id": "1052770780546",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 14,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "BELOW_THRESHOLD"
+    },
+    {
+      "observation_id": "mobs_bd53d83bfdb0",
+      "source_item_id": "1070164035510",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.28,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_323a58773bb0",
+      "source_item_id": "1059831024586",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_77abed5da432",
+      "source_item_id": "1008483525701",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 660,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_558206dd2057",
+      "source_item_id": "733931849575",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 1930,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_b2ee45a1a3ac",
+      "source_item_id": "990468976473",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_d9208eb6a2fc",
+      "source_item_id": "1016975143527",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_2a88c3a1bfe4",
+      "source_item_id": "1050112364126",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 7,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "BELOW_THRESHOLD"
+    },
+    {
+      "observation_id": "mobs_2198f9db4742",
+      "source_item_id": "1040306099626",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 436,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_217cd4886838",
+      "source_item_id": "1033698667594",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 186,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_accc1cee7846",
+      "source_item_id": "1075495541333",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_b547afe58be5",
+      "source_item_id": "1074182993597",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "price": 1.0,
+      "filter_status": "UNKNOWN"
+    },
+    {
+      "observation_id": "mobs_9a2cfaa1db42",
+      "source_item_id": "1074536975158",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 3,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.28,
+      "filter_status": "BELOW_THRESHOLD"
+    },
+    {
+      "observation_id": "mobs_a28b1bc7faca",
+      "source_item_id": "1013101172377",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 642,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "MATCH"
+    },
+    {
+      "observation_id": "mobs_c8922a71fafc",
+      "source_item_id": "1003872820177",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 1,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "BELOW_THRESHOLD"
+    },
+    {
+      "observation_id": "mobs_7f3434d9d518",
+      "source_item_id": "1031449454547",
+      "collection_run_id": "crun_378745ca45e0",
+      "session_id": "sess_1788419997563",
+      "extension_run_id": "run_1788419997563",
+      "want_count": 3,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "price": 1.0,
+      "filter_status": "BELOW_THRESHOLD"
+    }
+  ],
+  "code_modification": "NONE"
+}

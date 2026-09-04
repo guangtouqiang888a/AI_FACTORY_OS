@@ -1,0 +1,6 @@
+交付说明（草案）
+格式：final_product.zip
+内容：templates/*.xlsx + documents/product_manual.pdf + 发布辅助材料
+方式：平台虚拟商品交付 / 网盘链接（由人工发布时选定）
+版本：pilot_v1（HYPOTHESIS 标签）
+状态：PREPARED / NOT PUBLISHED

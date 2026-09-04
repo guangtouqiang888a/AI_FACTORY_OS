@@ -1,0 +1,90 @@
+{
+  "count": 20,
+  "note": "RECOMMENDED_FEED excluded from target search evidence",
+  "sample": [
+    {
+      "title": "双木锯铝机10寸255mm锯铝机（250A  1800W）爆 款10寸皮带式锯铝机，低噪音 可切45度 易操作！原机不含",
+      "price": 359.0,
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "want_count_card": null,
+      "want_count_detail": null,
+      "source_url": "https://www.goofish.com/item?id=668892297066&categoryId=126864150",
+      "source_item_id": "668892297066",
+      "view_count": null,
+      "comment_count": null,
+      "share_count": null,
+      "published_at": null,
+      "observed_at": "2026-09-03T13:48:53+08:00",
+      "result_origin": "RECOMMENDED_RESULT",
+      "source_platform": "xianyu",
+      "sales_platform": null,
+      "seller_reference": "卡***具",
+      "candidate_class": "REAL_CANDIDATE_EXTERNAL",
+      "valid_without_want_count": true,
+      "not_our_product": true,
+      "not_our_listing": true,
+      "evidence": {
+        "card_has_want_text": false,
+        "card_selector": "a.feeds-item-wrap"
+      },
+      "result_position": 1
+    },
+    {
+      "title": "恒飞电线双层阻燃 感兴趣的话点“我想要”和我私聊吧～",
+      "price": 15.0,
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "want_count_card": null,
+      "want_count_detail": null,
+      "source_url": "https://www.goofish.com/item?id=656716652043&categoryId=126856371",
+      "source_item_id": "656716652043",
+      "view_count": null,
+      "comment_count": null,
+      "share_count": null,
+      "published_at": null,
+      "observed_at": "2026-09-03T13:48:53+08:00",
+      "result_origin": "RECOMMENDED_RESULT",
+      "source_platform": "xianyu",
+      "sales_platform": null,
+      "seller_reference": "高***材",
+      "candidate_class": "REAL_CANDIDATE_EXTERNAL",
+      "valid_without_want_count": true,
+      "not_our_product": true,
+      "not_our_listing": true,
+      "evidence": {
+        "card_has_want_text": false,
+        "card_selector": "a.feeds-item-wrap"
+      },
+      "result_position": 2
+    },
+    {
+      "title": "35一斤包邮淮山干冻干淮山山药切片干货干净一等一品质 直接拍下是一斤！！！包邮！！！",
+      "price": 35.0,
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "want_count_card": null,
+      "want_count_detail": null,
+      "source_url": "https://www.goofish.com/item?id=682585874260&categoryId=201452221",
+      "source_item_id": "682585874260",
+      "view_count": null,
+      "comment_count": null,
+      "share_count": null,
+      "published_at": null,
+      "observed_at": "2026-09-03T13:48:53+08:00",
+      "result_origin": "RECOMMENDED_RESULT",
+      "source_platform": "xianyu",
+      "sales_platform": null,
+      "seller_reference": "靓***货",
+      "candidate_class": "REAL_CANDIDATE_EXTERNAL",
+      "valid_without_want_count": true,
+      "not_our_product": true,
+      "not_our_listing": true,
+      "evidence": {
+        "card_has_want_text": false,
+        "card_selector": "a.feeds-item-wrap"
+      },
+      "result_position": 3
+    }
+  ]
+}

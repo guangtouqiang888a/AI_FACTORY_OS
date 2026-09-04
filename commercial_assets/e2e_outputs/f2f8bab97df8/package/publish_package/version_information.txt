@@ -1,0 +1,4 @@
+product_asset_id=f2f8bab97df8
+experiment_id=exp_auto_20260830_8cbd08
+entry=055
+generated_at=2026-08-30T16:38:33+08:00

@@ -1,0 +1,8 @@
+product_asset_id: 8523329941d4
+production_request_id: preq_20260712_005
+experiment_id: exp_20260708_005
+version_label: pilot_v1
+package_status: PREPARED
+published: false
+entry: 048
+updated_at: 2026-08-29

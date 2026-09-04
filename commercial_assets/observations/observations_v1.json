@@ -1,0 +1,7 @@
+{
+  "schema": "observations_v1",
+  "entry": "051",
+  "note": "Observation fact store for Market Events. Empty by design until real observation starts. Does NOT replace Pilot Observation=NOT_STARTED on experiments.",
+  "observations": [],
+  "updated_at": null
+}

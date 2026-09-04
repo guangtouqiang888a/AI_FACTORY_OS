@@ -1,0 +1,182 @@
+{
+  "ok": true,
+  "entry": "056",
+  "generated_at": "2026-08-30T20:45:16+08:00",
+  "selection_origin": "AUTONOMOUSLY SELECTED + AUTONOMOUSLY PRODUCED",
+  "commercially_validated": false,
+  "product_identity": {
+    "product_id": "f2f8bab97df8",
+    "product_type": "digital_template",
+    "product_version": "e2e_055_v1",
+    "product_asset_id": "f2f8bab97df8",
+    "commercial_product_id": "cp_auto_f2f8bab97df8",
+    "listing_id": "lst_auto_f2f8bab97df8",
+    "publish_queue_id": "pq_auto_f2f8bab97df8",
+    "experiment_id": "exp_auto_20260830_8cbd08",
+    "production_request_id": "preq_auto_20260830_a4189c",
+    "opportunity_id": "aoc_919c62520b98"
+  },
+  "product_name": "批量关键词 EXCEL 模板",
+  "queue": {
+    "id": 2,
+    "publish_queue_id": "pq_auto_f2f8bab97df8",
+    "product_id": "f2f8bab97df8",
+    "product_asset_id": "f2f8bab97df8",
+    "product_type": "digital_template",
+    "experiment_id": "exp_auto_20260830_8cbd08",
+    "production_request_id": "preq_auto_20260830_a4189c",
+    "platform": "xianyu",
+    "listing_title": "【精品】【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+    "price": 99.9,
+    "currency": "CNY",
+    "risk_status": "passed",
+    "quality_status": "passed",
+    "commercial_status": "commercial_ready",
+    "commercial_score": 88.75,
+    "queue_status": "AWAITING_HUMAN_ACTION",
+    "blockers": "[]",
+    "package_path": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\package\\publish_package",
+    "notes": "Entry 055 E2E — AWAITING_HUMAN_ACTION. No auto external publish. Production success ≠ Commercial success.",
+    "observation_eligible": 0,
+    "created_at": "2026-08-30 16:38:33",
+    "updated_at": "2026-08-30 16:38:33"
+  },
+  "integrity": {
+    "ok": true,
+    "blockers": [],
+    "assets": [
+      {
+        "file_name": "f2f8bab97df8.xlsx",
+        "type": "xlsx",
+        "path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\templates\\f2f8bab97df8.xlsx",
+        "exists": true,
+        "openable_ooxml_zip": true,
+        "validated": true
+      },
+      {
+        "file_name": "product_manual.pdf",
+        "type": "pdf",
+        "path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\documents\\product_manual.pdf",
+        "exists": true,
+        "size_bytes": 3014,
+        "validated": true
+      },
+      {
+        "file_name": "final_product.zip",
+        "type": "zip",
+        "path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip",
+        "exists": true,
+        "zip_integrity_ok": true,
+        "member_count": 10,
+        "validated": true
+      },
+      {
+        "file_name": "cover_placeholder.txt",
+        "type": "cover_placeholder",
+        "path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\images\\cover_placeholder.txt",
+        "exists": true,
+        "placeholder": true,
+        "validated": true,
+        "note": "PLACEHOLDER — Replace before publish recommended; not Marketing Ready"
+      }
+    ],
+    "cover_placeholder": true,
+    "publish_readiness_blocked": false,
+    "artifact_root": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8"
+  },
+  "listing_package": {
+    "ok": true,
+    "missing": [],
+    "package_dir": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\package\\publish_package",
+    "contents": {
+      "title.txt": "【精品】【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+      "description.txt": "【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包\n\n【产品亮点】\n✓ commercial_score >= 80，质量达标\n✓ 专业 Excel模板，真实可交付文件\n✓ 含 PDF 产品说明\n✓ 数字交付，拍下即发\n\n【适用人群】\n需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）\n\n【交付说明】\n付款后发送 final_product.zip 网盘链接。\n\n【产物目录】",
+      "keywords.txt": "批量关键词 EXCEL 模板\nExcel模板\n虚拟资料\n数字商品\n模板",
+      "faq.txt": "Q: 交付什么？\nA: 批量关键词 EXCEL 模板 数字文件（zip）。\n\nQ: 是否真实已发布？\nA: 否。当前仅 Publish Queue AWAITING_HUMAN_ACTION。",
+      "delivery_description.txt": "数字下载：付款后发送 final_product.zip（平台外人工操作）。",
+      "version_information.txt": "product_asset_id=f2f8bab97df8\nexperiment_id=exp_auto_20260830_8cbd08\nentry=055\ngenerated_at=2026-08-30T16:38:33+08:00",
+      "pricing.json": {
+        "suggested_price": 19.9,
+        "currency": "CNY",
+        "platform": "xianyu",
+        "product_price_hypothesis": 99.9,
+        "listing_price": null,
+        "actual_paid_price": null,
+        "price_role": "PRICE_HYPOTHESIS",
+        "note": "Entry 057 ontology. suggested_price=CF default. ai_recommended_experimental_price is AI_RECOMMENDED_PRICE only. Human confirms Listing Price. ≠ Paid ≠ Validated.",
+        "market_reference_price": 99.9,
+        "cf_packaging_default": 19.9,
+        "ai_recommended_experimental_price": 19.9,
+        "recommended_range": {
+          "min": 12.9,
+          "max": 29.9,
+          "currency": "CNY"
+        },
+        "price_recommendation_id": "prrec_c4a8664a0fb6"
+      }
+    }
+  },
+  "price": {
+    "price_hypothesis": 99.9,
+    "listing_price_field": 99.9,
+    "listing_price_role": "PRICE_HYPOTHESIS",
+    "listing_price_note": "Entry 057: field may still hold 99.9 hypothesis mirror for gate history. Confirmed Listing Price = null until Human External Action. AI recommended experimental = 19.9 (range {'min': 12.9, 'max': 29.9, 'currency': 'CNY'}). ≠ Paid.",
+    "cf_packaging_default": 19.9,
+    "suggested_price_in_package": 19.9,
+    "actual_paid_price": null,
+    "ai_recommendation_only": true,
+    "labels": {
+      "99.9": "PRODUCT_PRICE_HYPOTHESIS (opportunity estimated_value proxy)",
+      "19.9": "CF_PACKAGING_DEFAULT / AI_RECOMMENDATION_ONLY",
+      "listing_field_99.9": "mirrored hypothesis for gate — NOT validated Listing Price"
+    },
+    "note": "Price Hypothesis ≠ Listing Price ≠ Actual Paid Price"
+  },
+  "platform": {
+    "system_recorded_platform": "xianyu",
+    "human_confirmed_platform": null,
+    "status": "SYSTEM_RECORDED_PENDING_HUMAN_CONFIRM",
+    "note": "Report Reality as-is. Human confirms platform for external action. AI does not auto-select or switch platforms."
+  },
+  "quality": {
+    "quality_score": 89.0,
+    "commercial_score": 88.75,
+    "usability_score": 100.0,
+    "market_score": 75.0,
+    "production_cost_score": 90.0,
+    "status": "quality_pass"
+  },
+  "risk_status": "passed",
+  "quality_status": "passed",
+  "publish_evidence_count": 0,
+  "publish_evidence_status": "MISSING",
+  "observation": {
+    "published_listing_exists": false,
+    "verified_publish_evidence_exists": false,
+    "observation_window_defined": false,
+    "market_event_collector_available": true,
+    "market_event_collector_note": "1_DATA/market_event_core.py ingest API exists; live connectors Not Built",
+    "observation_may_start": false,
+    "observation_status": "NOT_STARTED",
+    "blockers": [
+      "published_listing_missing",
+      "publish_evidence_missing",
+      "observation_window_undefined"
+    ]
+  },
+  "commercial_learning": "NONE",
+  "legacy_pilot_isolated": true,
+  "publish_readiness": "READY FOR HUMAN EXTERNAL ACTION",
+  "score_note": "Score ≠ Commercial Success. commercial_score is eligibility only.",
+  "commercial_product_id": "cp_auto_f2f8bab97df8",
+  "listing_id": "lst_auto_f2f8bab97df8",
+  "listing_status": "AWAITING_HUMAN_ACTION",
+  "commercial_status": "QUEUED",
+  "paths": {
+    "human_publish_pack": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\HUMAN_PUBLISH_PACK.md",
+    "decision_pack_alias": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\HUMAN_COMMERCIAL_DECISION_PACK.md",
+    "evidence_template": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\PUBLISH_EVIDENCE_TEMPLATE.json",
+    "listing_package": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\package\\publish_package",
+    "artifact_root": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8"
+  }
+}

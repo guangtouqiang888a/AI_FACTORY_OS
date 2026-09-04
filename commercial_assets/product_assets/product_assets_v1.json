@@ -1,0 +1,353 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_PRODUCT_ASSET_CONTRACT.md",
+  "creation_method": "human_assisted",
+  "creation_note": "Entry 033-B1 Pilot — Single Pilot preq_20260712_005 only. Production Completed ≠ Commercial Success.",
+  "created_at": "2026-07-13T18:37:11+08:00",
+  "product_asset_count": 2,
+  "summary": {
+    "pilot_only": "preq_20260712_005",
+    "validation_passed": 1
+  },
+  "product_assets": [
+    {
+      "object_type": "product_asset",
+      "contract_version": "1.0",
+      "product_asset_id": "8523329941d4",
+      "source_production_request_id": "preq_20260712_005",
+      "source_experiment_id": "exp_20260708_005",
+      "source_opportunity_id": "opp_20260708_005",
+      "approval_id": "appr_20260713_005",
+      "product_name": "Excel 考勤记录表",
+      "product_type": "excel",
+      "asset_category": "office_template",
+      "artifact_information": {
+        "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4",
+        "primary_file": "templates/8523329941d4.xlsx",
+        "file_type": "xlsx",
+        "artifact_files": [
+          "templates\\8523329941d4.xlsx",
+          "documents\\product_manual.pdf",
+          "images\\cover_placeholder.txt"
+        ],
+        "quality_result": {
+          "quality_score": 89.0,
+          "commercial_score": 88.75,
+          "content_score": 90.0,
+          "usability_score": 100.0,
+          "market_score": 75.0,
+          "selling_score": 100.0,
+          "production_cost_score": 90.0,
+          "passed": true,
+          "status": "quality_pass",
+          "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+          "issues": []
+        },
+        "generation_log_ref": null,
+        "dry_run": false
+      },
+      "creation_method": "adapter_generated",
+      "quality_score": 0.89,
+      "validation_status": "passed",
+      "generation_status": "completed",
+      "created_at": "2026-07-13T18:37:11+08:00",
+      "updated_at": "2026-07-13T18:37:11+08:00",
+      "pilot_execution_ref": "033-B1"
+    },
+    {
+      "object_type": "product_asset",
+      "contract_version": "1.0",
+      "product_asset_id": "f2f8bab97df8",
+      "source_production_request_id": "preq_auto_20260830_a4189c",
+      "source_experiment_id": "exp_auto_20260830_8cbd08",
+      "experiment_id": "exp_auto_20260830_8cbd08",
+      "source_opportunity_id": "aoc_919c62520b98",
+      "approval_id": "appr_auto_20260830_2fefcd",
+      "product_name": "批量关键词 EXCEL 模板",
+      "product_type": "excel",
+      "asset_category": "office_template",
+      "validation_context": {
+        "validation_goal": "验证自主发现候选能否走通 Production→Quality→Commercial→Publish Queue",
+        "asset_requirements": {
+          "product_name": "批量关键词 EXCEL 模板",
+          "product_concept": "【HYPOTHESIS】面向「批量关键词」需求的可编辑 EXCEL 数字模板包（digital_template → CF excel）",
+          "deliverable_format": "xlsx",
+          "deliverable_count": 1,
+          "structure_outline": [
+            "封面/标题",
+            "使用说明",
+            "核心模板区",
+            "示例数据",
+            "扩展字段"
+          ],
+          "content_constraints": {
+            "language": "zh-CN",
+            "include_instructions": true,
+            "editable": true
+          },
+          "publish_channel_planned": "xianyu",
+          "expected_price_cny": 99.9,
+          "price_role": "PRODUCT_PRICE_HYPOTHESIS",
+          "reference_from_experiment": {
+            "hypothesis_summary": "基于市场信号选择的「批量关键词」机会，以 digital_template/excel 形式生产可交付资产，可在 xianyu 验证首次付费转化。",
+            "validation_goal": "验证自主发现候选能否走通 Production→Quality→Commercial→Publish Queue",
+            "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6"
+          }
+        },
+        "quality_requirements": {
+          "min_quality_score": 0.8,
+          "first_pass_required": true,
+          "checklist": [
+            "deliverable_format_correct",
+            "structure_complete",
+            "file_openable"
+          ]
+        }
+      },
+      "artifact_information": {
+        "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8",
+        "primary_file": "templates\\f2f8bab97df8.xlsx",
+        "file_type": "xlsx",
+        "artifact_files": [
+          "templates\\f2f8bab97df8.xlsx",
+          "documents\\product_manual.pdf",
+          "images\\cover_placeholder.txt"
+        ],
+        "quality_result": {
+          "quality_score": 89.0,
+          "commercial_score": 88.75,
+          "content_score": 90.0,
+          "usability_score": 100.0,
+          "market_score": 75.0,
+          "selling_score": 100.0,
+          "production_cost_score": 90.0,
+          "passed": true,
+          "status": "quality_pass",
+          "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+          "issues": []
+        },
+        "generation_log_ref": [
+          {
+            "step": "market",
+            "status": "skipped",
+            "result": {
+              "reason": "Experiment path bypasses MarketAgent",
+              "market_stub": {
+                "keyword": "批量关键词 EXCEL 模板",
+                "category": "Excel模板",
+                "market_score": 75.0,
+                "competition": "pre_approved",
+                "recommendation": "Approved Production Request preq_auto_20260830_a4189c — market analysis bypassed; validation_goal read-only"
+              }
+            },
+            "logs": [
+              "MarketAgent bypassed for approved Production Request"
+            ]
+          },
+          {
+            "step": "creator",
+            "status": "ok",
+            "result": {
+              "product": {
+                "id": "f2f8bab97df8",
+                "title": "【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+                "category": "Excel模板",
+                "target_customer": "需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）",
+                "problem": "用户需要高质量 Excel模板 解决「批量关键词 EXCEL 模板」场景，自行制作耗时且质量不稳定",
+                "content": "# Excel模板 生产大纲\n\n## 关键词\n批量关键词 EXCEL 模板\n\n## 市场需求\nApproved Production Request preq_auto_20260830_a4189c — market analysis bypassed; validation_goal read-only\n\n## 交付物\n- source/ 原始素材\n- documents/ 文档内容\n- templates/ 模板结构\n- images/ 封面与配图占位\n- package/ 发布包\n",
+                "market_score": 75.0,
+                "quality_score": 0.0,
+                "profit_score": 0.0,
+                "price": 19.9,
+                "platform": "xianyu",
+                "status": "draft",
+                "created_at": "2026-08-30 16:38:33",
+                "product_type": "Excel模板",
+                "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8"
+              },
+              "artifacts": {
+                "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8",
+                "product_type": "Excel模板",
+                "artifact_files": []
+              }
+            },
+            "logs": [
+              "product_creator type=Excel模板 keyword=批量关键词 EXCEL 模板",
+              "directory created path=D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8",
+              "product metadata initialized id=f2f8bab97df8"
+            ]
+          },
+          {
+            "step": "product_generator",
+            "status": "ok",
+            "result": {
+              "product_id": "f2f8bab97df8",
+              "product_type": "Excel模板",
+              "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8",
+              "artifact_files": [
+                "templates\\f2f8bab97df8.xlsx",
+                "documents\\product_manual.pdf",
+                "images\\cover_placeholder.txt"
+              ],
+              "status": "generated"
+            },
+            "logs": [
+              "real product generation type=Excel模板 id=f2f8bab97df8",
+              "primary file=f2f8bab97df8.xlsx",
+              "manual pdf=product_manual.pdf",
+              "artifact_files=3"
+            ]
+          },
+          {
+            "step": "artifact_validation",
+            "status": "ok",
+            "result": {
+              "status": "ok",
+              "product_id": "f2f8bab97df8",
+              "artifact_files": [
+                "templates\\f2f8bab97df8.xlsx",
+                "documents\\product_manual.pdf"
+              ],
+              "has_pptx": false,
+              "has_xlsx": true,
+              "has_pdf": true,
+              "passed": true,
+              "missing": [],
+              "validation_mode": "experiment"
+            },
+            "logs": []
+          },
+          {
+            "step": "quality",
+            "status": "ok",
+            "result": {
+              "quality_score": 89.0,
+              "commercial_score": 88.75,
+              "content_score": 90.0,
+              "usability_score": 100.0,
+              "market_score": 75.0,
+              "selling_score": 100.0,
+              "production_cost_score": 90.0,
+              "passed": true,
+              "status": "quality_pass",
+              "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+              "issues": []
+            },
+            "logs": [
+              "inspecting product id=f2f8bab97df8",
+              "quality_score=89.0 commercial_score=88.75 status=quality_pass"
+            ]
+          },
+          {
+            "step": "packaging",
+            "status": "ok",
+            "result": {
+              "listing_title": "【精品】【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+              "selling_points": [
+                "commercial_score >= 80，质量达标",
+                "专业 Excel模板，真实可交付文件",
+                "含 PDF 产品说明",
+                "数字交付，拍下即发"
+              ],
+              "description": "【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包\n\n【产品亮点】\n✓ commercial_score >= 80，质量达标\n✓ 专业 Excel模板，真实可交付文件\n✓ 含 PDF 产品说明\n✓ 数字交付，拍下即发\n\n【适用人群】\n需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）\n\n【交付说明】\n付款后发送 final_product.zip 网盘链接。\n\n【产物目录】",
+              "keywords": [
+                "批量关键词 EXCEL 模板",
+                "Excel模板",
+                "虚拟资料",
+                "数字商品",
+                "模板"
+              ],
+              "publish_package_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\publish_package",
+              "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip",
+              "final_product_zip": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip",
+              "publish_package": {
+                "title": "【精品】【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+                "description": "【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包\n\n【产品亮点】\n✓ commercial_score >= 80，质量达标\n✓ 专业 Excel模板，真实可交付文件\n✓ 含 PDF 产品说明\n✓ 数字交付，拍下即发\n\n【适用人群】\n需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）\n\n【交付说明】\n付款后发送 final_product.zip 网盘链接。\n\n【产物目录】",
+                "keywords": [
+                  "批量关键词 EXCEL 模板",
+                  "Excel模板",
+                  "虚拟资料",
+                  "数字商品",
+                  "模板"
+                ],
+                "pricing": {
+                  "suggested_price": 19.9,
+                  "currency": "CNY",
+                  "platform": "xianyu"
+                },
+                "cover_prompt": "封面设计：【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包，关键词：批量关键词 EXCEL 模板, Excel模板, 虚拟资料, 数字商品, 模板，16:9"
+              }
+            },
+            "logs": [
+              "packaging product id=f2f8bab97df8",
+              "final_product.zip=D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip"
+            ]
+          },
+          {
+            "step": "release_gate",
+            "status": "ok",
+            "result": {
+              "release_status": "approved",
+              "checks": [
+                {
+                  "name": "real_files",
+                  "passed": true,
+                  "detail": [
+                    "documents\\product_manual.pdf",
+                    "templates\\f2f8bab97df8.xlsx"
+                  ]
+                },
+                {
+                  "name": "final_product_zip",
+                  "passed": true,
+                  "detail": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip"
+                },
+                {
+                  "name": "quality_score",
+                  "passed": true,
+                  "detail": 89.0
+                },
+                {
+                  "name": "commercial_score",
+                  "passed": true,
+                  "detail": 88.75
+                },
+                {
+                  "name": "publish_package",
+                  "passed": true,
+                  "detail": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\publish_package"
+                }
+              ],
+              "quality_score": 89.0,
+              "commercial_score": 88.75,
+              "artifact_files": [
+                "templates\\f2f8bab97df8.xlsx",
+                "documents\\product_manual.pdf",
+                "images\\cover_placeholder.txt"
+              ],
+              "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip",
+              "notice": "非自动发布 — 人工确认后方可上架"
+            },
+            "logs": [
+              "release gate check id=f2f8bab97df8",
+              "release_status=approved"
+            ]
+          }
+        ],
+        "dry_run": false
+      },
+      "generation_status": "completed",
+      "quality_score": 0.89,
+      "creation_method": "autonomous_bridge_055",
+      "created_at": "2026-08-30T16:38:33+08:00",
+      "updated_at": "2026-08-30T16:38:33+08:00",
+      "validation_status": "passed",
+      "quality_status": "passed",
+      "entry": "055",
+      "commercial_success": false,
+      "observation_started": false
+    }
+  ],
+  "entry_055_note": "Autonomous E2E assets appended; legacy pilot retained as HISTORICAL.",
+  "updated_at": "2026-08-30 16:38:33"
+}

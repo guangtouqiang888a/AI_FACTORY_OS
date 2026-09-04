@@ -1,0 +1,61 @@
+{
+  "entry": "069-A",
+  "captured_at": "2026-09-03T15:10:54+08:00",
+  "phase": "PRE_OPERATOR",
+  "bridge": {
+    "host": "127.0.0.1",
+    "port": 8765,
+    "listening": true,
+    "command_line": "connectors/xianyu_extension_bridge_065.py --port 8765 --test-mode",
+    "test_mode_confirmed": true,
+    "options_status": 204,
+    "invalid_post_rejected": true
+  },
+  "extension_path": "D:\\AI_FACTORY_OS\\1_DATA\\browser_extension\\xianyu",
+  "extension_files": [
+    "manifest.json",
+    "content.js",
+    "popup.js",
+    "popup.html",
+    "README.md"
+  ],
+  "contract_version": "064.1.0",
+  "db": {
+    "market_observations_before": 0,
+    "path": "D:\\AI_FACTORY_OS\\data\\ai_factory.db"
+  },
+  "sink": {
+    "path": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_extension_065",
+    "file_count": 22,
+    "files": [
+      "batch.json",
+      "errors.log",
+      "normalized_preview.json",
+      "raw\\run068_1a9840b025.json",
+      "raw\\run068_df8fd09bbd.json",
+      "raw\\run068_e801352a05.json",
+      "raw\\run_066_db_test.json",
+      "raw\\run_066_prod_check.json",
+      "raw\\run_066_test.json",
+      "raw\\run_068_db.json",
+      "raw\\run_068_filter_test.json",
+      "raw\\run_068_rec.json",
+      "raw\\run_068_sep.json",
+      "raw\\run_254c2ec9739f.json",
+      "raw\\run_db_check.json",
+      "raw\\run_empty.json",
+      "raw\\run_http_001.json",
+      "raw\\run_pending.json",
+      "raw\\run_rec_only.json",
+      "raw\\run_sep.json",
+      "raw\\run_test_001.json",
+      "validation_report.json"
+    ],
+    "root_batch_is_fixture_or_prior_test": true,
+    "root_batch_run_id": "run_http_001",
+    "root_batch_sample_title": "Excel模板合集"
+  },
+  "chrome_ui": "NOT_OPERATED_BY_AGENT",
+  "search_result": "NOT_CONFIRMED",
+  "live_extension_collection": "NOT_ATTEMPTED"
+}

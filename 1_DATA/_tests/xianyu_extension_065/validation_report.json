@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "status": "SUCCESS",
+  "run_id": "run_068_sep",
+  "request_id": "run_068_sep",
+  "contract_version": "064.1.0",
+  "test_mode": true,
+  "errors": [],
+  "warnings": [],
+  "records_in": 3,
+  "records_normalized": 3,
+  "duplicates": 0,
+  "sink_path": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_extension_065",
+  "raw_reference": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_extension_065\\raw\\run_068_sep.json",
+  "field_availability": {
+    "title": 3,
+    "price": 3,
+    "want_count_visible": 2,
+    "want_count_missing": 1,
+    "source_url": 3,
+    "source_item_id": 3,
+    "search_result": 3,
+    "recommended_result": 0
+  },
+  "validation_report": {
+    "run_id": "run_068_sep",
+    "page_state": "SEARCH_RESULT",
+    "result_origin": "SEARCH_RESULT",
+    "filter_metadata": null,
+    "field_availability": {
+      "title": 3,
+      "price": 3,
+      "want_count_visible": 2,
+      "want_count_missing": 1,
+      "source_url": 3,
+      "source_item_id": 3,
+      "search_result": 3,
+      "recommended_result": 0
+    },
+    "first_real_search_candidate": true
+  }
+}

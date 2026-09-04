@@ -1,0 +1,18 @@
+{
+  "entry": "069-A",
+  "final_status": "PASS",
+  "SEARCH_RESULT": "YES",
+  "INJECTION": "YES",
+  "COLLECTION": "YES",
+  "Records": 20,
+  "BRIDGE_RECEIVED_LIVE": "YES",
+  "REAL_EVIDENCE": "YES",
+  "FIRST_REAL_CANDIDATE_BATCH": "YES",
+  "FIRST_REAL_MARKET_OBSERVATION": "NOT_ATTEMPTED",
+  "evidence_run_id": "run_1788419997563",
+  "evidence_file": "1_DATA/_tests/xianyu_extension_065/raw/run_1788419997563.json",
+  "db": { "before": 0, "after": 0, "delta": 0 },
+  "code_modification": "NONE",
+  "next_entry": "069-B (authorized separately; NOT started)",
+  "source_of_truth": "live_verification_run_1788419997563.json + sink validation_report.json"
+}

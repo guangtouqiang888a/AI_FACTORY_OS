@@ -1,0 +1,32 @@
+{
+  "suggested_price": 19.9,
+  "currency": "CNY",
+  "platform": "taobao",
+  "meaning": "CURRENT DEFAULT from Content Factory packaging_agent (Excel模板 default), NOT Pilot-validated",
+  "status": "CURRENT DEFAULT",
+  "entry_048_price_reconciliation": {
+    "price_a_9_9": {
+      "source": "Sibling experiment exp_20260708_002 / opp family-budget Excel band",
+      "meaning": "Low-price band alternative for A/B design",
+      "status": "HYPOTHESIS",
+      "evidence": "No Pilot-specific market evidence; borrowed band"
+    },
+    "price_b_12_9": {
+      "source": "opp_20260708_005 → exp_20260708_005 → preq_20260712_005 → eval commercial_metric",
+      "meaning": "Pilot-specific experimental hypothesis price",
+      "status": "HYPOTHESIS",
+      "evidence": "Consistent across opportunity/experiment/PR/evaluation records; NOT VALIDATED by sales"
+    },
+    "price_c_19_9": {
+      "source": "11_CONTENT_FACTORY packaging_agent/creator_agent Excel模板 default; product_memory price; publish_package pricing.json",
+      "meaning": "Pipeline packaging default / historical CF default",
+      "status": "CURRENT DEFAULT",
+      "evidence": "Code default in packaging_agent.py (product.get('price', 19.9)); not Pilot opportunity estimate"
+    },
+    "conflict": "12.9 (commercial hypothesis chain) vs 19.9 (CF package default) vs 9.9 (sibling band)",
+    "recommended_experimental_price_cny": 12.9,
+    "recommendation_status": "AI_RECOMMENDATION_ONLY",
+    "human_decision_required": true,
+    "updated_at": "2026-08-29T15:00:00+08:00"
+  }
+}

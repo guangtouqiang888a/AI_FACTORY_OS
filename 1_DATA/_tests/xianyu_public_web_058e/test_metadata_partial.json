@@ -1,0 +1,61 @@
+{
+  "entry": "058E",
+  "method": "PUBLIC_WEB_READ",
+  "data_origin": "REAL_CANDIDATE_EXTERNAL",
+  "query": "虚拟资料",
+  "started_at": "2026-08-30T20:22:12+08:00",
+  "login": false,
+  "bypass_attempted": false,
+  "collector_test_version": "058e.1.0",
+  "pages": [
+    {
+      "tag": "search_candidate_0",
+      "url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "final_url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 11496,
+      "latency_ms": 112,
+      "sha256": "2850c4947af9c83634432cbd240074f805986e1d304c9a2625202a09f7ea517a",
+      "block_signals": [
+        "login",
+        "登录"
+      ],
+      "snip_file": "1_DATA\\_tests\\xianyu_public_web_058e\\search_candidate_0_snip.txt"
+    },
+    {
+      "tag": "search_candidate_1",
+      "url": "https://www.goofish.com/search?keyword=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "final_url": "https://www.goofish.com/search?keyword=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 11496,
+      "latency_ms": 111,
+      "sha256": "2850c4947af9c83634432cbd240074f805986e1d304c9a2625202a09f7ea517a",
+      "block_signals": [
+        "login",
+        "登录"
+      ],
+      "snip_file": "1_DATA\\_tests\\xianyu_public_web_058e\\search_candidate_1_snip.txt"
+    },
+    {
+      "tag": "search_candidate_2",
+      "url": "https://s.2.taobao.com/list/list.htm?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "final_url": "https://s.2.taobao.com/list/list.htm?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 336,
+      "latency_ms": 219,
+      "sha256": "d82498371047dce9940cec9a45e4ca5b5ac0d520dd58e0a5c0ab0cbcc487f5b4",
+      "block_signals": [
+        "punish",
+        "deny",
+        "VERY_SHORT_BODY"
+      ],
+      "snip_file": "1_DATA\\_tests\\xianyu_public_web_058e\\search_candidate_2_snip.txt"
+    }
+  ],
+  "errors": [],
+  "access_control": null,
+  "status": null
+}

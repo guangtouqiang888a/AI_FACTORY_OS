@@ -1,0 +1,2 @@
+ui_search:{"ok": true, "method": "button_click"}
+search_control_wait:{"stopped": "LISTINGS_VISIBLE", "item_links": 20, "wants_text": 0, "empty_search": true, "denied": false, "loading": false, "title": "简历模板_闲鱼", "href": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0"}

@@ -1,0 +1,45 @@
+{
+  "entry": "068",
+  "filters_applied": {
+    "min_want_count": 50,
+    "min_price": null,
+    "max_price": null
+  },
+  "observations_input": 3,
+  "observations_retained": 3,
+  "filter_deleted_observations": false,
+  "MATCH": 1,
+  "BELOW_THRESHOLD": 1,
+  "ABOVE_THRESHOLD": 0,
+  "UNKNOWN": 1,
+  "counts": {
+    "MATCH": 1,
+    "BELOW_THRESHOLD": 1,
+    "ABOVE_THRESHOLD": 0,
+    "UNKNOWN": 1
+  },
+  "note": "Collector retains all facts; Filter only classifies. NULL≠0.",
+  "classified_summary": [
+    {
+      "title": "MATCH商品",
+      "want_count": 61,
+      "price": 9.9,
+      "filter_status": "MATCH",
+      "source_item_id": "880068001"
+    },
+    {
+      "title": "BELOW商品",
+      "want_count": 10,
+      "price": 5.0,
+      "filter_status": "BELOW_THRESHOLD",
+      "source_item_id": "880068002"
+    },
+    {
+      "title": "NULL want商品",
+      "want_count": null,
+      "price": 8.0,
+      "filter_status": "UNKNOWN",
+      "source_item_id": "880068003"
+    }
+  ]
+}

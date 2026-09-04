@@ -1,0 +1,59 @@
+{
+  "rules": [
+    {
+      "id": "default_publish",
+      "if": {
+        "min_score": 40,
+        "action": "publish"
+      },
+      "then": "publish",
+      "confidence": 0.5,
+      "source": "bootstrap"
+    },
+    {
+      "id": "learned_publish_虚拟资料",
+      "if": {
+        "keyword": "虚拟资料",
+        "min_score": 40.0
+      },
+      "then": "publish",
+      "confidence": 0.95,
+      "source": "pattern_learning",
+      "last_pattern_id": "3db29fad"
+    },
+    {
+      "id": "learned_skip_虚拟资料",
+      "if": {
+        "keyword": "虚拟资料",
+        "outcome": "failure"
+      },
+      "then": "observe",
+      "confidence": 0.6,
+      "source": "pattern_learning",
+      "last_pattern_id": "261a860c"
+    },
+    {
+      "id": "learned_publish_virtual",
+      "if": {
+        "keyword": "virtual",
+        "min_score": 40.0
+      },
+      "then": "publish",
+      "confidence": 0.45,
+      "source": "pattern_learning",
+      "last_pattern_id": "88766008"
+    },
+    {
+      "id": "learned_publish_test",
+      "if": {
+        "keyword": "test",
+        "min_score": 40.0
+      },
+      "then": "publish",
+      "confidence": 0.45,
+      "source": "pattern_learning",
+      "last_pattern_id": "d56ea563"
+    }
+  ],
+  "updated_at": "2026-07-07 15:51:41"
+}

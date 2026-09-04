@@ -1,0 +1,128 @@
+{
+  "entry": "058E",
+  "date": "2026-08-30",
+  "method": "PUBLIC_WEB_READ",
+  "not": [
+    "LIVE_API",
+    "OFFICIAL_API",
+    "SCRAPE_BYPASS"
+  ],
+  "data_origin": "REAL_CANDIDATE_EXTERNAL",
+  "query": "虚拟资料",
+  "login_used": false,
+  "bypass_attempted": false,
+  "hidden_api_called": false,
+  "browser_automation": false,
+  "max_items_target": 10,
+  "items_extracted": 0,
+  "pages_tested": [
+    {
+      "kind": "search",
+      "url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "reads": 2
+    },
+    {
+      "kind": "legacy_search_candidate",
+      "note": "Earlier probe to s.2.taobao.com returned punish/deny/short body"
+    }
+  ],
+  "reread_stability": {
+    "status_codes": [
+      200,
+      200
+    ],
+    "bytes": [
+      11496,
+      11496
+    ],
+    "sha256_equal": true,
+    "ice_container_empty_both": true,
+    "item_url_counts": [
+      0,
+      0
+    ],
+    "assessment": "CSR shell stable; listing payload absent from initial HTML on both reads"
+  },
+  "page_stability": {
+    "dom_has_listings_in_initial_html": false,
+    "async_js_required": true,
+    "content_in_initial_html": false,
+    "detail_page_required": "UNKNOWN",
+    "login_wall": false,
+    "captcha": false,
+    "access_restriction_on_goofish_search_html": false,
+    "security_scripts_present": true,
+    "mtop_path_referenced_in_page_scripts": true,
+    "note": "HTML references mtop.taobao.idlemtopsearch — NOT called (058E forbids reverse/hidden API use)."
+  },
+  "fields": {
+    "title": "UNAVAILABLE",
+    "price": "UNAVAILABLE",
+    "source_url": "UNAVAILABLE",
+    "source_item_id": "UNAVAILABLE",
+    "want_count": "UNAVAILABLE",
+    "view_count": "UNAVAILABLE",
+    "comment_count": "UNAVAILABLE",
+    "share_count": "UNAVAILABLE",
+    "seller_reference": "UNAVAILABLE",
+    "published_at": "UNAVAILABLE",
+    "category": "UNAVAILABLE",
+    "query": "AVAILABLE",
+    "observed_at": "AVAILABLE"
+  },
+  "want_count_focus": {
+    "publicly_in_initial_html": false,
+    "stable_extract_via_html": false,
+    "requires_detail_page": "UNKNOWN",
+    "async_load_likely": true,
+    "classification": "UNAVAILABLE"
+  },
+  "feasibility": "NOT_FEASIBLE",
+  "feasibility_detail": "LIMITED_TO_CSR_SHELL — anonymous HTML has no listing title/price/want/url; JS+async required; hidden mtop not invoked",
+  "recommended_production_path": "EXTERNAL_IMPORT / USER_EXPORT / MANUAL_IMPORT",
+  "collector_test_version": "058e.1.0",
+  "current_db_write": false,
+  "reads_tech": [
+    {
+      "url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "final_url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 11496,
+      "latency_ms": 78,
+      "sha256": "2850c4947af9c83634432cbd240074f805986e1d304c9a2625202a09f7ea517a",
+      "renderMode_csr": true,
+      "documentOnly": true,
+      "ice_container_empty": true,
+      "item_urls": [],
+      "yuan_prices": [],
+      "want_mentions": 0,
+      "mtop_search_path_mentioned": true,
+      "login_wall": false,
+      "captcha": false,
+      "baxia_security": true,
+      "title_tag": "闲鱼 - 闲不住？上闲鱼！"
+    },
+    {
+      "url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "final_url": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 11496,
+      "latency_ms": 194,
+      "sha256": "2850c4947af9c83634432cbd240074f805986e1d304c9a2625202a09f7ea517a",
+      "renderMode_csr": true,
+      "documentOnly": true,
+      "ice_container_empty": true,
+      "item_urls": [],
+      "yuan_prices": [],
+      "want_mentions": 0,
+      "mtop_search_path_mentioned": true,
+      "login_wall": false,
+      "captcha": false,
+      "baxia_security": true,
+      "title_tag": "闲鱼 - 闲不住？上闲鱼！"
+    }
+  ],
+  "finished_at": "2026-08-30T20:24:29+08:00"
+}

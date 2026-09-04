@@ -1,0 +1,102 @@
+{
+  "entry": "069-A",
+  "verification_phase": "POST_OPERATOR_LIVE",
+  "evidence_file": "1_DATA/_tests/xianyu_extension_065/raw/run_1788419997563.json",
+  "acquisition_run_id": "run_1788419997563",
+  "raw_record_id": "raw_3b6632fc15e1",
+  "sink_timestamp": "2026-09-03T15:20:02+08:00",
+  "bridge_listening": true,
+  "bridge_test_mode": true,
+  "validation": {
+    "ok": true,
+    "status": "SUCCESS",
+    "run_id": "run_1788419997563",
+    "records_in": 20,
+    "records_normalized": 20,
+    "errors": [],
+    "warnings": [],
+    "sink_path": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_extension_065"
+  },
+  "batch": {
+    "contract_version": "064.1.0",
+    "run_id": "run_1788419997563",
+    "session_id": "sess_1788419997563",
+    "query": "Excel模板",
+    "page_state": "SEARCH_RESULT",
+    "result_origin": "SEARCH_RESULT",
+    "status": "SUCCESS",
+    "observed_at": "2026-09-03T15:20:02+08:00",
+    "collector_version": "065.1.0",
+    "adapter_version": "065.1.0",
+    "source": "xianyu",
+    "platform": "xianyu",
+    "records_len": 20,
+    "stats": {
+      "records_seen": 30,
+      "records_extracted": 20,
+      "missing_want_count": 6,
+      "pages_processed": 1,
+      "duplicates_skipped": 10
+    },
+    "filter_metadata": {
+      "min_want_count": null,
+      "min_price": null,
+      "max_price": null
+    },
+    "record_result_origins": {
+      "SEARCH_RESULT": 20
+    },
+    "want_count_status": {
+      "VISIBLE_ON_CARD": 14,
+      "MISSING_ON_CARD": 6
+    },
+    "want_null": 6,
+    "want_zero": 0,
+    "titles_with_ceshi": 0,
+    "sample_item_ids": [
+      "805580867741",
+      "1073857662447",
+      "1028751421655",
+      "1036095216365",
+      "1052770780546"
+    ],
+    "sample_urls": [
+      "https://www.goofish.com/item?id=805580867741&categoryId=201453706",
+      "https://www.goofish.com/item?id=1073857662447&categoryId=202036301",
+      "https://www.goofish.com/item?id=1028751421655&categoryId=201454708"
+    ],
+    "sample_titles_escaped": [
+      "Excel\\u6a21\\u677f9000\\u5957\\u79d2\\u53d1 \\u3010\\u76f4\\u62cd\\u79d2\\u53d1\\u3011Exce",
+      "\\u301055\\u5957\\u6210\\u672c\\u6838\\u7b97\\u4e0e\\u5206\\u6790Excel\\u6a21\\u677f\\u5408\\",
+      "2026\\u5de5\\u4f5c\\u8ba1\\u5212excel\\u6a21\\u677f2026\\u5de5\\u4f5c\\u8ba1\\u5212\\u7ba1\\",
+      "\\u30101W+\\u5957Excel\\u8868\\u683c\\u6a21\\u677f | \\u529e\\u516c\\u5fc5\\u5907 | \\u4e00",
+      "\\u3010E11\\u30112025OGSM\\u5de5\\u4f5c\\u8ba1\\u5212Excel\\u6a21\\u677f|||202 5\\u5de5\\u"
+    ],
+    "all_records_search_result": true
+  },
+  "normalized_preview_count": 20,
+  "db": {
+    "before": 0,
+    "after": 0,
+    "delta": 0
+  },
+  "distinction_from_history": {
+    "run_id_is_new_timestamp_style": true,
+    "mtime_vs_preflight_15_10": "15:20:02 vs preflight 15:10:54",
+    "not_run_066_or_068_or_http_001": true
+  },
+  "PASS_CHECKS": {
+    "1_search_result_page_state": true,
+    "2_extension_ran": true,
+    "3_about_20_records": true,
+    "4_bridge_received": true,
+    "5_new_sink_evidence": true,
+    "6_not_historical_fixture": true,
+    "7_db_delta_0": true,
+    "8_no_import": true,
+    "9_no_filter_signal_learning": true,
+    "10_no_code_mod": true,
+    "all_record_origins_SEARCH_RESULT": true,
+    "want_null_preserved": true
+  }
+}

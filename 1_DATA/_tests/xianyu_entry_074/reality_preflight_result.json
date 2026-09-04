@@ -1,0 +1,34 @@
+{
+  "entry": "074",
+  "status": "BLOCKED_AT_SIGNAL_TO_OPPORTUNITY",
+  "code_modification": "NONE",
+  "schema_modification": "NONE",
+  "db_modification": "NONE",
+  "ai_provider_calls": 0,
+  "ai_cost": 0,
+  "input_signal_ids": [
+    "sig_f1173cc0edca",
+    "sig_9a3983efb2a4",
+    "sig_10fa1228c3f2",
+    "sig_82a523bc2bc1",
+    "sig_90277d017e37",
+    "sig_90064dc020a6"
+  ],
+  "dry_run_discover_opportunities": {
+    "persist": false,
+    "min_listings": 1,
+    "status": "INSUFFICIENT_DATA",
+    "reason": "no_keyword_groups_meeting_min_listings",
+    "products_count": 0,
+    "candidates": 0
+  },
+  "capability_gap": "discover_opportunities requires products table; does not load Observation-lineage market_signals",
+  "product_substitution": "REFUSED",
+  "idempotency_gap_073": "ACKNOWLEDGED_NOT_MODIFIED",
+  "counts": {
+    "market_observations": 20,
+    "market_signals": 6,
+    "selection_results": 0,
+    "products": 0
+  }
+}

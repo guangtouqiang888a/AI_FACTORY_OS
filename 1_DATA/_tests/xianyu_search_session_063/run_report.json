@@ -1,0 +1,117 @@
+{
+  "ok": false,
+  "status": "PARTIAL",
+  "session": {
+    "session_id": "ss_3f4143703cae",
+    "browser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "source": "xianyu",
+    "query": "简历模板",
+    "search_url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+    "started_at": "2026-09-03T13:48:26+08:00",
+    "status": "PARTIAL",
+    "browser_version": "Chrome/152.0.7977.75",
+    "operating_mode": "INTERACTIVE_VISIBLE",
+    "login_used": false,
+    "notes": [
+      "launched_pid=12256"
+    ]
+  },
+  "search_control": {
+    "status": "PARTIAL",
+    "search_control_feasibility": "SEARCH_CONTROL_NOT_FEASIBLE",
+    "reason": "reached_search_page_without_SEARCH_RESULT",
+    "state": {
+      "search_state": "EMPTY_SEARCH_RESULT",
+      "secondary_feed": "RECOMMENDED_FEED",
+      "search_result_count": 0,
+      "recommended_count": 20,
+      "evidence": {
+        "empty_text": true,
+        "guess_you_like": true,
+        "url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+        "url_is_search": true,
+        "note": "URL /search alone does not imply SEARCH_RESULT"
+      }
+    },
+    "search_url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+    "page_title": "简历模板_闲鱼"
+  },
+  "collection": {
+    "ok": false,
+    "collector_status": "COLLECTOR_NO_SEARCH_RESULT_ON_PAGE",
+    "search_state": {
+      "search_state": "EMPTY_SEARCH_RESULT",
+      "secondary_feed": "RECOMMENDED_FEED",
+      "search_result_count": 0,
+      "recommended_count": 20,
+      "evidence": {
+        "empty_text": true,
+        "guess_you_like": true,
+        "url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+        "url_is_search": true,
+        "note": "URL /search alone does not imply SEARCH_RESULT"
+      }
+    },
+    "search_records": [],
+    "field_availability": {
+      "search_results_seen": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "duplicate": 0,
+      "title_rate": 0.0,
+      "price_rate": 0.0,
+      "want_count_visible_rate": 0.0,
+      "want_count_missing_rate": 0.0,
+      "url_rate": 0.0,
+      "item_id_rate": 0.0,
+      "note": "data availability ≠ commercial score"
+    },
+    "want_count_audit": {
+      "search_results_count": 0,
+      "status_distribution": {
+        "VISIBLE_ON_CARD": 0,
+        "MISSING_ON_CARD": 0,
+        "AVAILABLE_ON_DETAIL": 0,
+        "UNAVAILABLE": 0,
+        "UNKNOWN": 0
+      },
+      "card_visible_rate": 0.0,
+      "detail_available_rate": 0.0,
+      "total_observable_rate": 0.0,
+      "still_null_count": 0,
+      "still_null_rate": 0.0,
+      "null_vs_zero_rule": "NULL means field absent; 0 means page showed 0人想要",
+      "login_causation": {
+        "login_used": false,
+        "conclusion": "NOT_PROVEN",
+        "note": "Anonymous browser only. Cannot conclude missing want_count is caused by not being logged in."
+      },
+      "valid_without_want_count": true,
+      "note": "missing ≠ zero; unavailable ≠ proven login-related"
+    },
+    "minimum_want_filter": {
+      "minimum_want_count": null,
+      "note": "filter disabled"
+    },
+    "first_real_xianyu_search_candidate": false,
+    "login_used": false,
+    "bypass_attempted": false,
+    "hidden_api_called": false
+  },
+  "recommended_excluded_count": 20,
+  "fixture_collector_proof_status": null,
+  "search_control_feasibility": "SEARCH_CONTROL_NOT_FEASIBLE",
+  "collector_feasibility_live": "COLLECTOR_NO_SEARCH_RESULT_ON_PAGE",
+  "collector_feasibility_when_search_dom_present": null,
+  "first_real_xianyu_search_candidate": false,
+  "current_db_write": false,
+  "product_created": false,
+  "listing_created": false,
+  "opportunity_run": false,
+  "learning_run": false,
+  "error_log": [
+    "ui_search:{\"ok\": true, \"method\": \"button_click\"}",
+    "search_control_wait:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 20, \"wants_text\": 0, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"简历模板_闲鱼\", \"href\": \"https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0\"}"
+  ],
+  "finished_at": "2026-09-03T13:48:53+08:00"
+}

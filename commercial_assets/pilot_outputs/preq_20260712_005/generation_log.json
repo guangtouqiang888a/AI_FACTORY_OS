@@ -1,0 +1,17 @@
+{
+  "pilot_execution": "033-B1",
+  "production_request_id": "preq_20260712_005",
+  "approval_id": "appr_20260713_005",
+  "execution_time": "2026-07-13T18:37:11+08:00",
+  "pipeline_status": "ok",
+  "product_id": "8523329941d4",
+  "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4",
+  "artifact_files": [
+    "templates\\8523329941d4.xlsx",
+    "documents\\product_manual.pdf",
+    "images\\cover_placeholder.txt"
+  ],
+  "quality_score_raw": 89.0,
+  "commercial_score": 88.75,
+  "release_status": "approved"
+}

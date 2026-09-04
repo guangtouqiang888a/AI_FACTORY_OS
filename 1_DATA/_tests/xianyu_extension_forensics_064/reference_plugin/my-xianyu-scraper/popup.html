@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 400px; font-family: "Microsoft YaHei", sans-serif; padding: 15px; background: #f9f9f9; }
+    .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .config-group { margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+    input { width: 70px; padding: 5px; border: 1px solid #ddd; border-radius: 4px; }
+    .btn-group { display: flex; gap: 10px; margin-top: 15px; }
+    button { flex: 1; padding: 10px; cursor: pointer; border-radius: 4px; border: none; font-weight: bold; transition: 0.3s; }
+    #startBtn { background: #ff5000; color: white; }
+    #startBtn:disabled { background: #ccc; }
+    #downloadBtn { background: #28a745; color: white; display: none; }
+    #status { margin-top: 10px; color: #666; font-size: 12px; text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 11px; display: none; }
+    th, td { border: 1px solid #eee; padding: 6px; text-align: left; }
+    th { background: #f2f2f2; }
+    .img-preview { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3 style="color:#ff5000; margin-top:0;">闲鱼自动采集助手</h3>
+    <div class="config-group">
+      <span>想要人数 ≥</span>
+      <input type="number" id="minWant" value="50">
+    </div>
+    <div class="config-group">
+      <span>抓取页数：</span>
+      <input type="number" id="maxPages" value="3">
+    </div>
+    
+    <div class="btn-group">
+      <button id="startBtn">开始全自动抓取</button>
+      <button id="downloadBtn">下载 CSV 结果</button>
+    </div>
+    
+    <div id="status">准备就绪</div>
+    
+    <table id="resTable">
+      <thead>
+        <tr>
+          <th>想要数</th>
+          <th>图片</th>
+          <th>标题</th>
+          <th>价格</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

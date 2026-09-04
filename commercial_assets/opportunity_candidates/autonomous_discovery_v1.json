@@ -1,0 +1,746 @@
+{
+  "schema": "autonomous_discovery_v1",
+  "entry": "054",
+  "entry_058a_reclassification": {
+    "data_origin": "SAMPLE / TEST_FIXTURE",
+    "not_real_market_data": true,
+    "note": "Entry 058A: Upstream SQLite products used sample/test source_urls (goofish.com/item/sample001|sample002|test) and test titles. This discovery JSON remains historical evidence of the autonomous pipeline, but must NOT be cited as Real Market Data. Legacy DB archived; Current DB products=0.",
+    "reclassified_at": "2026-08-30"
+  },
+  "note": "Autonomous discovery candidates from market listings. ≠ human_assisted opportunities_v1.json. Selection ≠ Experiment ≠ Production. No fake commercial outcomes. Entry 058A: upstream listings = SAMPLE/TEST_FIXTURE — not REAL.",
+  "updated_at": "2026-08-29 16:57:38",
+  "candidates": [
+    {
+      "candidate_id": "aoc_919c62520b98",
+      "opportunity_id": null,
+      "keyword": "批量关键词",
+      "source": "marketplace",
+      "platform": "xianyu",
+      "source_observation": {
+        "listing_count": 6,
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      "problem": "Market listings for「批量关键词」show aggregated demand/competition signals",
+      "audience": "inferred_from_marketplace_listings",
+      "product_type": "digital_template",
+      "market_signals": {
+        "demand_signal": {
+          "value": 1200,
+          "status": "COMPUTED"
+        },
+        "engagement_signal": {
+          "value": 0.2,
+          "status": "COMPUTED"
+        },
+        "competition_signal": {
+          "value": 6.0,
+          "status": "COMPUTED"
+        },
+        "price_signal": {
+          "value": 99.9,
+          "status": "COMPUTED"
+        },
+        "trend_signal": {
+          "value": 200.0,
+          "status": "COMPUTED"
+        },
+        "growth_signal": {
+          "value": null,
+          "status": "UNAVAILABLE"
+        }
+      },
+      "estimated_value": 99.9,
+      "production_feasibility": "COMPUTED_PROXY",
+      "competition": {
+        "value": 6.0,
+        "status": "COMPUTED"
+      },
+      "risk": {
+        "passed": true,
+        "risk_status": "passed",
+        "level": "low",
+        "reason": "keyword_and_listings_passed_sensitive_and_price_checks"
+      },
+      "learning_value": {
+        "status": "HEURISTIC",
+        "score_0_100": 54.0,
+        "note": "Minimal concept — new keyword/format learning potential"
+      },
+      "score": {
+        "model_note": "Current model uses listing-derived demand/trend/competition/profit/difficulty proxies. Historical Performance / Learning Value / Conversion = NOT YET IMPLEMENTED unless evidence exists. This is NOT final commercial intelligence.",
+        "dimensions": {
+          "Demand": {
+            "status": "COMPUTED",
+            "value": 1200,
+            "score_0_100": 100.0
+          },
+          "Trend": {
+            "status": "COMPUTED_PROXY",
+            "value": 200.0,
+            "score_0_100": 95.0,
+            "note": "Proxy — not true time-series"
+          },
+          "Competition": {
+            "status": "COMPUTED",
+            "value": 6.0,
+            "score_0_100": 60.0
+          },
+          "Price": {
+            "status": "COMPUTED",
+            "value": 99.9
+          },
+          "Potential_Revenue": {
+            "status": "COMPUTED_PROXY",
+            "score_0_100": 100.0,
+            "note": "Proxy from listing profit heuristic — not real revenue"
+          },
+          "Production_Cost": {
+            "status": "NOT_YET_IMPLEMENTED",
+            "value": null
+          },
+          "Difficulty": {
+            "status": "COMPUTED_PROXY",
+            "score_0_100": 10.0
+          },
+          "Risk": {
+            "status": "DEFERRED_TO_RISK_GATE",
+            "value": null
+          },
+          "Historical_Performance": {
+            "status": "UNAVAILABLE",
+            "value": null,
+            "note": "No real commercial outcomes yet (Pilot Observation NOT_STARTED)"
+          },
+          "Learning_Value": {
+            "status": "HEURISTIC",
+            "score_0_100": 54.0,
+            "note": "Minimal concept — new keyword/format learning potential"
+          },
+          "Engagement": {
+            "status": "COMPUTED",
+            "value": 0.2
+          },
+          "Growth": {
+            "status": "UNAVAILABLE",
+            "value": null
+          }
+        },
+        "total_score": 69.83,
+        "listing_avg_total": 82.15,
+        "score_method": "market_signal_proxy_v1",
+        "scored_at": "2026-08-29 16:57:38"
+      },
+      "status": "discovered_candidate",
+      "discovery_source": "marketplace",
+      "discovery_method": "market_signal",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_f601ceaabcb8",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_ecf1794a3826",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_aefded299cff",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_bd3bd2f64ddf",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_33af03309f58",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_74ec9871c6aa",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "product_id": 2,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 3,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 7,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 8,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 12,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 13,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        }
+      ],
+      "signal_summary": {
+        "demand_signal": {
+          "value": 1200,
+          "status": "COMPUTED"
+        },
+        "engagement_signal": {
+          "value": 0.2,
+          "status": "COMPUTED"
+        },
+        "competition_signal": {
+          "value": 6.0,
+          "status": "COMPUTED"
+        },
+        "price_signal": {
+          "value": 99.9,
+          "status": "COMPUTED"
+        },
+        "trend_signal": {
+          "value": 200.0,
+          "status": "COMPUTED"
+        },
+        "growth_signal": {
+          "value": null,
+          "status": "UNAVAILABLE"
+        }
+      },
+      "created_at": "2026-08-29 16:57:38",
+      "auto_production_forbidden": true,
+      "note": "Candidate only — Selection ≠ Experiment ≠ Production",
+      "score_time": "2026-08-29T16:57:38"
+    },
+    {
+      "candidate_id": "aoc_c039b43ee94f",
+      "opportunity_id": null,
+      "keyword": "虚拟资料",
+      "source": "marketplace",
+      "platform": "xianyu",
+      "source_observation": {
+        "listing_count": 46,
+        "observation_timestamp": "2026-07-07T00:00:00"
+      },
+      "problem": "Market listings for「虚拟资料」show aggregated demand/competition signals",
+      "audience": "inferred_from_marketplace_listings",
+      "product_type": "digital_template",
+      "market_signals": {
+        "demand_signal": {
+          "value": 11500,
+          "status": "COMPUTED"
+        },
+        "engagement_signal": {
+          "value": 0.2174,
+          "status": "COMPUTED"
+        },
+        "competition_signal": {
+          "value": 46.0,
+          "status": "COMPUTED"
+        },
+        "price_signal": {
+          "value": 24.9,
+          "status": "COMPUTED"
+        },
+        "trend_signal": {
+          "value": 250.0,
+          "status": "COMPUTED"
+        },
+        "growth_signal": {
+          "value": null,
+          "status": "UNAVAILABLE"
+        }
+      },
+      "estimated_value": 24.9,
+      "production_feasibility": "COMPUTED_PROXY",
+      "competition": {
+        "value": 46.0,
+        "status": "COMPUTED"
+      },
+      "risk": {
+        "passed": true,
+        "risk_status": "passed",
+        "level": "low",
+        "reason": "keyword_and_listings_passed_sensitive_and_price_checks"
+      },
+      "learning_value": {
+        "status": "HEURISTIC",
+        "score_0_100": 60.0,
+        "note": "Minimal concept — new keyword/format learning potential"
+      },
+      "score": {
+        "model_note": "Current model uses listing-derived demand/trend/competition/profit/difficulty proxies. Historical Performance / Learning Value / Conversion = NOT YET IMPLEMENTED unless evidence exists. This is NOT final commercial intelligence.",
+        "dimensions": {
+          "Demand": {
+            "status": "COMPUTED",
+            "value": 11500,
+            "score_0_100": 100.0
+          },
+          "Trend": {
+            "status": "COMPUTED_PROXY",
+            "value": 250.0,
+            "score_0_100": 95.0,
+            "note": "Proxy — not true time-series"
+          },
+          "Competition": {
+            "status": "COMPUTED",
+            "value": 46.0,
+            "score_0_100": 50.0
+          },
+          "Price": {
+            "status": "COMPUTED",
+            "value": 24.9
+          },
+          "Potential_Revenue": {
+            "status": "COMPUTED_PROXY",
+            "score_0_100": 100.0,
+            "note": "Proxy from listing profit heuristic — not real revenue"
+          },
+          "Production_Cost": {
+            "status": "NOT_YET_IMPLEMENTED",
+            "value": null
+          },
+          "Difficulty": {
+            "status": "COMPUTED_PROXY",
+            "score_0_100": 10.0
+          },
+          "Risk": {
+            "status": "DEFERRED_TO_RISK_GATE",
+            "value": null
+          },
+          "Historical_Performance": {
+            "status": "UNAVAILABLE",
+            "value": null,
+            "note": "No real commercial outcomes yet (Pilot Observation NOT_STARTED)"
+          },
+          "Learning_Value": {
+            "status": "HEURISTIC",
+            "score_0_100": 60.0,
+            "note": "Minimal concept — new keyword/format learning potential"
+          },
+          "Engagement": {
+            "status": "COMPUTED",
+            "value": 0.2174
+          },
+          "Growth": {
+            "status": "UNAVAILABLE",
+            "value": null
+          }
+        },
+        "total_score": 69.17,
+        "listing_avg_total": 80.25,
+        "score_method": "market_signal_proxy_v1",
+        "scored_at": "2026-08-29 16:57:38"
+      },
+      "status": "discovered_candidate",
+      "discovery_source": "marketplace",
+      "discovery_method": "market_signal",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_8db6bd889676",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_7efb01974099",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_16bf11e02ca5",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_a4929588e661",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_3fea5cdcf1ef",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_d85636fe1d5f",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "product_id": 4,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 5,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 9,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 10,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 14,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 15,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 16,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 17,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 20,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 21,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 22,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 23,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 24,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 25,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 26,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 27,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 28,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 29,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 30,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 31,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        }
+      ],
+      "signal_summary": {
+        "demand_signal": {
+          "value": 11500,
+          "status": "COMPUTED"
+        },
+        "engagement_signal": {
+          "value": 0.2174,
+          "status": "COMPUTED"
+        },
+        "competition_signal": {
+          "value": 46.0,
+          "status": "COMPUTED"
+        },
+        "price_signal": {
+          "value": 24.9,
+          "status": "COMPUTED"
+        },
+        "trend_signal": {
+          "value": 250.0,
+          "status": "COMPUTED"
+        },
+        "growth_signal": {
+          "value": null,
+          "status": "UNAVAILABLE"
+        }
+      },
+      "created_at": "2026-08-29 16:57:38",
+      "auto_production_forbidden": true,
+      "note": "Candidate only — Selection ≠ Experiment ≠ Production",
+      "score_time": "2026-08-29T16:57:38"
+    }
+  ],
+  "selection_results": [
+    {
+      "selection_id": "sel_d2079d0aa487",
+      "candidate_id": "aoc_919c62520b98",
+      "rank": 1,
+      "score": 69.83,
+      "risk_status": "passed",
+      "selected": true,
+      "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_f601ceaabcb8",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_ecf1794a3826",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_aefded299cff",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_bd3bd2f64ddf",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_33af03309f58",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_74ec9871c6aa",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "product_id": 2,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 3,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 7,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 8,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 12,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 13,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        }
+      ],
+      "discovery_method": "market_signal",
+      "keyword": "批量关键词",
+      "product_type": "digital_template",
+      "platform": "xianyu",
+      "source": "marketplace",
+      "created_at": "2026-08-29 16:57:38",
+      "next_step": "experiment_candidate",
+      "auto_production_forbidden": true
+    },
+    {
+      "selection_id": "sel_b9af17ddf12c",
+      "candidate_id": "aoc_c039b43ee94f",
+      "rank": 2,
+      "score": 69.17,
+      "risk_status": "passed",
+      "selected": true,
+      "selection_reason": "rank=2; total_score=69.17; discovery_method=market_signal; keyword=虚拟资料; listings=46",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_8db6bd889676",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_7efb01974099",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_16bf11e02ca5",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_a4929588e661",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_3fea5cdcf1ef",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "signal_id": "sig_d85636fe1d5f",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-07T00:00:00"
+        },
+        {
+          "product_id": 4,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 5,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 9,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 10,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 14,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 15,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 16,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 17,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 20,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 21,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 22,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 23,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-05"
+        },
+        {
+          "product_id": 24,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 25,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 26,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 27,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 28,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 29,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 30,
+          "source_url": "https://goofish.com/item/sample001",
+          "collect_date": "2026-07-06"
+        },
+        {
+          "product_id": 31,
+          "source_url": "https://goofish.com/item/sample002",
+          "collect_date": "2026-07-06"
+        }
+      ],
+      "discovery_method": "market_signal",
+      "keyword": "虚拟资料",
+      "product_type": "digital_template",
+      "platform": "xianyu",
+      "source": "marketplace",
+      "created_at": "2026-08-29 16:57:38",
+      "next_step": "experiment_candidate",
+      "auto_production_forbidden": true
+    }
+  ]
+}

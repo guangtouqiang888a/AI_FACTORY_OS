@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 380px; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; margin: 0; padding: 12px; background: #f5f6f8; color: #222; }
+    h1 { font-size: 15px; margin: 0 0 10px; color: #1a1a2e; }
+    .panel { background: #fff; border-radius: 8px; padding: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 13px; }
+    .row label { flex: 1; }
+    .row input { width: 72px; padding: 4px 6px; border: 1px solid #ccc; border-radius: 4px; }
+    .hint { font-size: 11px; color: #666; margin: 4px 0 10px; line-height: 1.4; }
+    .status { font-size: 12px; color: #444; min-height: 36px; margin-top: 8px; white-space: pre-wrap; }
+    .btns { display: flex; gap: 8px; margin-top: 8px; }
+    button { flex: 1; padding: 8px; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; }
+    #startBtn { background: #2563eb; color: #fff; }
+    #startBtn:disabled, #stopBtn:disabled { opacity: .5; cursor: not-allowed; }
+    #stopBtn { background: #64748b; color: #fff; }
+    .stat { font-size: 11px; color: #555; margin-top: 6px; }
+    code { background: #eef2ff; padding: 1px 4px; border-radius: 3px; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>AI_FACTORY_OS Xianyu Collector</h1>
+  <div class="panel">
+    <div class="row"><span>页面状态</span><strong id="pageState">—</strong></div>
+    <div class="row"><span>当前 Query</span><span id="pageQuery">—</span></div>
+    <div class="row"><label for="maxRecords">Max Records (≤50)</label><input id="maxRecords" type="number" min="1" max="50" value="20"></div>
+    <div class="row"><label for="maxPages">Max Pages</label><input id="maxPages" type="number" min="1" max="5" value="1"></div>
+    <div class="row"><label for="minWant">Minimum Want Count</label><input id="minWant" type="number" min="0" placeholder="空=不过滤"></div>
+    <p class="hint">Minimum Want Count 为<strong>分析筛选条件</strong>（传给 Engine Filter），不是采集丢弃条件。缺失想要数的商品仍会采集。</p>
+    <div class="btns">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+    <div class="status" id="status">准备就绪。请先在正常 Chrome 中打开闲鱼搜索结果页。</div>
+    <div class="stat" id="stats"></div>
+    <p class="hint">Bridge: <code id="bridgeUrl">http://127.0.0.1:8765/acquisition/v1/market-record-batch</code></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

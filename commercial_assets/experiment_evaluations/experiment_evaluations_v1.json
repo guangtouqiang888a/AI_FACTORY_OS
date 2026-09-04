@@ -1,0 +1,105 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_EXPERIMENT_EVALUATION_FRAMEWORK.md",
+  "source_datasets": {
+    "product_assets": "commercial_assets/product_assets/product_assets_v1.json",
+    "experiments": "commercial_assets/experiments/experiments_v1.json",
+    "feedback": "commercial_assets/feedback/feedback_v1.json"
+  },
+  "creation_method": "human_assisted",
+  "creation_note": "Entry 035 — Pilot Experiment Evaluation Instance Generation v1。Evaluation Created ≠ Experiment Success。hypothesis_result=pending；success_metrics 保留 Experiment 目标定义，actual 均为 null；禁止填写未发生的市场/销售数据。 Entry 047 aligned recommendation; actual market metrics remain null.",
+  "created_at": "2026-07-13T18:54:00+08:00",
+  "evaluation_count": 1,
+  "summary": {
+    "evaluation_status_pending": 1,
+    "hypothesis_result_pending": 1,
+    "experiment_ids": [
+      "exp_20260708_005"
+    ],
+    "product_asset_ids": [
+      "8523329941d4"
+    ]
+  },
+  "experiment_evaluations": [
+    {
+      "evaluation_id": "eval_20260713_001",
+      "object_type": "experiment_evaluation",
+      "contract_version": "1.0",
+      "experiment_id": "exp_20260708_005",
+      "product_asset_id": "8523329941d4",
+      "source_production_request_id": "preq_20260712_005",
+      "product_name": "Excel 考勤记录表",
+      "evaluation_method": "human_assisted",
+      "hypothesis_result": "pending",
+      "success_metrics": {
+        "production_metric": {
+          "target_production_cost_cny": 1.5,
+          "target_production_time_minutes": 25,
+          "target_first_pass": true,
+          "target_quality_score": 0.85,
+          "actual_production_cost_cny": null,
+          "actual_production_time_minutes": null,
+          "actual_first_pass": true,
+          "actual_quality_score": 0.89,
+          "met": null,
+          "note": "生产侧：Pilot 已完成；quality_score 来自 Product Asset CF 产出（0.89）。市场侧指标 actual 均为 null — 观察未开始。"
+        },
+        "market_metric": {
+          "target_views": 50,
+          "target_clicks": 5,
+          "target_favorites": 2,
+          "target_ctr": 0.05,
+          "actual_views": null,
+          "actual_clicks": null,
+          "actual_favorites": null,
+          "actual_ctr": null,
+          "met": null,
+          "note": "14 天观察期未开始 — 禁止填写未发生数据"
+        },
+        "commercial_metric": {
+          "expected_price_cny": 12.9,
+          "target_orders": 1,
+          "target_conversion_rate": 0.025,
+          "target_profit_cny": 4.0,
+          "actual_orders": null,
+          "actual_conversion_rate": null,
+          "actual_revenue_cny": null,
+          "actual_profit_cny": null,
+          "met": null,
+          "note": "禁止填写销量/订单/收入 — 市场验证未执行"
+        },
+        "system_metric": {
+          "target_automation_rate": 0.75,
+          "target_data_completeness": 0.8,
+          "target_error_rate": 0.0,
+          "actual_automation_rate": null,
+          "actual_data_completeness": null,
+          "actual_error_rate": null,
+          "met": null,
+          "note": "Human Assisted 登记 — 观察期后更新"
+        }
+      },
+      "failure_metrics": [],
+      "feedback_summary": {
+        "feedback_ids": [
+          "fbk_20260713_001"
+        ],
+        "observation_period": "not_started",
+        "feedback_count": 1,
+        "note": "Pilot feedback collection not started"
+      },
+      "experiment_evaluation_score": null,
+      "learning_summary": "Entry 048: publish materials prepared; READY FOR HUMAN DECISION; observation still not_started; no market actuals.",
+      "recommendation": "await_human_decision_then_publish_then_start_observation",
+      "evaluation_status": "pending",
+      "observation_period": {
+        "planned_duration": "14 days",
+        "status": "not_started",
+        "start": null,
+        "end": null
+      },
+      "created_at": "2026-07-13T18:54:00+08:00",
+      "updated_at": "2026-08-29T15:00:00+08:00"
+    }
+  ]
+}

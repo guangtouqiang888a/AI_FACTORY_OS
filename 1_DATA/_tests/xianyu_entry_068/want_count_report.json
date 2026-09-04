@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "VISIBLE_ON_CARD": 2,
+    "MISSING_ON_CARD": 1,
+    "AVAILABLE_ON_DETAIL": 0,
+    "UNAVAILABLE": 0,
+    "UNKNOWN": 0
+  },
+  "rates": {
+    "VISIBLE_ON_CARD": 0.6667,
+    "MISSING_ON_CARD": 0.3333,
+    "AVAILABLE_ON_DETAIL": 0.0,
+    "UNAVAILABLE": 0.0,
+    "UNKNOWN": 0.0
+  },
+  "total": 3
+}

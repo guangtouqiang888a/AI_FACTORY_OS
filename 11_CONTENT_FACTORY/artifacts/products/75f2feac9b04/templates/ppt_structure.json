@@ -1,0 +1,78 @@
+{
+  "format": "PPT",
+  "title": "【PPT模板】办公PPT模板 — 专业数字资料包",
+  "slides": [
+    {
+      "id": 1,
+      "type": "cover",
+      "title": "【PPT模板】办公PPT模板 — 专业数字资料包",
+      "subtitle": "办公PPT模板"
+    },
+    {
+      "id": 2,
+      "type": "agenda",
+      "title": "目录",
+      "items": [
+        "背景",
+        "核心内容",
+        "案例",
+        "总结"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "content",
+      "title": "背景介绍",
+      "bullets": [
+        "行业现状",
+        "用户需求",
+        "解决方案"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "content",
+      "title": "核心框架",
+      "bullets": [
+        "模块一",
+        "模块二",
+        "模块三"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "chart",
+      "title": "数据展示",
+      "bullets": [
+        "关键指标",
+        "趋势分析"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "case",
+      "title": "案例示范",
+      "bullets": [
+        "场景描述",
+        "实施步骤",
+        "效果"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "summary",
+      "title": "总结",
+      "bullets": [
+        "核心要点",
+        "行动建议"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "end",
+      "title": "谢谢",
+      "subtitle": "欢迎交流"
+    }
+  ],
+  "slide_count": 8
+}

@@ -1,0 +1,65 @@
+{
+  "xianyu": {
+    "platform": "闲鱼",
+    "suggested_title": "【精品】【PPT模板】办公PPT模板 — 专业数字资料包",
+    "category_hint": "电子资料 / 办公文具",
+    "delivery_method": "拍下后通过聊天发送网盘链接",
+    "price_suggestion": 35.88,
+    "price_range": "9.9 - 49.9",
+    "keywords": [
+      "办公PPT模板",
+      "PPT模板",
+      "虚拟资料",
+      "数字商品",
+      "模板",
+      "电子版"
+    ],
+    "tips": [
+      "标题含关键词",
+      "首图清晰",
+      "描述突出即用型"
+    ]
+  },
+  "taobao": {
+    "platform": "淘宝",
+    "suggested_title": "【精品】【PPT模板】办公PPT模板 — 专业数字资料包",
+    "category_hint": "教育培训 / 办公用品",
+    "delivery_method": "自动发货（网盘链接）或人工发货",
+    "price_suggestion": 35.88,
+    "price_range": "19.9 - 99.9",
+    "keywords": [
+      "办公PPT模板",
+      "PPT模板",
+      "虚拟资料",
+      "数字商品",
+      "模板",
+      "电子版"
+    ],
+    "tips": [
+      "详情页结构化",
+      "支持7天无理由（虚拟需标注）",
+      "关注类目资质"
+    ]
+  },
+  "overseas": {
+    "platform": "海外数字商品平台（Gumroad / Etsy Digital）",
+    "suggested_title": "【精品】【PPT模板】办公PPT模板 — 专业数字资料包",
+    "category_hint": "Digital Downloads / Templates",
+    "delivery_method": "Platform digital delivery",
+    "price_suggestion": 35.88,
+    "price_range": "$4.99 - $29.99",
+    "keywords": [
+      "办公PPT模板",
+      "PPT模板",
+      "虚拟资料",
+      "数字商品",
+      "模板",
+      "电子版"
+    ],
+    "tips": [
+      "English listing required",
+      "Clear license terms",
+      "Preview images"
+    ]
+  }
+}

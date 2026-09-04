@@ -1,0 +1,74 @@
+{
+  "contract_version": "064.1.0",
+  "message_type": "MARKET_RECORD_BATCH",
+  "description": "Browser Extension → Local Bridge → Acquisition Engine (Entry 064 blueprint)",
+  "required_top_level": [
+    "contract_version",
+    "message_type",
+    "run_id",
+    "session_id",
+    "source",
+    "platform",
+    "query",
+    "result_origin",
+    "observed_at",
+    "collector_version",
+    "records"
+  ],
+  "record_required": [
+    "source_item_id",
+    "source_url",
+    "title",
+    "price",
+    "currency",
+    "want_count",
+    "want_count_status",
+    "observed_at",
+    "result_position"
+  ],
+  "want_count_status_enum": [
+    "VISIBLE_ON_CARD",
+    "MISSING_ON_CARD",
+    "AVAILABLE_ON_DETAIL",
+    "UNAVAILABLE",
+    "UNKNOWN"
+  ],
+  "result_origin_enum": [
+    "SEARCH_RESULT",
+    "RECOMMENDED_RESULT",
+    "UNKNOWN"
+  ],
+  "error_status_enum": [
+    "SUCCESS",
+    "PARTIAL",
+    "NO_RESULTS",
+    "ACCESS_BLOCKED",
+    "PAGE_STRUCTURE_CHANGED",
+    "UNKNOWN"
+  ],
+  "example": {
+    "contract_version": "064.1.0",
+    "message_type": "MARKET_RECORD_BATCH",
+    "run_id": "run_20260830_001",
+    "session_id": "sess_abc123",
+    "source": "xianyu",
+    "platform": "xianyu",
+    "query": "Excel模板",
+    "result_origin": "SEARCH_RESULT",
+    "observed_at": "2026-08-30T12:00:00+08:00",
+    "collector_version": "xianyu-ext-blueprint-064",
+    "records": [
+      {
+        "source_item_id": "1234567890",
+        "source_url": "https://www.goofish.com/item?id=1234567890",
+        "title": "示例商品",
+        "price": 9.9,
+        "currency": "CNY",
+        "want_count": 61,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "observed_at": "2026-08-30T12:00:01+08:00",
+        "result_position": 1
+      }
+    ]
+  }
+}

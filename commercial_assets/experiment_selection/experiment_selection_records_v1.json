@@ -1,0 +1,137 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_COMMERCIAL_EXPERIMENT_SELECTION_FRAMEWORK.md",
+  "source_dataset": "commercial_assets/opportunities/opportunities_v1.json",
+  "selection_method": "human_assisted",
+  "selection_note": "Human Assisted ≠ Automation — 无自动 Selection Engine；criteria 与 selection_score 为人工辅助应用 Framework v1 公式计算，非 Runtime 执行。",
+  "created_at": "2026-07-08T10:41:00+08:00",
+  "record_count": 5,
+  "summary": {
+    "selected": 4,
+    "watch": 1,
+    "rejected": 0,
+    "pending_experiment": 4
+  },
+  "selection_records": [
+    {
+      "selection_id": "sel_20260708_001",
+      "opportunity_id": "opp_20260708_001",
+      "source_candidate_id": "cand_20260708_001",
+      "keyword": "商业计划书 PPT 模板",
+      "selection_version": "1.0",
+      "category": "A",
+      "selection_score": 64,
+      "experiment_priority_score": 0.638,
+      "criteria": {
+        "market_potential": 0.756,
+        "validation_cost": 0.65,
+        "production_difficulty": 0.65,
+        "competition_risk": 0.50,
+        "feedback_value": 0.56
+      },
+      "criteria_note": "production_difficulty 字段存 production_ease（1 − difficulty_score），值越高表示生产越容易。competition_risk 字段存 competition_ease（1 − competition_score），值越高表示竞争风险越低。",
+      "decision": "selected",
+      "reason": "opportunity.recommendation=produce；experiment_priority_score=0.638（P1）；Category A 低成本验证；需求与趋势双高；竞争中等可差异化。符合 Framework §6.1 进入实验队列条件。",
+      "next_action": "create_experiment",
+      "conversion_status": "pending_experiment",
+      "selection_method": "human_assisted",
+      "selected_at": "2026-07-08T10:41:00+08:00"
+    },
+    {
+      "selection_id": "sel_20260708_002",
+      "opportunity_id": "opp_20260708_002",
+      "source_candidate_id": "cand_20260708_002",
+      "keyword": "Excel 家庭记账表",
+      "selection_version": "1.0",
+      "category": "A",
+      "selection_score": 62,
+      "experiment_priority_score": 0.618,
+      "criteria": {
+        "market_potential": 0.722,
+        "validation_cost": 0.70,
+        "production_difficulty": 0.70,
+        "competition_risk": 0.45,
+        "feedback_value": 0.44
+      },
+      "criteria_note": "production_difficulty / competition_risk 同上 ease 语义。",
+      "decision": "selected",
+      "reason": "opportunity.recommendation=produce；priority=0.618（P1）；Excel 单文件生产成本最低档；¥9.9 适合转化率测试；feedback_value 略低但仍满足 Category A 首批验证目标。",
+      "next_action": "create_experiment",
+      "conversion_status": "pending_experiment",
+      "selection_method": "human_assisted",
+      "selected_at": "2026-07-08T10:41:00+08:00"
+    },
+    {
+      "selection_id": "sel_20260708_003",
+      "opportunity_id": "opp_20260708_003",
+      "source_candidate_id": "cand_20260708_003",
+      "keyword": "Word 简历模板",
+      "selection_version": "1.0",
+      "category": "A",
+      "selection_score": 59,
+      "experiment_priority_score": 0.588,
+      "criteria": {
+        "market_potential": 0.760,
+        "validation_cost": 0.68,
+        "production_difficulty": 0.68,
+        "competition_risk": 0.25,
+        "feedback_value": 0.48
+      },
+      "criteria_note": "production_difficulty / competition_risk 同上 ease 语义。",
+      "decision": "watch",
+      "reason": "opportunity.recommendation=watch；priority=0.588（P2 观察区）；competition_risk ease=0.25（高竞争）；需求强但差异化未明确。Framework §4.4 建议观察，待细分行业/风格后再评估。",
+      "next_action": "monitor",
+      "conversion_status": "none",
+      "selection_method": "human_assisted",
+      "selected_at": "2026-07-08T10:41:00+08:00"
+    },
+    {
+      "selection_id": "sel_20260708_004",
+      "opportunity_id": "opp_20260708_004",
+      "source_candidate_id": "cand_20260708_004",
+      "keyword": "工作总结 PPT 模板",
+      "selection_version": "1.0",
+      "category": "A",
+      "selection_score": 64,
+      "experiment_priority_score": 0.642,
+      "criteria": {
+        "market_potential": 0.752,
+        "validation_cost": 0.67,
+        "production_difficulty": 0.67,
+        "competition_risk": 0.50,
+        "feedback_value": 0.544
+      },
+      "criteria_note": "production_difficulty / competition_risk 同上 ease 语义。",
+      "decision": "selected",
+      "reason": "opportunity.recommendation=produce；priority=0.642（P1）；周期性需求可预测；PPT 结构固定、生产成本低；适合验证办公场景「省时付费」假设。",
+      "next_action": "create_experiment",
+      "conversion_status": "pending_experiment",
+      "selection_method": "human_assisted",
+      "selected_at": "2026-07-08T10:41:00+08:00"
+    },
+    {
+      "selection_id": "sel_20260708_005",
+      "opportunity_id": "opp_20260708_005",
+      "source_candidate_id": "cand_20260708_005",
+      "keyword": "Excel 考勤记录表",
+      "selection_version": "1.0",
+      "category": "A",
+      "selection_score": 69,
+      "experiment_priority_score": 0.685,
+      "criteria": {
+        "market_potential": 0.704,
+        "validation_cost": 0.72,
+        "production_difficulty": 0.72,
+        "competition_risk": 0.72,
+        "feedback_value": 0.52
+      },
+      "criteria_note": "production_difficulty / competition_risk 同上 ease 语义。",
+      "decision": "selected",
+      "reason": "opportunity.recommendation=produce；priority=0.685（P1 最高）；竞争低风险 ease=0.72；痛点具体、Excel 单表交付；本批次优先实验候选。",
+      "next_action": "create_experiment",
+      "conversion_status": "pending_experiment",
+      "selection_method": "human_assisted",
+      "selected_at": "2026-07-08T10:41:00+08:00"
+    }
+  ]
+}

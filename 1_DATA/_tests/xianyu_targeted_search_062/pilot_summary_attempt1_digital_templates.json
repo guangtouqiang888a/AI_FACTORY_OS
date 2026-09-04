@@ -1,0 +1,61 @@
+{
+  "entry": "062",
+  "status": "NO_SEARCH_RESULTS_IN_TEST_SCOPE",
+  "ok": false,
+  "query": null,
+  "search_results_count": null,
+  "FIRST_REAL_XIANYU_SEARCH_BATCH": false,
+  "want_count_audit": null,
+  "field_availability": null,
+  "query_attempts": [
+    {
+      "query": "Excel模板",
+      "status": "NO_SEARCH_RESULTS",
+      "search_results": 0,
+      "recommended_excluded": 40,
+      "page_state": {
+        "search_primary_empty": true,
+        "has_guess_you_like": true,
+        "has_feeds": true
+      }
+    },
+    {
+      "query": "PPT模板",
+      "status": "NO_SEARCH_RESULTS",
+      "search_results": 0,
+      "recommended_excluded": 40,
+      "page_state": {
+        "search_primary_empty": true,
+        "has_guess_you_like": true,
+        "has_feeds": true
+      }
+    },
+    {
+      "query": "简历模板",
+      "status": "NO_SEARCH_RESULTS",
+      "search_results": 0,
+      "recommended_excluded": 40,
+      "page_state": {
+        "search_primary_empty": true,
+        "has_guess_you_like": true,
+        "has_feeds": true
+      }
+    }
+  ],
+  "current_db_before": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0
+  },
+  "current_db_after": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0
+  },
+  "current_db_unchanged": true,
+  "login_used": false,
+  "bypass_attempted": false,
+  "artifact_dir": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_targeted_search_062"
+}

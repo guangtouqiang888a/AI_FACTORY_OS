@@ -1,0 +1,115 @@
+{
+  "schema": "autonomous_experiment_candidates_v1",
+  "entry": "055",
+  "note": "Experiment Candidate ≠ Experiment. From autonomous selection only.",
+  "experiment_candidates": [
+    {
+      "experiment_candidate_id": "ec_5ce1f9c88754",
+      "object_type": "experiment_candidate",
+      "entry": "055",
+      "source_opportunity": "aoc_919c62520b98",
+      "source_selection_id": "sel_d2079d0aa487",
+      "source_candidate_id": "aoc_919c62520b98",
+      "selection_rank": 1,
+      "candidate_score": 69.83,
+      "risk_status": "passed",
+      "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_f601ceaabcb8",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_ecf1794a3826",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_aefded299cff",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_bd3bd2f64ddf",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_33af03309f58",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_74ec9871c6aa",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "product_id": 2,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 3,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 7,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 8,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 12,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 13,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        }
+      ],
+      "product_type": "digital_template",
+      "keyword": "批量关键词",
+      "platform": "xianyu",
+      "source": "marketplace",
+      "target_user": {
+        "value": "需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）",
+        "status": "HYPOTHESIS"
+      },
+      "problem": {
+        "value": "买家在「批量关键词」相关场景缺少即用可编辑数字模板（HYPOTHESIS）",
+        "status": "HYPOTHESIS"
+      },
+      "hypothesis": {
+        "value": "基于市场信号选择的「批量关键词」机会，以 digital_template/excel 形式生产可交付资产，可在 xianyu 验证首次付费转化。",
+        "status": "HYPOTHESIS",
+        "note": "Unvalidated judgment — Experiment Candidate ≠ Experiment completed"
+      },
+      "test_goal": {
+        "value": "验证自主发现候选能否走通 Production→Quality→Commercial→Publish Queue",
+        "status": "HYPOTHESIS"
+      },
+      "price_hypothesis": {
+        "value": 99.9,
+        "currency": "CNY",
+        "status": "HYPOTHESIS",
+        "source": "opportunity_candidate.estimated_value / price_signal proxy",
+        "note": "Price Hypothesis ≠ Listing Price ≠ Paid Price"
+      },
+      "status": "draft",
+      "creation_method": "autonomous_bridge_055",
+      "auto_production_forbidden_cleared": true,
+      "note": "Entry 055: Experiment Candidate from autonomous selection. ≠ Experiment complete ≠ Commercial Success. Legacy Pilot 8523329941d4 / exp_20260708_005 is HISTORICAL — not this candidate.",
+      "created_at": "2026-08-30T16:38:33+08:00"
+    }
+  ],
+  "updated_at": "2026-08-30 16:38:33"
+}

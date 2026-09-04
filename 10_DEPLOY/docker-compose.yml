@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  ai-factory-os:
+    build:
+      context: ..
+      dockerfile: 10_DEPLOY/Dockerfile
+    container_name: ai-factory-os
+    ports:
+      - "${DEPLOY_PORT:-8080}:8080"
+    environment:
+      - DEPLOY_HOST=0.0.0.0
+      - DEPLOY_PORT=8080
+      - DEPLOY_LOG_LEVEL=${DEPLOY_LOG_LEVEL:-INFO}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - DEEPSEEK_BASE_URL=${DEEPSEEK_BASE_URL:-https://api.deepseek.com/v1}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - ../data:/app/data
+      - ../logs:/app/logs
+      - ../7_MEMORY:/app/7_MEMORY
+      - ../output:/app/output
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s

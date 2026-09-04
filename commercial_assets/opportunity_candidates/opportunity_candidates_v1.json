@@ -1,0 +1,121 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_OPPORTUNITY_CANDIDATE_REGISTRY.md",
+  "generation_rule_ref": "docs/AI_FACTORY_OS_OPPORTUNITY_DATASET_GENERATION_RULE.md",
+  "created_at": "2026-07-08T08:44:00+08:00",
+  "batch_name": "category_a_batch_001",
+  "batch_category": "A",
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "opportunity_id": "cand_20260708_001",
+      "version": "1.0",
+      "source": "manual",
+      "market": "国内闲鱼虚拟商品",
+      "keyword": "商业计划书 PPT 模板",
+      "problem": "创业初期团队缺少专业 PPT 设计能力，商业计划书排版耗时且外观不专业，影响融资或合作沟通。",
+      "target_user": "创业初期中小企业主、独立创业者",
+      "demand_reason": "用户愿为「省 4–8 小时制作时间」和「接近专业外观」支付低价虚拟商品；闲鱼同类商品有稳定想要数和成交记录。",
+      "competition_status": "中 — 同类模板较多，但多数质量参差，可通过清晰结构与封面差异化",
+      "estimated_value": "¥19.9",
+      "recommended_category": "A",
+      "candidate_readiness_score": 84,
+      "status": "discovered",
+      "created_at": "2026-07-08T08:44:00+08:00",
+      "quality_assessment": {
+        "user_pain_point": "不会设计 PPT，商业计划书制作慢且不够专业，直接影响对外展示效果。",
+        "market_demand_basis": "闲鱼搜索「商业计划书 PPT」有大量 listing；创业类内容长期有搜索需求；属于办公类高频场景。",
+        "low_cost_validation_rationale": "单页 PPT 模板可由 Content Factory 快速生成 ppt artifact，生产成本低、LLM 调用少，符合 Category A 最短 pipeline。",
+        "selection_worthiness": "关键词具体、用户群清晰、定价带明确；竞争可差异化；适合作为首批低成本商业验证实验输入 Selection Layer。"
+      }
+    },
+    {
+      "opportunity_id": "cand_20260708_002",
+      "version": "1.0",
+      "source": "manual",
+      "market": "国内淘宝虚拟商品",
+      "keyword": "Excel 家庭记账表",
+      "problem": "普通家庭和个人缺乏简单易用的记账工具，复杂 App 学习成本高，希望用 Excel 一键记录收支。",
+      "target_user": "有基础 Excel 使用习惯的家庭用户、年轻上班族",
+      "demand_reason": "用户需要「开箱即用」的表格模板，比从零建表省时；虚拟 Excel 商品单价低、决策快。",
+      "competition_status": "中 — 免费模板多，但精美且带说明的版本仍有付费空间",
+      "estimated_value": "¥9.9",
+      "recommended_category": "A",
+      "candidate_readiness_score": 81,
+      "status": "discovered",
+      "created_at": "2026-07-08T08:44:00+08:00",
+      "quality_assessment": {
+        "user_pain_point": "想记账但不会做 Excel 公式和布局，下载免费模板质量不稳定。",
+        "market_demand_basis": "「家庭记账」「Excel 模板」在淘宝/闲鱼长期有搜索量；个人理财意识提升带来持续需求。",
+        "low_cost_validation_rationale": "Excel artifact 生产标准化程度高，单文件即可交付，属于 Category A 最低生产成本品类之一。",
+        "selection_worthiness": "痛点普遍、验证周期短；¥9.9 定价便于测试转化率；适合验证「办公小工具类」是否有真实付费意愿。"
+      }
+    },
+    {
+      "opportunity_id": "cand_20260708_003",
+      "version": "1.0",
+      "source": "manual",
+      "market": "国内闲鱼虚拟商品",
+      "keyword": "Word 简历模板",
+      "problem": "求职者尤其是应届生不会排版简历，网上免费模板同质化严重，希望快速获得专业可编辑 Word 简历。",
+      "target_user": "应届毕业生、转行求职者、初级白领",
+      "demand_reason": "求职季需求集中；用户愿为「专业排版 + 可编辑 Word」支付 ¥9.9–19.9 以节省制作时间。",
+      "competition_status": "高 — 简历模板供给大，但细分行业/风格模板仍有空间",
+      "estimated_value": "¥14.9",
+      "recommended_category": "A",
+      "candidate_readiness_score": 78,
+      "status": "discovered",
+      "created_at": "2026-07-08T08:44:00+08:00",
+      "quality_assessment": {
+        "user_pain_point": "简历排版不专业影响面试机会，自己调整 Word 格式耗时且效果差。",
+        "market_demand_basis": "求职季「简历模板 Word」搜索量周期性上升；闲鱼/淘宝虚拟简历商品评论可见真实购买动机。",
+        "low_cost_validation_rationale": "Word 单文档生产成本低，Content Factory 已有 word generator；无需多 artifact 组合。",
+        "selection_worthiness": "虽竞争高，但需求证据强、用户群明确；可作为 Category A 中「高竞争场景」对照实验，检验 Selection 竞争因子。"
+      }
+    },
+    {
+      "opportunity_id": "cand_20260708_004",
+      "version": "1.0",
+      "source": "manual",
+      "market": "国内闲鱼虚拟商品",
+      "keyword": "工作总结 PPT 模板",
+      "problem": "职场员工每季度/年终需提交工作总结 PPT，临时制作压力大，缺乏现成结构清晰的模板。",
+      "target_user": "企业白领、基层管理者、行政人员",
+      "demand_reason": "总结汇报有固定周期（季度/年终），用户愿为「现成结构 + 省时间」付费；办公场景付费动机明确。",
+      "competition_status": "中 — 通用总结模板多，按行业/岗位细分可差异化",
+      "estimated_value": "¥19.9",
+      "recommended_category": "A",
+      "candidate_readiness_score": 83,
+      "status": "discovered",
+      "created_at": "2026-07-08T08:44:00+08:00",
+      "quality_assessment": {
+        "user_pain_point": "临近汇报 deadline 缺少时间做 PPT，需要可直接填充内容的模板框架。",
+        "market_demand_basis": "「工作总结 PPT」在 Q4 和季度末搜索量上升；办公 PPT 类虚拟商品在闲鱼有稳定曝光。",
+        "low_cost_validation_rationale": "PPT 模板结构固定，AI 生成大纲 + 模板填充即可，生产时间可控制在 Category A 目标范围内。",
+        "selection_worthiness": "周期性需求可预测；关键词与 target_user 匹配度高；适合验证办公场景下「省时付费」假设。"
+      }
+    },
+    {
+      "opportunity_id": "cand_20260708_005",
+      "version": "1.0",
+      "source": "manual",
+      "market": "国内淘宝虚拟商品",
+      "keyword": "Excel 考勤记录表",
+      "problem": "小团队、个体户、培训班管理员需要简单考勤表，不会设计 Excel 公式统计出勤。",
+      "target_user": "小微商户管理员、培训班负责人、10 人以内小团队",
+      "demand_reason": "用户需要带自动统计的简单表格，比手工记录或复杂系统便宜；虚拟商品一次性购买即可。",
+      "competition_status": "低 — 细分「小团队考勤 Excel」竞争相对少，免费版功能弱",
+      "estimated_value": "¥12.9",
+      "recommended_category": "A",
+      "candidate_readiness_score": 86,
+      "status": "discovered",
+      "created_at": "2026-07-08T08:44:00+08:00",
+      "quality_assessment": {
+        "user_pain_point": "小团队没有 HR 系统，手工考勤易出错，需要简单可用的 Excel 考勤表。",
+        "market_demand_basis": "小微团队数量大；「考勤表 Excel 模板」搜索有稳定长尾需求；竞争相对办公大类更蓝海。",
+        "low_cost_validation_rationale": "Excel 单表 + 基础公式即可交付，生产难度低，完全符合 Category A 低成本快速验证策略。",
+        "selection_worthiness": "竞争低、痛点具体、定价适中；readiness 高，适合作为首批进入 evaluating 阶段的优先候选之一。"
+      }
+    }
+  ]
+}

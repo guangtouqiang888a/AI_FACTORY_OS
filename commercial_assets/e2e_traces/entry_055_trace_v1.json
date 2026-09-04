@@ -1,0 +1,113 @@
+{
+  "schema": "entry_055_trace_v1",
+  "trace": {
+    "entry": "055",
+    "entry_status": "PASS",
+    "date": "2026-08-30",
+    "opportunity_id": "aoc_919c62520b98",
+    "candidate_id": "aoc_919c62520b98",
+    "selection_id": "sel_d2079d0aa487",
+    "selection_rank": 1,
+    "score": 69.83,
+    "risk_status": "passed",
+    "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6",
+    "evidence_refs": [
+      {
+        "signal_id": "sig_f601ceaabcb8",
+        "signal_type": "demand_signal",
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      {
+        "signal_id": "sig_ecf1794a3826",
+        "signal_type": "engagement_signal",
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      {
+        "signal_id": "sig_aefded299cff",
+        "signal_type": "competition_signal",
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      {
+        "signal_id": "sig_bd3bd2f64ddf",
+        "signal_type": "price_signal",
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      {
+        "signal_id": "sig_33af03309f58",
+        "signal_type": "trend_signal",
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      {
+        "signal_id": "sig_74ec9871c6aa",
+        "signal_type": "growth_signal",
+        "observation_timestamp": "2026-07-04T00:00:00"
+      },
+      {
+        "product_id": 2,
+        "source_url": "https://goofish.com/item/test",
+        "collect_date": "2026-07-04"
+      },
+      {
+        "product_id": 3,
+        "source_url": "https://goofish.com/item/test",
+        "collect_date": "2026-07-04"
+      },
+      {
+        "product_id": 7,
+        "source_url": "https://goofish.com/item/test",
+        "collect_date": "2026-07-04"
+      },
+      {
+        "product_id": 8,
+        "source_url": "https://goofish.com/item/test",
+        "collect_date": "2026-07-04"
+      },
+      {
+        "product_id": 12,
+        "source_url": "https://goofish.com/item/test",
+        "collect_date": "2026-07-04"
+      },
+      {
+        "product_id": 13,
+        "source_url": "https://goofish.com/item/test",
+        "collect_date": "2026-07-04"
+      }
+    ],
+    "experiment_candidate_id": "ec_5ce1f9c88754",
+    "experiment_id": "exp_auto_20260830_8cbd08",
+    "production_request_id": "preq_auto_20260830_a4189c",
+    "approval_id": "appr_auto_20260830_2fefcd",
+    "product_id": "f2f8bab97df8",
+    "product_asset_id": "f2f8bab97df8",
+    "commercial_product_id": "cp_auto_f2f8bab97df8",
+    "listing_id": "lst_auto_f2f8bab97df8",
+    "publish_queue_id": "pq_auto_f2f8bab97df8",
+    "queue_status": "AWAITING_HUMAN_ACTION",
+    "published": false,
+    "commercial_success": false,
+    "market_events_created": false,
+    "commercial_learning_ingested": false,
+    "legacy_pilot_used": false,
+    "production_cost": "UNAVAILABLE",
+    "production_time": "UNAVAILABLE",
+    "package_path": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\package\\publish_package",
+    "quality": {
+      "quality_score": 89.0,
+      "commercial_score": 88.75,
+      "content_score": 90.0,
+      "usability_score": 100.0,
+      "market_score": 75.0,
+      "selling_score": 100.0,
+      "production_cost_score": 90.0,
+      "passed": true,
+      "status": "quality_pass",
+      "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+      "issues": []
+    },
+    "blocked": null,
+    "keyword": "批量关键词",
+    "product_type": "excel",
+    "created_at": "2026-08-30T16:38:33+08:00"
+  },
+  "updated_at": "2026-08-30 16:38:33"
+}

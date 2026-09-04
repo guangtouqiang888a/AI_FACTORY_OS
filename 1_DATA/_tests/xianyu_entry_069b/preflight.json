@@ -1,0 +1,15 @@
+{
+  "entry": "069-B",
+  "captured_at": "2026-09-03T17:37:48+08:00",
+  "db_path": "D:\\AI_FACTORY_OS\\data\\ai_factory.db",
+  "market_observations_before": 0,
+  "market_observations_real_before": 0,
+  "already_notes_matching_run": 0,
+  "existing_rows_for_batch_item_ids": 0,
+  "input_run_id": "run_1788419997563",
+  "input_session_id": "sess_1788419997563",
+  "input_query": "Excel模板",
+  "input_records": 20,
+  "raw_path": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_extension_065\\raw\\run_1788419997563.json",
+  "human_verification_basis": "069-A PASS + Entry 069-B operator authorization + --human-verified gate flag"
+}

@@ -1,0 +1,113 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_PRODUCTION_REQUEST_CONTRACT.md",
+  "source_dataset": "commercial_assets/production_requests/production_requests_v1.json",
+  "review_method": "human_assisted",
+  "approval_note": "Human Assisted ≠ Automation — 无 3_DECISION Runtime 自动审批；Approval 为人工辅助资产登记。Approval Completed ≠ Content Factory Execution — 本任务不触发生产、不创建 artifact / product。production_requests_v1.json 未修改 — Approval 与 Production Request 为独立实体。",
+  "created_at": "2026-07-13T17:43:00+08:00",
+  "approval_count": 4,
+  "summary": {
+    "approved": 3,
+    "rejected": 0,
+    "source_production_request_ids": [
+      "preq_20260712_001",
+      "preq_20260712_004",
+      "preq_20260712_005"
+    ]
+  },
+  "production_request_reviews": [
+    {
+      "approval_id": "appr_20260713_001",
+      "object_type": "production_request_review",
+      "contract_version": "1.0",
+      "source_production_request_id": "preq_20260712_001",
+      "source_experiment_id": "exp_20260708_001",
+      "product_name": "商业计划书 PPT 模板",
+      "product_type": "ppt",
+      "production_priority": "P1",
+      "review_method": "human_assisted",
+      "decision": "approved",
+      "review_reason": "asset_requirements 与 quality_requirements 完整；Category A 定价 ¥19.9 在预算带内；Experiment Review prepared 已通过；生产成本上限 ¥3.0 可接受；允许进入 approved 队列，待 Content Factory 单独授权执行。",
+      "approved_by": "human",
+      "approval_checks": {
+        "asset_requirements_complete": true,
+        "quality_requirements_complete": true,
+        "experiment_review_prepared": true,
+        "category_a_cost_within_budget": true,
+        "content_factory_not_invoked": true
+      },
+      "created_at": "2026-07-13T17:43:00+08:00",
+      "approved_at": "2026-07-13T17:43:00+08:00"
+    },
+    {
+      "approval_id": "appr_20260713_004",
+      "object_type": "production_request_review",
+      "contract_version": "1.0",
+      "source_production_request_id": "preq_20260712_004",
+      "source_experiment_id": "exp_20260708_004",
+      "product_name": "工作总结 PPT 模板",
+      "product_type": "ppt",
+      "production_priority": "P1",
+      "review_method": "human_assisted",
+      "decision": "approved",
+      "review_reason": "周期性汇报场景假设清晰；结构大纲与 quality checklist 完整；与 exp_001 同定价带便于横向对比；Experiment Review prepared 已通过；允许 approved，观察期宜覆盖季度末窗口。",
+      "approved_by": "human",
+      "approval_checks": {
+        "asset_requirements_complete": true,
+        "quality_requirements_complete": true,
+        "experiment_review_prepared": true,
+        "category_a_cost_within_budget": true,
+        "content_factory_not_invoked": true
+      },
+      "created_at": "2026-07-13T17:43:00+08:00",
+      "approved_at": "2026-07-13T17:43:00+08:00"
+    },
+    {
+      "approval_id": "appr_20260713_005",
+      "object_type": "production_request_review",
+      "contract_version": "1.0",
+      "source_production_request_id": "preq_20260712_005",
+      "source_experiment_id": "exp_20260708_005",
+      "product_name": "Excel 考勤记录表",
+      "product_type": "excel",
+      "production_priority": "P0",
+      "review_method": "human_assisted",
+      "decision": "approved",
+      "review_reason": "本批次 P0 优先项；selection_score 最高（69）；竞争低、痛点具体；含公式验收 checklist 完整；生产成本上限 ¥2.0；Experiment Review prepared 已通过；允许 approved，建议作为首批 Content Factory 试点（须单独授权）。",
+      "approved_by": "human",
+      "approval_checks": {
+        "asset_requirements_complete": true,
+        "quality_requirements_complete": true,
+        "experiment_review_prepared": true,
+        "category_a_cost_within_budget": true,
+        "content_factory_not_invoked": true
+      },
+      "created_at": "2026-07-13T17:43:00+08:00",
+      "approved_at": "2026-07-13T17:43:00+08:00"
+    },
+    {
+      "approval_id": "appr_auto_20260830_2fefcd",
+      "object_type": "production_request_review",
+      "contract_version": "1.0",
+      "entry": "055",
+      "source_production_request_id": "preq_auto_20260830_a4189c",
+      "source_experiment_id": "exp_auto_20260830_8cbd08",
+      "product_name": "批量关键词 EXCEL 模板",
+      "product_type": "excel",
+      "production_priority": "P0",
+      "review_method": "autonomous_bridge_055",
+      "decision": "approved",
+      "review_reason": "Entry 055 E2E bridge: autonomous selection risk=passed; system-generated approval for Content Factory execute only. Human Gate remains external publish only — not product approval.",
+      "approved_by": "system_e2e_055",
+      "approval_checks": {
+        "asset_requirements_complete": true,
+        "quality_requirements_complete": true,
+        "selection_risk_passed": true,
+        "legacy_pilot_not_reused": true
+      },
+      "created_at": "2026-08-30T16:38:33+08:00",
+      "approved_at": "2026-08-30T16:38:33+08:00"
+    }
+  ],
+  "updated_at": "2026-08-30 16:38:33"
+}

@@ -1,0 +1,271 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_EXPERIMENT_PREPARED_REVIEW_PROTOCOL.md",
+  "source_dataset": "commercial_assets/experiments/experiments_v1.json",
+  "review_method": "human_assisted",
+  "review_note": "Human Assisted ≠ Automation — 无自动 Review Engine；四类 Checklist 与 decision 为人工辅助审核，非 Runtime 执行。Review Completed ≠ Production Started — 本资产不触发 Content Factory、不修改 Experiment Object 原始定义。",
+  "created_at": "2026-07-09T17:30:00+08:00",
+  "review_count": 4,
+  "summary": {
+    "prepared": 3,
+    "rejected": 1,
+    "experiment_ids_prepared": [
+      "exp_20260708_001",
+      "exp_20260708_004",
+      "exp_20260708_005"
+    ],
+    "experiment_ids_rejected": [
+      "exp_20260708_002"
+    ]
+  },
+  "experiment_reviews": [
+    {
+      "object_type": "experiment_review",
+      "contract_version": "1.0",
+      "review_id": "erev_20260709_001",
+      "experiment_id": "exp_20260708_001",
+      "source_opportunity_id": "opp_20260708_001",
+      "source_selection_id": "sel_20260708_001",
+      "keyword": "商业计划书 PPT 模板",
+      "review_status": "prepared",
+      "business_review": {
+        "target_customer": "创业初期中小企业主、独立创业者",
+        "customer_problem": "创业初期团队缺少专业 PPT 设计能力，商业计划书排版耗时且外观不专业，影响融资或合作沟通",
+        "market_reason": "闲鱼「商业计划书 PPT」有稳定 listing 与想要数；创业类内容长期搜索需求；用户愿为省 4–8 小时与专业外观付费",
+        "expected_value": 19.9,
+        "business_pass": true
+      },
+      "product_review": {
+        "product_type": "ppt",
+        "asset_format": "pptx",
+        "production_complexity": "low",
+        "content_factory_compatibility": true,
+        "product_pass": true
+      },
+      "validation_review": {
+        "hypothesis": "创业团队愿为「节省 4–8 小时制作时间」和「接近专业外观」支付 ¥19.9 购买可编辑商业计划书 PPT 模板包",
+        "success_metrics": {
+          "production_metric": {
+            "target_production_cost_cny": 2.5,
+            "target_production_time_minutes": 30,
+            "target_quality_score": 0.80
+          },
+          "market_metric": {
+            "target_views": 50,
+            "target_clicks": 5,
+            "target_favorites": 3
+          },
+          "commercial_metric": {
+            "expected_price_cny": 19.9,
+            "target_orders": 1,
+            "target_profit_cny": 5.0
+          },
+          "system_metric": {
+            "target_data_completeness": 0.80
+          }
+        },
+        "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
+        "validation_period": "14 days",
+        "validation_pass": true
+      },
+      "commercial_review": {
+        "price_estimate": 19.9,
+        "distribution_channel": "xianyu",
+        "commercial_potential": "Category A 定价带内；竞争中等但可通过清晰章节结构与封面差异化；适合首批 PPT 类验证",
+        "commercial_pass": true
+      },
+      "decision": "prepared",
+      "decision_reason": "四类审核全部通过；商业目标、用户群、产品规格与验证指标明确；生产成本 ¥2.5 在 Category A 预算内；允许进入 Experiment prepared 队列并后续创建 Production Request。",
+      "review_method": "human_assisted",
+      "reviewer_note": "竞争中等 — 差异化依赖结构与封面质量，审核接受。",
+      "created_at": "2026-07-09T17:30:00+08:00",
+      "completed_at": "2026-07-09T17:30:00+08:00"
+    },
+    {
+      "object_type": "experiment_review",
+      "contract_version": "1.0",
+      "review_id": "erev_20260709_002",
+      "experiment_id": "exp_20260708_002",
+      "source_opportunity_id": "opp_20260708_002",
+      "source_selection_id": "sel_20260708_002",
+      "keyword": "Excel 家庭记账表",
+      "review_status": "rejected",
+      "business_review": {
+        "target_customer": "有基础 Excel 使用习惯的家庭用户、年轻上班族",
+        "customer_problem": "普通家庭缺乏简单易用记账工具，复杂 App 学习成本高，希望 Excel 一键记录收支",
+        "market_reason": "「家庭记账」「Excel 模板」有长期搜索量，但免费模板与开源方案供给极大",
+        "expected_value": 9.9,
+        "business_pass": true
+      },
+      "product_review": {
+        "product_type": "excel",
+        "asset_format": "xlsx",
+        "production_complexity": "low",
+        "content_factory_compatibility": true,
+        "product_pass": true
+      },
+      "validation_review": {
+        "hypothesis": "用户愿为「开箱即用」家庭月度收支 Excel 模板支付 ¥9.9",
+        "success_metrics": {
+          "production_metric": {
+            "target_production_cost_cny": 1.5,
+            "target_production_time_minutes": 20,
+            "target_quality_score": 0.82
+          },
+          "market_metric": {
+            "target_views": 50,
+            "target_clicks": 5,
+            "target_favorites": 2
+          },
+          "commercial_metric": {
+            "expected_price_cny": 9.9,
+            "target_orders": 1,
+            "target_profit_cny": 3.0
+          },
+          "system_metric": {
+            "target_data_completeness": 0.80
+          }
+        },
+        "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
+        "validation_period": "14 days",
+        "validation_pass": true
+      },
+      "commercial_review": {
+        "price_estimate": 9.9,
+        "distribution_channel": "taobao",
+        "commercial_potential": "低价带决策快，但免费优质模板极多；Selection feedback_value 偏低（0.44）；¥9.9 付费转化证据弱于同批次考勤表与 PPT 项",
+        "commercial_pass": false
+      },
+      "decision": "rejected",
+      "decision_reason": "商业运营维度未通过：免费模板供给充足、产品概念差异化不足、低价带付费意愿证据弱。虽生产成本极低，但首批 Category A 配额宜优先考勤表与 PPT 验证项；建议细化「带自动分类+年度对比+精美图表」后再申请复审。",
+      "review_method": "human_assisted",
+      "reviewer_note": "非否定需求存在，而是首批实验队列筛选 — 避免与免费品直接对打。",
+      "created_at": "2026-07-09T17:30:00+08:00",
+      "completed_at": "2026-07-09T17:30:00+08:00"
+    },
+    {
+      "object_type": "experiment_review",
+      "contract_version": "1.0",
+      "review_id": "erev_20260709_004",
+      "experiment_id": "exp_20260708_004",
+      "source_opportunity_id": "opp_20260708_004",
+      "source_selection_id": "sel_20260708_004",
+      "keyword": "工作总结 PPT 模板",
+      "review_status": "prepared",
+      "business_review": {
+        "target_customer": "企业白领、基层管理者、行政人员",
+        "customer_problem": "每季度/年终需提交工作总结 PPT，临时制作压力大，缺乏现成结构清晰模板",
+        "market_reason": "Q4 与季度末「工作总结 PPT」搜索量周期性上升；办公 PPT 虚拟商品有稳定曝光；省时付费假设可验证",
+        "expected_value": 19.9,
+        "business_pass": true
+      },
+      "product_review": {
+        "product_type": "ppt",
+        "asset_format": "pptx",
+        "production_complexity": "low",
+        "content_factory_compatibility": true,
+        "product_pass": true
+      },
+      "validation_review": {
+        "hypothesis": "职场用户愿为「现成结构 + 省时间」支付 ¥19.9 购买季度/年度工作总结 pptx 模板",
+        "success_metrics": {
+          "production_metric": {
+            "target_production_cost_cny": 2.5,
+            "target_production_time_minutes": 25,
+            "target_quality_score": 0.80
+          },
+          "market_metric": {
+            "target_views": 50,
+            "target_clicks": 5,
+            "target_favorites": 3
+          },
+          "commercial_metric": {
+            "expected_price_cny": 19.9,
+            "target_orders": 1,
+            "target_profit_cny": 5.0
+          },
+          "system_metric": {
+            "target_data_completeness": 0.80
+          }
+        },
+        "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
+        "validation_period": "14 days",
+        "validation_pass": true
+      },
+      "commercial_review": {
+        "price_estimate": 19.9,
+        "distribution_channel": "xianyu",
+        "commercial_potential": "周期性需求可预测；与商业计划书 PPT 形成办公场景双验证；竞争中等可按岗位占位微调",
+        "commercial_pass": true
+      },
+      "decision": "prepared",
+      "decision_reason": "四类审核全部通过；周期性汇报场景假设清晰；验证指标完整；生产成本可接受。允许进入 prepared 队列。注意观察期宜覆盖季度末窗口。",
+      "review_method": "human_assisted",
+      "reviewer_note": "与 exp_001 同定价带，便于 Category A 横向对比。",
+      "created_at": "2026-07-09T17:30:00+08:00",
+      "completed_at": "2026-07-09T17:30:00+08:00"
+    },
+    {
+      "object_type": "experiment_review",
+      "contract_version": "1.0",
+      "review_id": "erev_20260709_005",
+      "experiment_id": "exp_20260708_005",
+      "source_opportunity_id": "opp_20260708_005",
+      "source_selection_id": "sel_20260708_005",
+      "keyword": "Excel 考勤记录表",
+      "review_status": "prepared",
+      "business_review": {
+        "target_customer": "小微商户管理员、培训班负责人、10 人以内小团队",
+        "customer_problem": "小团队需要简单考勤表，不会设计 Excel 公式统计出勤、迟到早退",
+        "market_reason": "「考勤表 Excel 模板」长尾需求稳定；竞争相对低；痛点具体且可交付",
+        "expected_value": 12.9,
+        "business_pass": true
+      },
+      "product_review": {
+        "product_type": "excel",
+        "asset_format": "xlsx",
+        "production_complexity": "low",
+        "content_factory_compatibility": true,
+        "product_pass": true
+      },
+      "validation_review": {
+        "hypothesis": "小团队管理员愿为带自动统计与月度汇总的考勤 Excel 模板支付 ¥12.9",
+        "success_metrics": {
+          "production_metric": {
+            "target_production_cost_cny": 1.5,
+            "target_production_time_minutes": 25,
+            "target_quality_score": 0.85
+          },
+          "market_metric": {
+            "target_views": 50,
+            "target_clicks": 5,
+            "target_favorites": 2
+          },
+          "commercial_metric": {
+            "expected_price_cny": 12.9,
+            "target_orders": 1,
+            "target_profit_cny": 4.0
+          },
+          "system_metric": {
+            "target_data_completeness": 0.80
+          }
+        },
+        "failure_condition": "14 天观察期 views < 20 且 clicks = 0，或观察期满 orders = 0",
+        "validation_period": "14 days",
+        "validation_pass": true
+      },
+      "commercial_review": {
+        "price_estimate": 12.9,
+        "distribution_channel": "taobao",
+        "commercial_potential": "本批次 selection_score 最高（69）；竞争低风险 ease=0.72；建议 P0 优先进入 Production Request 队列",
+        "commercial_pass": true
+      },
+      "decision": "prepared",
+      "decision_reason": "四类审核全部通过；商业目标与验证指标最清晰；竞争低、痛点具体；生产成本 ¥1.5 为批次最低档之一。本批次首选 prepared 候选，建议 production_priority P0。",
+      "review_method": "human_assisted",
+      "reviewer_note": "首批 Category A 优先实验项。",
+      "created_at": "2026-07-09T17:30:00+08:00",
+      "completed_at": "2026-07-09T17:30:00+08:00"
+    }
+  ]
+}

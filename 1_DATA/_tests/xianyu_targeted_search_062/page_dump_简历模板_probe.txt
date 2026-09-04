@@ -1,0 +1,8 @@
+file=page_dump_简历模板.html
+input=简历模板
+title=简历模板_闲鱼
+empty=True
+empty_feed=True
+feeds=40
+len=397376
+hints=[]

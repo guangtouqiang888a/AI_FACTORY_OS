@@ -1,0 +1,23 @@
+{
+  "search_results_count": 0,
+  "status_distribution": {
+    "VISIBLE_ON_CARD": 0,
+    "MISSING_ON_CARD": 0,
+    "AVAILABLE_ON_DETAIL": 0,
+    "UNAVAILABLE": 0,
+    "UNKNOWN": 0
+  },
+  "card_visible_rate": 0.0,
+  "detail_available_rate": 0.0,
+  "total_observable_rate": 0.0,
+  "still_null_count": 0,
+  "still_null_rate": 0.0,
+  "null_vs_zero_rule": "NULL means field absent; 0 means page showed 0人想要",
+  "login_causation": {
+    "login_used": false,
+    "conclusion": "NOT_PROVEN",
+    "note": "Anonymous browser only. Cannot conclude missing want_count is caused by not being logged in."
+  },
+  "valid_without_want_count": true,
+  "note": "missing ≠ zero; unavailable ≠ proven login-related"
+}

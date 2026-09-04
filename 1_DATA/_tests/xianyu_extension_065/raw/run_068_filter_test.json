@@ -1,0 +1,69 @@
+{
+  "acquisition_run_id": "run_068_filter_test",
+  "raw_record_id": "raw_d58505eb9ce2",
+  "source": "xianyu",
+  "timestamp": "2026-09-03T17:47:55+08:00",
+  "payload": {
+    "contract_version": "064.1.0",
+    "message_type": "MARKET_RECORD_BATCH",
+    "run_id": "run_068_filter_test",
+    "session_id": "sess_068_test",
+    "source": "xianyu",
+    "platform": "xianyu",
+    "query": "手机壳",
+    "result_origin": "SEARCH_RESULT",
+    "page_state": "SEARCH_RESULT",
+    "status": "SUCCESS",
+    "records": [
+      {
+        "source": "xianyu",
+        "platform": "xianyu",
+        "source_item_id": "880068001",
+        "source_url": "https://www.goofish.com/item?id=880068001",
+        "title": "MATCH商品",
+        "price": 9.9,
+        "currency": "CNY",
+        "want_count": 61,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "result_origin": "SEARCH_RESULT",
+        "observed_at": "2026-09-03T12:00:00+08:00",
+        "query": "手机壳",
+        "session_id": "sess_068_test",
+        "collector_version": "065.1.0"
+      },
+      {
+        "source": "xianyu",
+        "platform": "xianyu",
+        "source_item_id": "880068002",
+        "source_url": "https://www.goofish.com/item?id=880068002",
+        "title": "BELOW商品",
+        "price": 5.0,
+        "currency": "CNY",
+        "want_count": 10,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "result_origin": "SEARCH_RESULT",
+        "observed_at": "2026-09-03T12:00:01+08:00",
+        "query": "手机壳",
+        "session_id": "sess_068_test",
+        "collector_version": "065.1.0"
+      },
+      {
+        "source": "xianyu",
+        "platform": "xianyu",
+        "source_item_id": "880068003",
+        "source_url": "https://www.goofish.com/item?id=880068003",
+        "title": "NULL want商品",
+        "price": 8.0,
+        "currency": "CNY",
+        "want_count": null,
+        "want_count_status": "MISSING_ON_CARD",
+        "result_origin": "SEARCH_RESULT",
+        "observed_at": "2026-09-03T12:00:02+08:00",
+        "query": "手机壳",
+        "session_id": "sess_068_test",
+        "collector_version": "065.1.0"
+      }
+    ]
+  },
+  "collector_version": "065.1.0"
+}

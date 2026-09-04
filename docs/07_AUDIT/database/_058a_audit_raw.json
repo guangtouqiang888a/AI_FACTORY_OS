@@ -1,0 +1,2132 @@
+{
+  "db_path": "D:\\AI_FACTORY_OS\\data\\ai_factory.db",
+  "exists": true,
+  "size": 208896,
+  "mtime": "2026-08-30T16:38:33.863992",
+  "tables": {
+    "audit_log": {
+      "row_count": 1,
+      "columns": [
+        "id",
+        "audit_type",
+        "target",
+        "passed",
+        "score",
+        "issues",
+        "suggestions",
+        "created_at"
+      ],
+      "earliest": "2026-07-04 13:29:19",
+      "latest": "2026-07-04 13:29:19",
+      "timestamp_cols_checked": [
+        "created_at"
+      ]
+    },
+    "collection_log": {
+      "row_count": 29,
+      "columns": [
+        "id",
+        "task_date",
+        "platform_id",
+        "keyword",
+        "total_items",
+        "valid_items",
+        "status",
+        "started_at",
+        "finished_at"
+      ],
+      "earliest": 1,
+      "latest": "done",
+      "timestamp_cols_checked": [
+        "task_date",
+        "platform_id",
+        "status",
+        "started_at",
+        "finished_at"
+      ]
+    },
+    "keywords": {
+      "row_count": 6,
+      "columns": [
+        "id",
+        "keyword",
+        "category",
+        "first_seen_date",
+        "last_seen_date",
+        "is_sensitive",
+        "is_low_efficiency",
+        "last_search_date"
+      ],
+      "earliest": "2026-07-04",
+      "latest": "test",
+      "timestamp_cols_checked": [
+        "category",
+        "first_seen_date",
+        "last_seen_date",
+        "last_search_date"
+      ]
+    },
+    "market_events": {
+      "row_count": 0,
+      "columns": [
+        "id",
+        "event_id",
+        "event_type",
+        "source",
+        "platform",
+        "event_timestamp",
+        "product_id",
+        "product_asset_id",
+        "product_type",
+        "experiment_id",
+        "listing_id",
+        "value",
+        "currency",
+        "data_origin",
+        "verification_status",
+        "verified_source",
+        "raw_reference",
+        "dedupe_key",
+        "linkage_status",
+        "linkage_notes",
+        "raw_payload",
+        "ingested_at",
+        "learning_routed",
+        "learning_result"
+      ],
+      "earliest": null,
+      "latest": null,
+      "timestamp_cols_checked": [
+        "platform",
+        "event_timestamp",
+        "data_origin",
+        "verification_status",
+        "linkage_status",
+        "ingested_at"
+      ],
+      "preview": []
+    },
+    "market_signals": {
+      "row_count": 30,
+      "columns": [
+        "id",
+        "signal_id",
+        "signal_type",
+        "keyword",
+        "platform",
+        "source",
+        "value",
+        "unit",
+        "evidence_refs",
+        "observation_timestamp",
+        "computed_at",
+        "product_type",
+        "notes"
+      ],
+      "earliest": "2026-07-04T00:00:00",
+      "latest": "xianyu",
+      "timestamp_cols_checked": [
+        "platform",
+        "observation_timestamp",
+        "computed_at"
+      ],
+      "preview": [
+        {
+          "id": 1,
+          "signal_id": "sig_1ef03dadbf38",
+          "signal_type": "demand_signal",
+          "keyword": "批量关键词",
+          "platform": "xianyu",
+          "source": "marketplace",
+          "value": 1200.0,
+          "unit": "want_count_sum",
+          "evidence_refs": "{\"product_ids\": [\"2\", \"3\", \"7\", \"8\", \"12\", \"13\"], \"listing_count\": 6, \"collect_dates\": [\"2026-07-04\"]}",
+          "observation_timestamp": "2026-07-04T00:00:00",
+          "computed_at": "2026-08-29 16:57:18",
+          "product_type": "digital_template",
+          "notes": ""
+        },
+        {
+          "id": 2,
+          "signal_id": "sig_086ab6aef933",
+          "signal_type": "engagement_signal",
+          "keyword": "批量关键词",
+          "platform": "xianyu",
+          "source": "marketplace",
+          "value": 0.2,
+          "unit": "want_per_view",
+          "evidence_refs": "{\"product_ids\": [\"2\", \"3\", \"7\", \"8\", \"12\", \"13\"], \"listing_count\": 6, \"collect_dates\": [\"2026-07-04\"]}",
+          "observation_timestamp": "2026-07-04T00:00:00",
+          "computed_at": "2026-08-29 16:57:18",
+          "product_type": "digital_template",
+          "notes": ""
+        },
+        {
+          "id": 3,
+          "signal_id": "sig_b4126f1c9283",
+          "signal_type": "competition_signal",
+          "keyword": "批量关键词",
+          "platform": "xianyu",
+          "source": "marketplace",
+          "value": 6.0,
+          "unit": "listing_count",
+          "evidence_refs": "{\"product_ids\": [\"2\", \"3\", \"7\", \"8\", \"12\", \"13\"], \"listing_count\": 6, \"collect_dates\": [\"2026-07-04\"]}",
+          "observation_timestamp": "2026-07-04T00:00:00",
+          "computed_at": "2026-08-29 16:57:18",
+          "product_type": "digital_template",
+          "notes": ""
+        }
+      ]
+    },
+    "platforms": {
+      "row_count": 2,
+      "columns": [
+        "id",
+        "name",
+        "base_url",
+        "status"
+      ],
+      "earliest": "active",
+      "latest": "active",
+      "timestamp_cols_checked": [
+        "status"
+      ]
+    },
+    "products": {
+      "row_count": 61,
+      "columns": [
+        "id",
+        "platform_id",
+        "keyword",
+        "title",
+        "price",
+        "want_count",
+        "view_count",
+        "comment_count",
+        "share_count",
+        "seller",
+        "tags",
+        "publish_time",
+        "source_url",
+        "raw_json",
+        "collect_date"
+      ],
+      "earliest": 1,
+      "latest": "2026-07-07",
+      "timestamp_cols_checked": [
+        "platform_id",
+        "publish_time",
+        "collect_date"
+      ]
+    },
+    "publish_evidence": {
+      "row_count": 0,
+      "columns": [
+        "id",
+        "evidence_id",
+        "queue_id",
+        "platform",
+        "listing_reference",
+        "published_at",
+        "source",
+        "verification_status",
+        "human_operator",
+        "notes",
+        "dedupe_key",
+        "created_at"
+      ],
+      "earliest": null,
+      "latest": null,
+      "timestamp_cols_checked": [
+        "platform",
+        "published_at",
+        "verification_status",
+        "human_operator",
+        "created_at"
+      ],
+      "preview": []
+    },
+    "publish_queue": {
+      "row_count": 2,
+      "columns": [
+        "id",
+        "publish_queue_id",
+        "product_id",
+        "product_asset_id",
+        "product_type",
+        "experiment_id",
+        "production_request_id",
+        "platform",
+        "listing_title",
+        "price",
+        "currency",
+        "risk_status",
+        "quality_status",
+        "commercial_status",
+        "commercial_score",
+        "queue_status",
+        "blockers",
+        "package_path",
+        "notes",
+        "observation_eligible",
+        "created_at",
+        "updated_at"
+      ],
+      "earliest": "2026-08-29 16:34:13",
+      "latest": "xianyu",
+      "timestamp_cols_checked": [
+        "platform",
+        "risk_status",
+        "quality_status",
+        "commercial_status",
+        "queue_status",
+        "package_path",
+        "observation_eligible",
+        "created_at",
+        "updated_at"
+      ],
+      "preview": [
+        {
+          "id": 1,
+          "publish_queue_id": "pq_pilot_preq_20260712_005",
+          "product_id": "pilot_excel_attendance",
+          "product_asset_id": "8523329941d4",
+          "product_type": "document",
+          "experiment_id": "exp_20260708_005",
+          "production_request_id": "preq_20260712_005",
+          "platform": "taobao",
+          "listing_title": "【Excel模板】小团队考勤记录表 — 出勤统计/月度汇总（可编辑）",
+          "price": 12.9,
+          "currency": "CNY",
+          "risk_status": "passed",
+          "quality_status": "passed",
+          "commercial_status": "acceptable",
+          "commercial_score": 80.0,
+          "queue_status": "AWAITING_HUMAN_ACTION",
+          "blockers": "[]",
+          "package_path": "D:\\AI_FACTORY_OS\\commercial_assets\\pilot_outputs\\preq_20260712_005\\artifacts\\package\\publish_package",
+          "notes": "Pilot Entry 052: AWAITING_HUMAN_ACTION. Observation remains NOT_STARTED until verified Publish Evidence and a future Observation Entry. Price 12.9 = AI recommendation only.",
+          "observation_eligible": 0,
+          "created_at": "2026-08-29 16:34:13",
+          "updated_at": "2026-08-29 16:34:13"
+        },
+        {
+          "id": 2,
+          "publish_queue_id": "pq_auto_f2f8bab97df8",
+          "product_id": "f2f8bab97df8",
+          "product_asset_id": "f2f8bab97df8",
+          "product_type": "digital_template",
+          "experiment_id": "exp_auto_20260830_8cbd08",
+          "production_request_id": "preq_auto_20260830_a4189c",
+          "platform": "xianyu",
+          "listing_title": "【精品】【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+          "price": 99.9,
+          "currency": "CNY",
+          "risk_status": "passed",
+          "quality_status": "passed",
+          "commercial_status": "commercial_ready",
+          "commercial_score": 88.75,
+          "queue_status": "AWAITING_HUMAN_ACTION",
+          "blockers": "[]",
+          "package_path": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\package\\publish_package",
+          "notes": "Entry 055 E2E — AWAITING_HUMAN_ACTION. No auto external publish. Production success ≠ Commercial success.",
+          "observation_eligible": 0,
+          "created_at": "2026-08-30 16:38:33",
+          "updated_at": "2026-08-30 16:38:33"
+        }
+      ]
+    },
+    "scores": {
+      "row_count": 519,
+      "columns": [
+        "id",
+        "product_id",
+        "hot_score",
+        "trend_score",
+        "comp_score",
+        "profit_score",
+        "difficulty_score",
+        "total_score",
+        "scored_date"
+      ],
+      "earliest": "2026-07-05",
+      "latest": "2026-07-07",
+      "timestamp_cols_checked": [
+        "scored_date"
+      ]
+    },
+    "selection_results": {
+      "row_count": 5,
+      "columns": [
+        "id",
+        "selection_id",
+        "candidate_id",
+        "rank",
+        "score",
+        "risk_status",
+        "selected",
+        "selection_reason",
+        "evidence_refs",
+        "discovery_method",
+        "created_at",
+        "payload"
+      ],
+      "earliest": "2026-08-29 16:57:18",
+      "latest": "passed",
+      "timestamp_cols_checked": [
+        "candidate_id",
+        "risk_status",
+        "created_at"
+      ],
+      "preview": [
+        {
+          "id": 1,
+          "selection_id": "sel_71115687877d",
+          "candidate_id": "aoc_90151d3384be",
+          "rank": 1,
+          "score": 69.83,
+          "risk_status": "passed",
+          "selected": 1,
+          "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6",
+          "evidence_refs": "[{\"signal_id\": \"sig_1ef03dadbf38\", \"signal_type\": \"demand_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_086ab6aef933\", \"signal_type\": \"engagement_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_b4126f1c9283\", \"signal_type\": \"competition_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_da83ba3eeae5\", \"signal_type\": \"price_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_2417770c3464\", \"signal_type\": \"trend_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_07295bc8fb0a\", \"signal_type\": \"growth_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"product_id\": 2, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 3, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 7, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 8, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 12, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 13, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}]",
+          "discovery_method": "market_signal",
+          "created_at": "2026-08-29 16:57:18",
+          "payload": "{\"selection_id\": \"sel_71115687877d\", \"candidate_id\": \"aoc_90151d3384be\", \"rank\": 1, \"score\": 69.83, \"risk_status\": \"passed\", \"selected\": true, \"selection_reason\": \"rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6\", \"evidence_refs\": [{\"signal_id\": \"sig_1ef03dadbf38\", \"signal_type\": \"demand_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_086ab6aef933\", \"signal_type\": \"engagement_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_b4126f1c9283\", \"signal_type\": \"competition_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_da83ba3eeae5\", \"signal_type\": \"price_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_2417770c3464\", \"signal_type\": \"trend_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_07295bc8fb0a\", \"signal_type\": \"growth_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"product_id\": 2, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 3, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 7, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 8, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 12, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 13, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}], \"discovery_method\": \"market_signal\", \"keyword\": \"批量关键词\", \"product_type\": \"digital_template\", \"platform\": \"xianyu\", \"source\": \"marketplace\", \"created_at\": \"2026-08-29 16:57:18\", \"next_step\": \"experiment_candidate\", \"auto_production_forbidden\": true}"
+        },
+        {
+          "id": 2,
+          "selection_id": "sel_22118ce73950",
+          "candidate_id": "aoc_cb78ca506dcd",
+          "rank": 2,
+          "score": 69.17,
+          "risk_status": "passed",
+          "selected": 1,
+          "selection_reason": "rank=2; total_score=69.17; discovery_method=market_signal; keyword=虚拟资料; listings=46",
+          "evidence_refs": "[{\"signal_id\": \"sig_c34dd30d238f\", \"signal_type\": \"demand_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_c82f9ef7645d\", \"signal_type\": \"engagement_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_0370e6534b2e\", \"signal_type\": \"competition_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_eb67d1e71076\", \"signal_type\": \"price_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_48ba1c0f55ff\", \"signal_type\": \"trend_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_4c9a2b53018c\", \"signal_type\": \"growth_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"product_id\": 4, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 5, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 9, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 10, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 14, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 15, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 16, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 17, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 20, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 21, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 22, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 23, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 24, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 25, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 26, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 27, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 28, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 29, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 30, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 31, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}]",
+          "discovery_method": "market_signal",
+          "created_at": "2026-08-29 16:57:18",
+          "payload": "{\"selection_id\": \"sel_22118ce73950\", \"candidate_id\": \"aoc_cb78ca506dcd\", \"rank\": 2, \"score\": 69.17, \"risk_status\": \"passed\", \"selected\": true, \"selection_reason\": \"rank=2; total_score=69.17; discovery_method=market_signal; keyword=虚拟资料; listings=46\", \"evidence_refs\": [{\"signal_id\": \"sig_c34dd30d238f\", \"signal_type\": \"demand_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_c82f9ef7645d\", \"signal_type\": \"engagement_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_0370e6534b2e\", \"signal_type\": \"competition_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_eb67d1e71076\", \"signal_type\": \"price_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_48ba1c0f55ff\", \"signal_type\": \"trend_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"signal_id\": \"sig_4c9a2b53018c\", \"signal_type\": \"growth_signal\", \"observation_timestamp\": \"2026-07-07T00:00:00\"}, {\"product_id\": 4, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 5, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 9, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 10, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 14, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 15, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 16, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 17, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 20, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 21, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 22, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 23, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-05\"}, {\"product_id\": 24, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 25, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 26, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 27, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 28, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 29, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 30, \"source_url\": \"https://goofish.com/item/sample001\", \"collect_date\": \"2026-07-06\"}, {\"product_id\": 31, \"source_url\": \"https://goofish.com/item/sample002\", \"collect_date\": \"2026-07-06\"}], \"discovery_method\": \"market_signal\", \"keyword\": \"虚拟资料\", \"product_type\": \"digital_template\", \"platform\": \"xianyu\", \"source\": \"marketplace\", \"created_at\": \"2026-08-29 16:57:18\", \"next_step\": \"experiment_candidate\", \"auto_production_forbidden\": true}"
+        },
+        {
+          "id": 3,
+          "selection_id": "sel_a57e1deed490",
+          "candidate_id": "aoc_6413c675c971",
+          "rank": 3,
+          "score": 67.0,
+          "risk_status": "passed",
+          "selected": 1,
+          "selection_reason": "rank=3; total_score=67.0; discovery_method=market_signal; keyword=测试关键词_db; listings=3",
+          "evidence_refs": "[{\"signal_id\": \"sig_b9e6b8b0e966\", \"signal_type\": \"demand_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_ecfd36133f9c\", \"signal_type\": \"engagement_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_fd23bc0ab43f\", \"signal_type\": \"competition_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_f32e85fadc8b\", \"signal_type\": \"price_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_61f2b9481e97\", \"signal_type\": \"trend_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_d14a74254a97\", \"signal_type\": \"growth_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"product_id\": 1, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 6, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 11, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}]",
+          "discovery_method": "market_signal",
+          "created_at": "2026-08-29 16:57:18",
+          "payload": "{\"selection_id\": \"sel_a57e1deed490\", \"candidate_id\": \"aoc_6413c675c971\", \"rank\": 3, \"score\": 67.0, \"risk_status\": \"passed\", \"selected\": true, \"selection_reason\": \"rank=3; total_score=67.0; discovery_method=market_signal; keyword=测试关键词_db; listings=3\", \"evidence_refs\": [{\"signal_id\": \"sig_b9e6b8b0e966\", \"signal_type\": \"demand_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_ecfd36133f9c\", \"signal_type\": \"engagement_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_fd23bc0ab43f\", \"signal_type\": \"competition_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_f32e85fadc8b\", \"signal_type\": \"price_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_61f2b9481e97\", \"signal_type\": \"trend_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"signal_id\": \"sig_d14a74254a97\", \"signal_type\": \"growth_signal\", \"observation_timestamp\": \"2026-07-04T00:00:00\"}, {\"product_id\": 1, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 6, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}, {\"product_id\": 11, \"source_url\": \"https://goofish.com/item/test\", \"collect_date\": \"2026-07-04\"}], \"discovery_method\": \"market_signal\", \"keyword\": \"测试关键词_db\", \"product_type\": \"digital_template\", \"platform\": \"xianyu\", \"source\": \"marketplace\", \"created_at\": \"2026-08-29 16:57:18\", \"next_step\": \"experiment_candidate\", \"auto_production_forbidden\": true}"
+        }
+      ]
+    },
+    "trends": {
+      "row_count": 0,
+      "columns": [
+        "id",
+        "snapshot_date",
+        "platform_id",
+        "keyword",
+        "total_products",
+        "avg_price",
+        "avg_want",
+        "growth_rate"
+      ],
+      "earliest": null,
+      "latest": null,
+      "timestamp_cols_checked": [
+        "snapshot_date",
+        "platform_id",
+        "growth_rate"
+      ]
+    }
+  },
+  "products_sample": [
+    {
+      "id": 1,
+      "platform_id": 1,
+      "keyword": "测试关键词_db",
+      "title": "测试商品标题",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 2,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品0",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 3,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品1",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 4,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 5,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 6,
+      "platform_id": 1,
+      "keyword": "测试关键词_db",
+      "title": "测试商品标题",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 7,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品0",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 8,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品1",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 9,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 10,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 11,
+      "platform_id": 1,
+      "keyword": "测试关键词_db",
+      "title": "测试商品标题",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 12,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品0",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 13,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品1",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "source_url": "https://goofish.com/item/test",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 14,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 15,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-04",
+      "seller": null,
+      "tags": null
+    },
+    {
+      "id": 16,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 17,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 18,
+      "platform_id": 1,
+      "keyword": "期末复习重点",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 19,
+      "platform_id": 1,
+      "keyword": "期末复习重点",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 20,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 21,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 22,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 23,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-05",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 24,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 25,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 26,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 27,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 28,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 29,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 30,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 31,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 32,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 33,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 34,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 35,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 36,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 37,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 38,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 39,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 40,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 41,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 42,
+      "platform_id": 1,
+      "keyword": "virtual",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 43,
+      "platform_id": 1,
+      "keyword": "virtual",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 44,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 45,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 46,
+      "platform_id": 1,
+      "keyword": "test",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 47,
+      "platform_id": 1,
+      "keyword": "test",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-06",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 48,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 49,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 50,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 51,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 52,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 53,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 54,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 55,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 56,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 57,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 58,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 59,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 60,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "虚拟资料合集",
+      "price": 29.9,
+      "want_count": 320,
+      "view_count": 1500,
+      "source_url": "https://goofish.com/item/sample001",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    },
+    {
+      "id": 61,
+      "platform_id": 1,
+      "keyword": "虚拟资料",
+      "title": "PPT模板打包",
+      "price": 19.9,
+      "want_count": 180,
+      "view_count": 800,
+      "source_url": "https://goofish.com/item/sample002",
+      "collect_date": "2026-07-07",
+      "seller": "",
+      "tags": ""
+    }
+  ],
+  "products_keyword_counts": {
+    "测试关键词_db": 3,
+    "批量关键词": 6,
+    "虚拟资料": 46,
+    "期末复习重点": 2,
+    "virtual": 2,
+    "test": 2
+  },
+  "products_price_dist": {
+    "99.9": 9,
+    "29.9": 26,
+    "19.9": 26
+  },
+  "titles_flagged": [
+    {
+      "id": 1,
+      "title": "测试商品标题",
+      "keyword": "测试关键词_db",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 2,
+      "title": "批量商品0",
+      "keyword": "批量关键词",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 3,
+      "title": "批量商品1",
+      "keyword": "批量关键词",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 4,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 5,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 6,
+      "title": "测试商品标题",
+      "keyword": "测试关键词_db",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 7,
+      "title": "批量商品0",
+      "keyword": "批量关键词",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 8,
+      "title": "批量商品1",
+      "keyword": "批量关键词",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 9,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 10,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 11,
+      "title": "测试商品标题",
+      "keyword": "测试关键词_db",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 12,
+      "title": "批量商品0",
+      "keyword": "批量关键词",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 13,
+      "title": "批量商品1",
+      "keyword": "批量关键词",
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 14,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 15,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 16,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 17,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 18,
+      "title": "虚拟资料合集",
+      "keyword": "期末复习重点",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 19,
+      "title": "PPT模板打包",
+      "keyword": "期末复习重点",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 20,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 21,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 22,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 23,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 24,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 25,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 26,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 27,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 28,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 29,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 30,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 31,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 32,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 33,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 34,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 35,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 36,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 37,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 38,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 39,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 40,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 41,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 42,
+      "title": "虚拟资料合集",
+      "keyword": "virtual",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 43,
+      "title": "PPT模板打包",
+      "keyword": "virtual",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 44,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 45,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 46,
+      "title": "虚拟资料合集",
+      "keyword": "test",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 47,
+      "title": "PPT模板打包",
+      "keyword": "test",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 48,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 49,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 50,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 51,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 52,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 53,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 54,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 55,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 56,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 57,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 58,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 59,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 60,
+      "title": "虚拟资料合集",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 61,
+      "title": "PPT模板打包",
+      "keyword": "虚拟资料",
+      "url": "https://goofish.com/item/sample002"
+    }
+  ],
+  "urls_sample": [
+    {
+      "id": 1,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 2,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 3,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 4,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 5,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 6,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 7,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 8,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 9,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 10,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 11,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 12,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 13,
+      "url": "https://goofish.com/item/test"
+    },
+    {
+      "id": 14,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 15,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 16,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 17,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 18,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 19,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 20,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 21,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 22,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 23,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 24,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 25,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 26,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 27,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 28,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 29,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 30,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 31,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 32,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 33,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 34,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 35,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 36,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 37,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 38,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 39,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 40,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 41,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 42,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 43,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 44,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 45,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 46,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 47,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 48,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 49,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 50,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 51,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 52,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 53,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 54,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 55,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 56,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 57,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 58,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 59,
+      "url": "https://goofish.com/item/sample002"
+    },
+    {
+      "id": 60,
+      "url": "https://goofish.com/item/sample001"
+    },
+    {
+      "id": 61,
+      "url": "https://goofish.com/item/sample002"
+    }
+  ],
+  "raw_files": [
+    {
+      "path": "data\\raw\\xianyu\\2026-07-04\\虚拟资料_sample.xlsx",
+      "size": 5048,
+      "mtime": "2026-07-04T11:42:41.666373",
+      "name": "虚拟资料_sample.xlsx",
+      "workbook": {
+        "sheets": [
+          {
+            "sheet": "Sheet1",
+            "nrows": 3,
+            "ncols": 5,
+            "header": [
+              "标题",
+              "价格",
+              "想要数",
+              "浏览量",
+              "链接"
+            ],
+            "sample_rows": [
+              [
+                "虚拟资料合集",
+                "29.9",
+                "320",
+                "1500",
+                "https://goofish.com/item/sample001"
+              ],
+              [
+                "PPT模板打包",
+                "19.9",
+                "180",
+                "800",
+                "https://goofish.com/item/sample002"
+              ]
+            ]
+          }
+        ],
+        "creator": "openpyxl"
+      }
+    }
+  ],
+  "products_vs_raw": {},
+  "products_exact_count": 61,
+  "unique_source_urls": [
+    "https://goofish.com/item/sample001",
+    "https://goofish.com/item/sample002",
+    "https://goofish.com/item/test"
+  ],
+  "unique_source_url_count": 3,
+  "price_99_9_rows": [
+    {
+      "id": 1,
+      "platform_id": 1,
+      "keyword": "测试关键词_db",
+      "title": "测试商品标题",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 2,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品0",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 3,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品1",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 6,
+      "platform_id": 1,
+      "keyword": "测试关键词_db",
+      "title": "测试商品标题",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 7,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品0",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 8,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品1",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 11,
+      "platform_id": 1,
+      "keyword": "测试关键词_db",
+      "title": "测试商品标题",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 12,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品0",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    },
+    {
+      "id": 13,
+      "platform_id": 1,
+      "keyword": "批量关键词",
+      "title": "批量商品1",
+      "price": 99.9,
+      "want_count": 200,
+      "view_count": 1000,
+      "comment_count": 0,
+      "share_count": 0,
+      "seller": null,
+      "tags": null,
+      "publish_time": null,
+      "source_url": "https://goofish.com/item/test",
+      "raw_json": "{\"source\": \"unit_test\"}",
+      "collect_date": "2026-07-04"
+    }
+  ],
+  "price_99_9_count": 9,
+  "scores_sample": [
+    {
+      "id": 1,
+      "product_id": 17,
+      "hot_score": 100.0,
+      "trend_score": 95.0,
+      "comp_score": 64.0,
+      "profit_score": 100.0,
+      "difficulty_score": 10.0,
+      "total_score": 82.91,
+      "scored_date": "2026-07-05"
+    },
+    {
+      "id": 2,
+      "product_id": 16,
+      "hot_score": 100.0,
+      "trend_score": 95.0,
+      "comp_score": 36.0,
+      "profit_score": 100.0,
+      "difficulty_score": 10.0,
+      "total_score": 77.59,
+      "scored_date": "2026-07-05"
+    },
+    {
+      "id": 3,
+      "product_id": 15,
+      "hot_score": 100.0,
+      "trend_score": 95.0,
+      "comp_score": 64.0,
+      "profit_score": 100.0,
+      "difficulty_score": 10.0,
+      "total_score": 82.91,
+      "scored_date": "2026-07-05"
+    },
+    {
+      "id": 4,
+      "product_id": 14,
+      "hot_score": 100.0,
+      "trend_score": 95.0,
+      "comp_score": 36.0,
+      "profit_score": 100.0,
+      "difficulty_score": 10.0,
+      "total_score": 77.59,
+      "scored_date": "2026-07-05"
+    },
+    {
+      "id": 5,
+      "product_id": 10,
+      "hot_score": 100.0,
+      "trend_score": 95.0,
+      "comp_score": 64.0,
+      "profit_score": 100.0,
+      "difficulty_score": 10.0,
+      "total_score": 82.91,
+      "scored_date": "2026-07-05"
+    }
+  ],
+  "scores_count": 519
+}

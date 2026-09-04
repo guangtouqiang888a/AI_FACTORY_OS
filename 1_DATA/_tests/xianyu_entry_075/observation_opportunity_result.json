@@ -1,0 +1,237 @@
+{
+  "entry": "075",
+  "completed_at": "2026-09-04T12:17:02.846057+08:00",
+  "before": {
+    "market_observations": 20,
+    "market_signals": 6,
+    "selection_results": 0,
+    "products": 0
+  },
+  "after": {
+    "market_observations": 20,
+    "market_signals": 6,
+    "selection_results": 1,
+    "products": 0
+  },
+  "deltas": {
+    "market_observations": 0,
+    "market_signals": 0,
+    "selection_results": 1,
+    "products": 0
+  },
+  "input_signal_ids": [
+    "sig_f1173cc0edca",
+    "sig_9a3983efb2a4",
+    "sig_10fa1228c3f2",
+    "sig_82a523bc2bc1",
+    "sig_90277d017e37",
+    "sig_90064dc020a6"
+  ],
+  "result_status": "OK",
+  "candidate_count": 1,
+  "grouping_key": "keyword",
+  "signal_opportunity_mapping": [
+    {
+      "keyword": "Excel模板",
+      "grouping_key": "keyword",
+      "signal_ids": [
+        "sig_f1173cc0edca",
+        "sig_9a3983efb2a4",
+        "sig_10fa1228c3f2",
+        "sig_82a523bc2bc1",
+        "sig_90277d017e37",
+        "sig_90064dc020a6"
+      ],
+      "observation_ids": [
+        "mobs_48d5a1daa0ee",
+        "mobs_4eeed83520dc",
+        "mobs_77abed5da432",
+        "mobs_558206dd2057",
+        "mobs_2198f9db4742",
+        "mobs_217cd4886838",
+        "mobs_a28b1bc7faca"
+      ],
+      "candidate_id": "aoc_19399677b7ba",
+      "opportunity_id": null
+    }
+  ],
+  "candidates_summary": [
+    {
+      "candidate_id": "aoc_19399677b7ba",
+      "keyword": "Excel模板",
+      "discovery_method": "observation_market_signal",
+      "total_score": 68.92,
+      "risk_status": "passed",
+      "provenance_observation_count": 7,
+      "signal_ids": [
+        "sig_f1173cc0edca",
+        "sig_9a3983efb2a4",
+        "sig_10fa1228c3f2",
+        "sig_82a523bc2bc1",
+        "sig_90277d017e37",
+        "sig_90064dc020a6"
+      ]
+    }
+  ],
+  "selection_results": [
+    {
+      "selection_id": "sel_53e7c414624f",
+      "candidate_id": "aoc_19399677b7ba",
+      "rank": 1,
+      "score": 68.92,
+      "risk_status": "passed",
+      "selected": true,
+      "selection_reason": "rank=1; total_score=68.92; discovery_method=market_signal; keyword=Excel模板; listings=7",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_f1173cc0edca",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-09-03T15:20:02+08:00",
+          "source": "market_observation"
+        },
+        {
+          "signal_id": "sig_9a3983efb2a4",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-09-03T15:20:02+08:00",
+          "source": "market_observation"
+        },
+        {
+          "signal_id": "sig_10fa1228c3f2",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-09-03T15:20:02+08:00",
+          "source": "market_observation"
+        },
+        {
+          "signal_id": "sig_82a523bc2bc1",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-09-03T15:20:02+08:00",
+          "source": "market_observation"
+        },
+        {
+          "signal_id": "sig_90277d017e37",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-09-03T15:20:02+08:00",
+          "source": "market_observation"
+        },
+        {
+          "signal_id": "sig_90064dc020a6",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-09-03T15:20:02+08:00",
+          "source": "market_observation"
+        },
+        {
+          "lineage": "market_observation",
+          "signal_ids": [
+            "sig_f1173cc0edca",
+            "sig_9a3983efb2a4",
+            "sig_10fa1228c3f2",
+            "sig_82a523bc2bc1",
+            "sig_90277d017e37",
+            "sig_90064dc020a6"
+          ],
+          "observation_ids": [
+            "mobs_48d5a1daa0ee",
+            "mobs_4eeed83520dc",
+            "mobs_77abed5da432",
+            "mobs_558206dd2057",
+            "mobs_2198f9db4742",
+            "mobs_217cd4886838",
+            "mobs_a28b1bc7faca"
+          ],
+          "source_item_ids": [
+            "805580867741",
+            "1028751421655",
+            "1008483525701",
+            "733931849575",
+            "1040306099626",
+            "1033698667594",
+            "1013101172377"
+          ],
+          "collection_run_ids": [
+            "crun_378745ca45e0"
+          ],
+          "session_ids": [
+            "sess_1788419997563"
+          ],
+          "extension_run_ids": [
+            "run_1788419997563"
+          ],
+          "data_origins": [
+            "REAL"
+          ],
+          "verification_statuses": [
+            "MANUAL_VERIFIED"
+          ]
+        },
+        {
+          "observation_id": "mobs_48d5a1daa0ee",
+          "source_item_id": "805580867741",
+          "source_url": "https://www.goofish.com/item?id=805580867741&categoryId=201453706",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        },
+        {
+          "observation_id": "mobs_4eeed83520dc",
+          "source_item_id": "1028751421655",
+          "source_url": "https://www.goofish.com/item?id=1028751421655&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        },
+        {
+          "observation_id": "mobs_77abed5da432",
+          "source_item_id": "1008483525701",
+          "source_url": "https://www.goofish.com/item?id=1008483525701&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        },
+        {
+          "observation_id": "mobs_558206dd2057",
+          "source_item_id": "733931849575",
+          "source_url": "https://www.goofish.com/item?id=733931849575&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        },
+        {
+          "observation_id": "mobs_2198f9db4742",
+          "source_item_id": "1040306099626",
+          "source_url": "https://www.goofish.com/item?id=1040306099626&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        },
+        {
+          "observation_id": "mobs_217cd4886838",
+          "source_item_id": "1033698667594",
+          "source_url": "https://www.goofish.com/item?id=1033698667594&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        },
+        {
+          "observation_id": "mobs_a28b1bc7faca",
+          "source_item_id": "1013101172377",
+          "source_url": "https://www.goofish.com/item?id=1013101172377&categoryId=202036301",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED"
+        }
+      ],
+      "discovery_method": "observation_market_signal",
+      "keyword": "Excel模板",
+      "product_type": "digital_template",
+      "platform": "xianyu",
+      "source": "market_observation",
+      "created_at": "2026-09-04 12:17:02",
+      "next_step": "experiment_candidate",
+      "auto_production_forbidden": true
+    }
+  ],
+  "ai_provider_calls": 0,
+  "ai_cost": 0,
+  "product_substitution": false,
+  "signals_re_persisted": false
+}

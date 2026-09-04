@@ -1,0 +1,116 @@
+{
+  "purpose": "Prove Page Collector when SEARCH_RESULT DOM is present",
+  "not_live_xianyu": true,
+  "collector_status": "COLLECTOR_FEASIBLE_WITH_MISSING_FIELDS",
+  "search_state": {
+    "search_state": "SEARCH_RESULT",
+    "secondary_feed": null,
+    "search_result_count": 2,
+    "recommended_count": 0,
+    "evidence": {
+      "empty_text": false,
+      "search_cards": 2,
+      "url": "https://www.goofish.com/search?q=fixture"
+    }
+  },
+  "records": [
+    {
+      "title": "夹具搜索商品A",
+      "price": 12.5,
+      "want_count": 61,
+      "want_count_status": "VISIBLE_ON_CARD",
+      "want_count_card": 61,
+      "want_count_detail": null,
+      "source_url": "https://www.goofish.com/item?id=900001",
+      "source_item_id": "900001",
+      "view_count": null,
+      "comment_count": null,
+      "share_count": null,
+      "published_at": null,
+      "observed_at": "2026-08-30T23:03:00+08:00",
+      "result_origin": "SEARCH_RESULT",
+      "source_platform": "xianyu",
+      "sales_platform": null,
+      "seller_reference": null,
+      "candidate_class": "REAL_CANDIDATE_EXTERNAL",
+      "valid_without_want_count": true,
+      "not_our_product": true,
+      "not_our_listing": true,
+      "evidence": {
+        "card_has_want_text": true,
+        "card_selector": "a.feeds-item-wrap"
+      },
+      "result_position": 1,
+      "query": "__fixture_search_result__",
+      "search_url": "https://www.goofish.com/search?q=fixture",
+      "session_id": "ss_852cb563af8e",
+      "collector_version": "063.1.0",
+      "source": "xianyu"
+    },
+    {
+      "title": "夹具搜索商品B",
+      "price": 3.0,
+      "want_count": null,
+      "want_count_status": "MISSING_ON_CARD",
+      "want_count_card": null,
+      "want_count_detail": null,
+      "source_url": "https://www.goofish.com/item?id=900002",
+      "source_item_id": "900002",
+      "view_count": null,
+      "comment_count": null,
+      "share_count": null,
+      "published_at": null,
+      "observed_at": "2026-08-30T23:03:00+08:00",
+      "result_origin": "SEARCH_RESULT",
+      "source_platform": "xianyu",
+      "sales_platform": null,
+      "seller_reference": null,
+      "candidate_class": "REAL_CANDIDATE_EXTERNAL",
+      "valid_without_want_count": true,
+      "not_our_product": true,
+      "not_our_listing": true,
+      "evidence": {
+        "card_has_want_text": false,
+        "card_selector": "a.feeds-item-wrap"
+      },
+      "result_position": 2,
+      "query": "__fixture_search_result__",
+      "search_url": "https://www.goofish.com/search?q=fixture",
+      "session_id": "ss_852cb563af8e",
+      "collector_version": "063.1.0",
+      "source": "xianyu"
+    }
+  ],
+  "minimum_want_filter": {
+    "minimum_want_count": 50,
+    "counts": {
+      "included": 1,
+      "excluded_below_min": 0,
+      "unknown_null_want": 1
+    },
+    "note": "NULL want_count never treated as 0 for filter"
+  },
+  "want_count_audit": {
+    "search_results_count": 2,
+    "status_distribution": {
+      "VISIBLE_ON_CARD": 1,
+      "MISSING_ON_CARD": 1,
+      "AVAILABLE_ON_DETAIL": 0,
+      "UNAVAILABLE": 0,
+      "UNKNOWN": 0
+    },
+    "card_visible_rate": 0.5,
+    "detail_available_rate": 0.0,
+    "total_observable_rate": 0.5,
+    "still_null_count": 1,
+    "still_null_rate": 0.5,
+    "null_vs_zero_rule": "NULL means field absent; 0 means page showed 0人想要",
+    "login_causation": {
+      "login_used": false,
+      "conclusion": "NOT_PROVEN",
+      "note": "Anonymous browser only. Cannot conclude missing want_count is caused by not being logged in."
+    },
+    "valid_without_want_count": true,
+    "note": "missing ≠ zero; unavailable ≠ proven login-related"
+  }
+}

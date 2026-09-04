@@ -1,0 +1,485 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_EXPERIMENT_OBJECT_REGISTRY.md",
+  "source_datasets": {
+    "opportunities": "commercial_assets/opportunities/opportunities_v1.json",
+    "selection": "commercial_assets/experiment_selection/experiment_selection_records_v1.json"
+  },
+  "experiment_method": "human_assisted",
+  "experiment_note": "Human Assisted ≠ Automation — 无自动 Experiment Engine、无 2_COGNITION 参与；Experiment Object 为人工辅助设计登记，不代表产品已生产、未创建 artifact / product / publish。 Entry 047: enriched exp_20260708_005 with commercial_observation_prep. No market data fabricated. Observation not started. Entry 048: publish prep + human decision pack; still not published.",
+  "created_at": "2026-07-08T14:51:00+08:00",
+  "experiment_count": 5,
+  "summary": {
+    "category_a": 4,
+    "status_draft": 4,
+    "linked_opportunities": 4,
+    "linked_selections": 4
+  },
+  "experiments": [
+    {
+      "experiment_id": "exp_20260708_001",
+      "object_type": "experiment",
+      "contract_version": "1.0",
+      "source_opportunity_id": "opp_20260708_001",
+      "source_selection_id": "sel_20260708_001",
+      "source_candidate_id": "cand_20260708_001",
+      "experiment_name": "Category A 验证 — 商业计划书 PPT 模板",
+      "category": "A",
+      "keyword": "商业计划书 PPT 模板",
+      "product_type": "ppt",
+      "hypothesis": "创业初期中小企业主与独立创业者缺少专业 PPT 设计能力，制作商业计划书排版耗时且外观不专业；用户愿为「节省 4–8 小时制作时间」和「接近专业外观」支付 ¥19.9 购买可编辑 pptx 模板包，闲鱼同类 listing 有稳定想要数可作为需求参照。",
+      "validation_goal": "验证 Category A 办公 PPT 类虚拟商品在闲鱼渠道是否存在基本市场需求与首次付费转化（非规模化盈利验证）。",
+      "target_customer": "创业初期中小企业主、独立创业者",
+      "product_concept": "面向创业团队的商业计划书 PPT 模板包，含封面、目录、商业模式、财务预测等标准章节，可编辑 pptx 格式，强调清晰结构与专业封面差异化。",
+      "validation_method": "闲鱼虚拟商品上架 → 14 天观察期；人工记录曝光、点击、想要、咨询与成交；不调用 Content Factory 直至单独授权生产任务。",
+      "success_metrics": {
+        "production_metric": {
+          "target_production_cost_cny": 2.5,
+          "target_production_time_minutes": 30,
+          "target_first_pass": true,
+          "target_quality_score": 0.8,
+          "note": "Category A 低成本生产 — 指标为实验设计目标，draft 阶段无实际生产数据"
+        },
+        "market_metric": {
+          "target_views": 50,
+          "target_clicks": 5,
+          "target_favorites": 3,
+          "target_ctr": 0.05,
+          "note": "Registry Category A 成功参考：views ≥ 50 或 clicks ≥ 5"
+        },
+        "commercial_metric": {
+          "expected_price_cny": 19.9,
+          "target_orders": 1,
+          "target_conversion_rate": 0.02,
+          "target_profit_cny": 5.0,
+          "note": "MVP Phase 1 以首单验证假设为主"
+        },
+        "system_metric": {
+          "target_automation_rate": 0.7,
+          "target_data_completeness": 0.8,
+          "target_error_rate": 0.0,
+          "note": "实验期间须完整录入四类 metrics 方可进入评估"
+        }
+      },
+      "expected_cost": 2.5,
+      "expected_cost_note": "预估 AI + 人工生产成本（CNY），非已发生成本",
+      "expected_cycle": "14 days",
+      "publish_channel_planned": "xianyu",
+      "status": "draft",
+      "experiment_method": "human_assisted",
+      "next_action": "review_hypothesis_and_transition_to_prepared",
+      "created_at": "2026-07-08T14:51:00+08:00"
+    },
+    {
+      "experiment_id": "exp_20260708_002",
+      "object_type": "experiment",
+      "contract_version": "1.0",
+      "source_opportunity_id": "opp_20260708_002",
+      "source_selection_id": "sel_20260708_002",
+      "source_candidate_id": "cand_20260708_002",
+      "experiment_name": "Category A 验证 — Excel 家庭记账表",
+      "category": "A",
+      "keyword": "Excel 家庭记账表",
+      "product_type": "excel",
+      "hypothesis": "有基础 Excel 使用习惯的家庭用户与年轻上班族缺乏简单易用的记账工具，复杂 App 学习成本高；用户愿为「开箱即用」的家庭月度收支 Excel 模板支付 ¥9.9，以节省从零建表时间并快速获得分类汇总与图表。",
+      "validation_goal": "验证 ¥9.9 低价 Excel 虚拟商品在淘宝/闲鱼场景下的点击兴趣与转化率，测试办公小工具类付费意愿。",
+      "target_customer": "有基础 Excel 使用习惯的家庭用户、年轻上班族",
+      "product_concept": "家庭月度收支 Excel 记账表，含分类汇总、月度对比与简单图表，附一页使用说明，单文件 xlsx 交付。",
+      "validation_method": "淘宝虚拟商品上架 → 14 天观察期；人工记录流量与成交；draft 阶段不触发生产 pipeline。",
+      "success_metrics": {
+        "production_metric": {
+          "target_production_cost_cny": 1.5,
+          "target_production_time_minutes": 20,
+          "target_first_pass": true,
+          "target_quality_score": 0.82,
+          "note": "Excel 单文件 — Category A 最低生产成本档"
+        },
+        "market_metric": {
+          "target_views": 50,
+          "target_clicks": 5,
+          "target_favorites": 2,
+          "target_ctr": 0.04,
+          "note": "低价带需更高曝光量以观察转化"
+        },
+        "commercial_metric": {
+          "expected_price_cny": 9.9,
+          "target_orders": 1,
+          "target_conversion_rate": 0.03,
+          "target_profit_cny": 3.0,
+          "note": "¥9.9 定价带 — 验证决策速度快的用户群"
+        },
+        "system_metric": {
+          "target_automation_rate": 0.75,
+          "target_data_completeness": 0.8,
+          "target_error_rate": 0.0,
+          "note": "draft 阶段 metrics 均为设计目标值"
+        }
+      },
+      "expected_cost": 1.5,
+      "expected_cost_note": "预估 AI + 人工生产成本（CNY），非已发生成本",
+      "expected_cycle": "14 days",
+      "publish_channel_planned": "taobao",
+      "status": "draft",
+      "experiment_method": "human_assisted",
+      "next_action": "review_hypothesis_and_transition_to_prepared",
+      "created_at": "2026-07-08T14:51:00+08:00"
+    },
+    {
+      "experiment_id": "exp_20260708_004",
+      "object_type": "experiment",
+      "contract_version": "1.0",
+      "source_opportunity_id": "opp_20260708_004",
+      "source_selection_id": "sel_20260708_004",
+      "source_candidate_id": "cand_20260708_004",
+      "experiment_name": "Category A 验证 — 工作总结 PPT 模板",
+      "category": "A",
+      "keyword": "工作总结 PPT 模板",
+      "product_type": "ppt",
+      "hypothesis": "企业白领、基层管理者与行政人员每季度/年终需提交工作总结 PPT，临时制作压力大；用户愿为「现成结构 + 省时间」支付 ¥19.9 购买含工作回顾、成果展示、问题与计划等标准页结构的 pptx 模板。",
+      "validation_goal": "验证周期性办公汇报场景下「省时付费」假设是否成立，并观察 Q4/季度末需求波动对曝光的影响。",
+      "target_customer": "企业白领、基层管理者、行政人员",
+      "product_concept": "季度/年度工作总结 PPT 模板，含工作回顾、成果展示、问题与计划等标准页结构，可编辑 pptx，可按岗位微调文案占位。",
+      "validation_method": "闲鱼虚拟商品上架 → 14 天观察期；人工记录周期性流量变化；不创建 product / artifact。",
+      "success_metrics": {
+        "production_metric": {
+          "target_production_cost_cny": 2.5,
+          "target_production_time_minutes": 25,
+          "target_first_pass": true,
+          "target_quality_score": 0.8,
+          "note": "PPT 结构固定 — 适合 Content Factory 短 pipeline（未来阶段）"
+        },
+        "market_metric": {
+          "target_views": 50,
+          "target_clicks": 5,
+          "target_favorites": 3,
+          "target_ctr": 0.05,
+          "note": "周期性 keyword — 观察期需覆盖汇报窗口"
+        },
+        "commercial_metric": {
+          "expected_price_cny": 19.9,
+          "target_orders": 1,
+          "target_conversion_rate": 0.02,
+          "target_profit_cny": 5.0,
+          "note": "与 opp_001 同定价带，便于 Category A 横向对比"
+        },
+        "system_metric": {
+          "target_automation_rate": 0.7,
+          "target_data_completeness": 0.8,
+          "target_error_rate": 0.0,
+          "note": "实验登记层 — 非 Runtime 指标"
+        }
+      },
+      "expected_cost": 2.5,
+      "expected_cost_note": "预估 AI + 人工生产成本（CNY），非已发生成本",
+      "expected_cycle": "14 days",
+      "publish_channel_planned": "xianyu",
+      "status": "draft",
+      "experiment_method": "human_assisted",
+      "next_action": "review_hypothesis_and_transition_to_prepared",
+      "created_at": "2026-07-08T14:51:00+08:00"
+    },
+    {
+      "experiment_id": "exp_20260708_005",
+      "object_type": "experiment",
+      "contract_version": "1.0",
+      "source_opportunity_id": "opp_20260708_005",
+      "source_selection_id": "sel_20260708_005",
+      "source_candidate_id": "cand_20260708_005",
+      "experiment_name": "Category A 验证 — Excel 考勤记录表",
+      "category": "A",
+      "keyword": "Excel 考勤记录表",
+      "product_type": "excel",
+      "hypothesis": "小微商户管理员、培训班负责人与 10 人以内小团队不会设计 Excel 考勤公式；用户愿为带自动统计、迟到早退计算与月度汇总的考勤 Excel 模板支付 ¥12.9，替代手工记录或复杂系统。",
+      "validation_goal": "验证低竞争细分「小团队考勤 Excel」是否有稳定长尾需求与首单转化；本批次 selection_score 最高（69）优先实验候选。",
+      "target_customer": "小微商户管理员、培训班负责人、10 人以内小团队",
+      "product_concept": "小团队 Excel 考勤记录表，含出勤统计、迟到早退自动计算与月度汇总，单文件 xlsx + 简短说明。",
+      "validation_method": "HYPOTHESIS channel: taobao virtual listing planned (NOT YET SELECTED / not published). Observation: 14-day human-assisted recording AFTER human publish. Reality 2026-08-29: Product Asset 8523329941d4 exists and validation passed; market observation NOT STARTED.",
+      "success_metrics": {
+        "production_metric": {
+          "target_production_cost_cny": 1.5,
+          "target_production_time_minutes": 25,
+          "target_first_pass": true,
+          "target_quality_score": 0.85,
+          "note": "含基础公式 — 仍属 Category A 低成本档"
+        },
+        "market_metric": {
+          "target_views": 50,
+          "target_clicks": 5,
+          "target_favorites": 2,
+          "target_ctr": 0.05,
+          "note": "竞争低风险 ease=0.72 — 曝光门槛同 Category A 标准"
+        },
+        "commercial_metric": {
+          "expected_price_cny": 12.9,
+          "target_orders": 1,
+          "target_conversion_rate": 0.025,
+          "target_profit_cny": 4.0,
+          "note": "本批次优先实验 — 竞争低、痛点具体"
+        },
+        "system_metric": {
+          "target_automation_rate": 0.75,
+          "target_data_completeness": 0.8,
+          "target_error_rate": 0.0,
+          "note": "Human Assisted 登记 — 非 Agent 自动创建"
+        }
+      },
+      "expected_cost": 1.5,
+      "expected_cost_note": "预估 AI + 人工生产成本（CNY），非已发生成本",
+      "expected_cycle": "14 days",
+      "publish_channel_planned": "taobao",
+      "status": "draft",
+      "experiment_method": "human_assisted",
+      "next_action": "await_human_distribution_price_cover_publish_decisions",
+      "created_at": "2026-07-08T14:51:00+08:00",
+      "updated_at": "2026-08-29T15:00:00+08:00",
+      "entry_047_note": "Commercial Validation Preparation — Experiment definition completed for Pilot. Status field remains draft pending authorized lifecycle sync (RA-002). Production Completed ≠ Market Validation.",
+      "commercial_observation_prep": {
+        "object_type": "commercial_observation_prep",
+        "entry_id": "047",
+        "prepared_at": "2026-08-29T14:40:00+08:00",
+        "pilot_production_request_id": "preq_20260712_005",
+        "product_asset_id": "8523329941d4",
+        "product_name": "Excel 考勤记录表",
+        "product_version_note": "CF artifact package final_product.zip; primary templates/8523329941d4.xlsx — HYPOTHESIS version label = pilot_v1 (no formal marketing version scheme in Reality)",
+        "hypothesis": "HYPOTHESIS: 小微商户管理员、培训班负责人与 10 人以内小团队缺少可用的考勤公式表；愿为带出勤统计/迟到早退计算/月度汇总的 Excel 模板付费，替代手工记账或复杂系统。",
+        "target_user": "小微商户管理员、培训班负责人、10 人以内小团队管理员（非『所有 Excel 用户』）",
+        "problem": "HYPOTHESIS: 考勤手工记录与月度汇总耗时，且不会自行设计公式",
+        "offer": {
+          "what": "可编辑 Excel 考勤记录表（xlsx）+ PDF 使用说明，打包为 final_product.zip",
+          "for_whom": "小微商户/培训班/≤10 人团队管理员",
+          "why": "HYPOTHESIS: 开箱即用的出勤统计与汇总，减少重复整理",
+          "format": "digital download — xlsx + pdf in zip",
+          "expected_benefit": "HYPOTHESIS: 减少重复整理时间；避免从零建表"
+        },
+        "price_hypothesis": {
+          "status": "HYPOTHESIS",
+          "primary_cny": 12.9,
+          "alternate_band": [
+            9.9,
+            12.9,
+            19.9
+          ],
+          "conflict_note": "Experiment/PR expected_price_cny=12.9 vs package pricing.json suggested_price=19.9 — NOT VALIDATED; human must pick Price A/B/C before listing",
+          "price_a": 9.9,
+          "price_b": 12.9,
+          "price_c": 19.9,
+          "recommended_experimental_price_cny": 12.9,
+          "recommendation_status": "AI_RECOMMENDATION_ONLY"
+        },
+        "distribution_hypothesis": {
+          "status": "NOT YET SELECTED",
+          "planned_in_record": "taobao",
+          "published": false,
+          "listing_live": false,
+          "evidence": "Feedback platform=taobao but observation_period=not_started; publish_checklist unchecked",
+          "recommendation_only": "taobao"
+        },
+        "primary_success_metric": "HYPOTHESIS target: >=1 paid order within Observation Window OR (views>=50 AND clicks>=5) as demand signal even if orders=0",
+        "secondary_metrics": [
+          "views",
+          "clicks",
+          "favorites",
+          "inquiries",
+          "downloads_or_delivery_confirms",
+          "refunds",
+          "qualitative_feedback"
+        ],
+        "observation_window": {
+          "planned_duration_days": 14,
+          "observation_start": null,
+          "observation_end": null,
+          "status": "not_started",
+          "before": "Complete human channel decision + publish materials + record baseline variables",
+          "during": "Do not silently change product/price/title/channel/audience together; log each major change",
+          "after": "AI/system evaluate evidence → Human Decision Gate → Continue/Iterate/Stop"
+        },
+        "stop_condition": "HYPOTHESIS: After window, if Exposure~0 AND no inquiries → INCONCLUSIVE/NEGATIVE lean Stop or change distribution; do NOT equate 0 revenue alone with no market need",
+        "iteration_condition": "HYPOTHESIS: Weak demand signal (views/clicks/favorites/inquiries) with 0 revenue → Iterate Offer/Price/Title/Channel one variable at a time",
+        "continue_condition": "HYPOTHESIS: Positive or Weak_Positive signal → Continue with controlled next experiment",
+        "human_decision_gate": {
+          "flow": [
+            "Observation Complete",
+            "System/AI Evaluation",
+            "Evidence Review",
+            "Human Decision",
+            "Continue|Iterate|Stop"
+          ],
+          "ai_may": [
+            "summarize",
+            "compute",
+            "analyze",
+            "recommend"
+          ],
+          "ai_must_not": [
+            "declare commercial success",
+            "declare commercial failure"
+          ]
+        },
+        "result_classes": [
+          "POSITIVE",
+          "WEAK_POSITIVE",
+          "INCONCLUSIVE",
+          "NEGATIVE"
+        ],
+        "evidence_source": {
+          "product_asset": "commercial_assets/product_assets/product_assets_v1.json",
+          "artifacts": "11_CONTENT_FACTORY/artifacts/products/8523329941d4/",
+          "feedback": "commercial_assets/feedback/feedback_v1.json",
+          "evaluation": "commercial_assets/experiment_evaluations/experiment_evaluations_v1.json",
+          "revenue_orders": "NOT AVAILABLE — no revenue/order dataset in commercial_assets"
+        },
+        "commercial_readiness": {
+          "minimum_commercially_testable": "YES_WITH_GAPS",
+          "gaps": [
+            "Cover is placeholder text only (images/cover_placeholder.txt) — listing may need human cover",
+            "Price A/B/C not human-selected",
+            "Distribution channel NOT YET SELECTED / not published",
+            "Publish checklist all unchecked"
+          ],
+          "minimal_fixes_before_observation": [
+            "Human select distribution channel",
+            "Human select listing price from A/B/C",
+            "Optional: replace cover placeholder with real cover",
+            "Human publish — OUT OF SCOPE for Entry 047"
+          ]
+        },
+        "metrics_plan": {
+          "exposure": "channel-dependent; UNAVAILABLE until listing live",
+          "views": "target>=50 HYPOTHESIS; actual=NOT YET OBSERVED",
+          "clicks_or_visits": "target>=5 HYPOTHESIS; actual=NOT YET OBSERVED",
+          "inquiries": "manual log; actual=NOT YET OBSERVED",
+          "downloads_or_trial": "digital delivery confirms; actual=NOT YET OBSERVED",
+          "purchases": "target>=1 HYPOTHESIS; actual=NOT YET OBSERVED",
+          "revenue": "NOT YET OBSERVED",
+          "refunds": "NOT YET OBSERVED",
+          "qualitative_feedback": "manual notes; actual=NOT YET OBSERVED"
+        },
+        "entry_048": {
+          "prepared_at": "2026-08-29T15:00:00+08:00",
+          "publish_package_status": "PREPARED",
+          "published": false,
+          "observation_status": "not_started",
+          "system_state": "READY FOR HUMAN DECISION",
+          "recommended_experimental_price_cny": 12.9,
+          "recommended_first_test_channel": "taobao",
+          "cover_recommendation": "Replace if low-cost; Keep acceptable for first test",
+          "decision_pack_path": "commercial_assets/pilot_outputs/preq_20260712_005/HUMAN_COMMERCIAL_DECISION_PACK.md",
+          "price_reality_report_path": "commercial_assets/pilot_outputs/preq_20260712_005/PRICE_REALITY_REPORT.md",
+          "distribution_candidate_report_path": "commercial_assets/pilot_outputs/preq_20260712_005/DISTRIBUTION_CANDIDATE_REPORT.md",
+          "note": "Recommendations only. Human must decide. No publish performed in Entry 048."
+        }
+      }
+    },
+    {
+      "experiment_id": "exp_auto_20260830_8cbd08",
+      "object_type": "experiment",
+      "contract_version": "1.0",
+      "entry": "055",
+      "source_opportunity_id": "aoc_919c62520b98",
+      "source_selection_id": "sel_d2079d0aa487",
+      "source_candidate_id": "aoc_919c62520b98",
+      "source_experiment_candidate_id": "ec_5ce1f9c88754",
+      "experiment_name": "Autonomous E2E — 批量关键词",
+      "category": "A",
+      "keyword": "批量关键词",
+      "product_type": "excel",
+      "product_type_declared": "digital_template",
+      "hypothesis": "基于市场信号选择的「批量关键词」机会，以 digital_template/excel 形式生产可交付资产，可在 xianyu 验证首次付费转化。",
+      "hypothesis_status": "HYPOTHESIS",
+      "validation_goal": "验证自主发现候选能否走通 Production→Quality→Commercial→Publish Queue",
+      "target_customer": "需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）",
+      "product_concept": "【HYPOTHESIS】面向「批量关键词」需求的可编辑 EXCEL 数字模板包（digital_template → CF excel）",
+      "validation_method": "Content Factory production → Quality Gate → Commercial Product → Listing Package → Publish Queue AWAITING_HUMAN_ACTION；不执行真实平台发布 / Observation / Commercial Learning",
+      "success_metrics": {
+        "production_metric": {
+          "target_first_pass": true,
+          "note": "Production success ≠ Commercial success"
+        },
+        "market_metric": {
+          "note": "NOT STARTED — no market events fabricated"
+        },
+        "commercial_metric": {
+          "expected_price_cny": 99.9,
+          "price_role": "PRODUCT_PRICE_HYPOTHESIS",
+          "note": "Hypothesis only"
+        }
+      },
+      "expected_cost": null,
+      "expected_cost_note": "UNAVAILABLE until CF records cost",
+      "publish_channel_planned": "xianyu",
+      "status": "prepared",
+      "experiment_method": "autonomous_bridge_055",
+      "selection_rank": 1,
+      "candidate_score": 69.83,
+      "risk_status": "passed",
+      "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_f601ceaabcb8",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_ecf1794a3826",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_aefded299cff",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_bd3bd2f64ddf",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_33af03309f58",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_74ec9871c6aa",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "product_id": 2,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 3,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 7,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 8,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 12,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 13,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        }
+      ],
+      "next_action": "production_request",
+      "created_at": "2026-08-30T16:38:33+08:00",
+      "legacy_pilot_note": "HISTORICAL / LEGACY PILOT exp_20260708_005 is unrelated"
+    }
+  ],
+  "entry_055_note": "Autonomous bridge experiments appended; human_assisted experiments retained.",
+  "updated_at": "2026-08-30 16:38:33"
+}

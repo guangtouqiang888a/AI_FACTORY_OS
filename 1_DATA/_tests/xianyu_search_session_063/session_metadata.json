@@ -1,0 +1,42 @@
+{
+  "session": {
+    "session_id": "ss_3f4143703cae",
+    "browser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "source": "xianyu",
+    "query": "简历模板",
+    "search_url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+    "started_at": "2026-09-03T13:48:26+08:00",
+    "status": "PARTIAL",
+    "browser_version": "Chrome/152.0.7977.75",
+    "operating_mode": "INTERACTIVE_VISIBLE",
+    "login_used": false,
+    "notes": [
+      "launched_pid=12256"
+    ]
+  },
+  "search_control": {
+    "status": "PARTIAL",
+    "search_control_feasibility": "SEARCH_CONTROL_NOT_FEASIBLE",
+    "reason": "reached_search_page_without_SEARCH_RESULT",
+    "state": {
+      "search_state": "EMPTY_SEARCH_RESULT",
+      "secondary_feed": "RECOMMENDED_FEED",
+      "search_result_count": 0,
+      "recommended_count": 20,
+      "evidence": {
+        "empty_text": true,
+        "guess_you_like": true,
+        "url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+        "url_is_search": true,
+        "note": "URL /search alone does not imply SEARCH_RESULT"
+      }
+    },
+    "search_url": "https://www.goofish.com/search?q=%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0",
+    "page_title": "简历模板_闲鱼"
+  },
+  "collector_status": "COLLECTOR_NO_SEARCH_RESULT_ON_PAGE",
+  "first_real_xianyu_search_candidate": false,
+  "current_db_write": false,
+  "collector_version": "063.1.0",
+  "finished_at": "2026-09-03T13:48:53+08:00"
+}

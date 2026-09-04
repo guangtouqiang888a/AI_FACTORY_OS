@@ -1,0 +1,5 @@
+Q: 交付什么？
+A: 批量关键词 EXCEL 模板 数字文件（zip）。
+
+Q: 是否真实已发布？
+A: 否。当前仅 Publish Queue AWAITING_HUMAN_ACTION。

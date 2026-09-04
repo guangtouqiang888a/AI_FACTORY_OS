@@ -1,0 +1,291 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_PRODUCTION_REQUEST_CONTRACT.md",
+  "source_datasets": {
+    "experiments": "commercial_assets/experiments/experiments_v1.json",
+    "experiment_reviews": "commercial_assets/experiment_reviews/experiment_reviews_v1.json"
+  },
+  "creation_method": "human_assisted",
+  "creation_note": "Human Assisted ≠ Automation — 无 3_DECISION Runtime 自动生成；Production Request 为人工辅助资产登记。Production Request Creation ≠ Content Factory Execution — status=draft，未调用 Content Factory、未创建 artifact / product。",
+  "created_at": "2026-07-12T17:03:00+08:00",
+  "production_request_count": 4,
+  "summary": {
+    "status_draft": 3,
+    "priority_p0": 1,
+    "priority_p1": 2,
+    "source_experiment_ids": [
+      "exp_20260708_001",
+      "exp_20260708_004",
+      "exp_20260708_005"
+    ],
+    "excluded_experiment_ids": [
+      "exp_20260708_002"
+    ],
+    "exclusion_reason": "exp_002 Review decision=rejected — 不生成 Production Request"
+  },
+  "production_requests": [
+    {
+      "production_request_id": "preq_20260712_001",
+      "object_type": "production_request",
+      "contract_version": "1.0",
+      "source_experiment_id": "exp_20260708_001",
+      "source_review_id": "erev_20260709_001",
+      "source_opportunity_id": "opp_20260708_001",
+      "source_selection_id": "sel_20260708_001",
+      "keyword": "商业计划书 PPT 模板",
+      "experiment_category": "A",
+      "product_type": "ppt",
+      "product_name": "商业计划书 PPT 模板",
+      "target_customer": "创业初期中小企业主、独立创业者",
+      "business_goal": "验证闲鱼渠道办公 PPT 类虚拟商品是否存在基本市场需求与首次付费转化；用户愿为省 4–8 小时与专业外观支付 ¥19.9",
+      "validation_goal": "验证 Category A 办公 PPT 类虚拟商品在闲鱼渠道是否存在基本市场需求与首次付费转化（非规模化盈利验证）。",
+      "asset_requirements": {
+        "product_name": "商业计划书 PPT 模板",
+        "product_concept": "面向创业团队的商业计划书 PPT 模板包，含封面、目录、商业模式、财务预测等标准章节，可编辑 pptx 格式，强调清晰结构与专业封面差异化",
+        "deliverable_format": "pptx",
+        "deliverable_count": 1,
+        "structure_outline": [
+          "封面",
+          "目录",
+          "项目概述",
+          "商业模式",
+          "市场分析",
+          "团队介绍",
+          "财务预测",
+          "融资计划"
+        ],
+        "content_constraints": {
+          "language": "zh-CN",
+          "max_pages_or_sheets": 12,
+          "include_instructions": true,
+          "editable": true
+        },
+        "reference_from_experiment": {
+          "hypothesis_summary": "创业团队愿为节省制作时间与专业外观支付 ¥19.9 购买可编辑商业计划书 PPT 模板包",
+          "validation_goal": "验证 Category A 办公 PPT 类虚拟商品在闲鱼渠道是否存在基本市场需求与首次付费转化"
+        },
+        "publish_channel_planned": "xianyu",
+        "expected_price_cny": 19.9
+      },
+      "quality_requirements": {
+        "min_quality_score": 0.8,
+        "first_pass_required": true,
+        "category_a_threshold": {
+          "production_time_minutes_max": 30,
+          "production_cost_cny_max": 3.0
+        },
+        "checklist": [
+          "deliverable_format_correct",
+          "structure_complete",
+          "no_placeholder_text",
+          "cover_design_professional",
+          "instructions_included"
+        ],
+        "reject_conditions": [
+          "missing_required_sections",
+          "quality_score_below_threshold"
+        ]
+      },
+      "production_priority": "P1",
+      "status": "draft",
+      "creation_method": "human_assisted",
+      "created_at": "2026-07-12T17:03:00+08:00"
+    },
+    {
+      "production_request_id": "preq_20260712_004",
+      "object_type": "production_request",
+      "contract_version": "1.0",
+      "source_experiment_id": "exp_20260708_004",
+      "source_review_id": "erev_20260709_004",
+      "source_opportunity_id": "opp_20260708_004",
+      "source_selection_id": "sel_20260708_004",
+      "keyword": "工作总结 PPT 模板",
+      "experiment_category": "A",
+      "product_type": "ppt",
+      "product_name": "工作总结 PPT 模板",
+      "target_customer": "企业白领、基层管理者、行政人员",
+      "business_goal": "验证周期性办公汇报场景下「省时付费」假设；用户愿为现成结构支付 ¥19.9 购买季度/年度工作总结 pptx 模板",
+      "validation_goal": "验证周期性办公汇报场景下「省时付费」假设是否成立，并观察 Q4/季度末需求波动对曝光的影响。",
+      "asset_requirements": {
+        "product_name": "工作总结 PPT 模板",
+        "product_concept": "季度/年度工作总结 PPT 模板，含工作回顾、成果展示、问题与计划等标准页结构，可编辑 pptx，可按岗位微调文案占位",
+        "deliverable_format": "pptx",
+        "deliverable_count": 1,
+        "structure_outline": [
+          "封面",
+          "工作回顾",
+          "主要成果",
+          "数据展示",
+          "问题与反思",
+          "下阶段计划",
+          "致谢"
+        ],
+        "content_constraints": {
+          "language": "zh-CN",
+          "max_pages_or_sheets": 10,
+          "include_instructions": true,
+          "editable": true
+        },
+        "reference_from_experiment": {
+          "hypothesis_summary": "职场用户愿为「现成结构 + 省时间」支付 ¥19.9 购买工作总结 pptx 模板",
+          "validation_goal": "验证周期性办公汇报场景下省时付费假设是否成立"
+        },
+        "publish_channel_planned": "xianyu",
+        "expected_price_cny": 19.9
+      },
+      "quality_requirements": {
+        "min_quality_score": 0.8,
+        "first_pass_required": true,
+        "category_a_threshold": {
+          "production_time_minutes_max": 25,
+          "production_cost_cny_max": 3.0
+        },
+        "checklist": [
+          "deliverable_format_correct",
+          "structure_complete",
+          "no_placeholder_text",
+          "placeholder_text_editable",
+          "instructions_included"
+        ],
+        "reject_conditions": [
+          "missing_required_sections",
+          "quality_score_below_threshold"
+        ]
+      },
+      "production_priority": "P1",
+      "status": "draft",
+      "creation_method": "human_assisted",
+      "created_at": "2026-07-12T17:03:00+08:00"
+    },
+    {
+      "production_request_id": "preq_20260712_005",
+      "object_type": "production_request",
+      "contract_version": "1.0",
+      "source_experiment_id": "exp_20260708_005",
+      "source_review_id": "erev_20260709_005",
+      "source_opportunity_id": "opp_20260708_005",
+      "source_selection_id": "sel_20260708_005",
+      "keyword": "Excel 考勤记录表",
+      "experiment_category": "A",
+      "product_type": "excel",
+      "product_name": "Excel 考勤记录表",
+      "target_customer": "小微商户管理员、培训班负责人、10 人以内小团队",
+      "business_goal": "验证低竞争细分「小团队考勤 Excel」是否有稳定长尾需求与首单转化；用户愿为带自动统计的考勤模板支付 ¥12.9",
+      "validation_goal": "验证低竞争细分「小团队考勤 Excel」是否有稳定长尾需求与首单转化；本批次 selection_score 最高（69）优先实验候选。",
+      "asset_requirements": {
+        "product_name": "Excel 考勤记录表",
+        "product_concept": "小团队 Excel 考勤记录表，含出勤统计、迟到早退自动计算与月度汇总，单文件 xlsx + 简短说明",
+        "deliverable_format": "xlsx",
+        "deliverable_count": 1,
+        "structure_outline": [
+          "考勤明细表",
+          "月度汇总",
+          "使用说明"
+        ],
+        "content_constraints": {
+          "language": "zh-CN",
+          "max_pages_or_sheets": 3,
+          "include_instructions": true,
+          "editable": true,
+          "formulas_required": true
+        },
+        "reference_from_experiment": {
+          "hypothesis_summary": "小团队管理员愿为带自动统计与月度汇总的考勤 Excel 模板支付 ¥12.9",
+          "validation_goal": "验证低竞争细分小团队考勤 Excel 是否有首单转化"
+        },
+        "publish_channel_planned": "taobao",
+        "expected_price_cny": 12.9
+      },
+      "quality_requirements": {
+        "min_quality_score": 0.85,
+        "first_pass_required": true,
+        "category_a_threshold": {
+          "production_time_minutes_max": 25,
+          "production_cost_cny_max": 2.0
+        },
+        "checklist": [
+          "deliverable_format_correct",
+          "structure_complete",
+          "formulas_functional",
+          "attendance_stats_accurate",
+          "instructions_included"
+        ],
+        "reject_conditions": [
+          "missing_required_sections",
+          "formula_errors",
+          "quality_score_below_threshold"
+        ]
+      },
+      "production_priority": "P0",
+      "status": "draft",
+      "creation_method": "human_assisted",
+      "created_at": "2026-07-12T17:03:00+08:00"
+    },
+    {
+      "production_request_id": "preq_auto_20260830_a4189c",
+      "object_type": "production_request",
+      "contract_version": "1.0",
+      "entry": "055",
+      "source_experiment_id": "exp_auto_20260830_8cbd08",
+      "source_experiment_candidate_id": "ec_5ce1f9c88754",
+      "source_opportunity_id": "aoc_919c62520b98",
+      "source_selection_id": "sel_d2079d0aa487",
+      "source_candidate_id": "aoc_919c62520b98",
+      "keyword": "批量关键词",
+      "product_type": "excel",
+      "product_type_declared": "digital_template",
+      "product_name": "批量关键词 EXCEL 模板",
+      "target_customer": "需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）",
+      "business_goal": "基于市场信号选择的「批量关键词」机会，以 digital_template/excel 形式生产可交付资产，可在 xianyu 验证首次付费转化。",
+      "validation_goal": "验证自主发现候选能否走通 Production→Quality→Commercial→Publish Queue",
+      "hypothesis": "基于市场信号选择的「批量关键词」机会，以 digital_template/excel 形式生产可交付资产，可在 xianyu 验证首次付费转化。",
+      "production_priority": "P0",
+      "status": "approved_for_e2e_055",
+      "creation_method": "autonomous_bridge_055",
+      "asset_requirements": {
+        "product_name": "批量关键词 EXCEL 模板",
+        "product_concept": "【HYPOTHESIS】面向「批量关键词」需求的可编辑 EXCEL 数字模板包（digital_template → CF excel）",
+        "deliverable_format": "xlsx",
+        "deliverable_count": 1,
+        "structure_outline": [
+          "封面/标题",
+          "使用说明",
+          "核心模板区",
+          "示例数据",
+          "扩展字段"
+        ],
+        "content_constraints": {
+          "language": "zh-CN",
+          "include_instructions": true,
+          "editable": true
+        },
+        "publish_channel_planned": "xianyu",
+        "expected_price_cny": 99.9,
+        "price_role": "PRODUCT_PRICE_HYPOTHESIS",
+        "reference_from_experiment": {
+          "hypothesis_summary": "基于市场信号选择的「批量关键词」机会，以 digital_template/excel 形式生产可交付资产，可在 xianyu 验证首次付费转化。",
+          "validation_goal": "验证自主发现候选能否走通 Production→Quality→Commercial→Publish Queue",
+          "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6"
+        }
+      },
+      "quality_requirements": {
+        "min_quality_score": 0.8,
+        "first_pass_required": true,
+        "checklist": [
+          "deliverable_format_correct",
+          "structure_complete",
+          "file_openable"
+        ]
+      },
+      "required_output": "可打开的 excel 交付文件 + publish_package",
+      "production_constraints": {
+        "phase1_virtual_materials_only": true,
+        "no_future_media_runtime": true,
+        "no_external_publish": true
+      },
+      "created_at": "2026-08-30T16:38:33+08:00"
+    }
+  ],
+  "entry_055_note": "Autonomous bridge PRs appended; human_assisted retained.",
+  "updated_at": "2026-08-30 16:38:33"
+}

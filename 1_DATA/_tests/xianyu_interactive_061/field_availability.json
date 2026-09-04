@@ -1,0 +1,27 @@
+{
+  "records_seen": 20,
+  "records_extracted": 20,
+  "rates": {
+    "title_rate": 1.0,
+    "price_rate": 1.0,
+    "want_count_rate": 0.4,
+    "source_url_rate": 1.0,
+    "source_item_id_rate": 1.0,
+    "view_count_rate": 0.0,
+    "comment_count_rate": 0.0,
+    "share_count_rate": 0.0,
+    "published_at_rate": 0.0
+  },
+  "statuses": {
+    "title": "AVAILABLE",
+    "price": "AVAILABLE",
+    "want_count": "PARTIAL",
+    "source_url": "AVAILABLE",
+    "source_item_id": "AVAILABLE",
+    "view_count": "UNAVAILABLE",
+    "comment_count": "UNAVAILABLE",
+    "share_count": "UNAVAILABLE",
+    "published_at": "UNAVAILABLE"
+  },
+  "note": "data quality stats ≠ opportunity / hotness score"
+}

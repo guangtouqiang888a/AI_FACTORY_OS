@@ -1,0 +1,44 @@
+{
+  "purpose": "want_count_visibility_on_visible_cards_when_primary_search_empty",
+  "dump_file": "page_dump_Excel模板.html",
+  "search_result_count": 0,
+  "recommended_sampled": 20,
+  "recommended_want_audit": {
+    "search_results_count": 20,
+    "status_distribution": {
+      "VISIBLE_ON_CARD": 13,
+      "MISSING_ON_CARD": 7,
+      "AVAILABLE_ON_DETAIL": 0,
+      "UNAVAILABLE": 0,
+      "UNKNOWN": 0
+    },
+    "card_visible_rate": 0.65,
+    "detail_available_rate": 0.0,
+    "total_observable_rate": 0.65,
+    "still_null_count": 7,
+    "still_null_rate": 0.35,
+    "null_vs_zero_rule": "NULL means field absent; 0 means page showed 0人想要",
+    "login_causation": {
+      "login_used": false,
+      "conclusion": "NOT_PROVEN",
+      "note": "Anonymous browser only. Cannot conclude missing want_count is caused by not being logged in."
+    },
+    "valid_without_want_count": true,
+    "note": "missing ≠ zero; unavailable ≠ proven login-related"
+  },
+  "recommended_field_availability": {
+    "search_results_seen": 20,
+    "accepted": 20,
+    "rejected": 0,
+    "duplicate": 0,
+    "title_rate": 1.0,
+    "price_rate": 1.0,
+    "want_count_visible_rate": 0.65,
+    "want_count_missing_rate": 0.35,
+    "url_rate": 1.0,
+    "item_id_rate": 1.0,
+    "note": "data availability ≠ commercial score"
+  },
+  "warning": "RECOMMENDED_RESULT only. Must NOT be used as query-specific SEARCH_RESULT evidence or FIRST_REAL_XIANYU_SEARCH_BATCH.",
+  "login_causation": "NOT_PROVEN"
+}

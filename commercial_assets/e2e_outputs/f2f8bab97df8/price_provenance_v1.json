@@ -1,0 +1,218 @@
+{
+  "schema": "price_provenance_v1",
+  "entry": "057",
+  "product_asset_id": "f2f8bab97df8",
+  "provenance_99_9": {
+    "product_asset_id": "f2f8bab97df8",
+    "target_value": 99.9,
+    "chain": [
+      {
+        "step": 1,
+        "source": "SQLite products.price",
+        "file": "99_ARCHIVE/database_history/ai_factory_legacy_simulation_20260830.db",
+        "db_role": "legacy_archive",
+        "field": "products.price",
+        "function": null,
+        "value": [
+          99.9,
+          99.9,
+          99.9,
+          99.9,
+          99.9,
+          99.9
+        ],
+        "unique_values": [
+          99.9
+        ],
+        "source_urls": [
+          "https://goofish.com/item/test"
+        ],
+        "data_origin": "SAMPLE / TEST_FIXTURE",
+        "meaning": "Listing asking prices from SAMPLE/test URLs — NOT REAL platform evidence (Entry 058A reclassification)",
+        "origin": "MARKET_REFERENCE_PRICE",
+        "timestamp": "2026-07-04",
+        "product_ids": [
+          2,
+          3,
+          7,
+          8,
+          12,
+          13
+        ]
+      },
+      {
+        "step": 2,
+        "source": "market_signals.price_signal",
+        "file": "1_DATA/market_signal_core.py",
+        "field": "value / unit=avg_price",
+        "function": "derive_signals → price_signal",
+        "value": 99.9,
+        "meaning": "Average of listing prices for keyword cohort (derived from SAMPLE rows)",
+        "origin": "MARKET_REFERENCE_PRICE",
+        "timestamp": "2026-08-29 16:57:38",
+        "signal_id": "sig_bd3bd2f64ddf",
+        "note": "signal may live only in legacy archive after Entry 058A"
+      },
+      {
+        "step": 3,
+        "source": "opportunity_candidate.estimated_value",
+        "file": "3_DECISION/opportunity_discovery.py",
+        "field": "estimated_value",
+        "function": "build_candidate_from_group (avg_price assignment)",
+        "value": 99.9,
+        "meaning": "Copied avg listing price into candidate estimated_value (proxy, not WTP)",
+        "origin": "PRICE_HYPOTHESIS",
+        "timestamp": "2026-08-29 16:57:38"
+      },
+      {
+        "step": 4,
+        "source": "e2e_autonomous_pilot price_hypothesis",
+        "file": "6_EXECUTION/e2e_autonomous_pilot.py",
+        "field": "price_hypothesis.value ← candidate.estimated_value",
+        "function": "build_experiment_candidate / materialize_production_request",
+        "value": 99.9,
+        "meaning": "Propagated into Experiment Candidate / PR expected_price / CP price_boundary",
+        "origin": "PRICE_HYPOTHESIS",
+        "timestamp": "2026-08-30 (Entry 055)"
+      },
+      {
+        "step": 5,
+        "source": "listing.listing_price field mirror",
+        "file": "6_EXECUTION/e2e_autonomous_pilot.py → build_and_upsert_listing",
+        "field": "listing_price (mirrored for gate eligibility)",
+        "function": "build_and_upsert_listing",
+        "value": 99.9,
+        "meaning": "Gate mirror of Price Hypothesis — NOT human-confirmed Listing Price, NOT Paid Price",
+        "origin": "PRICE_HYPOTHESIS",
+        "timestamp": "2026-08-30"
+      }
+    ],
+    "classification": {
+      "value": 99.9,
+      "primary_role": "MARKET_REFERENCE_PRICE",
+      "propagated_as": "PRICE_HYPOTHESIS",
+      "is_default": false,
+      "is_paid": false,
+      "is_validated": false,
+      "is_listing_confirmed": false,
+      "is_real_market": false,
+      "data_origin": "SAMPLE / TEST_FIXTURE",
+      "db_role": "legacy_archive",
+      "case": "SAMPLE_FIXTURE_THEN_HYPOTHESIS",
+      "case_note": "Entry 058A: products.price rows are SAMPLE/TEST_FIXTURE (source_url sample001/sample002/test; titles 测试商品*). Avg 99.9 propagated as PRICE_HYPOTHESIS — NOT REAL market evidence, NOT VALIDATED, NOT Paid. Evidence diversity LOW (identical prices).",
+      "avg_matches_signal": true,
+      "unique_price_count": 1
+    },
+    "listing_rows": [
+      {
+        "id": 2,
+        "title": "批量商品0",
+        "price": 99.9,
+        "want_count": 200,
+        "keyword": "批量关键词",
+        "collect_date": "2026-07-04",
+        "source_url": "https://goofish.com/item/test"
+      },
+      {
+        "id": 3,
+        "title": "批量商品1",
+        "price": 99.9,
+        "want_count": 200,
+        "keyword": "批量关键词",
+        "collect_date": "2026-07-04",
+        "source_url": "https://goofish.com/item/test"
+      },
+      {
+        "id": 7,
+        "title": "批量商品0",
+        "price": 99.9,
+        "want_count": 200,
+        "keyword": "批量关键词",
+        "collect_date": "2026-07-04",
+        "source_url": "https://goofish.com/item/test"
+      },
+      {
+        "id": 8,
+        "title": "批量商品1",
+        "price": 99.9,
+        "want_count": 200,
+        "keyword": "批量关键词",
+        "collect_date": "2026-07-04",
+        "source_url": "https://goofish.com/item/test"
+      },
+      {
+        "id": 12,
+        "title": "批量商品0",
+        "price": 99.9,
+        "want_count": 200,
+        "keyword": "批量关键词",
+        "collect_date": "2026-07-04",
+        "source_url": "https://goofish.com/item/test"
+      },
+      {
+        "id": 13,
+        "title": "批量商品1",
+        "price": 99.9,
+        "want_count": 200,
+        "keyword": "批量关键词",
+        "collect_date": "2026-07-04",
+        "source_url": "https://goofish.com/item/test"
+      }
+    ]
+  },
+  "provenance_19_9": {
+    "target_value": 19.9,
+    "chain": [
+      {
+        "step": 1,
+        "source": "Content Factory creator_agent hardcode map",
+        "file": "11_CONTENT_FACTORY/agents/creator_agent.py",
+        "field": "_suggest_price → Excel模板: 19.9",
+        "function": "CreatorAgent._suggest_price",
+        "value": 19.9,
+        "meaning": "Pipeline product-type default (heuristic), not market WTP",
+        "origin": "CF_PIPELINE_DEFAULT"
+      },
+      {
+        "step": 2,
+        "source": "packaging_agent fallback",
+        "file": "11_CONTENT_FACTORY/agents/packaging_agent.py",
+        "field": "product.get('price', 19.9) → pricing.json suggested_price",
+        "function": "PackagingAgent._pricing",
+        "value": 19.9,
+        "meaning": "Writes CF suggested_price into publish_package/pricing.json",
+        "origin": "AI_RECOMMENDED_PRICE"
+      },
+      {
+        "step": 3,
+        "source": "product_memory / artifact pricing.json",
+        "file": "11_CONTENT_FACTORY/storage/product_memory.json + artifacts/.../pricing.json",
+        "field": "price / suggested_price",
+        "function": null,
+        "value": 19.9,
+        "meaning": "Persisted CF default on autonomous product package",
+        "origin": "CF_PIPELINE_DEFAULT"
+      }
+    ],
+    "classification": {
+      "value": 19.9,
+      "primary_role": "CF_PIPELINE_DEFAULT",
+      "also": "AI_RECOMMENDED_PRICE",
+      "is_default": true,
+      "is_paid": false,
+      "is_validated": false,
+      "case": "B_DEFAULT_HEURISTIC",
+      "case_note": "Hardcoded Excel模板 default in CreatorAgent. Must NOT be treated as Market Evidence or Validated Price."
+    }
+  },
+  "legacy_12_9": {
+    "value": 12.9,
+    "role": "HISTORICAL_PRICE",
+    "applies_to": "8523329941d4",
+    "applies_to_autonomous": false,
+    "meaning": "Legacy Pilot HISTORICAL / HYPOTHESIS for 8523329941d4 only. Must not contaminate f2f8bab97df8 as VALIDATED or current evidence.",
+    "validated": false
+  },
+  "recommendation_id": "prrec_b5299bdb6935",
+  "updated_at": "2026-08-30 20:45:16"
+}

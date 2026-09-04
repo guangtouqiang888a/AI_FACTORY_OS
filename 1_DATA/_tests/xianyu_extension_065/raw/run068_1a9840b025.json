@@ -1,0 +1,37 @@
+{
+  "acquisition_run_id": "run068_1a9840b025",
+  "raw_record_id": "raw_20d0af2a024c",
+  "source": "xianyu",
+  "timestamp": "2026-09-03T13:48:53+08:00",
+  "payload": {
+    "contract_version": "064.1.0",
+    "message_type": "MARKET_RECORD_BATCH",
+    "request_id": "run068_1a9840b025",
+    "run_id": "run068_1a9840b025",
+    "session_id": "ss_3f4143703cae",
+    "source": "xianyu",
+    "platform": "xianyu",
+    "query": "简历模板",
+    "result_origin": "RECOMMENDED_RESULT",
+    "page_state": "EMPTY_SEARCH_RESULT",
+    "observed_at": "2026-09-03T13:48:53+08:00",
+    "collector_version": "065.1.0",
+    "adapter_version": "065.1.0",
+    "status": "NO_RESULTS",
+    "filter_metadata": {
+      "min_want_count": 50
+    },
+    "records": [],
+    "stats": {
+      "records_extracted": 0,
+      "search_result_count": 0,
+      "recommended_count": 0
+    },
+    "probe_meta": {
+      "entry": "068",
+      "route": "A_search_session",
+      "method": "search_session_063_dom + extension_batch + filter_068"
+    }
+  },
+  "collector_version": "065.1.0"
+}

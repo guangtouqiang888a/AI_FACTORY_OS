@@ -1,0 +1,33 @@
+
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><link href="//img.alicdn.com/tfs/TB19WObTNv1gK0jSZFFXXb0sXXa-144-144.png" rel="Shortcut Icon" type="image/x-icon"/><link rel="apple-touch-icon-precomposed" href="//img.alicdn.com/tfs/TB19WObTNv1gK0jSZFFXXb0sXXa-144-144.png"/><meta name="viewport" content="width=1280, initial-scale=0.3, maximum-scale=1, user-scalable=yes, viewport-fit=cover"/><meta property="wb:webmaster" content="bd14bd59a79e2a4d"/><meta name="google-site-verification" content="0wfGvfynIETSS9YHEGRXA-mFhUyewvxl_zUY2L74Eak"/><meta name="msvalidate.01" content="B4416C79DC5998EE565E50BB97F823D7"/><meta name="baidu-site-verification" content="codeva-dRdGVvVcpB"/><meta name="sogou_site_verification" content="sv4WPDOiaa"/><meta name="360-site-verification" content="c7cce62a27c0da9ee94c3e3ac721a36a"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="闲鱼，中国领先的闲置二手交易平台，趣味生活社区，从最初的C2C交易，到用户在这里分享技能、兴趣与经验，从物品到服务、从交易到交流，如今闲鱼累计用户数超5亿，日均交易额已突破10亿，每天都有400万件闲置物品在平台上发布。同时，闲鱼以闲置交易为起点，还发展出一键转卖、极速回收、验货宝、闲鱼小法庭等服务；并在2024年闲鱼成立十周年之际推出了闲鱼简历功能，通过闲置时间、技能来赚钱，让你的人生另起一行。"/><meta name="keywords" content="闲鱼，咸鱼，xianyu，二手，旧货，卖东西，网上交易，闲置交易，网页版，电脑版，卖闲置，回收，搞副业，鱼小铺，个人交易，同城交易，自提，在线交易，一口价，小刀，砍价，海鲜市场，购物网站，网上贸易，安全购物，放心买，网购，网上开店"/><link rel="dns-prefetch" href="//g.alicdn.com"/><link rel="dns-prefetch" href="//o.alicdn.com"/><link rel="dns-prefetch" href="//gw.alicdn.com"/><link rel="dns-prefetch" href="//img.alicdn.com"/><link rel="dns-prefetch" href="//gm.mmstat.com"/><link rel="dns-prefetch" href="//log.mmstat.com"/><meta name="ice-meta-count" content="0"/><title>闲鱼 - 闲不住？上闲鱼！</title><link rel="stylesheet" type="text/css" href="https://g.alicdn.com/idle-pc/xy-site/0.0.174/css/main.css"/><link rel="stylesheet" type="text/css" href="https://g.alicdn.com/idle-pc/xy-site/0.0.174/css/p_layout.css"/><link rel="stylesheet" type="text/css" href="https://g.alicdn.com/idle-pc/xy-site/0.0.174/css/p_search-index.css"/><script src="https://g.alicdn.com/??/AWSC/AWSC/awsc.js,/sd/baxia-entry/baxiaCommon.js"></script><script src="https://g.alicdn.com/??mtb/lib-promise/3.1.3/polyfillB.js,mtb/lib-mtop/2.7.3/mtop.js,mtb/lib-login/3.5.1/login.js,idleFish-F2e/perf/lottie.js,vip/havana-login/0.4.10/js/mini-login-embedder-min.js"></script><script src="https://o.alicdn.com/vip/goofish-auto-login/plugin.js"></script><script src="https://g.alicdn.com/aes/??tracker/3.3.9/index.js,tracker-plugin-survey/3.1.3/index.js,tracker-plugin-pv/3.0.6/index.js,tracker-plugin-event/3.0.0/index.js,tracker-plugin-jserror/3.0.3/index.js,tracker-plugin-api/3.1.3/index.js,tracker-plugin-resourceError/3.0.4/index.js,tracker-plugin-perf/3.1.0/index.js,tracker-plugin-eventTiming/3.0.0/index.js,tracker-plugin-blank/3.0.1/index.js"></script><script>
+  window.__baxiaReady = new Promise(function (resolve) {
+    if (typeof baxiaCommon === 'undefined' || typeof baxiaCommon.init !== 'function') {
+      console.warn('[baxia] baxiaCommon not loaded synchronously, security params will be missing');
+      return resolve();
+    }
+
+    baxiaCommon.init({
+      mergeApiPath: true,
+      appendTo: 'default',
+      paramsType: ['uab', 'umid', 'et'],
+      checkApiPath: function (url) {
+        return !!(url && url.indexOf('/mtop.taobao.idlemtopsearch.pc.search/') > -1);
+      },
+    });
+
+    if (window.__baxia__ && window.__baxia__.baxiaPromptInit === true) {
+      return resolve();
+    }
+
+    var timer = setInterval(function () {
+      if (window.__baxia__ && window.__baxia__.baxiaPromptInit === true) {
+        clearInterval(timer);
+        resolve();
+      }
+    }, 50);
+    setTimeout(function () {
+      clearInterval(timer);
+      resolve();
+    }, 5000);
+  });
+</script></head><body><div style="position:absolute;top:50%;left:50%;transform:translate3d(-50%, -50%, 0);background:transparent;z-index:-1;opacity:0;font-size:0"><img id="site-logo" width="121" height="75" src="https://gw.alicdn.com/imgextra/i4/O1CN01puu0XC1vG0PyKApAV_!!6000000006144-2-tps-242-150.png" 

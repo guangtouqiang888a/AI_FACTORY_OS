@@ -1,0 +1,70 @@
+{
+  "zip": "D:\\闲鱼全自动采集插件1.zip",
+  "files": [
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/my-xianyu-scraper/1 ▓┐╩≡▓σ╝■.png",
+      "size": 199696,
+      "compress": 193467
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/my-xianyu-scraper/2 ╩╣╙├▓σ╝■.png",
+      "size": 920511,
+      "compress": 912239
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/my-xianyu-scraper/content.js",
+      "size": 3522,
+      "compress": 1446
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/my-xianyu-scraper/manifest.json",
+      "size": 364,
+      "compress": 237
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/my-xianyu-scraper/popup.html",
+      "size": 2088,
+      "compress": 962
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/my-xianyu-scraper/popup.js",
+      "size": 2665,
+      "compress": 1260
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/._my-xianyu-scraper",
+      "size": 220,
+      "compress": 92
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/my-xianyu-scraper/._1 ▓┐╩≡▓σ╝■.png",
+      "size": 219,
+      "compress": 131
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/my-xianyu-scraper/._2 ╩╣╙├▓σ╝■.png",
+      "size": 219,
+      "compress": 131
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/my-xianyu-scraper/._content.js",
+      "size": 163,
+      "compress": 86
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/my-xianyu-scraper/._manifest.json",
+      "size": 163,
+      "compress": 86
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/my-xianyu-scraper/._popup.html",
+      "size": 163,
+      "compress": 86
+    },
+    {
+      "path": "╧╨╙π╚½╫╘╢»▓╔╝»▓σ╝■/__MACOSX/my-xianyu-scraper/._popup.js",
+      "size": 163,
+      "compress": 86
+    }
+  ]
+}

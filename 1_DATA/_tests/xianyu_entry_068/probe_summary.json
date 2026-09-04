@@ -1,0 +1,126 @@
+{
+  "entry": "068",
+  "route": "A_search_session",
+  "queries": [
+    "手机壳",
+    "Excel模板",
+    "简历模板"
+  ],
+  "human_verified": false,
+  "FIRST_REAL_XIANYU_MARKET_OBSERVATION": false,
+  "attempts": [
+    {
+      "query": "手机壳",
+      "run_id": "run068_e801352a05",
+      "search_control_feasibility": "SEARCH_CONTROL_NOT_FEASIBLE",
+      "search_control_status": "PARTIAL",
+      "page_state": "EMPTY_SEARCH_RESULT",
+      "search_result_count": 0,
+      "recommended_count": 0,
+      "collector_status": "COLLECTOR_NO_SEARCH_RESULT_ON_PAGE",
+      "access_control": null,
+      "pipeline": {
+        "ok": true,
+        "first_real": false,
+        "filter": {
+          "MATCH": 0,
+          "BELOW_THRESHOLD": 0,
+          "UNKNOWN": 0,
+          "observations_retained": 0,
+          "filter_deleted_observations": false,
+          "filters_applied": {
+            "min_want_count": 50,
+            "min_price": null,
+            "max_price": null
+          }
+        },
+        "block_reason": null,
+        "import_status": "PENDING_HUMAN_VERIFICATION"
+      }
+    },
+    {
+      "query": "Excel模板",
+      "run_id": "run068_df8fd09bbd",
+      "search_control_feasibility": "SEARCH_CONTROL_NOT_FEASIBLE",
+      "search_control_status": "PARTIAL",
+      "page_state": "EMPTY_SEARCH_RESULT",
+      "search_result_count": 0,
+      "recommended_count": 0,
+      "collector_status": "COLLECTOR_NO_SEARCH_RESULT_ON_PAGE",
+      "access_control": null,
+      "pipeline": {
+        "ok": true,
+        "first_real": false,
+        "filter": {
+          "MATCH": 0,
+          "BELOW_THRESHOLD": 0,
+          "UNKNOWN": 0,
+          "observations_retained": 0,
+          "filter_deleted_observations": false,
+          "filters_applied": {
+            "min_want_count": 50,
+            "min_price": null,
+            "max_price": null
+          }
+        },
+        "block_reason": null,
+        "import_status": "PENDING_HUMAN_VERIFICATION"
+      }
+    },
+    {
+      "query": "简历模板",
+      "run_id": "run068_1a9840b025",
+      "search_control_feasibility": "SEARCH_CONTROL_NOT_FEASIBLE",
+      "search_control_status": "PARTIAL",
+      "page_state": "EMPTY_SEARCH_RESULT",
+      "search_result_count": 0,
+      "recommended_count": 0,
+      "collector_status": "COLLECTOR_NO_SEARCH_RESULT_ON_PAGE",
+      "access_control": null,
+      "pipeline": {
+        "ok": true,
+        "first_real": false,
+        "filter": {
+          "MATCH": 0,
+          "BELOW_THRESHOLD": 0,
+          "UNKNOWN": 0,
+          "observations_retained": 0,
+          "filter_deleted_observations": false,
+          "filters_applied": {
+            "min_want_count": 50,
+            "min_price": null,
+            "max_price": null
+          }
+        },
+        "block_reason": null,
+        "import_status": "PENDING_HUMAN_VERIFICATION"
+      }
+    }
+  ],
+  "blocker": {
+    "stage": "Search Controller / Page State",
+    "detail": "EMPTY_SEARCH_RESULT",
+    "search_control": "SEARCH_CONTROL_NOT_FEASIBLE",
+    "note": "EMPTY or non-SEARCH_RESULT; recommended not used as substitute"
+  },
+  "db_before": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0,
+    "market_events": 0
+  },
+  "db_after": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0,
+    "market_events": 0
+  },
+  "db_delta_observations": 0,
+  "products_unchanged": true,
+  "signals_unchanged": true,
+  "selection_unchanged": true,
+  "events_unchanged": true,
+  "artifact_dir": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_entry_068"
+}

@@ -1,0 +1,19 @@
+{
+  "suggested_price": 19.9,
+  "currency": "CNY",
+  "platform": "xianyu",
+  "product_price_hypothesis": 99.9,
+  "listing_price": null,
+  "actual_paid_price": null,
+  "price_role": "PRICE_HYPOTHESIS",
+  "note": "Entry 057 ontology. suggested_price=CF default. ai_recommended_experimental_price is AI_RECOMMENDED_PRICE only. Human confirms Listing Price. ≠ Paid ≠ Validated.",
+  "market_reference_price": 99.9,
+  "cf_packaging_default": 19.9,
+  "ai_recommended_experimental_price": 19.9,
+  "recommended_range": {
+    "min": 12.9,
+    "max": 29.9,
+    "currency": "CNY"
+  },
+  "price_recommendation_id": "prrec_b5299bdb6935"
+}

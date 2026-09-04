@@ -1,0 +1,193 @@
+{
+  "products": [
+    {
+      "product_id": "e601c17c6977",
+      "category": "PPT模板",
+      "score": 93.05,
+      "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\e601c17c6977",
+      "artifact_files": [
+        "templates\\e601c17c6977.pptx",
+        "documents\\product_manual.pdf",
+        "images\\cover_placeholder.txt"
+      ],
+      "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\e601c17c6977\\package\\final_product.zip",
+      "commercial_score": 92.12,
+      "release_status": "approved",
+      "status": "quality_pass",
+      "created_time": "2026-07-07 14:40:17",
+      "saved_at": "2026-07-07 14:40:17",
+      "product": {
+        "id": "e601c17c6977",
+        "title": "【PPT模板】办公PPT模板 — 专业数字资料包",
+        "category": "PPT模板",
+        "target_customer": "职场人士、创业者、学生",
+        "problem": "用户需要高质量 PPT模板 解决「办公PPT模板」场景，自行制作耗时且质量不稳定",
+        "content": "# PPT模板 生产大纲\n\n## 关键词\n办公PPT模板\n\n## 市场需求\nPPT模板 市场需求稳定，建议结合细分场景切入\n\n## 交付物\n- source/ 原始素材\n- documents/ 文档内容\n- templates/ 模板结构\n- images/ 封面与配图占位\n- package/ 发布包\n",
+        "market_score": 88.5,
+        "quality_score": 92.12,
+        "profit_score": 32.53,
+        "price": 35.88,
+        "platform": "xianyu",
+        "status": "quality_pass",
+        "created_at": "2026-07-07 14:40:17"
+      },
+      "quality": {
+        "quality_score": 93.05,
+        "commercial_score": 92.12,
+        "content_score": 90.0,
+        "usability_score": 100.0,
+        "market_score": 88.5,
+        "selling_score": 100.0,
+        "production_cost_score": 90.0,
+        "passed": true,
+        "status": "quality_pass",
+        "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+        "issues": []
+      }
+    },
+    {
+      "product_id": "8523329941d4",
+      "category": "Excel模板",
+      "score": 89.0,
+      "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4",
+      "artifact_files": [
+        "templates\\8523329941d4.xlsx",
+        "documents\\product_manual.pdf",
+        "images\\cover_placeholder.txt"
+      ],
+      "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4\\package\\final_product.zip",
+      "commercial_score": 88.75,
+      "release_status": "approved",
+      "status": "quality_pass",
+      "created_time": "2026-07-13 18:36:18",
+      "saved_at": "2026-07-13 18:36:19",
+      "product": {
+        "id": "8523329941d4",
+        "title": "【Excel模板】Excel 考勤记录表 — 专业数字资料包",
+        "category": "Excel模板",
+        "target_customer": "小微商户管理员、培训班负责人、10 人以内小团队",
+        "problem": "用户需要高质量 Excel模板 解决「Excel 考勤记录表」场景，自行制作耗时且质量不稳定",
+        "content": "# Excel模板 生产大纲\n\n## 关键词\nExcel 考勤记录表\n\n## 市场需求\nApproved Production Request preq_20260712_005 — market analysis bypassed; validation_goal read-only\n\n## 交付物\n- source/ 原始素材\n- documents/ 文档内容\n- templates/ 模板结构\n- images/ 封面与配图占位\n- package/ 发布包\n",
+        "market_score": 75.0,
+        "quality_score": 88.75,
+        "profit_score": 16.57,
+        "price": 19.9,
+        "platform": "taobao",
+        "status": "quality_pass",
+        "created_at": "2026-07-13 18:36:18",
+        "production_request_id": "preq_20260712_005"
+      },
+      "quality": {
+        "quality_score": 89.0,
+        "commercial_score": 88.75,
+        "content_score": 90.0,
+        "usability_score": 100.0,
+        "market_score": 75.0,
+        "selling_score": 100.0,
+        "production_cost_score": 90.0,
+        "passed": true,
+        "status": "quality_pass",
+        "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+        "issues": []
+      }
+    },
+    {
+      "product_id": "f2f8bab97df8",
+      "category": "Excel模板",
+      "score": 89.0,
+      "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8",
+      "artifact_files": [
+        "templates\\f2f8bab97df8.xlsx",
+        "documents\\product_manual.pdf",
+        "images\\cover_placeholder.txt"
+      ],
+      "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip",
+      "commercial_score": 88.75,
+      "release_status": "approved",
+      "status": "quality_pass",
+      "created_time": "2026-08-30 16:38:33",
+      "saved_at": "2026-08-30 16:38:33",
+      "product": {
+        "id": "f2f8bab97df8",
+        "title": "【Excel模板】批量关键词 EXCEL 模板 — 专业数字资料包",
+        "category": "Excel模板",
+        "target_customer": "需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）",
+        "problem": "用户需要高质量 Excel模板 解决「批量关键词 EXCEL 模板」场景，自行制作耗时且质量不稳定",
+        "content": "# Excel模板 生产大纲\n\n## 关键词\n批量关键词 EXCEL 模板\n\n## 市场需求\nApproved Production Request preq_auto_20260830_a4189c — market analysis bypassed; validation_goal read-only\n\n## 交付物\n- source/ 原始素材\n- documents/ 文档内容\n- templates/ 模板结构\n- images/ 封面与配图占位\n- package/ 发布包\n",
+        "market_score": 75.0,
+        "quality_score": 88.75,
+        "profit_score": 16.57,
+        "price": 19.9,
+        "platform": "xianyu",
+        "status": "quality_pass",
+        "created_at": "2026-08-30 16:38:33",
+        "production_request_id": "preq_auto_20260830_a4189c"
+      },
+      "quality": {
+        "quality_score": 89.0,
+        "commercial_score": 88.75,
+        "content_score": 90.0,
+        "usability_score": 100.0,
+        "market_score": 75.0,
+        "selling_score": 100.0,
+        "production_cost_score": 90.0,
+        "passed": true,
+        "status": "quality_pass",
+        "recommendation": "commercial_score >= 80，可进入包装与发布辅助流程",
+        "issues": []
+      }
+    }
+  ],
+  "history": [
+    {
+      "product_id": "e601c17c6977",
+      "category": "PPT模板",
+      "score": 93.05,
+      "commercial_score": 92.12,
+      "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\e601c17c6977",
+      "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\e601c17c6977\\package\\final_product.zip",
+      "release_status": "approved",
+      "status": "quality_pass",
+      "created_time": "2026-07-07 14:40:17"
+    },
+    {
+      "product_id": "8523329941d4",
+      "category": "Excel模板",
+      "score": 89.0,
+      "commercial_score": 88.75,
+      "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4",
+      "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\8523329941d4\\package\\final_product.zip",
+      "release_status": "approved",
+      "status": "quality_pass",
+      "created_time": "2026-07-13 18:36:18"
+    },
+    {
+      "product_id": "f2f8bab97df8",
+      "category": "Excel模板",
+      "score": 89.0,
+      "commercial_score": 88.75,
+      "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8",
+      "zip_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\f2f8bab97df8\\package\\final_product.zip",
+      "release_status": "approved",
+      "status": "quality_pass",
+      "created_time": "2026-08-30 16:38:33"
+    }
+  ],
+  "updated_at": "2026-08-30 16:38:33",
+  "_schema": {
+    "product_entry": {
+      "product_id": "string",
+      "category": "string",
+      "score": "quality_score float",
+      "artifact_path": "string",
+      "artifact_files": [
+        "list of relative paths"
+      ],
+      "zip_path": "path to package/final_product.zip",
+      "commercial_score": "float",
+      "release_status": "approved | blocked",
+      "status": "quality_pass | need_revision",
+      "created_time": "ISO datetime string"
+    }
+  }
+}

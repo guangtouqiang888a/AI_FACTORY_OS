@@ -1,0 +1,209 @@
+{
+  "schema": "commercial_products_v1",
+  "entry": "053",
+  "note": "Commercial Product lifecycle. ≠ Product Asset ≠ Listing ≠ Published.",
+  "commercial_products": [
+    {
+      "commercial_product_id": "cp_pilot_excel_attendance",
+      "product_id": "prod_excel_attendance",
+      "product_name": "小团队考勤记录表",
+      "product_type": "digital_template",
+      "product_version": "pilot_v1",
+      "product_asset_id": "8523329941d4",
+      "asset_refs": [
+        {
+          "asset_type": "xlsx",
+          "ref": "templates/8523329941d4.xlsx"
+        },
+        {
+          "asset_type": "pdf",
+          "ref": "documents/product_manual.pdf"
+        },
+        {
+          "asset_type": "zip",
+          "ref": "package/final_product.zip"
+        },
+        {
+          "asset_type": "preview_image",
+          "ref": "images/cover_placeholder.txt",
+          "placeholder": true
+        }
+      ],
+      "source_experiment_id": "exp_20260708_005",
+      "source_production_request_id": "preq_20260712_005",
+      "quality_status": "passed",
+      "risk_status": "passed",
+      "delivery_method": "digital_download_zip",
+      "commercial_metadata": {
+        "target_user": "小团队 / 个体经营者需要简单考勤记录",
+        "problem": "手工考勤易错、格式不统一",
+        "offer": "可立即使用的 Excel 考勤记录表模板 + 说明 PDF",
+        "delivery_method": "digital_download_zip"
+      },
+      "price_boundary": {
+        "product_price_hypothesis": 12.9,
+        "listing_price": null,
+        "actual_paid_price": null,
+        "cf_packaging_default": 19.9,
+        "currency": "CNY",
+        "note": "Product Price Hypothesis ≠ Listing Price ≠ Actual Paid Price ≠ CF Default"
+      },
+      "phase1_scope": "virtual_materials_only",
+      "future_extensible": true,
+      "notes": "Entry 053: Commercial Product from Asset+metadata. COMMERCIAL_READY ≠ PUBLISHED. Cover placeholder ≠ Marketing Ready.",
+      "readiness": {
+        "ready": true,
+        "commercial_status": "COMMERCIAL_READY",
+        "blockers": [],
+        "published": false,
+        "commercial_success": false,
+        "note": "COMMERCIAL_READY ≠ PUBLISHED ≠ Commercial Success"
+      },
+      "commercial_status": "QUEUED",
+      "object_type": "commercial_product",
+      "published": false,
+      "commercial_success": false,
+      "updated_at": "2026-08-29 16:47:29",
+      "created_at": "2026-08-29 16:47:29"
+    },
+    {
+      "commercial_product_id": "cp_auto_f2f8bab97df8",
+      "product_id": "f2f8bab97df8",
+      "product_name": "批量关键词 EXCEL 模板",
+      "product_type": "digital_template",
+      "product_version": "e2e_055_v1",
+      "product_asset_id": "f2f8bab97df8",
+      "asset_refs": [
+        {
+          "asset_type": "xlsx",
+          "ref": "templates\\f2f8bab97df8.xlsx"
+        }
+      ],
+      "source_experiment_id": "exp_auto_20260830_8cbd08",
+      "source_production_request_id": "preq_auto_20260830_a4189c",
+      "source_opportunity_id": "aoc_919c62520b98",
+      "source_candidate_id": "aoc_919c62520b98",
+      "selection_reason": "rank=1; total_score=69.83; discovery_method=market_signal; keyword=批量关键词; listings=6",
+      "evidence_refs": [
+        {
+          "signal_id": "sig_f601ceaabcb8",
+          "signal_type": "demand_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_ecf1794a3826",
+          "signal_type": "engagement_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_aefded299cff",
+          "signal_type": "competition_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_bd3bd2f64ddf",
+          "signal_type": "price_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_33af03309f58",
+          "signal_type": "trend_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "signal_id": "sig_74ec9871c6aa",
+          "signal_type": "growth_signal",
+          "observation_timestamp": "2026-07-04T00:00:00"
+        },
+        {
+          "product_id": 2,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 3,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 7,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 8,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 12,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        },
+        {
+          "product_id": 13,
+          "source_url": "https://goofish.com/item/test",
+          "collect_date": "2026-07-04"
+        }
+      ],
+      "quality_status": "passed",
+      "risk_status": "passed",
+      "delivery_method": "digital_download_zip",
+      "commercial_metadata": {
+        "target_user": "需要「批量关键词」类虚拟资料/模板的闲鱼买家（HYPOTHESIS）",
+        "problem": "买家在「批量关键词」相关场景缺少即用可编辑数字模板（HYPOTHESIS）",
+        "offer": "批量关键词 EXCEL 模板",
+        "delivery_method": "digital_download_zip"
+      },
+      "price_boundary": {
+        "product_price_hypothesis": 99.9,
+        "listing_price": null,
+        "actual_paid_price": null,
+        "cf_packaging_default": 19.9,
+        "currency": "CNY",
+        "note": "Entry 057: Market Evidence ≠ Recommendation ≠ Listing ≠ Paid. Human confirms Listing Price at publish.",
+        "market_reference_price": 99.9,
+        "ai_recommended_experimental_price": 19.9,
+        "recommended_range": {
+          "min": 12.9,
+          "max": 29.9,
+          "currency": "CNY"
+        },
+        "price_recommendation_id": "prrec_b5299bdb6935",
+        "roles": {
+          "99.9": "MARKET_REFERENCE_PRICE→PRICE_HYPOTHESIS",
+          "19.9": "AI_RECOMMENDED_PRICE"
+        },
+        "validated": false
+      },
+      "quality_detail": {
+        "quality_score": 89.0,
+        "commercial_score": 88.75,
+        "usability_score": 100.0,
+        "market_score": 75.0,
+        "production_cost_score": 90.0,
+        "status": "quality_pass"
+      },
+      "listing_package_path": "D:\\AI_FACTORY_OS\\commercial_assets\\e2e_outputs\\f2f8bab97df8\\package\\publish_package",
+      "phase1_scope": "virtual_materials_only",
+      "entry": "055",
+      "published": false,
+      "commercial_success": false,
+      "notes": "Entry 055 autonomous E2E. COMMERCIAL_READY ≠ PUBLISHED. Production success ≠ Commercial success. No Market Event fabricated.",
+      "object_type": "commercial_product",
+      "readiness": {
+        "ready": true,
+        "commercial_status": "COMMERCIAL_READY",
+        "blockers": [],
+        "published": false,
+        "commercial_success": false,
+        "note": "COMMERCIAL_READY ≠ PUBLISHED ≠ Commercial Success"
+      },
+      "updated_at": "2026-08-30 20:45:16",
+      "commercial_status": "QUEUED",
+      "created_at": "2026-08-30 16:38:33",
+      "price_recommendation_id": "prrec_b5299bdb6935"
+    }
+  ],
+  "updated_at": "2026-08-30 20:45:16"
+}

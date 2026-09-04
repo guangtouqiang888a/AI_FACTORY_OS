@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Runtime / local outputs
+output/
+logs/
+
+# Local SQLite / runtime DB (not Own Product assets)
+data/
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+
+# Browser automation session profiles (cookies / local storage risk)
+**/_browser_profile/
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+
+# AI_FACTORY_OS runtime memory state
+7_MEMORY/core_state.json
+7_MEMORY/event_log.jsonl
+7_MEMORY/runtime_policy.json
+7_MEMORY/runtime_policy_snapshot.json
+7_MEMORY/policy_patch.json

@@ -1,0 +1,135 @@
+{
+  "schema": "price_recommendations_v1",
+  "entry": "057",
+  "note": "Price Recommendation store. AI Recommendation ≠ Validated ≠ Paid. No platform-specific price core tables.",
+  "price_learning_data": "NONE",
+  "recommendations": [
+    {
+      "price_recommendation_id": "prrec_b5299bdb6935",
+      "object_type": "price_recommendation",
+      "entry": "057",
+      "product_id": "f2f8bab97df8",
+      "product_asset_id": "f2f8bab97df8",
+      "product_type": "digital_template",
+      "channel": "xianyu",
+      "recommended_price": 19.9,
+      "recommended_experimental_price": 19.9,
+      "recommended_range": {
+        "min": 12.9,
+        "max": 29.9,
+        "currency": "CNY"
+      },
+      "currency": "CNY",
+      "recommendation_method": "hybrid",
+      "methods_considered": [
+        "market_reference",
+        "ai_heuristic",
+        "hybrid",
+        "historical"
+      ],
+      "evidence_refs": [
+        {
+          "signal_id": "sig_bd3bd2f64ddf",
+          "role": "MARKET_REFERENCE_PRICE",
+          "value": 99.9
+        },
+        {
+          "file": "11_CONTENT_FACTORY/agents/creator_agent.py",
+          "role": "CF_PIPELINE_DEFAULT",
+          "value": 19.9
+        },
+        {
+          "product_ids": [
+            2,
+            3,
+            7,
+            8,
+            12,
+            13
+          ],
+          "role": "MARKET_REFERENCE_PRICE"
+        },
+        {
+          "legacy_pilot": "8523329941d4",
+          "role": "HISTORICAL_PRICE",
+          "value": 12.9,
+          "isolated": true
+        }
+      ],
+      "price_candidates": [
+        {
+          "value": 99.9,
+          "currency": "CNY",
+          "role": "MARKET_REFERENCE_PRICE",
+          "origin": "listing_avg",
+          "meaning": "Upper market reference — not auto experimental price when diversity low",
+          "validated": false,
+          "paid": false,
+          "note": "Role classification only. AI Recommendation / Default / Market Reference ≠ Paid ≠ Validated."
+        },
+        {
+          "value": 19.9,
+          "currency": "CNY",
+          "role": "CF_PIPELINE_DEFAULT",
+          "origin": "cf_type_default",
+          "meaning": "CF type default for excel/digital_template path",
+          "validated": false,
+          "paid": false,
+          "note": "Role classification only. AI Recommendation / Default / Market Reference ≠ Paid ≠ Validated."
+        },
+        {
+          "value": 12.9,
+          "currency": "CNY",
+          "role": "HISTORICAL_PRICE",
+          "origin": "legacy_pilot_isolated",
+          "meaning": "HISTORICAL only — not evidence for this product",
+          "validated": false,
+          "paid": false,
+          "note": "Role classification only. AI Recommendation / Default / Market Reference ≠ Paid ≠ Validated."
+        }
+      ],
+      "confidence": "LOW",
+      "confidence_meaning": "evidence_confidence_not_sale_probability",
+      "confidence_note": "Evidence confidence LOW: market listings all share identical 99.9 (no price dispersion); no Paid events; production cost UNAVAILABLE; product form digital_template/excel may not match listing goods sold at 99.9. Confidence ≠ probability of sale.",
+      "status": "RECOMMENDATION_WITH_INSUFFICIENT_DIVERSITY",
+      "why": "Reject blind adoption of market avg 99.9 as experimental Listing Price. Prefer CF Excel-type default 19.9 within office-template historical band 12.9–29.9 (HISTORICAL band, not validated). Human must confirm Listing Price.",
+      "forbidden_mappings_checked": {
+        "commercial_score_to_price": false,
+        "commercial_score_value": 88.75,
+        "production_cost_to_price": false,
+        "production_cost_value": null,
+        "competitor_min_equals_price": false,
+        "cf_default_as_validated": false,
+        "market_avg_as_validated": false,
+        "legacy_12_9_as_current_evidence": false
+      },
+      "human_action_required": true,
+      "human_action_scope": "Confirm final Listing Price at Human External Action — NOT re-decide whether product should have been produced",
+      "validated": false,
+      "paid_price": null,
+      "listing_price_confirmed": null,
+      "price_learning_eligible": false,
+      "price_learning_data": "NONE",
+      "simulation_rejected_from_real_price_learning": true,
+      "created_at": "2026-08-30T20:45:16+08:00",
+      "ontology": {
+        "market_evidence": 99.9,
+        "price_recommendation": 19.9,
+        "listing_price": null,
+        "paid_price": null,
+        "price_validation": null
+      },
+      "boundary": {
+        "product_price_hypothesis": 99.9,
+        "listing_price": null,
+        "actual_paid_price": null,
+        "cf_packaging_default": 19.9,
+        "currency": "CNY",
+        "note": "Market Evidence ≠ Recommendation ≠ Listing Price ≠ Paid Price ≠ Validated",
+        "ai_recommended_experimental_price": 19.9,
+        "market_reference_price": 99.9
+      }
+    }
+  ],
+  "updated_at": "2026-08-30 20:45:16"
+}

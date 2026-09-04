@@ -1,0 +1,32 @@
+{
+  "ok": false,
+  "status": "BLOCKED_BY_ACCESS_CONTROL",
+  "access_control": "ACCESS_DENIED",
+  "run_id": "crun_b461f8de36dd",
+  "raw_reference": "D:\\AI_FACTORY_OS\\data\\raw\\xianyu\\2026-08-30\\import_batches\\crun_b461f8de36dd\\browser_run_meta.json",
+  "acquisition_mode": "PUBLIC_WEB_READ",
+  "query": "虚拟资料",
+  "sales_platform": null,
+  "login_used": false,
+  "bypass_attempted": false,
+  "stats": {
+    "raw_count": 0,
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "duplicate_count": 0,
+    "normalized_count": 0,
+    "error_count": 0,
+    "rejected_rows": [],
+    "observation_ids": [],
+    "error_summary": "ACCESS_DENIED"
+  },
+  "collector_version": "060.1.0",
+  "product_created": false,
+  "listing_created": false,
+  "market_event_created": false,
+  "adapter_id": "adapter_xianyu_browser",
+  "discovery_platform": "xianyu",
+  "opportunity_discovery_run": false,
+  "collector_abstraction_version": "058d.1.0",
+  "query_note": "collection_query is search/topic — not equal to source platform"
+}

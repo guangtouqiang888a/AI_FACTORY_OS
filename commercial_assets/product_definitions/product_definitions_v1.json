@@ -1,0 +1,434 @@
+{
+  "schema": "product_definitions_v1",
+  "entry": "076",
+  "note": "Evidence-first Product Definitions from Observation-lineage Opportunities. ≠ product_assets (CF files). ≠ commercial_products. ≠ marketplace products table.",
+  "product_definitions": [
+    {
+      "product_id": "prod_a0638789fc2b",
+      "object_type": "product_definition",
+      "product_status": "draft",
+      "product_type": "digital_template",
+      "product_category": "Excel模板",
+      "product_definition": {
+        "market_class": {
+          "value": "Excel模板",
+          "classification": "DIRECT_EVIDENCE",
+          "note": "Search/query keyword from Observation notes — market class only"
+        },
+        "product_type": {
+          "value": "digital_template",
+          "classification": "DERIVED",
+          "note": "From Opportunity product_type default; not a specific template design"
+        },
+        "specific_template_subtype": {
+          "value": null,
+          "classification": "UNKNOWN",
+          "note": "Excel模板 ≠ 考勤/进销存/财务/人事 — subtype not evidenced"
+        },
+        "specific_template_content": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "target_user_persona": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "deliverable_file_content": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "feature_list": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "marketing_title": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "marketing_description": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "differentiated_selling_points": {
+          "value": null,
+          "classification": "UNKNOWN"
+        },
+        "observed_marketplace_evidence": {
+          "value": [
+            {
+              "observation_id": "mobs_48d5a1daa0ee",
+              "source_item_id": "805580867741",
+              "source_url": "https://www.goofish.com/item?id=805580867741&categoryId=201453706",
+              "want_count": 1082,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "Excel模板9000套秒发 【直拍秒发】Excel表格模板9000套 公司行政管理财务人事销售计划可视化图表  9000套Excel模板，众多风格款式可选，用途广泛，可编辑修改，功能强大，使用方便，需要的直接下单就行；还有各种办公教程，需要的私聊我  ❤️自动发货 想...",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            },
+            {
+              "observation_id": "mobs_4eeed83520dc",
+              "source_item_id": "1028751421655",
+              "source_url": "https://www.goofish.com/item?id=1028751421655&categoryId=201454708",
+              "want_count": 2245,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "2026工作计划excel模板2026工作计划管理表学习工作 进度管理日历日程excel表格模板2026工作计划excel表格模板115款。附赠158款甘特图表。纵览全局，清楚看到工作计划脉络。量化工作计划、工作进度，工作成果一目了然。包括但不限于：2026年工作安排表2026年度工作任务管理系统2026年年度工作计划表2026年日历工作计划表2026年日历及月度计划表2026年日历日程计划表2026年日历营销计划表个人工作计划进度表个人工作学习日常记录表格个人年度工作规划表个人日常工作安排表个人日历日程计划表工作安排总结表-带日历工作复盘表工作计划安排表工作计划安排表-带日历工作计划安排表-图表统计工作计划表-甘特图工作计划表-任务统计工作计划表-四象限管理工作计划表-月度甘特图工作计划跟进表工作计划可视化表工作计划任务进度甘特表工作日志管理系统日历日程工作计划表四象限工作备忘录四象限工作学习行程计划事项表通用日历学习计划表-番茄计划表学习工作计划表—今日提醒一周工作任务计划表（自动任务分配）月度工作计划表月工作计划事项待办清单周工作报表-一周工作计划表周工作计划表周工作计划表-带日历周工作计划明细周事项管理表......拍前需知：[1]、本店24小时自动发货，标价就是卖价，可放心下单，默认秒发网盘链接！[2]、本商品为虚拟产品，具有可复制性，售后不退不换，感谢理解！#闲鱼还能卖这个？ #发布技能来赚钱",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            },
+            {
+              "observation_id": "mobs_77abed5da432",
+              "source_item_id": "1008483525701",
+              "source_url": "https://www.goofish.com/item?id=1008483525701&categoryId=201454708",
+              "want_count": 660,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "进销存出入库管理系统excel仓库存表格模板账本看板盘点电子 版  ✅ 全套Excel格式，内容丰富，支持库存明细、出入库登记、看板分析、智能预警、盘点管理等，适合工厂、电商、零售、仓库等多场景使用，省时高效，直接套用修改即可  ✅网盘24小时自动发货，拍下秒发，标价即售价，需要的直接拍即可",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            },
+            {
+              "observation_id": "mobs_558206dd2057",
+              "source_item_id": "733931849575",
+              "source_url": "https://www.goofish.com/item?id=733931849575&categoryId=201454708",
+              "want_count": 1930,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "Excel甘特图模板大全 600套Excel甘特图表格模板，可用于制作工作计划，项目进度管理等内容，功能强大，多种风格款式可选，可自由编辑修改，用途广泛  上架都在，需要请直接拍下  附赠甘特图制作视p教程",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            },
+            {
+              "observation_id": "mobs_2198f9db4742",
+              "source_item_id": "1040306099626",
+              "source_url": "https://www.goofish.com/item?id=1040306099626&categoryId=201454708",
+              "want_count": 436,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "2026记账模板可用excel表格电子模板素材 记账不用愁！2026智能Excel模板一套全搞定！ ✅ 自动算余额，杜绝手算错误 ✅ 动态图表，钱花在哪一目了然 ✅ 全场景覆盖，个人/家庭/公司/班费都能用 ✅ 拍下秒发，含使用教程，新手直接上手  冲就完了！让记账变得简单又高效！ ...",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            },
+            {
+              "observation_id": "mobs_217cd4886838",
+              "source_item_id": "1033698667594",
+              "source_url": "https://www.goofish.com/item?id=1033698667594&categoryId=201454708",
+              "want_count": 186,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "颜值在线家庭记账Excel模板 【超高颜值】家庭记账excel表个人收支明细表格年度花销电子记账本版模板神器每天只要花1分钟时间记录日收入和消费，所有数据自动汇总统计分析，生成可视化看板，带您进一步分析自己的消费行为，改善消费习惯，更清晰，全面了解自己全年收入和消费习惯。[hot][hot][hot]只做精品，拒绝平庸。我们的表格界面设计精美，项目齐全，操作方便。夸克网盘，均可发送。",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            },
+            {
+              "observation_id": "mobs_a28b1bc7faca",
+              "source_item_id": "1013101172377",
+              "source_url": "https://www.goofish.com/item?id=1013101172377&categoryId=202036301",
+              "want_count": 642,
+              "view_count": null,
+              "comment_count": null,
+              "share_count": null,
+              "price": 1.0,
+              "observed_at": "2026-09-03T15:20:02+08:00",
+              "data_origin": "REAL",
+              "verification_status": "MANUAL_VERIFIED",
+              "observed_marketplace_title": "Excel电子表格模板办公室人事行政财务报销销售管理考勤绩效 工资  考勤、人事、财务、销售、工资、绩效、报销、甘特图、仓库、加工生产等全场景，格式规范，Excel，公式已设置，直接套用省时省力！  ✅拍下网盘24小时自动发货，标价就是售价，喜欢的直接拍～",
+              "title_role": "THIRD_PARTY_MARKETPLACE_LISTING_NOT_OWN_PRODUCT"
+            }
+          ],
+          "classification": "DIRECT_EVIDENCE",
+          "note": "Competitor/marketplace listings — not own product content"
+        },
+        "market_signals_summary": {
+          "value": {
+            "demand_signal": {
+              "signal_id": "sig_f1173cc0edca",
+              "value": 7181.0,
+              "unit": "want_count_sum"
+            },
+            "engagement_signal": {
+              "signal_id": "sig_9a3983efb2a4",
+              "value": 0.0,
+              "unit": "want_per_view"
+            },
+            "competition_signal": {
+              "signal_id": "sig_10fa1228c3f2",
+              "value": 7.0,
+              "unit": "listing_count"
+            },
+            "price_signal": {
+              "signal_id": "sig_82a523bc2bc1",
+              "value": 1.0,
+              "unit": "avg_price"
+            },
+            "trend_signal": {
+              "signal_id": "sig_90277d017e37",
+              "value": 1025.86,
+              "unit": "avg_want_proxy"
+            },
+            "growth_signal": {
+              "signal_id": "sig_90064dc020a6",
+              "value": null,
+              "unit": "unavailable"
+            }
+          },
+          "classification": "DERIVED"
+        },
+        "opportunity_score": {
+          "value": 68.92,
+          "classification": "DERIVED",
+          "note": "075 Opportunity score — not commercial success"
+        }
+      },
+      "evidence_classification": {
+        "DIRECT_EVIDENCE": [
+          "keyword",
+          "observed_metrics",
+          "source_observation_ids",
+          "source_signal_ids",
+          "source_item_ids",
+          "collection_run_ids",
+          "session_ids",
+          "extension_run_ids",
+          "data_origin",
+          "verification_status",
+          "source_urls",
+          "observed_at"
+        ],
+        "DERIVED": [
+          "product_type_digital_template",
+          "market_class_excel_template",
+          "opportunity_score_from_075"
+        ],
+        "UNKNOWN": [
+          "specific_template_subtype",
+          "specific_template_content",
+          "target_user_persona",
+          "deliverable_file_content",
+          "feature_list",
+          "product_positioning_copy",
+          "marketing_title",
+          "marketing_description",
+          "differentiated_selling_points",
+          "final_listing_price"
+        ]
+      },
+      "source_opportunity_id": "aoc_19399677b7ba",
+      "source_selection_id": "sel_53e7c414624f",
+      "source_signal_ids": [
+        "sig_f1173cc0edca",
+        "sig_9a3983efb2a4",
+        "sig_10fa1228c3f2",
+        "sig_82a523bc2bc1",
+        "sig_90277d017e37",
+        "sig_90064dc020a6"
+      ],
+      "source_observation_ids": [
+        "mobs_48d5a1daa0ee",
+        "mobs_4eeed83520dc",
+        "mobs_77abed5da432",
+        "mobs_558206dd2057",
+        "mobs_2198f9db4742",
+        "mobs_217cd4886838",
+        "mobs_a28b1bc7faca"
+      ],
+      "provenance": {
+        "lineage": "market_observation",
+        "signal_ids": [
+          "sig_f1173cc0edca",
+          "sig_9a3983efb2a4",
+          "sig_10fa1228c3f2",
+          "sig_82a523bc2bc1",
+          "sig_90277d017e37",
+          "sig_90064dc020a6"
+        ],
+        "observation_ids": [
+          "mobs_48d5a1daa0ee",
+          "mobs_4eeed83520dc",
+          "mobs_77abed5da432",
+          "mobs_558206dd2057",
+          "mobs_2198f9db4742",
+          "mobs_217cd4886838",
+          "mobs_a28b1bc7faca"
+        ],
+        "source_item_ids": [
+          "805580867741",
+          "1028751421655",
+          "1008483525701",
+          "733931849575",
+          "1040306099626",
+          "1033698667594",
+          "1013101172377"
+        ],
+        "collection_run_ids": [
+          "crun_378745ca45e0"
+        ],
+        "session_ids": [
+          "sess_1788419997563"
+        ],
+        "extension_run_ids": [
+          "run_1788419997563"
+        ],
+        "data_origins": [
+          "REAL"
+        ],
+        "verification_statuses": [
+          "MANUAL_VERIFIED"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "source_opportunity_id": "aoc_19399677b7ba",
+          "source_selection_id": "sel_53e7c414624f",
+          "lineage": "market_observation"
+        },
+        {
+          "signal_id": "sig_f1173cc0edca",
+          "signal_type": "demand_signal",
+          "value": 7181.0
+        },
+        {
+          "signal_id": "sig_9a3983efb2a4",
+          "signal_type": "engagement_signal",
+          "value": 0.0
+        },
+        {
+          "signal_id": "sig_10fa1228c3f2",
+          "signal_type": "competition_signal",
+          "value": 7.0
+        },
+        {
+          "signal_id": "sig_82a523bc2bc1",
+          "signal_type": "price_signal",
+          "value": 1.0
+        },
+        {
+          "signal_id": "sig_90277d017e37",
+          "signal_type": "trend_signal",
+          "value": 1025.86
+        },
+        {
+          "signal_id": "sig_90064dc020a6",
+          "signal_type": "growth_signal",
+          "value": null
+        },
+        {
+          "observation_id": "mobs_48d5a1daa0ee",
+          "source_item_id": "805580867741",
+          "source_url": "https://www.goofish.com/item?id=805580867741&categoryId=201453706",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 1082,
+          "view_count": null,
+          "price": 1.0
+        },
+        {
+          "observation_id": "mobs_4eeed83520dc",
+          "source_item_id": "1028751421655",
+          "source_url": "https://www.goofish.com/item?id=1028751421655&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 2245,
+          "view_count": null,
+          "price": 1.0
+        },
+        {
+          "observation_id": "mobs_77abed5da432",
+          "source_item_id": "1008483525701",
+          "source_url": "https://www.goofish.com/item?id=1008483525701&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 660,
+          "view_count": null,
+          "price": 1.0
+        },
+        {
+          "observation_id": "mobs_558206dd2057",
+          "source_item_id": "733931849575",
+          "source_url": "https://www.goofish.com/item?id=733931849575&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 1930,
+          "view_count": null,
+          "price": 1.0
+        },
+        {
+          "observation_id": "mobs_2198f9db4742",
+          "source_item_id": "1040306099626",
+          "source_url": "https://www.goofish.com/item?id=1040306099626&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 436,
+          "view_count": null,
+          "price": 1.0
+        },
+        {
+          "observation_id": "mobs_217cd4886838",
+          "source_item_id": "1033698667594",
+          "source_url": "https://www.goofish.com/item?id=1033698667594&categoryId=201454708",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 186,
+          "view_count": null,
+          "price": 1.0
+        },
+        {
+          "observation_id": "mobs_a28b1bc7faca",
+          "source_item_id": "1013101172377",
+          "source_url": "https://www.goofish.com/item?id=1013101172377&categoryId=202036301",
+          "observed_at": "2026-09-03T15:20:02+08:00",
+          "data_origin": "REAL",
+          "verification_status": "MANUAL_VERIFIED",
+          "want_count": 642,
+          "view_count": null,
+          "price": 1.0
+        }
+      ],
+      "created_at": "2026-09-04T18:33:16+08:00",
+      "entry": "076",
+      "creation_method": "opportunity_to_product_definition_076",
+      "auto_production_forbidden": true,
+      "publish_forbidden": true,
+      "content_factory_forbidden": true,
+      "e2e_055_forbidden": true,
+      "commercial_learning": "NOT_EXECUTED",
+      "commercial_success": false,
+      "published": false,
+      "ai_invoked": false,
+      "note": "Evidence-first Product Definition / Draft Product. ≠ Opportunity rename. ≠ Content Factory asset. ≠ Published. Specific template content UNKNOWN."
+    }
+  ],
+  "product_definition_count": 1,
+  "updated_at": "2026-09-04 18:33:16"
+}

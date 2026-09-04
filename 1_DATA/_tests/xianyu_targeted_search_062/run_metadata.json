@@ -1,0 +1,111 @@
+{
+  "ok": false,
+  "status": "NO_SEARCH_RESULTS_IN_TEST_SCOPE",
+  "browser_mode": "INTERACTIVE_VISIBLE",
+  "browser_binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "operating_mode": "INTERACTIVE_VISIBLE",
+  "collector_version": "062.1.0",
+  "collector_id": "col_xianyu_targeted_search",
+  "devtools_port": 61408,
+  "profile_dir": "D:\\AI_FACTORY_OS\\1_DATA\\_tests\\xianyu_targeted_search_062\\_browser_profile\\run_1788101314",
+  "user_profile_reused": false,
+  "login_used": false,
+  "bypass_attempted": false,
+  "hidden_api_called": false,
+  "pid": 10036,
+  "started_at": "2026-08-30T22:48:34+08:00",
+  "queries_planned": [
+    "手机壳",
+    "电子书",
+    "Excel模板"
+  ],
+  "browser_version": "Chrome/152.0.7977.64",
+  "query_attempts": [
+    {
+      "query": "手机壳",
+      "status": "NO_SEARCH_RESULTS",
+      "search_results": 0,
+      "recommended_excluded": 40,
+      "page_state": {
+        "search_primary_empty": true,
+        "has_guess_you_like": true,
+        "has_feeds": true
+      }
+    },
+    {
+      "query": "电子书",
+      "status": "NO_SEARCH_RESULTS",
+      "search_results": 0,
+      "recommended_excluded": 40,
+      "page_state": {
+        "search_primary_empty": true,
+        "has_guess_you_like": true,
+        "has_feeds": true
+      }
+    },
+    {
+      "query": "Excel模板",
+      "status": "NO_SEARCH_RESULTS",
+      "search_results": 0,
+      "recommended_excluded": 40,
+      "page_state": {
+        "search_primary_empty": true,
+        "has_guess_you_like": true,
+        "has_feeds": true
+      }
+    }
+  ],
+  "current_db_write": false,
+  "first_real_xianyu_search_batch": false,
+  "note": "Did not fill with 猜你喜欢 / RECOMMENDED_RESULT",
+  "error_log": [
+    "ui_search:{\"ok\": true, \"method\": \"button_click\"}",
+    "wait:手机壳:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 20, \"wants_text\": 14, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"手机壳_闲鱼\", \"href\": \"https://www.goofish.com/search?q=%E6%89%8B%E6%9C%BA%E5%A3%B3&spm=a21ybx.home.searchInput.0\"}",
+    "wait2:手机壳:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 40, \"wants_text\": 29, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"手机壳_闲鱼\", \"href\": \"https://www.goofish.com/search?q=%E6%89%8B%E6%9C%BA%E5%A3%B3&spm=a21ybx.home.searchInput.0\"}",
+    "ui_search:{\"ok\": true, \"method\": \"button_click\"}",
+    "wait:电子书:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 20, \"wants_text\": 11, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"电子书_闲鱼\", \"href\": \"https://www.goofish.com/search?q=%E7%94%B5%E5%AD%90%E4%B9%A6&spm=a21ybx.home.searchInput.0\"}",
+    "wait2:电子书:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 40, \"wants_text\": 23, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"电子书_闲鱼\", \"href\": \"https://www.goofish.com/search?q=%E7%94%B5%E5%AD%90%E4%B9%A6&spm=a21ybx.home.searchInput.0\"}",
+    "ui_search:{\"ok\": true, \"method\": \"button_click\"}",
+    "wait:Excel模板:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 20, \"wants_text\": 13, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"Excel模板_闲鱼\", \"href\": \"https://www.goofish.com/search?q=Excel%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0\"}",
+    "wait2:Excel模板:{\"stopped\": \"LISTINGS_VISIBLE\", \"item_links\": 40, \"wants_text\": 22, \"empty_search\": true, \"denied\": false, \"loading\": false, \"title\": \"Excel模板_闲鱼\", \"href\": \"https://www.goofish.com/search?q=Excel%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0\"}"
+  ],
+  "finished_at": "2026-08-30T22:50:08+08:00",
+  "want_count_audit": {
+    "search_results_count": 0,
+    "status_distribution": {
+      "VISIBLE_ON_CARD": 0,
+      "MISSING_ON_CARD": 0,
+      "AVAILABLE_ON_DETAIL": 0,
+      "UNAVAILABLE": 0,
+      "UNKNOWN": 0
+    },
+    "card_visible_rate": 0.0,
+    "detail_available_rate": 0.0,
+    "total_observable_rate": 0.0,
+    "still_null_count": 0,
+    "still_null_rate": 0.0,
+    "null_vs_zero_rule": "NULL means field absent; 0 means page showed 0人想要",
+    "login_causation": {
+      "login_used": false,
+      "conclusion": "NOT_PROVEN",
+      "note": "Anonymous browser only. Cannot conclude missing want_count is caused by not being logged in."
+    },
+    "valid_without_want_count": true,
+    "note": "missing ≠ zero; unavailable ≠ proven login-related"
+  },
+  "field_availability": {
+    "search_results_seen": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "duplicate": 0,
+    "title_rate": 0.0,
+    "price_rate": 0.0,
+    "want_count_visible_rate": 0.0,
+    "want_count_missing_rate": 0.0,
+    "url_rate": 0.0,
+    "item_id_rate": 0.0,
+    "note": "data availability ≠ commercial score"
+  },
+  "recommended_side_observation_file": "recommended_want_side_observation.json",
+  "attempt_note": "Multiple queries (digital templates + high-volume) returned primary empty + 猜你喜欢 in anonymous interactive Chrome. SEARCH_RESULT batch not obtained. Recommendations excluded from target batch."
+}

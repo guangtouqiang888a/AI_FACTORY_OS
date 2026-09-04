@@ -1,0 +1,13 @@
+feedsList	0
+feed	170
+searchList	0
+empty	6
+loading	3
+骨架	0
+暂无	0
+没有找到	1
+content-container	1
+want	0
+想要	69
+price	119
+元	13

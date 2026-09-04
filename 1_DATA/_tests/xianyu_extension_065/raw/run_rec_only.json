@@ -1,0 +1,37 @@
+{
+  "acquisition_run_id": "run_rec_only",
+  "raw_record_id": "raw_64f473425722",
+  "source": "xianyu",
+  "timestamp": "2026-09-03T13:50:11+08:00",
+  "payload": {
+    "contract_version": "064.1.0",
+    "message_type": "MARKET_RECORD_BATCH",
+    "run_id": "run_rec_only",
+    "session_id": "sess_066_test",
+    "source": "xianyu",
+    "platform": "xianyu",
+    "query": "手机壳",
+    "result_origin": "SEARCH_RESULT",
+    "page_state": "SEARCH_RESULT",
+    "status": "SUCCESS",
+    "records": [
+      {
+        "source": "xianyu",
+        "platform": "xianyu",
+        "source_item_id": "880020001",
+        "source_url": "https://www.goofish.com/item?id=880020001",
+        "title": "纯推荐",
+        "price": 5.0,
+        "currency": "CNY",
+        "want_count": 3,
+        "want_count_status": "VISIBLE_ON_CARD",
+        "result_origin": "RECOMMENDED_RESULT",
+        "observed_at": "2026-08-30T14:00:00+08:00",
+        "query": "手机壳",
+        "session_id": "sess_066_test",
+        "collector_version": "065.1.0"
+      }
+    ]
+  },
+  "collector_version": "065.1.0"
+}

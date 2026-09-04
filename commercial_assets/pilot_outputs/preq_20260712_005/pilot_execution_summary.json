@@ -1,0 +1,12 @@
+{
+  "tests": {
+    "TEST1_approval_gate": true,
+    "TEST2_pilot_whitelist": true,
+    "TEST3_cf_execute": true,
+    "TEST4_artifact_exists": true,
+    "TEST5_validation_gate": true,
+    "TEST6_product_asset": true
+  },
+  "validation_status": "passed",
+  "all_pass": true
+}

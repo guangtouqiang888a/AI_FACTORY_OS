@@ -1,0 +1,39 @@
+{
+  "entry": "066",
+  "query": "phone_case_probe",
+  "run_id": "run_254c2ec9739f",
+  "human_verified": false,
+  "search_control": "SEARCH_CONTROL_NOT_FEASIBLE",
+  "search_state": {
+    "search_state": "EMPTY_SEARCH_RESULT",
+    "secondary_feed": "RECOMMENDED_FEED",
+    "search_result_count": 0,
+    "recommended_count": 20,
+    "evidence": {
+      "empty_text": true,
+      "guess_you_like": true,
+      "url": "https://www.goofish.com/search?q=phone_case_probe&spm=a21ybx.home.searchInput.0",
+      "url_is_search": true,
+      "note": "URL /search alone does not imply SEARCH_RESULT"
+    }
+  },
+  "search_result_cards": 0,
+  "recommended_cards": 0,
+  "first_real_market_observation": false,
+  "db_before": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0,
+    "market_events": 0
+  },
+  "db_after": {
+    "market_observations": 0,
+    "products": 0,
+    "market_signals": 0,
+    "selection_results": 0,
+    "market_events": 0
+  },
+  "pipeline_ok": true,
+  "import_status": "PENDING_HUMAN_VERIFICATION"
+}

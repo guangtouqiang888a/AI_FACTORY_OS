@@ -1,0 +1,9 @@
+ui_search:{"ok": true, "method": "button_click"}
+wait:手机壳:{"stopped": "LISTINGS_VISIBLE", "item_links": 20, "wants_text": 14, "empty_search": true, "denied": false, "loading": false, "title": "手机壳_闲鱼", "href": "https://www.goofish.com/search?q=%E6%89%8B%E6%9C%BA%E5%A3%B3&spm=a21ybx.home.searchInput.0"}
+wait2:手机壳:{"stopped": "LISTINGS_VISIBLE", "item_links": 40, "wants_text": 29, "empty_search": true, "denied": false, "loading": false, "title": "手机壳_闲鱼", "href": "https://www.goofish.com/search?q=%E6%89%8B%E6%9C%BA%E5%A3%B3&spm=a21ybx.home.searchInput.0"}
+ui_search:{"ok": true, "method": "button_click"}
+wait:电子书:{"stopped": "LISTINGS_VISIBLE", "item_links": 20, "wants_text": 11, "empty_search": true, "denied": false, "loading": false, "title": "电子书_闲鱼", "href": "https://www.goofish.com/search?q=%E7%94%B5%E5%AD%90%E4%B9%A6&spm=a21ybx.home.searchInput.0"}
+wait2:电子书:{"stopped": "LISTINGS_VISIBLE", "item_links": 40, "wants_text": 23, "empty_search": true, "denied": false, "loading": false, "title": "电子书_闲鱼", "href": "https://www.goofish.com/search?q=%E7%94%B5%E5%AD%90%E4%B9%A6&spm=a21ybx.home.searchInput.0"}
+ui_search:{"ok": true, "method": "button_click"}
+wait:Excel模板:{"stopped": "LISTINGS_VISIBLE", "item_links": 20, "wants_text": 13, "empty_search": true, "denied": false, "loading": false, "title": "Excel模板_闲鱼", "href": "https://www.goofish.com/search?q=Excel%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0"}
+wait2:Excel模板:{"stopped": "LISTINGS_VISIBLE", "item_links": 40, "wants_text": 22, "empty_search": true, "denied": false, "loading": false, "title": "Excel模板_闲鱼", "href": "https://www.goofish.com/search?q=Excel%E6%A8%A1%E6%9D%BF&spm=a21ybx.home.searchInput.0"}

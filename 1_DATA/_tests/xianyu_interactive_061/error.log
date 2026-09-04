@@ -1,0 +1,2 @@
+listing_wait:{"stopped": "LISTINGS_VISIBLE", "item_links": 20, "wants_text": 8, "empty_search": true, "denied": false, "loading": false, "title": "虚拟资料_闲鱼", "href": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99"}
+listing_wait_after_scroll:{"stopped": "LISTINGS_VISIBLE", "item_links": 40, "wants_text": 20, "empty_search": true, "denied": false, "loading": false, "title": "虚拟资料_闲鱼", "href": "https://www.goofish.com/search?q=%E8%99%9A%E6%8B%9F%E8%B5%84%E6%96%99"}

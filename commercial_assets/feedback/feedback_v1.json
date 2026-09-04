@@ -1,0 +1,41 @@
+{
+  "dataset_version": "1.0",
+  "schema_ref": "docs/AI_FACTORY_OS_FEEDBACK_OBJECT_CONTRACT.md",
+  "source_dataset": "commercial_assets/product_assets/product_assets_v1.json",
+  "creation_method": "human_assisted",
+  "creation_note": "Entry 035 — Pilot Feedback Instance Generation v1。Feedback Created ≠ Market Validation。产品已生产完成，市场反馈观察周期尚未开始；禁止填写未发生的销量/订单/收入/转化率/满意度数据。",
+  "created_at": "2026-07-13T18:54:00+08:00",
+  "feedback_count": 1,
+  "summary": {
+    "status_pending": 1,
+    "source_product_asset_ids": [
+      "8523329941d4"
+    ],
+    "source_experiment_ids": [
+      "exp_20260708_005"
+    ],
+    "observation_period": "not_started"
+  },
+  "feedbacks": [
+    {
+      "feedback_id": "fbk_20260713_001",
+      "object_type": "feedback",
+      "contract_version": "1.0",
+      "source_product_asset_id": "8523329941d4",
+      "source_experiment_id": "exp_20260708_005",
+      "source_production_request_id": "preq_20260712_005",
+      "product_name": "Excel 考勤记录表",
+      "feedback_type": "market_feedback",
+      "feedback_source": "human_observation",
+      "feedback_method": "human_assisted",
+      "feedback_status": "pending",
+      "metric_name": "pilot_observation",
+      "metric_value": null,
+      "observation_period": "not_started",
+      "platform": "taobao",
+      "notes": "Pilot Product Asset 8523329941d4（Excel 考勤记录表）已完成 Content Factory 生产并通过 Validation Gate；当前尚未上架、未进入 14 天观察期，市场反馈采集未开始。Feedback ≠ Market Success；禁止填写未发生的销量、订单、收入或转化率。",
+      "created_at": "2026-07-13T18:54:00+08:00",
+      "updated_at": "2026-07-13T18:54:00+08:00"
+    }
+  ]
+}
