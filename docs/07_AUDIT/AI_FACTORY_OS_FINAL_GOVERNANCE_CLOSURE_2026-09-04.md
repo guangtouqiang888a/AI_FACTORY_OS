@@ -176,19 +176,22 @@ Recent governance records（PHASE 1 / PHASE 2 / Continuity Repair / 本 Closure�
 | Item | Reality |
 |------|---------|
 | Branch | `main` |
-| Pre-closure HEAD | `3a4ef37bfef581a575e89c35a120f9a625b2fa3b` |
-| Commit | **PENDING** |
-| Push | **PENDING** |
-| Remote Verification | **PENDING** |
+| Local HEAD | `4aade80d59ec960f0c64d98dea8b981e3dc6db4c` |
+| origin/main | `4aade80d59ec960f0c64d98dea8b981e3dc6db4c` |
+| GitHub `main`（API + ls-remote） | `4aade80d59ec960f0c64d98dea8b981e3dc6db4c` |
+| Commit | `4aade80d59ec960f0c64d98dea8b981e3dc6db4c` — `docs: close governance active task anchor to NONE` |
+| Push | **SUCCESS**（`3a4ef37..4aade80`；无 force / 无 bypass） |
+| Remote Verification | **PASS**（API SHA 对齐；remote Control Center `ACTIVE_TASK = NONE`；Audit 存在于 `main`） |
 
 ---
 
 ## Evidence
 
-- Control Center Active Task Anchor（post-fix）
+- Control Center Active Task Anchor（post-fix；remote verified）
 - `docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md` — FINAL GOVERNANCE CLOSURE record
 - This Audit
 - Prior audits: PHASE 1 / PHASE 2 / History Continuity Repair
+- Commit `4aade80d59ec960f0c64d98dea8b981e3dc6db4c`
 
 ---
 
@@ -203,9 +206,9 @@ TASK_TYPE = GOVERNANCE_CLOSURE
 RUNTIME_CHANGE = NO
 DB_CHANGE = NO
 COMMERCIAL_ASSETS_CHANGE = NO
-GIT_COMMIT = PENDING
-PUSH = PENDING
-REMOTE_VERIFICATION = PENDING
+GIT_COMMIT = 4aade80d59ec960f0c64d98dea8b981e3dc6db4c
+PUSH = SUCCESS
+REMOTE_VERIFICATION = PASS
 CHATGPT_CLOSURE_REVIEW = NOT_CLAIMED_BY_CURSOR
 ```
 
