@@ -2434,7 +2434,7 @@
 - Audit internal consistency：§5-D **Execution History** ≠ History Evolution Context；**History intentionally unchanged**
 - No DEC added；DEC-016/017/019 remain sufficient
 - Scope integrity rechecked：no Python/Runtime/DB/`commercial_assets`/Decision Log/UA/Business Strategy/Module Registry/`06_HISTORY` mutation
-- Git versioned closure commit：`docs: close core documentation continuity hardening`（see Phase after push）
+- Git versioned closure commit：`8be9b7b5105091f9218592f4aea016658c4e4f5e` — `docs: close core documentation continuity hardening`
 - Entry 077 remains **NOT_STARTED**
 - Final validation：PRIMARY_HARDENING=PASS；AUDIT_INTERNAL_CONSISTENCY=PASS
 

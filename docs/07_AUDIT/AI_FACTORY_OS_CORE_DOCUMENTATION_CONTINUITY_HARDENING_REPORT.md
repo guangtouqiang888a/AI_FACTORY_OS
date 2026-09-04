@@ -243,7 +243,9 @@ Governance Recovery Drift corrected at the points that were actively misleading 
 ```text
 PRIMARY_HARDENING: PASS
 AUDIT_INTERNAL_CONSISTENCY: PASS
-GIT_VERSIONED_CLOSURE: PENDING_UNTIL_PUSH
+GIT_VERSIONED_CLOSURE: PASS
+CLOSURE_COMMIT: 8be9b7b5105091f9218592f4aea016658c4e4f5e
+CLOSURE_MESSAGE: docs: close core documentation continuity hardening
 REMOTE_VERIFICATION: PENDING_UNTIL_PUSH
 ENTRY_077: NOT_STARTED
 ENTRY_076: PASS_WITH_FINDINGS
@@ -256,6 +258,7 @@ ENTRY_076: PASS_WITH_FINDINGS
 - No DEC added；DEC-016 / 017 / 019 unchanged and sufficient
 - Remaining Risks（ChatGPT↔GitHub↔Cursor workflow not formalized；mid-layer 067-era echoes）kept as **REMAINING_RISK / FUTURE GOVERNANCE CANDIDATE** — not implemented in this Closure
 - Scope integrity: dirty set limited to governance/continuity docs + this Audit；no Python/Runtime/DB/`commercial_assets`/Decision Log/UA/Business Strategy/Module Registry/History
+- Closure commit: `8be9b7b5105091f9218592f4aea016658c4e4f5e`
 
 **STOP.** Do not start Entry 077. Do not expand into product/content/publish work from this task.
 
