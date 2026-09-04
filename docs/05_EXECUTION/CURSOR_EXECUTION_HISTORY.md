@@ -2444,6 +2444,29 @@
 
 ---
 
+### ChatGPT ↔ Cursor ↔ GitHub Collaboration Continuity Hardening (NOT Entry 077)
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Task** | Collaboration Continuity Hardening — formalize ChatGPT↔Cursor↔GitHub闭环 |
+| **Nature** | Governance / Collaboration Continuity only — **not** an Entry；**must not** consume Entry 077 |
+| **Scope** | Existing docs/0–6 Governance/Protocol files + Execution History + Audit only |
+| **Out of Scope** | Entry 077；Product/Content/Publish；Runtime/Python/DB/`commercial_assets`；Business Strategy；UA；Module Registry；Decision Log；History；new half-core workflow MD；new DEC |
+| **Primary landing** | `AI_FACTORY_OS_EXECUTION_PROTOCOL.md` — Collaboration Continuity Workflow |
+| **Also updated** | Control Center pointer；Constitution Persistent Collaboration；Authority non-authorities；KUP triggers；Documentation Map；Current State note |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_CHATGPT_CURSOR_GITHUB_COLLABORATION_CONTINUITY_HARDENING_REPORT.md` |
+| **Key rules** | Conversation Idea ≠ Execution Authorization；Cursor PASS ≠ Project Task Closed；ChatGPT Closure Review；Local ≠ Commit ≠ GitHub main |
+| **Entry 076** | Remains `PASS_WITH_FINDINGS` |
+| **Entry 077** | **NOT_STARTED** |
+| **Development** | Remains **PAUSED** |
+
+**Core Documentation Continuity Check：**
+- Modified：Execution Protocol；Control Center；Constitution；Authority Model；KUP；Documentation Map；Current State；Execution History；Audit
+- Reviewed but Not Modified：Decision Log；Business Strategy；Unified Architecture；Module Registry；Architecture Evolution Context；Runtime/DB/`commercial_assets`
+
+---
+
 ## 模板（复制用于新记录）
 
 ```markdown

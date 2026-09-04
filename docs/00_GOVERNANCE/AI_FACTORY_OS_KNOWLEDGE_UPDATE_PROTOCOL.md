@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Knowledge Update Protocol
 
 > **Knowledge Update Protocol（知识更新协议）**  
-> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-04（**Collaboration Continuity Hardening** — NOT Entry 077）
 
 **目的：** 当项目发生重大变化时，规定必须检查与更新哪些核心文件，防止文档再次爆炸或与 Reality（运行现实）漂移。
 
@@ -11,7 +11,8 @@
 **不适用：** 未经授权的 Reality 修改（Python / Database / commercial_assets）——此类必须先有明确 Scope（范围）。
 
 **连续性（DEC-019）：** `docs/0–6` 是**当前**核心连续性记录域。历史 Core Governance Set v1（8+1）是结构版本 / 检查清单，≠「完整连续性域仅此 8+1」。变化发生后须与 Execution Protocol 的 **Post-Execution Core Documentation Sync** 配合；长期规则不得只留在聊天中。  
-**GitHub：** 版本化 / 协作连续基础设施；**不得**当作 Reality Authority。
+**GitHub：** 版本化 / 协作连续基础设施；**不得**当作 Reality Authority。  
+**协作闭环：** 长期协作规则见 Execution Protocol **Collaboration Continuity Workflow**；`Conversation Idea ≠ Execution Authorization`；Cursor PASS 后须 ChatGPT Closure Review 才可 Project Task Closed。
 ---
 
 ## Change Level（变化等级）
@@ -48,11 +49,12 @@
 | 3 | **架构变化** | 分层调整；Core OS ↔ Content Factory 关系变化；融合授权 |
 | 4 | **模块变化** | 新模块落盘；职责迁移；入口启用/废弃登记 |
 | 5 | **数据结构变化** | Schema / Ownership / commercial_assets 字段或权威域变化 |
-| 6 | **AI 工作协议变化** | Bootstrap、可读性、自检、Scope 规则变化；**长期协作规则变化（DEC-019）** |
+| 6 | **AI 工作协议变化** | Bootstrap、可读性、自检、Scope 规则变化；**长期协作规则变化（DEC-019）**；Collaboration Continuity Workflow / Closure Review 规则变化 |
 | 7 | **重大错误修正** | P0/P1 问题关闭策略；发现新的系统性错误与避坑规则 |
 | 8 | **项目阶段变化** | Current Phase / Primary Goal 跃迁（须更新 Control Center + Current State） |
 | 9 | **连续性 / Recovery 规则变化** | Core Documentation Continuity、Recovery 权威路径、Post-Execution Sync 要求变化 |
 | 10 | **商业学习 / 发布 / 产品 / 选品 / 价格 / 数据源原则变化** | DEC-020…028：含 Price Intelligence + **Current vs Legacy DB Boundary** |
+| 11 | **Git-versioned closure 要求变化** | 任务是否要求 Commit / Push / Remote Verification；失败不得标 PASS |
 
 另外：任何拟修改 **核心认知文件**（见下文核心清单）的行为，默认触发本协议。
 

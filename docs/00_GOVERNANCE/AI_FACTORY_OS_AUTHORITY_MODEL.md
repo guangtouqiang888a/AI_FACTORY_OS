@@ -98,6 +98,9 @@ IF lower Level (e.g. L5 History) ≠ higher Level (e.g. L3 Decision)
 - **Control Center state projections**（Phase / Goal / Focus / Active Risks）are **not** Reality SoT；conflict → Current State / Reality win
 - **Audit reports** are evidence — **not** Current State substitutes
 - **GitHub** Documentation / Commit / Audit are continuity / versioning infrastructure — **not** Runtime / Code / DB / Assets Reality Authority；sync ≠ Production / commercial success
+- **Conversation Idea ≠ Execution Authorization** — chat proposals are not execution authority（DEC-012 / Collaboration Continuity）
+- **Cursor PASS ≠ Project Task Closed** — requires ChatGPT Closure Review when the collaboration workflow applies
+- `Local Reality ≠ Git Commit ≠ GitHub main`
 
 ### Human Gate vs User Authority（DEC-020 / DEC-023）
 

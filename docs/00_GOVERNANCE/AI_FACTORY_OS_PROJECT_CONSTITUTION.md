@@ -2,7 +2,7 @@
 
 > Collaboration Control Layer — Project Constitution v1  
 > **Update frequency: LOW**  
-> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-04（**Collaboration Continuity Hardening** — NOT Entry 077）
 
 This document defines **why** AI_FACTORY_OS exists.  
 Do not update casually. Prefer Decision Log for new strategic decisions.
@@ -394,6 +394,15 @@ GitHub sync 本身 ≠ Runtime 完成 ≠ Production ≠ 商业成功。
 | 重大原则变化 | 更新 Governance；必要时 Decision Log；按 Change Level 处理 |
 
 当 ChatGPT ↔ Cursor 协作确认会长期影响执行方式的规则时，必须判断是否进入 Governance / Work Principles / Execution Protocol / Knowledge Update Protocol 等正式位置。
+
+**协作闭环正式位置：** [EXECUTION_PROTOCOL — Collaboration Continuity Workflow](AI_FACTORY_OS_EXECUTION_PROTOCOL.md)
+
+```text
+Conversation Idea ≠ Execution Authorization
+Cursor reports PASS ≠ Project Task Closed
+```
+
+不得新建平行「半核心」协作协议文件来重复承载上述规则。
 
 ### Daily / Timely Progress Recording（每日/及时进度留痕）
 

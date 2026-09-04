@@ -436,5 +436,24 @@ GitHub（当前 `main`）承担：版本化、协作连续性、跨 Session / �
 **不得**：以 GitHub 文档 / Commit / Audit **凌驾** Runtime / Code / DB / Assets Reality。  
 **GitHub sync ≠** Runtime 完成 ≠ Production ≠ 商业成功。
 
+### Collaboration Continuity Pointer（协作连续性指针）
+
+长期协作闭环（ChatGPT ↔ 用户确认 ↔ Cursor ↔ GitHub ↔ ChatGPT Closure Review）的正式规则位于：
+
+[EXECUTION_PROTOCOL — Collaboration Continuity Workflow](AI_FACTORY_OS_EXECUTION_PROTOCOL.md)
+
+关键约束（已硬化，勿重复发明）：
+
+```text
+Conversation Idea ≠ Execution Authorization
+Cursor reports PASS ≠ Project Task Closed
+Audit ≠ Current State
+GitHub ≠ Reality Authority
+Local Reality ≠ Git Commit ≠ GitHub main
+```
+
+需要用户确认的重大任务：ChatGPT 形成 Cursor-ready instruction 后，须经用户确认再执行。  
+Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task Closed。
+
 详见 Constitution **Core Documentation Continuity Rule** 与 **DEC-019**。
 

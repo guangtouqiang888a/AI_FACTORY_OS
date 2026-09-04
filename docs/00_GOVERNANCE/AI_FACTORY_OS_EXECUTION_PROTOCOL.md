@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Execution Protocol
 
 > Collaboration Control — ChatGPT + Cursor task execution rules（协作控制 — 执行规则）  
-> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-04（**ChatGPT ↔ Cursor ↔ GitHub Collaboration Continuity Hardening** — NOT Entry 077）
 
 Applies to every Entry / implementation task unless the task document overrides with **explicit** authorization（除非任务明确授权覆盖）。
 
@@ -9,6 +9,130 @@ Applies to every Entry / implementation task unless the task document overrides 
 重要 Reality 变更后须按 Constitution **Architecture State Change Synchronization** 同步 MODULE_REGISTRY / CURRENT_STATE（DEC-016）。
 
 Session start must follow **Session Bootstrap Protocol（会话启动协议）** and **Session Bootstrap Required Reading Order** in Control Center before proposing architecture or execution tasks.
+
+---
+
+# Collaboration Continuity Workflow（协作连续性工作流）
+
+> **NOT Entry 077.** 本节目的：把 ChatGPT ↔ 用户确认 ↔ Cursor ↔ GitHub ↔ ChatGPT Closure Review 的长期协作闭环落入现有 Execution Protocol（DEC-016 / 017 / 019）。  
+> **不是**新架构层；**不是**新 Core 文件；**不是**新 DEC。
+
+## Workflow（协作闭环）
+
+```text
+ChatGPT
+↓ Governance / Reality Recovery
+↓ Task Analysis
+↓ Scope Definition
+↓ AI Self Review
+↓ 用户确认（需要确认的任务）
+↓ Cursor（Execution Agent）
+↓ Reality Verification → Execution → Validation
+↓ Core Documentation Impact Check
+↓ Audit + Execution History
+↓ Git Commit → GitHub Push → Remote Verification（若任务要求 versioned closure）
+↓ ChatGPT Closure Review
+↓ Project Task Closed / PASS_WITH_FINDINGS / RETRY_REQUIRED
+```
+
+## Responsibility Boundary（责任边界）
+
+### ChatGPT
+
+负责：恢复 Governance；恢复 Current State / Reality；分析任务；定义 Scope / Out of Scope；AI Self Review；形成 Cursor-ready instruction；**仅在用户确认后**进入需确认的执行阶段；收到 Cursor 结果后做 **ChatGPT Closure Review**。
+
+```text
+Conversation Idea ≠ Execution Authorization
+```
+
+聊天想法本身不是执行授权。不得仅凭聊天改变项目方向（DEC-012）。
+
+### 用户（User Gate）
+
+负责：对需要确认的重大任务做最终确认；对商业方向 / 重大项目方向做最终判断；对超出既有 Scope 的重大变化做明确授权。  
+用户确认 **≠** 放弃 Governance / Reality 检查。
+
+### Cursor（Execution Agent）
+
+负责：按 Scope 执行；执行前验证 Reality；遵守 Forbidden Actions；验证结果；Core Documentation Impact Check；更新受影响 Core Files；更新 Execution History；生成 Audit；按任务要求 commit / push / remote verification。
+
+```text
+Cursor reports PASS ≠ Project Task automatically closed
+```
+
+Cursor 的本地/执行 PASS 是证据输入，不是项目任务最终关闭。
+
+## GitHub Role（复用既有原则）
+
+GitHub = Versioning / Continuity Infrastructure。详见 Constitution / Control Center / Authority Model。
+
+```text
+GitHub ≠ Runtime Reality
+GitHub ≠ DB Reality
+GitHub ≠ Commercial Success
+GitHub ≠ Reality Authority
+Local Reality ≠ Git Commit ≠ GitHub main
+```
+
+若任务要求 **Git-versioned closure**：
+
+```text
+Local Validation → Commit → Push → Remote Verification
+```
+
+全部完成前不得声称 Git-versioned closure = PASS。  
+Remote verification 失败 → `REMOTE_VERIFICATION = DEGRADED / RETRY_REQUIRED`（如实填写）。
+
+## Audit Role（复用既有原则）
+
+Audit = Execution Evidence（执行证据）。记录做了什么 / 没做什么 / 验证 / 文件变更 / 风险 / Git·Remote 状态。
+
+```text
+Audit ≠ Current State
+```
+
+Audit 事实须经 Core Documentation Impact Check 后，按 Information Ownership（DEC-016）同步到对应文件。
+
+## Task State Model（状态不得混用）
+
+不得把以下状态混为一谈：
+
+```text
+Execution Started
+Execution Completed
+Local Validation Passed
+Audit Generated
+Core Documentation Synced
+Git Commit Created
+GitHub Push Succeeded
+Remote Verification Passed
+ChatGPT Closure Reviewed
+Project Task Closed
+```
+
+**Project Task Closed** = 该任务规定的全部闭环条件已满足（含所需的 Sync / Git / Remote / Closure Review）。
+
+## ChatGPT Closure Review（最终闭环审查）
+
+Cursor 返回后，ChatGPT **不得**仅凭 `STATUS: PASS` 宣布任务完成。至少检查：
+
+1. Scope 是否遵守  
+2. 是否 Scope Creep  
+3. Reality 是否发生预期变化  
+4. 不允许修改的文件是否未改  
+5. Current State 是否需要/已同步  
+6. Module Registry 是否需要/已同步  
+7. Decision Log 是否需要/已同步  
+8. Architecture / Business Strategy 是否需要/已同步  
+9. Execution History 是否更新  
+10. Audit 是否存在且内部一致  
+11. Git commit 是否存在（若要求）  
+12. GitHub push 是否成功（若要求）  
+13. Remote verification 是否成功（若要求）  
+14. 是否错误启动 Entry 077 / 越权开发  
+15. 是否出现新的 Governance Drift  
+
+通过后才可给出：`PROJECT TASK CLOSED` / `PASS_WITH_FINDINGS` / `RETRY_REQUIRED`。
 
 ---
 
@@ -163,6 +287,8 @@ User-facing text → follow **Human Readability Rule（人类可读规则）**.
 5. Add **Decision Log** entry only if a durable decision was made.
 6. Do not mark Implementation Completed when only Blueprint/Strategy was produced.
 7. Apply Knowledge Update Protocol Change Level if cognition/state changed.
+8. 若任务要求 Git-versioned closure：完成 Commit → Push → Remote Verification（见上方 Collaboration Continuity Workflow）。
+9. Cursor 报告完成后，仍须等待 **ChatGPT Closure Review**；不得自称 Project Task Closed。
 
 用户可见报告须遵守 **Human Readability Rule（人类可读规则）**.
 

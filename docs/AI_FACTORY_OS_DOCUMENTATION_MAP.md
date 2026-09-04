@@ -192,3 +192,6 @@ Reality > Current State > Core Governance > Blueprint > History > Archive
 历史 Core Governance Set v1（8+1）= 结构版本 / 检查清单，≠ 当前完整核心集合。  
 正式 Entry 必须完成 Post-Execution Core Documentation Sync / Impact Check（见 Execution Protocol）。  
 **Audit ≠ Current State。** **GitHub ≠ Reality Authority。** Control Center 状态投影可过期，冲突以 Current State / Reality 为准。
+
+**Collaboration Continuity：** 正式协作闭环规则见 [EXECUTION_PROTOCOL — Collaboration Continuity Workflow](./00_GOVERNANCE/AI_FACTORY_OS_EXECUTION_PROTOCOL.md)。  
+`Conversation Idea ≠ Execution Authorization` · `Cursor PASS ≠ Project Task Closed`。不得新建平行半核心协作协议文件。
