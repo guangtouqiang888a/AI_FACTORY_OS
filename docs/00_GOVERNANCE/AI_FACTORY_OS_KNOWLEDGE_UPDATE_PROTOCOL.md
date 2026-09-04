@@ -1,8 +1,7 @@
 # AI_FACTORY_OS Knowledge Update Protocol
 
 > **Knowledge Update Protocol（知识更新协议）**  
-> Core Governance Set v1（核心治理集 v1）  
-> Last updated: 2026-08-30（Entry **066**）
+> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
 
 **目的：** 当项目发生重大变化时，规定必须检查与更新哪些核心文件，防止文档再次爆炸或与 Reality（运行现实）漂移。
 
@@ -11,7 +10,8 @@
 **适用：** 所有影响认知、状态、架构解释或协作规则的 Entry。  
 **不适用：** 未经授权的 Reality 修改（Python / Database / commercial_assets）——此类必须先有明确 Scope（范围）。
 
-**连续性（DEC-019）：** `docs/0–6` 是核心连续性记录域。变化发生后须与 Execution Protocol 的 **Post-Execution Core Documentation Sync** 配合；长期规则不得只留在聊天中。
+**连续性（DEC-019）：** `docs/0–6` 是**当前**核心连续性记录域。历史 Core Governance Set v1（8+1）是结构版本 / 检查清单，≠「完整连续性域仅此 8+1」。变化发生后须与 Execution Protocol 的 **Post-Execution Core Documentation Sync** 配合；长期规则不得只留在聊天中。  
+**GitHub：** 版本化 / 协作连续基础设施；**不得**当作 Reality Authority。
 ---
 
 ## Change Level（变化等级）
@@ -81,7 +81,7 @@
     ↓
 影响范围判断（哪些域：商业 / 架构 / 状态 / 协议 / 数据）
     ↓
-检查核心文件（Core Governance Set + AUTHORITY_MODEL）
+检查核心文件（`docs/0–6` Continuity Domain；可用历史 Core Governance Set v1 清单作评估起点，但须另评估 Module Registry / Execution History / Evolution Context 等受影响文件）
     ↓
 生成更新建议（逐文件：改 / 不改 / 仅指针）
     ↓
@@ -89,16 +89,16 @@
     ↓
 Cursor 按 Scope 执行
     ↓
-验证（文件存在性、范围未越权、Current State 对齐）
+验证（文件存在性、范围未越权、Current State 对齐；**禁止机械全量刷新**）
     ↓
-Decision Log 记录（战略级必须写 DEC）
+Decision Log 记录（战略级必须写 DEC；仅明确化既有 DEC 时通常不新增 DEC）
 ```
 
 ### 2.1 影响范围判断检查单
 
 - [ ] 是否改变「为什么存在 / 永久原则」？ → Constitution  
 - [ ] 是否改变「如何赚钱与如何验证」？ → Business Strategy  
-- [ ] 是否改变阶段 / 目标 / 禁止 / 必读？ → Control Center  
+- [ ] 是否改变阶段 / 目标 / 禁止 / 必读 / Recovery 导航？ → Control Center（状态投影须对照 Current State）  
 - [ ] 是否改变事实摘要？ → Current State  
 - [ ] 是否战略选择或否决？ → Decision Log  
 - [ ] 是否改变协作做法？ → Execution Protocol  
@@ -107,8 +107,13 @@ Decision Log 记录（战略级必须写 DEC）
 - [ ] 是否改变裁决顺序？ → Authority Model  
 - [ ] 是否仅台账？ → PROJECT_STATUS / snapshot / HISTORY  
 - [ ] 是否仅解释「目录为何如此」的历史背景？ → Architecture Evolution Context（**非核心**；不得当 Current State）
+- [ ] 是否仅 Audit 证据？ → `07_AUDIT`（**不得**替代 Current State）
+- [ ] 是否仅 GitHub 同步？ → 通常不改商业/架构；记录 Execution History；**不得**把 sync 写成 Runtime 完成
 
 ### 2.2 核心文件检查清单（必须打开评估）
+
+> 下列 8+1 源自历史 **Core Governance Set v1**（DEC-009），用作 Impact **评估清单**。  
+> **当前连续性域仍是整个 `docs/0–6`。** 评估后按影响更新；无影响则 Reviewed-but-Not-Modified。
 
 1. `AI_FACTORY_OS_CONTROL_CENTER.md`  
 2. `AI_FACTORY_OS_PROJECT_CONSTITUTION.md`  
@@ -119,6 +124,10 @@ Decision Log 记录（战略级必须写 DEC）
 7. `AI_FACTORY_OS_KNOWLEDGE_UPDATE_PROTOCOL.md`（本文件）  
 8. `AI_FACTORY_OS_UNIFIED_ARCHITECTURE.md`  
 9. `AI_FACTORY_OS_AUTHORITY_MODEL.md`（强制卫星）  
+
+**同属 `docs/0–6`、须按影响评估：** `AI_FACTORY_OS_MODULE_REGISTRY.md` · `CURSOR_EXECUTION_HISTORY.md` · `AI_FACTORY_OS_ARCHITECTURE_EVOLUTION_CONTEXT_RECORD.md`（历史解释 only）。
+
+**非 Continuity 权威：** `docs/07_AUDIT`（证据）；GitHub remote 本身（运输层）。
 
 **非核心（可选同步）：** `AI_FACTORY_OS_ARCHITECTURE_EVOLUTION_CONTEXT_RECORD.md` — 仅历史解释；**不得**升格为核心治理文件。
 

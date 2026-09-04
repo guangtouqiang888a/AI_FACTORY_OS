@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Execution Protocol
 
 > Collaboration Control — ChatGPT + Cursor task execution rules（协作控制 — 执行规则）  
-> Last updated: 2026-08-30（Entry **066**）
+> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
 
 Applies to every Entry / implementation task unless the task document overrides with **explicit** authorization（除非任务明确授权覆盖）。
 
@@ -204,17 +204,17 @@ Final Core File Impact Report
 
 ## Core Documentation Continuity Check（每次 Cursor Entry 必须包含）
 
-以后所有 AI_FACTORY_OS Cursor Entry，都必须包含本检查。Cursor 至少须：
+以后所有 AI_FACTORY_OS Cursor Entry（及正式治理硬化任务），都必须包含本检查。Cursor 至少须：
 
-1. 判断本次工作影响哪些 `docs/0–6` 文件  
-2. 更新必要核心文件  
+1. 判断本次工作影响哪些 `docs/0–6` 文件（**Core Documentation Impact Check**）  
+2. 更新必要核心文件（**仅受影响者**）  
 3. 更新 `CURSOR_EXECUTION_HISTORY`  
 4. 若 Current State 变化 → 更新 Current State  
 5. 若模块 Reality 变化 → 更新 Module Registry  
 6. 若发生重大决策 → 更新 Decision Log  
 7. 若架构认知变化 → 更新 Unified Architecture  
 8. 若商业战略/阶段变化 → 更新 Business Strategy  
-9. 若工作协议变化 → 更新相关 Governance  
+9. 若工作协议 / Recovery / Continuity 规则变化 → 更新相关 Governance  
 10. 最后列出：
 
 ```text
@@ -222,6 +222,15 @@ Modified Core Files
 Reviewed but Not Modified Core Files
 Reason for Each
 ```
+
+### Impact Check 强制纪律
+
+- **禁止**机械更新全部核心文件  
+- **禁止**仅因文件日期旧而强制刷新  
+- **禁止**用单个 Audit 覆盖其他文件的 Information Ownership  
+- **Audit ≠ Current State** — Audit 事实须经 Sync 后才进入状态投影  
+- **GitHub ≠ Reality Authority** — sync / commit 不等于 Runtime 完成或商业成功  
+- Control Center 状态投影若需更新，仍须与 Current State 对齐，不得让投影成为独立 SoT  
 
 ### Modified Core Files（强制格式）
 

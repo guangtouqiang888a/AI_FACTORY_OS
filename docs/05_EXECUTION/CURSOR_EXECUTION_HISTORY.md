@@ -2413,6 +2413,37 @@
 
 ---
 
+### Core Documentation Continuity Hardening — Governance Recovery Drift Correction (NOT Entry 077)
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Task** | Core Documentation Continuity / Governance Recovery Hardening |
+| **Nature** | Governance / Recovery / Continuity only — **not** an Entry; **must not** consume Entry 077 |
+| **Pre-Reality** | Entry 076=`PASS_WITH_FINDINGS`；`prod_a0638789fc2b` draft；`aoc_19399677b7ba`；Entry 077=`NOT_STARTED`；dev paused；GitHub `main` synced as infrastructure |
+| **Impact Analysis** | Drift concentrated in Control Center state projections + 8+1 vs `docs/0–6` ambiguity；DEC-016/017/019 sufficient — **no new DEC** |
+| **Modified** | Control Center；Constitution；Authority Model；Execution Protocol；Knowledge Update Protocol；Current State（pause/GitHub/077 note）；Documentation Map Continuity pointer；Execution History；Audit |
+| **Not Modified** | Decision Log；Business Strategy；Unified Architecture；Module Registry；History；Runtime/DB/`commercial_assets`；Entry 076 outcomes |
+| **Decision Log** | **UNCHANGED** — clarification of existing DEC-016/017/019 |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_CORE_DOCUMENTATION_CONTINUITY_HARDENING_REPORT.md` |
+| **Validation** | Recovery order intact；Authority hierarchy unchanged；CC projections demoted；Entry 076 preserved；Entry 077 NOT_STARTED |
+| **Entry 077** | **NOT_STARTED** |
+| **Note** | Hardening does not change AI_FACTORY_OS business/product/architecture direction. |
+
+**Closure / correction note（append-only · 2026-09-04）：**
+- Audit internal consistency：§5-D **Execution History** ≠ History Evolution Context；**History intentionally unchanged**
+- No DEC added；DEC-016/017/019 remain sufficient
+- Scope integrity rechecked：no Python/Runtime/DB/`commercial_assets`/Decision Log/UA/Business Strategy/Module Registry/`06_HISTORY` mutation
+- Git versioned closure commit：`docs: close core documentation continuity hardening`（see Phase after push）
+- Entry 077 remains **NOT_STARTED**
+- Final validation：PRIMARY_HARDENING=PASS；AUDIT_INTERNAL_CONSISTENCY=PASS
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Constitution；Authority Model；Execution Protocol；KUP；Current State；Documentation Map；Execution History；Audit report
+- Reviewed but Not Modified：Decision Log；Business Strategy；Unified Architecture；Module Registry；Architecture Evolution Context；`commercial_assets` / Runtime / DB
+
+---
+
 ## 模板（复制用于新记录）
 
 ```markdown

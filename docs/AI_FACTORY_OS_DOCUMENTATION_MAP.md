@@ -187,4 +187,8 @@ Reality > Current State > Core Governance > Blueprint > History > Archive
 
 ## Continuity Rule Pointer（DEC-019）
 
-项目连续性不依赖 Conversation Memory。正式 Entry 必须完成 Post-Execution Core Documentation Sync（见 Execution Protocol）。
+项目连续性不依赖 Conversation Memory。  
+**当前核心连续性文档域 = `docs/0–6`。**  
+历史 Core Governance Set v1（8+1）= 结构版本 / 检查清单，≠ 当前完整核心集合。  
+正式 Entry 必须完成 Post-Execution Core Documentation Sync / Impact Check（见 Execution Protocol）。  
+**Audit ≠ Current State。** **GitHub ≠ Reality Authority。** Control Center 状态投影可过期，冲突以 Current State / Reality 为准。

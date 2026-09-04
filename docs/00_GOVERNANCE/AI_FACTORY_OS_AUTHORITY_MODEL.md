@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Authority Model
 
 > Collaboration Control — truth hierarchy（权威模型）  
-> Last updated: 2026-08-29（Entry **052** / **DEC-023**）
+> Last updated: 2026-09-04（**Core Documentation Continuity Hardening**；权威层级未改）
 
 Aligned with System Governance / State Authority Protocol; this file is the **session-facing** control summary（会话侧权威摘要）。
 
@@ -95,6 +95,9 @@ IF lower Level (e.g. L5 History) ≠ higher Level (e.g. L3 Decision)
 - Chat claims of “migration done” without Asset Reality changes are false  
 - Long chat consensus without Core Governance 回溯 does not change project direction（DEC-012）
 - Long-term collaboration rules that exist **only** in Conversation Memory are **not** project authority（DEC-019）；must enter `docs/0–6` Governance when lasting
+- **Control Center state projections**（Phase / Goal / Focus / Active Risks）are **not** Reality SoT；conflict → Current State / Reality win
+- **Audit reports** are evidence — **not** Current State substitutes
+- **GitHub** Documentation / Commit / Audit are continuity / versioning infrastructure — **not** Runtime / Code / DB / Assets Reality Authority；sync ≠ Production / commercial success
 
 ### Human Gate vs User Authority（DEC-020 / DEC-023）
 
@@ -109,6 +112,8 @@ IF lower Level (e.g. L5 History) ≠ higher Level (e.g. L3 Decision)
 
 ## Continuity Domain Note（连续性记录域说明）
 
-`docs/0–6` 是项目**核心连续性记录域**（DEC-019）。  
+`docs/0–6` 是项目**当前核心连续性记录域**（DEC-019）。  
+历史 **Core Governance Set v1（8+1）**（DEC-009）是结构版本 / 核心认知检查清单，**≠**「当前完整核心文件集合仅此 8+1」。  
 这**不改变**上表 L0–L5 权威层级：User / Reality 仍高于文档治理。  
-连续性规则要求：可恢复的项目认知必须能从 `docs/0–6` 重建，而不是从聊天记忆猜测。
+连续性规则要求：可恢复的项目认知必须能从 `docs/0–6` 重建，而不是从聊天记忆猜测。  
+Control Center = 导航 / Recovery 控制层（Navigation Authority），**不是** Reality Authority。

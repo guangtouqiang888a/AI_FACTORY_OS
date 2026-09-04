@@ -2,17 +2,29 @@
 
 > **SINGLE ENTRY POINT for future AI sessions（未来 AI 会话唯一入口）**  
 > Collaboration Control System v1（协作控制系统 v1）  
-> Core Governance Set v1（核心治理集 v1）  
-> Last updated: 2026-09-03（Entry **067**）
+> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
 
 **Read this file first.（任何新会话必须先读本文件。）** Then follow **New Session Recovery Protocol**（及下方 Bootstrap）。  
 文档目录导航 SoT：[DOCUMENTATION_MAP](../AI_FACTORY_OS_DOCUMENTATION_MAP.md)。
+
+### Navigation Authority ≠ Reality Authority（导航权威 ≠ Reality 权威）
+
+本文件是新会话**入口、导航与 Recovery 控制层**。  
+**不是** Runtime / Code / DB / Assets 的替代权威，也**不是** Current State 的替代品。
+
+权威顺序仍以 [AUTHORITY_MODEL](AI_FACTORY_OS_AUTHORITY_MODEL.md) 为准：
+
+`Reality > Current State > Decision Log > Documentation > Conversation Memory`
+
+本文件中的 **Current Phase / Current Primary Goal / Current Development Focus / Active Risks** 属于**可过期状态投影**。  
+若与 [CURRENT_STATE](../01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md) 或 Reality 冲突 → **以 Current State / Reality 为准**，不得用本文件旧投影覆盖事实。
 
 **Recovery 权威（唯一）：** 本文件内 **New Session Recovery Protocol（DEC-017）** + 上方 **AI Recovery Reading Boundary（044-A）** + Documentation Map 导航。  
 **协作准则（现行对齐）：** [`AI_FACTORY_OS_WORK_PRINCIPLES.md`](../AI_FACTORY_OS_WORK_PRINCIPLES.md) — 冲突以本目录 Constitution / Protocol 为准。  
 归档辅助文件 `99_ARCHIVE/execution_history/reference/AI_FACTORY_OS_RECOVERY_READ_ORDER.md` **不是**现行 Recovery 权威，默认不读取。
 
-**长期商业方向指针（DEC-020…032）：** … + Browser Extension v1（065）；Import Gate（066）；Acquisition Policy + AI Cost Gate（067）— 成本控 estimated_cost 非 call_count；Model Router 未建；IMPORT 仍可用；Cursor ≠ 产品 AI。
+**长期商业方向指针（DEC-020…032）：** … + Browser Extension v1（065）；Import Gate（066）；Acquisition Policy + AI Cost Gate（067）— 成本控 estimated_cost 非 call_count；Model Router 未建；IMPORT 仍可用；Cursor ≠ 产品 AI。  
+**基础设施指针：** GitHub `main` 已作为版本化 / 跨 Session 连续性载体（见下方 GitHub Continuity Note）；**GitHub ≠ Reality Authority**。
 
 ---
 
@@ -168,21 +180,34 @@ AI 恢复上下文时，按层加载；**禁止**一次加载全部 `docs/`；**
 
 # Core Governance Navigation（核心治理导航）
 
-**Core Governance Set v1 = 8 核心文件 + AUTHORITY_MODEL（强制卫星）**
+### Current Core Continuity Domain（当前核心连续性文档域 · DEC-019）
 
-文件清单（与上表对应，可作速查）：
+当前 **`docs/00_GOVERNANCE` → `docs/06_HISTORY`（`docs/0–6`）** 构成 AI_FACTORY_OS **当前核心连续性文档域**。  
+新会话应能从该域恢复：规则、权威、当前状态、商业/架构认知、执行进度、重大决策与长期演进背景。
+
+**含：** Governance · Current State（含 Module Registry）· Architecture · Business · Execution History · History。  
+**Audit（`07_AUDIT`）** = 证据 / 验证记录，**不是** Current State 替代品。
+
+### Historical: Core Governance Set v1（历史结构版本 · DEC-009）
+
+**Core Governance Set v1 = 8 核心文件 + AUTHORITY_MODEL（强制卫星）** 是**历史治理结构版本**（Entry 040-D1 / DEC-009）。  
+它仍是「核心认知文件检查清单」的有用导航，**不得**再被解释为「当前完整核心文件集合 = 仅此 8+1」。
+
+文件清单（速查 / Impact 评估常用）：
 
 | # | 文件 | 角色 |
 |---|------|------|
-| — | [CONTROL_CENTER](AI_FACTORY_OS_CONTROL_CENTER.md)（本文件） | 启动入口与导航 |
+| — | [CONTROL_CENTER](AI_FACTORY_OS_CONTROL_CENTER.md)（本文件） | 启动入口与导航（**非 Reality SoT**） |
 | 1 | [AUTHORITY_MODEL](AI_FACTORY_OS_AUTHORITY_MODEL.md) | 权威模型（强制卫星） |
 | 2 | [PROJECT_CONSTITUTION](AI_FACTORY_OS_PROJECT_CONSTITUTION.md) | 项目宪法 |
-| 3 | [CURRENT_STATE](../01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md) | 当前事实状态 |
+| 3 | [CURRENT_STATE](../01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md) | 当前事实状态投影 |
 | 4 | [BUSINESS_STRATEGY](../03_BUSINESS/AI_FACTORY_OS_BUSINESS_STRATEGY.md) | 当前商业战略唯一入口 |
 | 5 | [UNIFIED_ARCHITECTURE](../02_ARCHITECTURE/AI_FACTORY_OS_UNIFIED_ARCHITECTURE.md) | 统一架构（目标层） |
 | 6 | [EXECUTION_PROTOCOL](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) | AI 执行协议 |
 | 7 | [KNOWLEDGE_UPDATE_PROTOCOL](AI_FACTORY_OS_KNOWLEDGE_UPDATE_PROTOCOL.md) | 知识更新协议 |
 | 8 | [DECISION_LOG](AI_FACTORY_OS_DECISION_LOG.md) | 正式决策 |
+
+另属 `docs/0–6` 连续性域、须按影响同步：`MODULE_REGISTRY`、`CURSOR_EXECUTION_HISTORY`、`ARCHITECTURE_EVOLUTION_CONTEXT_RECORD`（历史解释 only）。
 
 Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99_ARCHIVE/audit_history/AI_FACTORY_OS_KNOWLEDGE_CONSOLIDATION_MAP_A.md)（映射，非默认全文必读）。
 
@@ -203,13 +228,12 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 
 ### 第二步
 
-确认：**当前项目阶段（Current Phase）**  
-（见下方「Current Phase」章节）
+阅读下方 **Current Phase**（状态投影），然后**必须**与 [CURRENT_STATE](../01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md)（及 Scope 所需 Reality）交叉核验。  
+**禁止**仅凭本文件旧投影宣布 Current Reality。
 
 ### 第三步
 
-确认：**当前最高优先级目标（Current Primary Goal）**  
-（见下方「Current Primary Goal」章节）
+阅读下方 **Current Primary Goal**（状态投影），同样以 Current State / 用户授权 Scope 为准核验。
 
 ### 第四步
 
@@ -235,67 +259,55 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 
 ## Current Phase
 
-**Commercial Validation Preparation（商业验证准备阶段）**
+> **State projection（可过期）。** 权威事实投影 → [CURRENT_STATE](../01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md)。Audit ≠ Current State。
+
+### Strategic orientation（慢变标签）
+
+**Commercial Validation Preparation（商业验证准备）** — 长期战略取向标签；**不等于**「下一动作已授权」或「Runtime/商业已验证成功」。
+
+### Operational snapshot（2026-09-04 · 须与 Current State / Reality 核验）
+
+| 项 | 投影（须核验） |
+|----|----------------|
+| Latest completed product-path Entry | **076** = `PASS_WITH_FINDINGS` |
+| Product Definition | `prod_a0638789fc2b`（`draft`）← Opportunity `aoc_19399677b7ba` |
+| Product Definition ≠ | Product Asset / Commercial Product / Listing / Published / Market Validated |
+| Entry **077** | **NOT_STARTED** — 不得擅自启动 |
+| Development posture | 商业/产品推进**暂停**，等待另开授权 Entry |
+| GitHub | `main` 已建立为版本化 / 协作连续载体；**同步本身未改变**产品/商业/架构方向 |
+| Pilot Observation | 仍 **NOT_STARTED**（见 Current State；非本投影发明） |
+| Commercial JSON full migration / Pilot sync | 历史 open item（RA-002 等）— **不得**因本文件旧文自动当作当前唯一焦点 |
+
+### Governance foundation history（已完成 · 非 Current Reality 清单）
 
 Collaboration Control System v1 Foundation: **Implemented (docs/control layer)**  
-Entry 040-A: Session Bootstrap / Human Readability / AI Self Review Gate — **Completed**  
-Entry 040-D1: Core Governance Foundation（BUSINESS_STRATEGY + KNOWLEDGE_UPDATE + DEC-005..010）— **Completed**  
-Entry 040-D2-A: Knowledge Consolidation Wave A（继承地图 + 历史角色标识）— **Completed**  
-Entry 040-D2-B: Knowledge Consolidation Wave B（商业知识 / 工作协议裁决 / 架构数据边界）— **Completed**  
-Entry 040-E: Core Governance Final Acceptance Review — **Completed（ACCEPTED）**  
-Entry 040-F-A: Governance Hardening — **Completed**  
-Entry 040-F-B: Governance User Manual（治理系统使用手册）— **Completed**  
-Entry 041-A: Reality Architecture Alignment Audit — **Completed**（双轨 Case B 再确认）  
-证据报告：[REALITY_ARCHITECTURE_ALIGNMENT_REPORT](../07_AUDIT/runtime/AI_FACTORY_OS_REALITY_ARCHITECTURE_ALIGNMENT_REPORT.md)  
-Entry 041-B-A: Modular Capability Principle Update — **Completed**（DEC-013）  
-Entry 041-C: Reality Alignment Correction Strategy — **Completed**（策略完成；修复未执行）  
-策略：[REALITY_ALIGNMENT_CORRECTION_STRATEGY](../07_AUDIT/runtime/AI_FACTORY_OS_REALITY_ALIGNMENT_CORRECTION_STRATEGY.md)  
-Entry 041-D: Reality Documentation Alignment — **Completed**（docs-only；RA-001 文档校正）  
-验证：[REALITY_DOCUMENTATION_ALIGNMENT_VALIDATION](../07_AUDIT/validation/AI_FACTORY_OS_REALITY_DOCUMENTATION_ALIGNMENT_VALIDATION_REPORT.md)  
-Entry 041-D-A: Architecture Evolution Context — **Completed**  
-Entry 041-B-B: Capability Composition Principle — **Completed**（DEC-014）  
-Entry 041-E: Documentation Architecture Governance Strategy — **Completed**（DEC-015；不移动文件）  
-策略：[DOCUMENTATION_ARCHITECTURE_GOVERNANCE_STRATEGY](../99_ARCHIVE/audit_history/AI_FACTORY_OS_DOCUMENTATION_ARCHITECTURE_GOVERNANCE_STRATEGY.md)  
-Entry 041-F: Core Knowledge Boundary Review — **Completed**（DEC-016 Information Ownership）  
-验证：[CORE_KNOWLEDGE_BOUNDARY_REVIEW_VALIDATION](../99_ARCHIVE/audit_history/AI_FACTORY_OS_CORE_KNOWLEDGE_BOUNDARY_REVIEW_VALIDATION_REPORT.md)  
-Entry 041-G: New Session Recovery Protocol — **Completed**（DEC-017）  
-验证：[NEW_SESSION_RECOVERY_PROTOCOL_VALIDATION](../07_AUDIT/validation/AI_FACTORY_OS_NEW_SESSION_RECOVERY_PROTOCOL_VALIDATION_REPORT.md)  
-Entry 041-H: Architecture Structure Clarification — **Completed**（DEC-018；Folder ≠ Capability ≠ Product）  
-验证：[ARCHITECTURE_STRUCTURE_CLARIFICATION_VALIDATION](../99_ARCHIVE/audit_history/AI_FACTORY_OS_ARCHITECTURE_STRUCTURE_CLARIFICATION_VALIDATION_REPORT.md)
+Entry 040-A … 041-H 治理基础（DEC-013…018 等）— **Completed**（详文保留于历史 Entry / Audit；此处不重复当作「今天刚发生」）。
 
 ---
 
 ## Current Primary Goal
 
-Operate via **Core Governance Set v1（已最终验收 + 040-F-A 硬化）** so each new session can recover:
+1. **正确 Recovery：** 先规则与权威 → 再 Current State / Reality → 再按 Scope 读设计 / 商业 / 历史（DEC-017）。  
+2. **防止认知错误：** 不以 Control Center 旧投影、Audit  alone、或 GitHub 文档状态覆盖 Reality。  
+3. **范围纪律：** Entry **077** = **NOT_STARTED**；未授权不得推进 Product content / Publish / CF–Core 合并 / DB 迁移。  
+4. **连续性：** 有意义推进写入 `docs/0–6`（DEC-019）；长期协作规则不得只留在 Conversation Memory。
 
-- phase（阶段）
-- focus（重点）
-- authority（权威层级）
-- forbidden actions（禁止事项）
-- decision history（决策历史）
-- business strategy entry（商业战略入口）
-
-Without re-deriving the entire documentation corpus（无需重读全部文档）。  
-**重大判断必须回溯 Core Governance Set（DEC-012）**，不得只靠当前聊天上下文改方向。
-
-Governance ops（治理运营）已允许；**Reality Execution（JSON 同步 / 观察 / Runtime）须另开授权 Entry。**
+**重大判断必须回溯 Core Governance（DEC-012）与 `docs/0–6`，** 不得只靠聊天改方向。  
+Governance / Recovery hardening 可在授权下进行；**Reality Execution（产品内容、发布、观察、迁移）须另开授权 Entry。**
 
 ---
 
 ## Current Development Focus
 
-1. Use Control Center + **New Session Recovery Protocol**（DEC-017）as session start
-2. Apply DEC-011 / DEC-012：Scope 控制 + 防聊天认知漂移
-3. Commercial state migration / Pilot sync — **Strategy ready, Implementation Not Started**
-4. Pilot observation — **planned, Not Started**
-5. Do **not** expand into Core OS ↔ CF Runtime merge unless explicitly tasked
-6. After 041-D: trust **CURRENT_STATE + MODULE_REGISTRY** for Runtime Reality；Blueprint ✅ ≠ Production
-7. Apply **DEC-015**：文档角色分层；历史解释 / Blueprint 不得覆盖 Reality
-8. Apply **DEC-016**：Information Ownership — 先判信息类型再选文件；重要 Reality 变更同步 Registry + Current State
-9. Apply **DEC-017**：先规则 → Reality → 设计 → 历史；禁止用历史文件推断当前系统
-10. Apply **DEC-018**：分析商业方案时不得按文件夹拆分能力；Folder ≠ Capability ≠ Product
-11. Next suggested（未授权不执行）：商业验证准备 / RA-002（人辅 JSON sync）— 须另开 Entry
+1. Control Center + **New Session Recovery Protocol**（DEC-017）启动；状态投影须对照 Current State / Reality  
+2. DEC-011 / DEC-012：Scope 控制 + 防聊天认知漂移  
+3. Trust **CURRENT_STATE + MODULE_REGISTRY + Reality**；Blueprint / Audit / GitHub docs ≠ Production / Runtime complete  
+4. Entry **076** 已完成（Definition draft）；**等待授权**再开 Product content / Commercial / Publish Entry  
+5. Entry **077**：**NOT_STARTED** — 禁止抢跑  
+6. Do **not** expand into Core OS ↔ CF Runtime merge unless explicitly tasked  
+7. DEC-015…018：文档角色 / Ownership / Recovery / Folder≠Capability≠Product  
+8. Open historical commercial items（Pilot Observation、RA-002 migration 等）— **先读 Current State**，不得因本文件旧 bullet 自动执行  
+9. GitHub = 版本化 / 跨工具运输 / 可追溯恢复；**≠ Reality Authority**
 
 ---
 
@@ -303,11 +315,13 @@ Governance ops（治理运营）已允许；**Reality Execution（JSON 同步 / 
 
 | ID | Risk（风险） |
 |----|------|
-| R1 | Documentation volume high (~60+ md) → context overflow if all are loaded（文档过多导致上下文溢出） |
-| R2 | Commercial JSON lifecycle still `draft` while Pilot production completed（文档/字段与已完成生产不一致） |
+| R1 | Documentation volume high → context overflow if all docs loaded |
+| R2 | Control Center / 其他导航文件中的**状态投影过期**，被误当作 Current Reality（Recovery Drift） |
 | R3 | Dual-track: Core OS pipeline ≠ Content Factory Adapter（双轨未统一 Runtime） |
 | R4 | Schema drift: `database.py` vs `ai_factory.db`（已知；未执行迁移） |
-| R5 | Conversation memory treated as truth without Current State / Decision Log（聊天记忆被当成事实） |
+| R5 | Conversation memory / GitHub docs / Audit  alone 被当成 Reality 或 Current State |
+| R6 | Product Definition（如 `prod_a0638789fc2b`）被误升格为 Asset / Listing / Published / Market Validated |
+| R7 | Commercial JSON lifecycle / Pilot 字段与已完成生产不一致（RA-002 等仍可能 open — 以 Current State 为准） |
 
 ---
 
@@ -340,6 +354,11 @@ Governance ops（治理运营）已允许；**Reality Execution（JSON 同步 / 
 - Infer current system from Evolution Context / Blueprint / audit alone（用历史文件推断当前系统；违反 DEC-017）  
 - Split commercial capabilities by folder name alone（按目录名拆商业能力；违反 DEC-018）  
 - Change project direction from **chat context alone** without Core Governance 回溯（违反 DEC-012）  
+- Treat Control Center **state projections** as Reality SoT when they conflict with Current State / Reality  
+- Treat **Audit** as Current State substitute  
+- Treat **GitHub** Documentation / Commit / Audit as Runtime Reality Authority  
+- Start **Entry 077** or Product content / Publish without explicit authorization  
+- Elevate Product Definition to Product Asset / Commercial Product / Listing / Published / Market Validated without Reality  
 
 ---
 
@@ -400,10 +419,22 @@ Documentation Map 是文档结构唯一导航入口。
 
 # Core Documentation Continuity（核心文档连续性 · DEC-019）
 
-项目连续性**不依赖** Conversation Memory。`docs/0–6` 是核心连续性记录域。
+项目连续性**不依赖** Conversation Memory。  
+**当前核心连续性文档域 = `docs/0–6`**（Governance → History）。  
+历史 **Core Governance Set v1（8+1）** = 结构版本 / 检查清单，≠ 当前完整连续性域。
 
-正式 Cursor Entry 完成后，必须执行 **Post-Execution Core Documentation Sync**（见 [EXECUTION_PROTOCOL](AI_FACTORY_OS_EXECUTION_PROTOCOL.md)）。  
-长期协作规则必须进入 Governance（Persistent Collaboration Rule）。有意义工作必须及时留痕（Daily / Timely Progress Recording）。
+正式 Cursor Entry（及同类正式治理任务）完成后，必须执行 **Post-Execution Core Documentation Sync**（见 [EXECUTION_PROTOCOL](AI_FACTORY_OS_EXECUTION_PROTOCOL.md)）：
+
+- **Core Documentation Impact Check** — 判断哪些核心文件受事实变化影响  
+- **禁止**机械更新全部核心文件；**禁止**仅因日期旧而强制刷新；**禁止**用 Audit 覆盖他处 Information Ownership  
+- **Audit ≠ Current State** — Audit 事实须经正确 Sync 后才进入状态投影  
+- 长期协作规则必须进入 Governance（Persistent Collaboration Rule）
+
+### GitHub Continuity Note（基础设施 · 非 Reality 权威）
+
+GitHub（当前 `main`）承担：版本化、协作连续性、跨 Session / 跨工具运输、可追溯恢复。  
+**不得**：以 GitHub 文档 / Commit / Audit **凌驾** Runtime / Code / DB / Assets Reality。  
+**GitHub sync ≠** Runtime 完成 ≠ Production ≠ 商业成功。
 
 详见 Constitution **Core Documentation Continuity Rule** 与 **DEC-019**。
 
