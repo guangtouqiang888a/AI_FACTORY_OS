@@ -467,19 +467,17 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | `PHASE_2_GOVERNANCE_IMPLEMENTATION`（Intent Continuity + Collaboration Model） |
-| **ORIGINAL OBJECTIVE** | 修复长期任务连续性 + 建立 ChatGPT/Cursor/GitHub 合理协作闭环 |
-| **CURRENT OBJECTIVE** | 在既有 Governance 落地 Intent Continuity + Responsibility Boundary（本 PHASE 2） |
-| **CURRENT PHASE** | PHASE 2 / GOVERNANCE IMPLEMENTATION |
-| **CURRENT STEP** | Governance docs implementation → Formal Audit → History →（若要求）Git |
+| **ACTIVE_TASK** | **`NONE`** |
+| **STATUS** | 无正在进行的正式多步骤治理任务 |
+| **NOTE** | 先前临时锚点 `PHASE_2_GOVERNANCE_IMPLEMENTATION` 已结束；已清理，不得再当作当前任务 |
+| **LAST GOVERNANCE CHAIN（证据指针，非当前任务）** | Core Documentation Continuity Hardening → Collaboration Continuity Hardening → PHASE 1 Audit → PHASE 2 Governance Implementation → Execution History Continuity Repair → 本 Final Governance Closure |
+| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_1_CORE_CONTINUITY_RECOVERY_AUDIT.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_EXECUTION_HISTORY_CONTINUITY_REPAIR.md`；本 Closure Audit |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
-| **PHASE 1 AUDIT POINTER** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_1_CORE_CONTINUITY_RECOVERY_AUDIT.md` |
-| **PHASE 2 AUDIT POINTER** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md` |
-| **STOP** | 完成后等待 ChatGPT Closure Review；**不得**启动 Entry 077 |
-| **FINAL COMPLETION CRITERIA（整链）** | PHASE 1 + PHASE 2 完成 + ChatGPT Closure Review；之后才可评估下一开发 Entry |
 | **ENTRY_077** | **NOT_STARTED** |
+| **PROJECT_DEVELOPMENT** | **PAUSED** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 
 详见 Constitution **Core Documentation Continuity Rule** 与 **DEC-019**。
+
 
