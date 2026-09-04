@@ -116,7 +116,7 @@ Runtime/DB/`commercial_assets`/CF 修改；新平台/未来产品类型实现；
 | Future Extensibility 与当前 Scope 无冲突 | **PASS** |
 | Execution History 留痕 | **PASS** |
 | Formal Audit 生成 | **PASS** |
-| Git commit/push/remote verification | **PENDING → 本文件 Git 节更新** |
+| Git commit/push/remote verification | **LOCAL COMMIT PASS；PUSH/REMOTE = RETRY_REQUIRED** |
 | 无 Runtime/DB/assets/CF 开发 | **PASS** |
 | ChatGPT 可仅依赖核心治理恢复方向 | **PASS（原则层）** |
 
@@ -215,9 +215,12 @@ ENTRY_077 = NOT_STARTED
 | Item | Reality |
 |------|---------|
 | Branch | `main` |
-| Commit | **PENDING** |
-| Push | **PENDING** |
-| Remote Verification | **PENDING** |
+| Local HEAD | `8bebfe6d80120faffc27dfcdff1d445d248ac056` |
+| origin/main（cached） | `f804d356cd61b6d0b23c3b1744ace18aae66b821` |
+| Ahead | **1** |
+| Commit | `8bebfe6d80120faffc27dfcdff1d445d248ac056` — `docs: harden commercial outcome primacy principles (DEC-033)` |
+| Push | **FAILED**（Recv failure / Could not connect to github.com:443）→ **RETRY_REQUIRED** |
+| Remote Verification | **RETRY_REQUIRED** |
 
 ---
 
@@ -230,10 +233,13 @@ PROJECT_DEVELOPMENT = PAUSED
 ACTIVE_TASK = NONE
 EARNED_REVENUE_CLAIMED = NO
 MULTI_PLATFORM_IMPLEMENTED = NO
+GIT_COMMIT = 8bebfe6d80120faffc27dfcdff1d445d248ac056
+PUSH = FAILED
+REMOTE_VERIFICATION = RETRY_REQUIRED
 CHATGPT_CLOSURE_REVIEW = NOT_CLAIMED_BY_CURSOR
 ```
 
 **浓缩原则（恢复用）：**  
 赚钱是最高商业目的；以最低合理成本生产达到可销售质量的产品；AI 成本必须进入经济判断；正常情况下系统自主运行，用户只负责最终发布和重大异常介入；产品、市场、平台、商业模式、价格、交付和成本必须解耦；当前闲鱼只是 Pilot，不是永久边界；未来扩展靠正确抽象，而不是提前堆功能。
 
-**STOP.**
+**STOP.** Do not start Entry 077. Remote push must be retried before claiming GitHub baseline sync.
