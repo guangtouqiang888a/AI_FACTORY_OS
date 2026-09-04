@@ -2398,7 +2398,7 @@
 | **Branch** | `master` → `main` |
 | **Baseline commit** | `6f1c033428fc38aa8d8dd54a2e717658f477e174` — `chore: establish AI_FACTORY_OS Git baseline` |
 | **Baseline push** | Success — `origin/main` created; independent fetch/ls-remote/ls-tree verification PASS (600 files; hash match) |
-| **Audit closure commit** | See Phase 3 report after second commit (`docs: close GitHub sync audit`) |
+| **Audit closure commit** | `965dbdf4dc4d25180606d25bb903dcf44bb6b268` — `docs: close GitHub sync audit` |
 | **Remote** | `https://github.com/guangtouqiang888a/AI_FACTORY_OS.git` |
 | **Phase 1 report** | `docs/07_AUDIT/GITHUB_SYNC_PHASE_1_GIT_FOUNDATION_REPORT.md` |
 | **Phase 2 report** | `docs/07_AUDIT/GITHUB_SYNC_PHASE_2_COMMIT_BOUNDARY_REVIEW.md` |

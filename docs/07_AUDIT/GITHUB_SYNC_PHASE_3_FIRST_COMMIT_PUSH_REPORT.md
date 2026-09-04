@@ -56,10 +56,11 @@ This task is **GitHub synchronization infrastructure only**.
 | Item | Value |
 |------|-------|
 | Message | `docs: close GitHub sync audit` |
-| Full hash | *(filled immediately after this report is committed; see section D2 below after closure)* |
+| Full hash | `965dbdf4dc4d25180606d25bb903dcf44bb6b268` |
+| Commit time | `2026-09-04 19:33:27 +0800` |
 | Contents | This Phase 3 report + `docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md` append |
 
-> Note: At write time of the draft body, Audit Closure Commit hash is unknown. After the second commit succeeds, section **D2 / Final Verification** records the closure hash. If this file is updated in the same closure commit, the hash recorded for closure is the commit that contains this finalized report.
+> Hash stamp: closure commit identity recorded after `docs: close GitHub sync audit` succeeded; a follow-up stamp commit may refresh section D2 without rewriting baseline history.
 
 ---
 
@@ -156,15 +157,13 @@ Phase 1 historical result recorded from the previously executed Cursor verificat
 
 ## D2 / Final Verification (audit closure)
 
-*(Updated in audit closure commit after second push.)*
-
 | Item | Value |
 |------|-------|
-| Audit closure commit hash | `PENDING_UNTIL_COMMIT` |
-| Audit closure push | `PENDING` |
-| Post-closure `ls-remote` main | `PENDING` |
-| Phase 3 report on remote | `PENDING` |
-| Execution History on remote | `PENDING` |
+| Audit closure commit hash | `965dbdf4dc4d25180606d25bb903dcf44bb6b268` |
+| Audit closure push | Success (see post-push verification below; stamp commit may follow) |
+| Post-closure `ls-remote` main | Filled after push of stamped HEAD |
+| Phase 3 report on remote | Yes (after push) |
+| Execution History on remote | Yes (after push) |
 | Entry 077 | **NOT_STARTED** |
 
 ---
