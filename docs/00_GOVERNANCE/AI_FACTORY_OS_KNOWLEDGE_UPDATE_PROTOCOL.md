@@ -53,7 +53,7 @@
 | 7 | **重大错误修正** | P0/P1 问题关闭策略；发现新的系统性错误与避坑规则 |
 | 8 | **项目阶段变化** | Current Phase / Primary Goal 跃迁（须更新 Control Center + Current State） |
 | 9 | **连续性 / Recovery 规则变化** | Core Documentation Continuity、Recovery 权威路径、Post-Execution Sync、**Active Task Anchor**、Intent Continuity 字段变化 |
-| 10 | **商业学习 / 发布 / 产品 / 选品 / 价格 / 数据源原则变化** | DEC-020…028：含 Price Intelligence + **Current vs Legacy DB Boundary** |
+| 10 | **商业学习 / 发布 / 产品 / 选品 / 价格 / 数据源 / 成本与职责原则变化** | DEC-020…033：含 Price Intelligence、DB Boundary、**Commercial Outcome Primacy / AI Cost / User Boundary / Commercialization Context Decoupling（DEC-033）** |
 | 11 | **Git-versioned closure 要求变化** | 任务是否要求 Commit / Push / Remote Verification；失败不得标 PASS |
 
 另外：任何拟修改 **核心认知文件**（见下文核心清单）的行为，默认触发本协议。

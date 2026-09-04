@@ -1,7 +1,8 @@
 # AI_FACTORY_OS Execution Protocol
 
 > Collaboration Control — ChatGPT + Cursor task execution rules（协作控制 — 执行规则）  
-> Last updated: 2026-09-04（**PHASE 2 / GOVERNANCE IMPLEMENTATION** — Intent Continuity + Collaboration Model — NOT Entry 077）
+> Last updated: 2026-09-04（**DEC-033** Commercial Outcome Primacy / Cost / User Boundary + PHASE 2 Intent Continuity）
+
 
 Applies to every Entry / implementation task unless the task document overrides with **explicit** authorization（除非任务明确授权覆盖）。
 
@@ -581,6 +582,26 @@ Reason for Each
 4. Selection Result ≠ 跳过门控的自动发布  
 5. 禁止用未来时间戳观察数据污染当前评分（no leakage）  
 6. human_assisted opportunities 与 autonomous_discovery 分流，不得混称为同一 SoT
+
+### Commercial Outcome & Cost Discipline（DEC-033）
+
+Market → Opportunity → Selection → Experiment → Production 的商业判断 **不能只看** demand / score / trend。  
+原则层至少还须考虑：
+
+```text
+需求 × 可生产性 × 可销售质量 × 单位经济性
+  × AI 边际成本 × 资产复用价值 × 商业化上下文
+```
+
+执行约束：
+
+1. **商业结果优先** — 完整性/自动化/AI 用量不得凌驾真实商业回报目标；不得牺牲可销售质量/真实性/合规/治理  
+2. **最低合理成本达可销售质量** — AI 调用/推理/重复生成成本必须进入判断；AI/自动化非默认越多越好  
+3. **一次生产、多次复用** 优先于每次高成本重算  
+4. **用户正常职责** = 最终外部发布 + 重大异常介入；≠ 逐步技术/商业审批  
+5. Product ≠ Market ≠ Channel ≠ Commercial/Pricing/Delivery/Cost Model；当前渠道 Pilot ≠ 永久边界  
+6. **本条为治理原则，不要求本任务实现选品计算引擎**；不得因本原则启动 Entry 077 或把 UNKNOWN 写成事实  
+7. Entry 076 Product Definition（如 `prod_a0638789fc2b`）之后仍须：Product Hypothesis → Experiment → Review → Production Request → Gate → CF；Hypothesis ≠ DIRECT_EVIDENCE
 
 ### End-to-End Product Generation Loop（DEC-026）
 

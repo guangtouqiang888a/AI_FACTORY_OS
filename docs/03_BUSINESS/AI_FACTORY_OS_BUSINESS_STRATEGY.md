@@ -3,7 +3,7 @@
 > **Business Strategy（商业战略）** — 当前有效商业战略唯一入口  
 > Document role：Business Strategy only（DEC-016）— **不是** Core Governance Set 定义文件  
 > 历史结构版本提示：Core Governance Set v1（8+1，DEC-009）= **历史检查清单**；当前核心连续性域 = `docs/0–6`  
-> Last updated: 2026-09-04（页眉歧义最小修正 · PHASE 2；**商业方向未改** · 原 Entry **049** / **DEC-020**）  
+> Last updated: 2026-09-04（**DEC-033** 商业最高原则硬化；**商业方向未改** · 仍为商业验证准备 + 半自动 + 数字商品优先；不启动 Entry 077）  
 > **Update frequency: MEDIUM（中等）** — 商业方向变化时必须经 Knowledge Update Protocol（知识更新协议）更新
 
 **定位：** 本文定义「如何创造与验证商业价值」— **商业方向唯一文档归属**（DEC-016）。  
@@ -12,6 +12,8 @@
 冲突时：以本文 + Current State（当前状态）+ Reality（运行现实）为准；不以旧 Business Plan 的「已完成」清单为准。
 
 **Entry 040-D2-B 修改原因：** 按商业知识归位分析，补充「第一收入来源 / 盈利阶段 / 禁止误判 / 长期价值闭环」摘要；**不改变**既有商业方向（仍为商业验证准备 + 半自动 + 数字商品优先）。
+
+**DEC-033 修改原因：** 固化「赚钱是最高商业目的」、最低成本/AI 成本约束、用户职责边界、Product 与商业化上下文解耦、闲鱼 Pilot ≠ 永久边界；**不改变**当前执行 Scope；**不等于**已经赚钱或已实现多平台。
 
 ---
 
@@ -24,18 +26,29 @@
 - 以 Human Assisted（人工辅助）方式发布与观测市场反馈
 - 用真实反馈更新判断，而不是用假设或伪造指标宣称成功
 
-近程目标不是「全自动赚钱机器」，而是：**可审计的商业验证准备与执行能力**。
+**最高商业目标（DEC-033）：** 形成真实、可持续、可验证的商业回报。  
+近程执行目标不是「全自动赚钱机器」，而是：**可审计的商业验证准备与执行能力**（赚钱第一 ≠ 已经赚钱）。
 
-### 1.1 Phase 1 Scope vs Permanent Boundary（DEC-020）
+### 1.0 商业结果优先序（DEC-033）
+
+```text
+可销售质量底线 → 真实商业结果 → 单位经济性 / 成本效率 → 自动化与系统完善度
+```
+
+系统完整性 / 自动化 / AI 使用量 / 架构复杂度 **不得** 凌驾于商业结果；亦不得为赚钱牺牲质量、真实性、合规或治理。
+
+### 1.1 Phase 1 Scope vs Permanent Boundary（DEC-020 / DEC-033）
 
 | | 内容 |
 |--|------|
 | **Current Product Scope（Phase 1）** | **只做虚拟资料类产品**（严格 Scope Control） |
-| **Architecture / Long-term** | 多产品类型自主商业学习系统（Future-Extensible；**Not Built**） |
-| **禁止误读** | 「当前只做虚拟资料」≠「系统永久只能虚拟资料」 |
+| **Current Channel Scope** | 当前授权渠道验证（如闲鱼 Pilot）= **执行 Scope**，≠ 永久商业架构 |
+| **Architecture / Long-term** | 多产品类型 / 多市场 / 多渠道 / 多商业模式（Future-Extensible；**Not Built**） |
+| **禁止误读** | 「当前只做虚拟资料」≠「系统永久只能虚拟资料」；「先跑闲鱼」≠「系统=闲鱼虚拟资料系统」 |
 | **Human Gate** | 管高风险外部行为（发布/付款/广告/账号），不是逐产品人工商业审批 |
+| **用户正常职责** | 最终成品发布；重大异常介入（见 §5.1） |
 
-长期方向见 Constitution **Autonomous Commercial Learning Principle**；当前 Reality 仍以 Pilot 人辅准备 + 观察未开始为准。
+长期方向见 Constitution **Autonomous Commercial Learning Principle** + **DEC-033**；当前 Reality 仍以 Pilot 人辅准备 + 观察未开始为准。
 
 ---
 
@@ -113,20 +126,57 @@ Opportunity Candidate（机会候选）
 | 技术验收（如 Validation Gate 技术通过） | 上架/发布最终确认（按风控策略） |
 | 状态迁移**建议**与分析 | 商业 JSON 生命周期同步写入（须授权 Entry） |
 | 风险与冲突记录 | 收入、市场验证成功字段的写入 |
+| 正常闭环内的市场采集→选品→实验→生产→质检→成本/风险检查→成品准备 | **重大异常**介入（质量崩坏、成本失控、方向偏离、合规风险等） |
 
 **Human Assisted ≠ Automation（人工辅助 ≠ 自动化）：**  
 自动化可提高生产效率，**不能**自动裁定商业结果（见 DEC-008）。
+
+### 5.1 用户职责边界（DEC-033）
+
+> 用户不是系统日常商业决策员，也不是技术执行员。  
+> **正常情况下自主运行；重大异常才需要用户介入。**
+
+- **正常用户职责：** 最终成品发布（不可逆外部动作）。  
+- **用户不承担：** 技术 Reality 验证；Git；Audit 编写；日常技术决策；每个产品中间审批；逐步生产确认；每个实验的手工商业批准。  
+- **Human External Action Gate（DEC-023）：** 最终发布责任 ≠ 逐步内部审批。
 
 ---
 
 ## 6. 商业决策原则（Commercial Decision Principles）
 
-1. **盈利可行性优先于炫技自动化** — 稳定性与风控优先于「全自动发布」。  
-2. **半自动发布** — AI 生成与筛选 → 人工确认 → 工具辅助发布 → 反馈学习。  
-3. **禁止高风险绕过平台规则的行为设计。**  
-4. **Blueprint ≠ Runtime（蓝图 ≠ 运行时）** — 战略/设计完成 ≠ 生产或市场完成。  
-5. **Scope Control（范围控制）** — 商业相关 Reality 变更必须有明确 Entry 授权。  
-6. **Governance Before Expansion（治理先于扩张）** — 文档与状态治理跟不上时，不扩大商业自动化面。
+1. **商业结果优先（DEC-033）** — 真实可持续可验证回报优先于系统完善度 / 自动化炫技 / AI 用量。  
+2. **盈利可行性优先于炫技自动化** — 稳定性与风控优先于「全自动发布」。  
+3. **最低成本达到可销售质量（DEC-033）** — 含 AI 调用/推理/重复生成成本；一次生产、多次复用优先。  
+4. **半自动发布** — AI 生成与筛选 → 人工确认最终外部动作 → 工具辅助发布 → 反馈学习。  
+5. **禁止高风险绕过平台规则的行为设计。**  
+6. **Blueprint ≠ Runtime（蓝图 ≠ 运行时）** — 战略/设计完成 ≠ 生产或市场完成。  
+7. **Scope Control（范围控制）** — 商业相关 Reality 变更必须有明确 Entry 授权。  
+8. **Governance Before Expansion（治理先于扩张）** — 文档与状态治理跟不上时，不扩大商业自动化面。  
+9. **Commercialization Context 解耦（DEC-033）** — Product ≠ Market ≠ Channel ≠ Commercial/Pricing/Delivery/Cost Model；当前渠道 Pilot ≠ 永久边界。
+
+### 6.1 选品与生产经济判断维度（原则层 · 非算法实现）
+
+Market → Opportunity → Selection → Experiment → Production 的商业判断 **不能只看** demand / score / trend，至少还须考虑：
+
+```text
+需求 × 可生产性 × 可销售质量 × 单位经济性
+  × AI 边际成本 × 资产复用价值 × 商业化上下文
+```
+
+本条为治理原则；**不**表示已实现完整计算引擎。
+
+---
+
+## 6.2 Product 与商业化上下文解耦（DEC-033 / DEC-024 / DEC-029）
+
+```text
+Product ≠ Market ≠ Channel/Platform ≠ Commercial Model
+≠ Pricing ≠ Delivery ≠ Acquisition/Conversion ≠ Cost Model
+```
+
+价格不是 Product 永久固有属性。同一 Product 可有多个商业化实例（例：闲鱼低价网盘 / 淘宝店铺 / 海外定价 / B2B 授权）。
+
+**当前闲鱼 = Pilot Scope，不是系统永久边界。** Future-Extensible ≠ Future-Built；不得提前实现淘宝/PDD/海外/短视频/小说等。
 
 ---
 
@@ -168,7 +218,11 @@ Opportunity Candidate（机会候选）
 3. 禁止把 Product Asset 生产完成当成市场/商业成功（见 DEC-008）。  
 4. 禁止把 Content Factory Isolated Active 当成 Core OS Runtime 已融合。  
 5. 禁止在无 Pilot Observation 数据时宣称实验成功/失败。  
-6. 禁止用「提高自动化」压过盈利可行性与平台风控。
+6. 禁止用「提高自动化」压过盈利可行性与平台风控。  
+7. 禁止把「赚钱第一」写成「已经赚钱」或把原则固化写成收入已实现。  
+8. 禁止把「未来多平台/多产品可扩展」写成「已经实现」。  
+9. 禁止把当前闲鱼 Pilot 固化为 AI_FACTORY_OS 永久商业边界。  
+10. 禁止因 DEC-033 跳过 Product Hypothesis / Experiment，直接从 Entry 076 Definition 进入 Production。
 
 ---
 
@@ -302,4 +356,5 @@ AI_FACTORY_OS 未来商业化可能包括：
 **Entry 040-D2-B：** 补充第一收入来源、盈利阶段、禁止误判、长期价值闭环（方向不变）。  
 **Entry 041-B-A：** 新增 Modular Commercialization Strategy（模块化商业化策略）；长期方向更新为 Modular AI Business OS（现实 Runtime 不变）。  
 **Entry 041-D-A：** 补充长期商业化方向清单（战略可能性；非完成态）。  
-**Entry 041-B-B：** 新增 Capability-based Commercialization Strategy（§8.2）；DEC-014（方向 only；Runtime 不变）。
+**Entry 041-B-B：** 新增 Capability-based Commercialization Strategy（§8.2）；DEC-014（方向 only；Runtime 不变）。  
+**2026-09-04 / DEC-033：** 商业结果优先、最低成本/AI 成本、用户职责、Commercialization Context 解耦、闲鱼 Pilot ≠ 永久边界（方向强化；当前 Scope / Runtime 不变；不启动 Entry 077）。

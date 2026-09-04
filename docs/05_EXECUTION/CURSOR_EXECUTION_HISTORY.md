@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-04（Final Governance Closure；**ACTIVE_TASK = NONE**；**Entry 077 = NOT_STARTED**；**PROJECT_DEVELOPMENT = PAUSED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-04（Commercial Principles Hardening / DEC-033；**ACTIVE_TASK = NONE**；**Entry 077 = NOT_STARTED**；**PROJECT_DEVELOPMENT = PAUSED**）
 
 ---
 
@@ -2629,6 +2629,45 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center（Active Task Anchor only）；Execution History；本 Closure Audit
 - Reviewed but Not Modified：Execution Protocol；Authority；Constitution；KUP；Decision Log；Current State；Module Registry；UA；Business Strategy；Doc Map；Architecture Evolution Context；Runtime/DB/`commercial_assets`
+
+---
+
+### COMMERCIAL PRINCIPLES HARDENING — DEC-033（NOT Entry 077）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Objective** | 将「赚钱最高商业目的」及成本/用户职责/解耦/Pilot 边界以最小方式固化进现有 Governance |
+| **Original Objective** | 让 AI_FACTORY_OS 长期不会因上下文丢失、局部任务或平台偏好忘记赚钱是最高商业目的，并明确用户职责与多产品/多市场/多平台/多商业模式长期架构边界 |
+| **Current Objective** | 在现有 Governance 最小固化五组长期原则（商业结果优先、最低成本/AI 成本、用户职责、解耦、闲鱼 Pilot ≠ 永久边界） |
+| **Current Phase** | Governance Alignment / Commercial Principle Hardening |
+| **Current Step** | 检查现有核心 → 强化缺失 → Audit → Git |
+| **Scope** | Constitution；Business Strategy；Execution Protocol；KUP；Decision Log（DEC-033）；Execution History；Formal Audit；Control Center Active Task / 商业指针（任务状态准确） |
+| **Out of Scope** | Runtime/Python/DB/`commercial_assets`/CF；新核心文件；淘宝/PDD/海外/短视频/小说实现；Entry 077；选品算法引擎；把 UNKNOWN 写成事实 |
+| **Cursor Instruction Summary** | 商业最高原则与长期商业架构固化；复用 DEC-020…032；新增 DEC-033；禁止扩大为生产开发 |
+| **Modified Files** | Constitution；Business Strategy；Execution Protocol；KUP；Decision Log；Control Center（指针/Active Task）；Execution History；本 Audit |
+| **Created Files** | `docs/07_AUDIT/AI_FACTORY_OS_COMMERCIAL_PRINCIPLES_HARDENING_2026-09-04.md` |
+| **Completed** | DEC-033；Constitution 原则 35–39 + 专节；Business Strategy §1/5/6/7.2；EP 商业判断约束；KUP 触发扩展；History；Audit；Active Task=NONE |
+| **Findings** | `docs/00_GOVERNANCE/AI_FACTORY_OS_WORK_PRINCIPLES.md` 不在当前路径（历史在 Archive）；未新建平行赚钱框架；未启动 Entry 077 |
+| **Decisions** | **DEC-033** 新增；强化而非替换 DEC-020/023/024/029 |
+| **Pending** | 基于 Entry 076 `prod_a0638789fc2b` 的 Product Hypothesis / Experiment Preparation（另授权；非本任务） |
+| **Next Step** | ChatGPT/User 评估下一商业执行任务；**STOP** — 不自动启动 Entry 077 |
+| **Stop Conditions** | Runtime/DB/assets/CF 修改；新平台/未来产品类型实现；未经授权选品生产；UNKNOWN→事实 → STOP |
+| **Final Completion Criteria** | 原则入 Governance；用户职责明确；AI 成本入经济判断；解耦与 Pilot 边界明确；History+Audit+Git；无 Runtime 开发 |
+| **Architecture Impact** | Documentation Only |
+| **Validation Result** | 原则可从 Constitution/Business Strategy/DEC-033 恢复；ENTRY_077=NOT_STARTED；Development=PAUSED |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_COMMERCIAL_PRINCIPLES_HARDENING_2026-09-04.md` |
+| **Git Commit** | （提交后回填） |
+| **GitHub Push** | （提交后核验） |
+| **Remote Verification** | （提交后核验） |
+| **Final Status** | 进行中 → 以 Formal Audit / Git 为准 |
+| **Evidence** | DEC-033；Constitution；Business Strategy；本 Audit |
+| **Entry 077** | **NOT_STARTED** |
+| **Project Development** | **PAUSED** |
+
+**Core Documentation Continuity Check：**
+- Modified：Constitution；Business Strategy；Execution Protocol；KUP；Decision Log；Control Center（Active Task 证据指针）；Execution History；Audit
+- Reviewed but Not Modified：Authority Model；Current State（开发仍暂停；Audit≠State）；UA；Module Registry；Doc Map；Architecture Evolution Context；Work Principles（当前路径不存在）；Runtime/DB/`commercial_assets`
 
 ---
 

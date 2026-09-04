@@ -95,12 +95,17 @@ Strategic orientation reminders（非 Reality 清单）：
 32. **Own Product Principle** (DEC-030): 可研究/借鉴市场并生产同类竞品；进入商业发布链的资产须 **SELF_PRODUCED** 或具备合法使用权；未经授权直接搬运/简单重包装第三方受保护内容 ≠ 默认生产路线；**MARKET_INSPIRED ≠ 自动侵权**；禁止 originality_score 僵化硬门
 33. **Autonomous Market Acquisition Engine** (DEC-031): User 设边界（源/区域/频率/合规）；Engine 决定如何采；Source Adapter 承载平台细节；Cursor ≠ 产品生产 AI；Collector 只记事实不判爆款；QUERY 是任务参数 ≠ source platform
 34. **Search Result Origin & Missing Field Integrity** (DEC-032): SEARCH_RESULT ≠ RECOMMENDED_RESULT；NULL ≠ 0；MISSING ≠ ZERO；匿名无法获取 ≠ 证明「因未登录」；Observation 可 `valid_without_want_count`；Collector 不判爆款
+35. **Commercial Outcome Primacy** (DEC-033): 最高商业目标是真实、可持续、可验证的商业回报；系统完整性 / 自动化程度 / AI 使用程度 / 架构复杂度 / 技术先进程度均不得凌驾于商业结果；**不等于**牺牲可销售质量、真实性、合规或治理
+36. **Lowest Reasonable Cost to Sellable Quality** (DEC-033): 以可销售质量底线为前提，用最低合理成本生产；AI 调用 / 推理 / 重复生成成本必须进入经济判断；AI/自动化不是默认越多越好；一次生产、资产复用优先于每次高成本重算
+37. **Autonomous Operation / Exception Escalation** (DEC-033): 正常情况下系统自主完成市场采集→…→成品准备；用户职责是最终外部发布与重大异常介入；用户 ≠ 日常技术执行员 / 逐步审批员；Human External Action Gate 仍只覆盖不可逆外部动作
+38. **Commercialization Context Decoupling** (DEC-033): Product ≠ Market ≠ Channel/Platform ≠ Commercial Model ≠ Pricing ≠ Delivery ≠ Acquisition/Conversion ≠ Cost Model；价格不是 Product 永久固有属性；同一 Product 可有多个商业化实例
+39. **Current Channel Pilot ≠ Permanent Boundary** (DEC-033 + DEC-020/029): 当前闲鱼等渠道是执行 Scope / Pilot，不是 AI_FACTORY_OS 永久商业架构；Future-Extensible ≠ Future-Built；禁止把系统等同于「闲鱼虚拟资料系统」
 
 ---
 
 ## Autonomous Commercial Learning Principle
 
-> Entry **049** / **DEC-020**；050–062：… / Acquisition Engine / **Search Origin & Missing Fields**。
+> Entry **049** / **DEC-020**；050–062：… / Acquisition Engine / **Search Origin & Missing Fields**；**2026-09-04 / DEC-033** 商业结果优先与成本/职责/解耦硬化。
 
 AI_FACTORY_OS 的商业能力应逐步形成持续商业学习闭环：
 
@@ -113,6 +118,49 @@ AI_FACTORY_OS 的商业能力应逐步形成持续商业学习闭环：
 
 **目标方向：** 在明确规则与风险边界内，系统逐步自主完成低风险商业决策与循环学习。  
 **不是：** 要求用户对每一个产品做手工商业审批。
+
+### Commercial Outcome Primacy（DEC-033）
+
+> **赚钱是最高商业目的** — 形成真实、可持续、可验证的商业回报。
+
+优先级（不可颠倒）：
+
+```text
+可销售质量底线
+        ↓
+真实商业结果
+        ↓
+单位经济性 / 成本效率
+        ↓
+自动化与系统完善度
+```
+
+- 系统完整性、自动化程度、AI 使用程度、架构复杂度、技术先进程度 **不得** 凌驾于商业结果。  
+- **不等于** 为赚钱牺牲可销售质量、真实性、合规或治理。  
+- 「赚钱第一」≠「已经赚钱」；原则固化 ≠ 收入已实现。
+
+### Lowest Reasonable Cost & AI Cost Discipline（DEC-033）
+
+> **最低成本达到可销售质量，而不是最低成本制造垃圾产品。**
+
+成本判断必须包含：人工 / 计算 / 存储，以及 **AI 调用成本 / 模型推理成本 / 重复生成成本**。
+
+- AI 不是默认越多越好；自动化不是默认越多越好。  
+- 高成本 AI 调用不能仅因「更智能」自动获得优先级。  
+- 能由规则、代码、模板、缓存、已有资产、批处理、复用解决的，优先低成本方案。  
+- 只有当额外 AI / 自动化成本具有合理商业回报时，才应增加。  
+- 产品选择必须考虑单位经济性，而不是只看需求热度。  
+- 生产策略须考虑：售价 / 可预期收益 / 生产成本 / AI 边际成本 / 可复用程度。
+
+**一次生产、多次复用：**
+
+```text
+一次生产 → 质量验证 → 资产复用
+  → 多次销售 / 多平台销售 / 多种商业化
+  → 市场反馈 → 必要时低成本迭代
+```
+
+优化目标不是「每一次都重新调用高成本 AI」。
 
 ### Human Gate Boundary（人工闸门边界）
 
@@ -127,6 +175,26 @@ High Risk / External Irreversible Action → Human Gate
 
 人工 Gate **负责控制**：平台账号风险、不可逆外部操作、付款、广告、（当前阶段）真实发布动作。  
 人工 Gate **不负责**：替 AI 做所有商业判断、把系统退化成「每生产一个产品就人工批准」。
+
+### User Responsibility & Autonomous Operation（DEC-033）
+
+> **正常情况下自主运行；重大异常才需要用户介入。**
+
+```text
+系统（正常）：
+市场采集 → 机会发现 → 选品 → 实验 → 生产
+  → 质量检查 → 成本检查 → 商业风险检查 → 优化 → 成品准备
+
+用户（正常）：
+最终成品发布（不可逆外部动作）
+```
+
+用户 **不是** 系统日常商业决策员，也 **不是** 技术执行员。  
+用户不承担：技术 Reality 验证、Git 操作、Audit 编写、日常技术决策、每个产品的中间审批、每一步生产确认、每个实验的手工商业批准。
+
+用户在 **重大异常** 时介入，包括但不限于：产品质量明显低于预期；过于单调/重复；长期销量低；生产成本过高；AI 成本失控；明显偏离赚钱主线；产品方向重大错误；合规/平台等重大风险。
+
+**Human External Action Gate（DEC-023）仍然有效：** 用户负责最终不可逆外部动作 ≠ 用户审批系统内部每个商业步骤。
 
 ### Learning Integrity（学习诚实性）
 
@@ -289,7 +357,7 @@ User Policy → Acquisition Engine → Source Adapter → Raw → Observation
 
 ## Future Extensibility Principle
 
-> Entry **049** / **DEC-020**。
+> Entry **049** / **DEC-020**；**DEC-033** 强化 Channel Pilot ≠ Permanent Boundary。
 
 ```text
 Current Product Scope  ≠  Architecture Boundary
@@ -303,12 +371,43 @@ Current Product Type   ≠  Data Model Boundary
 |----------------------|----------|
 | **只做虚拟资料类产品**（严格 Scope Control） | 为多产品类型、多生产能力、多渠道、多反馈类型保留合理扩展空间 |
 
-未来规划方向（**愿景 / Not Built**）：短视频、AI 短剧、小说、音频、图片、课程、模板、软件/工具等可自动化生产、分发、验证并产生商业价值的产品。
+未来规划方向（**愿景 / Not Built**）：短视频、AI 短剧、小说、音频、图片、课程、模板、软件/工具等可自动化生产、分发、验证并产生商业价值的产品；渠道可含 PDD / 淘宝 / 闲鱼 / 海外 / B2B 等。
+
+### Commercialization Context Decoupling（DEC-033）
+
+```text
+Product
+≠ Market
+≠ Channel / Platform
+≠ Commercial Model
+≠ Pricing Model
+≠ Delivery Model
+≠ Acquisition / Conversion Model
+≠ Cost Model
+```
+
+- **价格不是 Product 的永久固有属性。**  
+- 同一 Product 可按 Market / Channel / Commercial Model 使用不同价格与销售方式（多个 Commercialization Context，不是多个 Product Core）。  
+- 例：同一 Excel Product → 闲鱼低价网盘 / 淘宝店铺 / 海外美元定价 / B2B 授权批量 —— 商业化上下文不同，Product Core 可相同。
+
+### Current Channel Pilot ≠ Permanent Boundary（DEC-033）
+
+> 当前阶段先跑通闲鱼（或当前授权渠道）是 **执行 Scope / Pilot**，不是 AI_FACTORY_OS 的永久商业架构。
+
+```text
+禁止误读：
+AI_FACTORY_OS = 闲鱼虚拟资料系统
+
+正确关系：
+AI_FACTORY_OS → 统一底层能力 → Product → Market → Channel → Commercial Model
+```
 
 **强制纪律：**
 
 - **Future-Extensible ≠ Future-Built** — 不得因未来可能支持而现在全部开发。  
 - **Reserve Abstraction ≠ Implement Future Capability** — 只提前消除结构性硬编码错误，不提前建设未来业务。  
+- 未来增加短视频、小说等类型时：不得直接复制当前 Excel/闲鱼产品规则；保持底层能力可复用 + 产品/市场/平台/商业模式可变化。  
+- **为未来保留正确抽象，不为未来提前制造复杂度。**  
 - 当前实现可最小；新增能力时应优先 `Product / Product Type / Asset / Asset Type` 与可扩展 Collector / Market Event / Quality Framework，而不是永久钉死 Excel/PPT 专用模型为唯一边界。
 
 ---

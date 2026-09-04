@@ -1,7 +1,8 @@
 # AI_FACTORY_OS Decision Log
 
 > Collaboration Control — important decisions only（重要决策专用）  
-> Last updated: 2026-08-30（Entry **062** / **DEC-032**）
+> Last updated: 2026-09-04（**DEC-033** Commercial Outcome Primacy / Cost / User Boundary / Context Decoupling）
+
 
 **Document Role（041-F）：** 正式战略裁决与否决记录。**不是** Current State；**不是**模块 Status 表；**不是**日常 commit 日志。
 
@@ -538,6 +539,23 @@ Append new decisions; do not rewrite history. Supersede via new Decision ID + Re
 | **Non-Goals** | 登录对比实验；强制 want_count；把推荐当搜索命中 |
 | **Rejected Alternatives** | (A) 猜你喜欢填充搜索批次；(B) NULL→0；(C) 缺失即丢弃整条；(D) 未登录=缺失根因（无证据） |
 | **Review Condition** | 若出现「推荐当搜索证据」或「NULL 写成 0」或「无证据宣称登录导致缺失」— 以本 DEC 否决 |
+
+---
+
+### Decision ID: DEC-20260904-033（DEC-033）
+
+| 字段 | 内容 |
+|------|------|
+| **编号** | DEC-033 / DEC-20260904-033 |
+| **标题** | Commercial Outcome Primacy, Cost Discipline, User Boundary & Commercialization Context Decoupling |
+| **日期 / Entry 来源** | 2026-09-04 · Governance Alignment（**NOT Entry 077**） |
+| **背景 / Problem** | 长期商业核心思想（赚钱优先、最低成本含 AI 成本、用户只发布与重大异常、Product/商业化解耦、闲鱼仅 Pilot）若只存在对话中，恢复会话后易被局部任务/平台偏好偏离。现有 DEC-020…032 已覆盖自主学习、扩展性、Human Gate、Product/Listing 分离、渠道分离等，但缺显式「商业结果优先序」「AI 成本进入经济判断」「用户日常职责边界」「Commercialization Context 全解耦」的浓缩固化。 |
+| **决策 / Decision** | (1) **Commercial Outcome Primacy：** 最高商业目标=真实可持续可验证回报；完整性/自动化/AI 用量/复杂度不得凌驾；须在可销售质量、真实性、合规、治理之内。(2) **Lowest Reasonable Cost to Sellable Quality：** 最低合理成本达可销售质量；含 AI 调用/推理/重复生成；一次生产多次复用优先；AI/自动化非默认越多越好。(3) **Autonomous Operation / Exception Escalation：** 正常系统自主跑通采集→成品准备；用户正常职责=最终发布；重大异常才介入；≠逐步技术/商业审批员；保留 DEC-023 External Action Gate。(4) **Commercialization Context Decoupling：** Product≠Market≠Channel≠Commercial/Pricing/Delivery/Acquisition/Cost Model；价格非 Product 固有属性。(5) **Current Channel Pilot ≠ Permanent Boundary：** 闲鱼等当前渠道=执行 Scope；禁止 AI_FACTORY_OS=闲鱼虚拟资料系统；Future-Extensible≠Future-Built。(6) 选品/生产商业判断原则层须考虑需求×可生产性×可销售质量×单位经济性×AI 边际成本×复用价值×商业化上下文——**不**要求本次实现计算引擎。(7) **不得**因本 DEC 启动 Entry 077、直接选品生产、或把 UNKNOWN 写成事实。 |
+| **Scope** | Constitution；Business Strategy；Execution Protocol；KUP；本 Decision Log；Execution History；Formal Audit |
+| **Effect** | 强化现有 DEC-020/023/024/029；新增原则编号 35–39；商业战略 §1/5/6 硬化 |
+| **Non-Goals** | Runtime/Python/DB/commercial_assets/CF 实现；淘宝/PDD/海外/短视频/小说提前开发；选品算法引擎；Entry 077；宣称已赚钱/已多平台 |
+| **Rejected Alternatives** | (A) 新建平行「赚钱框架」核心文件；(B) 把闲鱼固化为永久架构；(C) 为赚钱牺牲质量/合规；(D) 要求用户逐步审批每个商业步骤；(E) 不写 DEC 仅散落聊天 |
+| **Review Condition** | 若出现「已经赚钱」「已实现多平台」「闲鱼=系统永久边界」「因赚钱跳过质量/合规」「用户逐步审批替代自主运行」「因本 DEC 启动生产 Entry」— 以本 DEC 否决 |
 
 ---
 

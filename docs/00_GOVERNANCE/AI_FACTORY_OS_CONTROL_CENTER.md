@@ -23,7 +23,7 @@
 **协作准则（现行对齐）：** [`AI_FACTORY_OS_WORK_PRINCIPLES.md`](../AI_FACTORY_OS_WORK_PRINCIPLES.md) — 冲突以本目录 Constitution / Protocol 为准。  
 归档辅助文件 `99_ARCHIVE/execution_history/reference/AI_FACTORY_OS_RECOVERY_READ_ORDER.md` **不是**现行 Recovery 权威，默认不读取。
 
-**长期商业方向指针（DEC-020…032）：** … + Browser Extension v1（065）；Import Gate（066）；Acquisition Policy + AI Cost Gate（067）— 成本控 estimated_cost 非 call_count；Model Router 未建；IMPORT 仍可用；Cursor ≠ 产品 AI。  
+**长期商业方向指针（DEC-020…033）：** … + Browser Extension v1（065）；Import Gate（066）；Acquisition Policy + AI Cost Gate（067）— 成本控 estimated_cost 非 call_count；Model Router 未建；IMPORT 仍可用；Cursor ≠ 产品 AI；**DEC-033** 商业结果优先 / 最低成本含 AI / 用户发布与异常介入 / Commercialization Context 解耦 / 闲鱼 Pilot ≠ 永久边界。  
 **基础设施指针：** GitHub `main` 已作为版本化 / 跨 Session 连续性载体（见下方 GitHub Continuity Note）；**GitHub ≠ Reality Authority**。
 
 ---
@@ -469,9 +469,9 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 |-------|-------|
 | **ACTIVE_TASK** | **`NONE`** |
 | **STATUS** | 无正在进行的正式多步骤治理任务 |
-| **NOTE** | 先前临时锚点 `PHASE_2_GOVERNANCE_IMPLEMENTATION` 已结束；已清理，不得再当作当前任务 |
-| **LAST GOVERNANCE CHAIN（证据指针，非当前任务）** | Core Documentation Continuity Hardening → Collaboration Continuity Hardening → PHASE 1 Audit → PHASE 2 Governance Implementation → Execution History Continuity Repair → 本 Final Governance Closure |
-| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_1_CORE_CONTINUITY_RECOVERY_AUDIT.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_EXECUTION_HISTORY_CONTINUITY_REPAIR.md`；本 Closure Audit |
+| **NOTE** | 商业最高原则硬化（DEC-033）已落盘并收口；不得当作正在执行的开发 Entry |
+| **LAST GOVERNANCE CHAIN（证据指针，非当前任务）** | Continuity Hardening → Collaboration → PHASE 1/2 → History Repair → Final Governance Closure → **Commercial Principles Hardening（DEC-033）** |
+| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_FINAL_GOVERNANCE_CLOSURE_2026-09-04.md`；`docs/07_AUDIT/AI_FACTORY_OS_COMMERCIAL_PRINCIPLES_HARDENING_2026-09-04.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_DECISION_LOG.md`（DEC-033） |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **NOT_STARTED** |
 | **PROJECT_DEVELOPMENT** | **PAUSED** |
