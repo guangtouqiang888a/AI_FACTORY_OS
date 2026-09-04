@@ -246,7 +246,8 @@ AUDIT_INTERNAL_CONSISTENCY: PASS
 GIT_VERSIONED_CLOSURE: PASS
 CLOSURE_COMMIT: 8be9b7b5105091f9218592f4aea016658c4e4f5e
 CLOSURE_MESSAGE: docs: close core documentation continuity hardening
-REMOTE_VERIFICATION: PENDING_UNTIL_PUSH
+REMOTE_VERIFICATION: PASS
+REMOTE_MAIN: 45786b767fa77eec11cc590fad2db0d4d89dc85a
 ENTRY_077: NOT_STARTED
 ENTRY_076: PASS_WITH_FINDINGS
 ```
@@ -259,6 +260,7 @@ ENTRY_076: PASS_WITH_FINDINGS
 - Remaining Risks（ChatGPT↔GitHub↔Cursor workflow not formalized；mid-layer 067-era echoes）kept as **REMAINING_RISK / FUTURE GOVERNANCE CANDIDATE** — not implemented in this Closure
 - Scope integrity: dirty set limited to governance/continuity docs + this Audit；no Python/Runtime/DB/`commercial_assets`/Decision Log/UA/Business Strategy/Module Registry/History
 - Closure commit: `8be9b7b5105091f9218592f4aea016658c4e4f5e`
+- Remote verification: `fetch` + `ls-remote` hash match；hardening report + Execution History on `origin/main`；closure commit is ancestor；no Entry 077 on remote
 
 **STOP.** Do not start Entry 077. Do not expand into product/content/publish work from this task.
 
