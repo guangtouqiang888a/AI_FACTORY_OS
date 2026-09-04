@@ -100,7 +100,10 @@ IF lower Level (e.g. L5 History) ≠ higher Level (e.g. L3 Decision)
 - **GitHub** Documentation / Commit / Audit are continuity / versioning infrastructure — **not** Runtime / Code / DB / Assets Reality Authority；sync ≠ Production / commercial success
 - **Conversation Idea ≠ Execution Authorization** — chat proposals are not execution authority（DEC-012 / Collaboration Continuity）
 - **Cursor PASS ≠ Project Task Closed** — requires ChatGPT Closure Review when the collaboration workflow applies
+- **Finding ≠ Objective** — discoveries do not auto-change Original Objective or expand Scope
+- **Cursor Process Output ≠ Formal Audit** — agent window chatter is not `docs/07_AUDIT` evidence SoT
 - `Local Reality ≠ Git Commit ≠ GitHub main`
+- **Intent Continuity does not reorder Authority** — still Reality > Current State > Decision Log > Documentation > Conversation Memory
 
 ### Human Gate vs User Authority（DEC-020 / DEC-023）
 

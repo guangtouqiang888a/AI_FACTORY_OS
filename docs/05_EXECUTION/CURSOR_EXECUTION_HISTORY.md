@@ -2467,18 +2467,89 @@
 
 ---
 
+### PHASE 1 — Core Governance + Collaboration + Intent Continuity Recovery Audit (NOT Entry 077)
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Task** | PHASE 1 / AUDIT ONLY — Core Continuity Recovery Audit |
+| **Original Objective** | 修复长期任务连续性与 ChatGPT↔Cursor↔GitHub 协作闭环，防止多步骤任务丢失最初目标 |
+| **Current Objective** | 只读审计并生成证据化报告 |
+| **Current Phase** | PHASE 1 — **STOP after this record** |
+| **Next Phase** | PHASE 2（未开始；须 ChatGPT Closure Review 后） |
+| **Scope** | Read-only review of docs/0–6 + related audits + Git metadata + Product Definition spot-check |
+| **Out of Scope** | PHASE 2 实施；Entry 077；Runtime/Python/DB/`commercial_assets`；修复 Findings；新建核心文件 |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_1_CORE_CONTINUITY_RECOVERY_AUDIT.md` |
+| **Key Finding** | Collaboration/State/Authority 主路径 PASS；**Intent Continuity = FAIL**（无 ORIGINAL OBJECTIVE 等正式模型） |
+| **Git** | `main`；local `b1abaa9` **ahead 1** of `origin/main`=`160c159`；本阶段未 push；既有 Remote Verification **DEGRADED** 残留 |
+| **Entry 076** | Remains `PASS_WITH_FINDINGS` |
+| **Entry 077** | **NOT_STARTED** |
+| **PHASE_1_STATUS** | `PASS_WITH_FINDINGS` |
+| **Allow PHASE 2** | YES after ChatGPT Closure Review only |
+
+**Core Documentation Continuity Check：**
+- Modified：Execution History（append）；PHASE 1 Audit（new evidence file）
+- Reviewed but Not Modified：Control Center；Authority；Constitution；Execution Protocol；KUP；Decision Log；Current State；Module Registry；UA；Business Strategy；Doc Map；History；prior Hardening Audits
+
+---
+
+### PHASE 2 — Governance Implementation: Intent Continuity + Collaboration Model (NOT Entry 077)
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Original Objective** | 修复长期任务连续性 + 建立合理 ChatGPT/Cursor/GitHub 协作闭环，防止多步骤丢失最初目标 |
+| **Current Objective** | 在既有 Governance 落地 Intent Continuity Model + Responsibility Boundary + Audit/Process 分层 |
+| **Current Phase** | PHASE 2 / GOVERNANCE IMPLEMENTATION |
+| **Current Step** | Docs implementation → Formal Audit → History → Git（若可行） |
+| **Scope** | Execution Protocol；Control Center；KUP；Constitution；Authority；Business Strategy 页眉；Execution History；PHASE 2 Audit |
+| **Out of Scope** | Entry 077；Runtime/Python/DB/`commercial_assets`；UA；Module Registry；Decision Log；Business 正文方向；新建半核心文件 |
+| **Completed** | Task Intent Continuity Model；四层职责；Finding≠Objective；Process Output≠Formal Audit；Active Task Anchor；History 模板升级；KUP 8+1 措辞澄清；BS 页眉歧义修正 |
+| **Findings** | 无 Runtime 变化；Git 若 remote degraded 须如实记录 |
+| **Decisions** | 无新 DEC；沿用 DEC-016/017/019 |
+| **Pending** | ChatGPT Closure Review；整链 PROJECT TASK CLOSED 尚未宣布 |
+| **Next Step** | 等待 ChatGPT Closure Review；**STOP** — 不启动 Entry 077 |
+| **Stop Conditions** | 越出 docs governance Scope；启动 Entry 077；修改 Runtime/DB/assets；新建半核心文件 → STOP |
+| **Final Completion Criteria（本 PHASE）** | Intent Continuity + Collaboration 规则落盘；Audit；History；Impact Check；等待 Closure Review |
+| **Evidence** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md` |
+| **Entry 077** | **NOT_STARTED** |
+| **Project Development** | **PAUSED** |
+
+**Core Documentation Continuity Check：**
+- Modified：Execution Protocol；Control Center；KUP；Constitution；Authority Model；Business Strategy（页眉 only）；Execution History；PHASE 2 Audit
+- Reviewed but Not Modified：Decision Log；Unified Architecture；Module Registry；Current State（事实未变）；History Evolution Context；Documentation Map；Runtime/DB/`commercial_assets`
+
+---
+
 ## 模板（复制用于新记录）
 
+> 多步骤 / 多 Phase 正式任务须填写 Intent Continuity 字段（见 Execution Protocol）。  
+> **不得**为新模板机械回填全部历史 Entry。
+
 ```markdown
-### Entry NNN — [标题]
+### Entry NNN / Task — [标题]
 
 | 字段 | 内容 |
 |------|------|
 | **Date** | YYYY-MM-DD |
-| **Objective** | |
+| **Original Objective** | |
+| **Current Objective** | |
+| **Current Phase** | |
+| **Current Step** | |
+| **Scope** | |
+| **Out of Scope** | |
+| **Completed** | |
+| **Findings** | |
+| **Decisions** | |
+| **Pending** | |
+| **Next Step** | |
+| **Stop Conditions** | |
+| **Final Completion Criteria** | |
+| **Evidence** | |
 | **Cursor Instruction Summary** | |
 | **Modified Files** | |
 | **Created Files** | |
 | **Architecture Impact** | Documentation Only / Module Layer / Core Layer |
 | **Validation Result** | |
+| **Entry 077** | NOT_STARTED（若适用） |
 ```

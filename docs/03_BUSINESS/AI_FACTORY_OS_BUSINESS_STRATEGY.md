@@ -1,12 +1,13 @@
 # AI_FACTORY_OS Business Strategy
 
 > **Business Strategy（商业战略）** — 当前有效商业战略唯一入口  
-> Core Governance Set v1（核心治理集 v1）  
-> Last updated: 2026-08-29（Entry **049** / **DEC-020** — Phase 1 Scope ≠ 永久边界；**方向未改：仍数字商品验证准备**）  
+> Document role：Business Strategy only（DEC-016）— **不是** Core Governance Set 定义文件  
+> 历史结构版本提示：Core Governance Set v1（8+1，DEC-009）= **历史检查清单**；当前核心连续性域 = `docs/0–6`  
+> Last updated: 2026-09-04（页眉歧义最小修正 · PHASE 2；**商业方向未改** · 原 Entry **049** / **DEC-020**）  
 > **Update frequency: MEDIUM（中等）** — 商业方向变化时必须经 Knowledge Update Protocol（知识更新协议）更新
 
 **定位：** 本文定义「如何创造与验证商业价值」— **商业方向唯一文档归属**（DEC-016）。  
-**不是：** Current State；**不是**模块 Status 表；**不是**历史演进主文；**不是**历史规划全文副本。早期长文见 `AI_FACTORY_OS_BUSINESS_PLAN.md`（Historical Reference）。
+**不是：** Current State；**不是**模块 Status 表；**不是**历史演进主文；**不是**历史规划全文副本；**不是**「当前完整核心文件集合」的定义处。早期长文见 `AI_FACTORY_OS_BUSINESS_PLAN.md`（Historical Reference）。
 
 冲突时：以本文 + Current State（当前状态）+ Reality（运行现实）为准；不以旧 Business Plan 的「已完成」清单为准。
 

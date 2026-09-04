@@ -438,22 +438,48 @@ GitHub（当前 `main`）承担：版本化、协作连续性、跨 Session / �
 
 ### Collaboration Continuity Pointer（协作连续性指针）
 
-长期协作闭环（ChatGPT ↔ 用户确认 ↔ Cursor ↔ GitHub ↔ ChatGPT Closure Review）的正式规则位于：
+长期协作闭环 + **Task Intent Continuity** 的正式规则位于：
 
-[EXECUTION_PROTOCOL — Collaboration Continuity Workflow](AI_FACTORY_OS_EXECUTION_PROTOCOL.md)
+[EXECUTION_PROTOCOL — Collaboration Continuity Workflow + Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md)
 
 关键约束（已硬化，勿重复发明）：
 
 ```text
 Conversation Idea ≠ Execution Authorization
 Cursor reports PASS ≠ Project Task Closed
+Finding ≠ Objective
 Audit ≠ Current State
+Process Output ≠ Formal Audit
 GitHub ≠ Reality Authority
 Local Reality ≠ Git Commit ≠ GitHub main
+PHASE_N PASS ≠ PROJECT TASK CLOSED
 ```
 
 需要用户确认的重大任务：ChatGPT 形成 Cursor-ready instruction 后，须经用户确认再执行。  
+多步骤任务进入下一 Step 前：须过 **Intent Continuity Gate**。  
 Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task Closed。
+
+### Active Task Anchor（当前正式任务锚点）
+
+> **指针层，不是 SoT。** Active Task Anchor ≠ Current State ≠ Reality ≠ Primary Goal ≠ Task Content SoT。
+
+用于告诉未来 AI：是否存在正式进行中的多步骤任务；Original Objective / Phase / Step / Completion Criteria **指针**在哪里。
+
+| Field | Value |
+|-------|-------|
+| **ACTIVE_TASK** | `PHASE_2_GOVERNANCE_IMPLEMENTATION`（Intent Continuity + Collaboration Model） |
+| **ORIGINAL OBJECTIVE** | 修复长期任务连续性 + 建立 ChatGPT/Cursor/GitHub 合理协作闭环 |
+| **CURRENT OBJECTIVE** | 在既有 Governance 落地 Intent Continuity + Responsibility Boundary（本 PHASE 2） |
+| **CURRENT PHASE** | PHASE 2 / GOVERNANCE IMPLEMENTATION |
+| **CURRENT STEP** | Governance docs implementation → Formal Audit → History →（若要求）Git |
+| **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
+| **PHASE 1 AUDIT POINTER** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_1_CORE_CONTINUITY_RECOVERY_AUDIT.md` |
+| **PHASE 2 AUDIT POINTER** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md` |
+| **STOP** | 完成后等待 ChatGPT Closure Review；**不得**启动 Entry 077 |
+| **FINAL COMPLETION CRITERIA（整链）** | PHASE 1 + PHASE 2 完成 + ChatGPT Closure Review；之后才可评估下一开发 Entry |
+| **ENTRY_077** | **NOT_STARTED** |
+
+若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 
 详见 Constitution **Core Documentation Continuity Rule** 与 **DEC-019**。
 

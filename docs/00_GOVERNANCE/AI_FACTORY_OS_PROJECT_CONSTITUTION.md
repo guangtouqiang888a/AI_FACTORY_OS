@@ -2,7 +2,7 @@
 
 > Collaboration Control Layer — Project Constitution v1  
 > **Update frequency: LOW**  
-> Last updated: 2026-09-04（**Collaboration Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-04（**PHASE 2 / GOVERNANCE IMPLEMENTATION** — NOT Entry 077）
 
 This document defines **why** AI_FACTORY_OS exists.  
 Do not update casually. Prefer Decision Log for new strategic decisions.
@@ -75,25 +75,26 @@ Strategic orientation reminders（非 Reality 清单）：
 12. **Information Ownership Principle** (DEC-016): 每类信息唯一最高权威归属；他处可引用，不得重复定义
 13. **Architecture State Change Synchronization** (DEC-016): 重要 Reality 变化必须同步 MODULE_REGISTRY / CURRENT_STATE（及必要时 Evolution Context）
 14. **Folder Capability Separation** (DEC-018): Folder Structure ≠ Capability Architecture ≠ Product Architecture
-15. **Core Documentation Continuity Rule** (DEC-019): 项目连续性不得依赖 Conversation Memory；`docs/0–6` 是**当前**核心连续性记录域；历史 Core Governance Set v1（8+1）是结构版本 ≠ 当前完整核心集合；有意义推进必须及时留痕；长期协作规则必须进入 Governance，不得只存在聊天中；正式工作后必须做 Core Documentation Impact Check（禁止机械全量刷新）
+15. **Core Documentation Continuity Rule** (DEC-019): 项目连续性不得依赖 Conversation Memory；`docs/0–6` 是**当前**核心连续性记录域；历史 Core Governance Set v1（8+1）是结构版本 ≠ 当前完整核心集合；有意义推进必须及时留痕；长期协作规则必须进入 Governance，不得只存在聊天中；正式工作后必须做 Core Documentation Impact Check（禁止机械全量刷新）；**正式多步骤任务必须保留可恢复的 Original Objective 与任务状态链（Task Intent Continuity）**
 16. **Navigation Authority ≠ Reality Authority**: Control Center 是入口/导航/Recovery 控制层，不是 Runtime Reality 或 Current State 的替代权威
 17. **State Projection Expiration**: Control Center 的 Current Phase / Primary Goal / Development Focus / Active Risks 为可过期投影，不得覆盖 Current State / Reality
 18. **Audit ≠ Current State**: Audit 是证据/验证记录；须经正确 Core Documentation Sync 后才能成为状态投影
 19. **GitHub Continuity Infrastructure**: GitHub 承担版本化/协作连续/可追溯恢复；GitHub 文档/Commit/Audit 不得凌驾 Reality；sync ≠ Production / 商业成功
-20. **Autonomous Commercial Learning Principle** (DEC-020): 长期商业主线是可审计的自主商业学习闭环；真实市场反馈是学习主依据；Execution Success ≠ Commercial Success；人工 Gate 管高风险外部行为，而非逐产品替代 AI 做全部商业判断
-21. **Future Extensibility Principle** (DEC-020): Current Product Scope ≠ Architecture Boundary；Phase 1 可严格只做虚拟资料，但底层抽象不得把当前产品类型硬编码为永久系统边界；Future-Extensible ≠ Future-Built
-22. **Commercial Learning Integrity Principle** (DEC-021): Real Commercial Learning 只能消费已验证的真实商业证据；`published_local` / quality_pass / production_completed / simulation / UNKNOWN 不得进入 Real Commercial Learning；Execution Strategy 与 Commercial Strategy 必须隔离
-23. **Market Event Data Foundation Principle** (DEC-022): 真实 Market Event 是 Commercial Observation / Evaluation / Real Commercial Learning 的数据基础；Market Event ≠ Observation Conclusion ≠ Commercial Success；Platform ≠ Core Product Model
-24. **Human External Action Gate Principle** (DEC-023): 系统可自主完成 Opportunity→Production→Quality→Commercial/Risk→Publish Queue 入队；Human Gate 仅覆盖不可逆外部动作（登录/点击发布/付款/广告）；Human Gate ≠ Product Approval Gate；READY ≠ PUBLISHED
-25. **Product / Commercial Product / Listing Separation** (DEC-024): Product Asset ≠ Commercial Product ≠ Listing Package ≠ Listing ≠ Published Listing ≠ Observation ≠ Commercial Success；product_type 与 asset_type 分离；Platform 不得进入 Product Core
-26. **Data-Driven Opportunity Discovery & Selection** (DEC-025): Market Data → Market Signals → Opportunity Candidates → Score → Risk → Selection；Selection ≠ Production；不得无证据伪造 Opportunity；人工不是永久选品瓶颈
-27. **End-to-End Autonomous Product Generation Loop** (DEC-026): Real Market Data → Opportunity → Selection → Experiment → Production → Quality → Commercial Product → Listing → Publish Queue（止于 AWAITING_HUMAN_ACTION）；Production Success ≠ Commercial Success；不得伪造市场结果
-28. **Evidence-Based Price Intelligence Boundary** (DEC-027): Market Evidence ≠ Price Recommendation ≠ Listing Price ≠ Paid Price ≠ Validated Price；Default / AI Heuristic ≠ Market Fact；Commercial Score ≠ Price；Production Cost ≠ Market Price；无真实成交则无已验证价格
-29. **Current vs Legacy Database Boundary** (DEC-028): `data/ai_factory.db` = Current Operational SoT；历史练习/样例库必须 Archive 且 `not_current_sot`；「库中有行」≠「真实市场数据」；SAMPLE/SIMULATION 不得进入 Real Commercial Learning
-30. **Discovery Source / Sales Channel Separation** (DEC-029): Market Source ≠ Sales Platform ≠ Product ≠ Feedback Source；闲鱼采集 ≠ 闲鱼销售；同一 Product 可多 Listing/多平台；禁止平台专用核心表（如 xianyu_products）
-31. **Own Product Principle** (DEC-030): 可研究/借鉴市场并生产同类竞品；进入商业发布链的资产须 **SELF_PRODUCED** 或具备合法使用权；未经授权直接搬运/简单重包装第三方受保护内容 ≠ 默认生产路线；**MARKET_INSPIRED ≠ 自动侵权**；禁止 originality_score 僵化硬门
-32. **Autonomous Market Acquisition Engine** (DEC-031): User 设边界（源/区域/频率/合规）；Engine 决定如何采；Source Adapter 承载平台细节；Cursor ≠ 产品生产 AI；Collector 只记事实不判爆款；QUERY 是任务参数 ≠ source platform
-33. **Search Result Origin & Missing Field Integrity** (DEC-032): SEARCH_RESULT ≠ RECOMMENDED_RESULT；NULL ≠ 0；MISSING ≠ ZERO；匿名无法获取 ≠ 证明「因未登录」；Observation 可 `valid_without_want_count`；Collector 不判爆款
+20. **Task Intent Continuity** (PHASE 2): Finding ≠ Objective；多步骤下一步必须仍服务于 Original Objective；Intent Continuity **不改变** Authority hierarchy
+21. **Autonomous Commercial Learning Principle** (DEC-020): 长期商业主线是可审计的自主商业学习闭环；真实市场反馈是学习主依据；Execution Success ≠ Commercial Success；人工 Gate 管高风险外部行为，而非逐产品替代 AI 做全部商业判断
+22. **Future Extensibility Principle** (DEC-020): Current Product Scope ≠ Architecture Boundary；Phase 1 可严格只做虚拟资料，但底层抽象不得把当前产品类型硬编码为永久系统边界；Future-Extensible ≠ Future-Built
+23. **Commercial Learning Integrity Principle** (DEC-021): Real Commercial Learning 只能消费已验证的真实商业证据；`published_local` / quality_pass / production_completed / simulation / UNKNOWN 不得进入 Real Commercial Learning；Execution Strategy 与 Commercial Strategy 必须隔离
+24. **Market Event Data Foundation Principle** (DEC-022): 真实 Market Event 是 Commercial Observation / Evaluation / Real Commercial Learning 的数据基础；Market Event ≠ Observation Conclusion ≠ Commercial Success；Platform ≠ Core Product Model
+25. **Human External Action Gate Principle** (DEC-023): 系统可自主完成 Opportunity→Production→Quality→Commercial/Risk→Publish Queue 入队；Human Gate 仅覆盖不可逆外部动作（登录/点击发布/付款/广告）；Human Gate ≠ Product Approval Gate；READY ≠ PUBLISHED
+26. **Product / Commercial Product / Listing Separation** (DEC-024): Product Asset ≠ Commercial Product ≠ Listing Package ≠ Listing ≠ Published Listing ≠ Observation ≠ Commercial Success；product_type 与 asset_type 分离；Platform 不得进入 Product Core
+27. **Data-Driven Opportunity Discovery & Selection** (DEC-025): Market Data → Market Signals → Opportunity Candidates → Score → Risk → Selection；Selection ≠ Production；不得无证据伪造 Opportunity；人工不是永久选品瓶颈
+28. **End-to-End Autonomous Product Generation Loop** (DEC-026): Real Market Data → Opportunity → Selection → Experiment → Production → Quality → Commercial Product → Listing → Publish Queue（止于 AWAITING_HUMAN_ACTION）；Production Success ≠ Commercial Success；不得伪造市场结果
+29. **Evidence-Based Price Intelligence Boundary** (DEC-027): Market Evidence ≠ Price Recommendation ≠ Listing Price ≠ Paid Price ≠ Validated Price；Default / AI Heuristic ≠ Market Fact；Commercial Score ≠ Price；Production Cost ≠ Market Price；无真实成交则无已验证价格
+30. **Current vs Legacy Database Boundary** (DEC-028): `data/ai_factory.db` = Current Operational SoT；历史练习/样例库必须 Archive 且 `not_current_sot`；「库中有行」≠「真实市场数据」；SAMPLE/SIMULATION 不得进入 Real Commercial Learning
+31. **Discovery Source / Sales Channel Separation** (DEC-029): Market Source ≠ Sales Platform ≠ Product ≠ Feedback Source；闲鱼采集 ≠ 闲鱼销售；同一 Product 可多 Listing/多平台；禁止平台专用核心表（如 xianyu_products）
+32. **Own Product Principle** (DEC-030): 可研究/借鉴市场并生产同类竞品；进入商业发布链的资产须 **SELF_PRODUCED** 或具备合法使用权；未经授权直接搬运/简单重包装第三方受保护内容 ≠ 默认生产路线；**MARKET_INSPIRED ≠ 自动侵权**；禁止 originality_score 僵化硬门
+33. **Autonomous Market Acquisition Engine** (DEC-031): User 设边界（源/区域/频率/合规）；Engine 决定如何采；Source Adapter 承载平台细节；Cursor ≠ 产品生产 AI；Collector 只记事实不判爆款；QUERY 是任务参数 ≠ source platform
+34. **Search Result Origin & Missing Field Integrity** (DEC-032): SEARCH_RESULT ≠ RECOMMENDED_RESULT；NULL ≠ 0；MISSING ≠ ZERO；匿名无法获取 ≠ 证明「因未登录」；Observation 可 `valid_without_want_count`；Collector 不判爆款
 
 ---
 
@@ -339,6 +340,21 @@ AI_FACTORY_OS 的项目连续性**不能**依赖 Conversation Memory。
 **强制纪律：** 不能把所有信息都塞进 `CURSOR_EXECUTION_HISTORY`；也不能让 `CURRENT_STATE` 承担历史叙述。必须遵守 Information Ownership（DEC-016）。
 
 **反膨胀：** 「`docs/0–6` 是核心连续性记录域」≠「每一个 Entry 都要修改 0–6 的全部文件」。只根据实际影响更新。
+
+### Task Intent Continuity（任务意图连续性）
+
+> PHASE 2。对齐 Execution Protocol **Task Intent Continuity Model**。
+
+正式多步骤 / 多阶段任务的项目连续性 **不得**依赖 Conversation Memory。  
+必须保留可恢复的 **Original Objective** 与任务状态链（Current Objective / Phase / Step / Completed / Pending / Next / Stop / Final Completion Criteria / Evidence）。
+
+```text
+Finding ≠ Objective
+CURRENT OBJECTIVE → 必须服务于 → ORIGINAL OBJECTIVE
+```
+
+Intent Continuity **不改变** Authority hierarchy：`Reality > Current State > Decision Log > Documentation > Conversation Memory`。  
+细则与 Intent Continuity Gate 见 Execution Protocol。
 
 ### Navigation Authority ≠ Reality Authority
 

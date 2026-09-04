@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Knowledge Update Protocol
 
 > **Knowledge Update Protocol（知识更新协议）**  
-> Last updated: 2026-09-04（**Collaboration Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-04（**PHASE 2 / GOVERNANCE IMPLEMENTATION** — NOT Entry 077）
 
 **目的：** 当项目发生重大变化时，规定必须检查与更新哪些核心文件，防止文档再次爆炸或与 Reality（运行现实）漂移。
 
@@ -12,7 +12,7 @@
 
 **连续性（DEC-019）：** `docs/0–6` 是**当前**核心连续性记录域。历史 Core Governance Set v1（8+1）是结构版本 / 检查清单，≠「完整连续性域仅此 8+1」。变化发生后须与 Execution Protocol 的 **Post-Execution Core Documentation Sync** 配合；长期规则不得只留在聊天中。  
 **GitHub：** 版本化 / 协作连续基础设施；**不得**当作 Reality Authority。  
-**协作闭环：** 长期协作规则见 Execution Protocol **Collaboration Continuity Workflow**；`Conversation Idea ≠ Execution Authorization`；Cursor PASS 后须 ChatGPT Closure Review 才可 Project Task Closed。
+**协作闭环 + Intent Continuity：** 见 Execution Protocol **Collaboration Continuity Workflow** 与 **Task Intent Continuity Model**；`Conversation Idea ≠ Execution Authorization`；`Finding ≠ Objective`；Cursor PASS 后须 ChatGPT Closure Review 才可 Project Task Closed。
 ---
 
 ## Change Level（变化等级）
@@ -49,10 +49,10 @@
 | 3 | **架构变化** | 分层调整；Core OS ↔ Content Factory 关系变化；融合授权 |
 | 4 | **模块变化** | 新模块落盘；职责迁移；入口启用/废弃登记 |
 | 5 | **数据结构变化** | Schema / Ownership / commercial_assets 字段或权威域变化 |
-| 6 | **AI 工作协议变化** | Bootstrap、可读性、自检、Scope 规则变化；**长期协作规则变化（DEC-019）**；Collaboration Continuity Workflow / Closure Review 规则变化 |
+| 6 | **AI 工作协议变化** | Bootstrap、可读性、自检、Scope；**长期协作规则（DEC-019）**；Collaboration Continuity；**Task Intent Continuity**；Closure Review；Process Output ≠ Formal Audit |
 | 7 | **重大错误修正** | P0/P1 问题关闭策略；发现新的系统性错误与避坑规则 |
 | 8 | **项目阶段变化** | Current Phase / Primary Goal 跃迁（须更新 Control Center + Current State） |
-| 9 | **连续性 / Recovery 规则变化** | Core Documentation Continuity、Recovery 权威路径、Post-Execution Sync 要求变化 |
+| 9 | **连续性 / Recovery 规则变化** | Core Documentation Continuity、Recovery 权威路径、Post-Execution Sync、**Active Task Anchor**、Intent Continuity 字段变化 |
 | 10 | **商业学习 / 发布 / 产品 / 选品 / 价格 / 数据源原则变化** | DEC-020…028：含 Price Intelligence + **Current vs Legacy DB Boundary** |
 | 11 | **Git-versioned closure 要求变化** | 任务是否要求 Commit / Push / Remote Verification；失败不得标 PASS |
 
@@ -240,7 +240,7 @@ Decision Log 记录（战略级必须写 DEC；仅明确化既有 DEC 时通常�
 
 ## 五、禁止事项（Forbidden）
 
-1. **AI 未经用户确认修改核心认知**（上列 8+1 文件的原则性/战略性内容）。  
+1. **AI 未经用户确认修改核心认知**（当前 **docs/0–6 Core Continuity Domain** 中受影响文件的原则性/战略性内容；历史 Core Governance Set v1 / 8+1 仅为检查清单起点，≠「完整核心仅此 8+1」）。  
 2. 用聊天记忆覆盖 Current State 或 Reality。  
 3. 用 PROJECT_STATUS 覆盖 Current State。  
 4. 将 Blueprint / Strategy 标记为 Runtime / Production Completed（除非 Reality 证实且用户授权）。  

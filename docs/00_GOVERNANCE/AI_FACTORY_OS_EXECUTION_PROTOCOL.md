@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Execution Protocol
 
 > Collaboration Control — ChatGPT + Cursor task execution rules（协作控制 — 执行规则）  
-> Last updated: 2026-09-04（**ChatGPT ↔ Cursor ↔ GitHub Collaboration Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-04（**PHASE 2 / GOVERNANCE IMPLEMENTATION** — Intent Continuity + Collaboration Model — NOT Entry 077）
 
 Applies to every Entry / implementation task unless the task document overrides with **explicit** authorization（除非任务明确授权覆盖）。
 
@@ -14,57 +14,79 @@ Session start must follow **Session Bootstrap Protocol（会话启动协议）**
 
 # Collaboration Continuity Workflow（协作连续性工作流）
 
-> **NOT Entry 077.** 本节目的：把 ChatGPT ↔ 用户确认 ↔ Cursor ↔ GitHub ↔ ChatGPT Closure Review 的长期协作闭环落入现有 Execution Protocol（DEC-016 / 017 / 019）。  
+> **NOT Entry 077.** 本节目的：ChatGPT ↔ 用户确认 ↔ Cursor ↔ GitHub ↔ ChatGPT Closure Review 闭环 + **Task Intent Continuity**（DEC-016 / 017 / 019）。  
 > **不是**新架构层；**不是**新 Core 文件；**不是**新 DEC。
 
 ## Workflow（协作闭环）
 
 ```text
 ChatGPT
-↓ Governance / Reality Recovery
-↓ Task Analysis
-↓ Scope Definition
-↓ AI Self Review
+↓ Governance / Reality / Original Objective Recovery
+↓ Intent Continuity Gate（多步骤任务）
+↓ Task Analysis / Scope Definition
+↓ AI Self Review / Cognitive Integrity Check
 ↓ 用户确认（需要确认的任务）
-↓ Cursor（Execution Agent）
+↓ Cursor（Local Reality Execution Agent）
 ↓ Reality Verification → Execution → Validation
 ↓ Core Documentation Impact Check
-↓ Audit + Execution History
-↓ Git Commit → GitHub Push → Remote Verification（若任务要求 versioned closure）
-↓ ChatGPT Closure Review
+↓ Formal Audit（docs/07_AUDIT）+ Execution History
+↓ Git Commit → GitHub Push → Remote Verification（若任务要求）
+↓ ChatGPT Closure Review（独立）
 ↓ Project Task Closed / PASS_WITH_FINDINGS / RETRY_REQUIRED
 ```
 
+## Four-Layer Responsibility Model（四层职责模型）
+
+```text
+Layer 1 — Human Intent
+  用户：目标 / 方向 / 授权 / 重大决策
+
+Layer 2 — Cognitive Governance
+  ChatGPT：理解 / 恢复 / 分析 / Scope / 编排 / Intent Continuity / Closure Review
+
+Layer 3 — Local Reality Execution
+  Cursor：本地 Reality / 修改 / 测试 / Git / 持久化证据
+
+Layer 4 — Shared Version Continuity
+  GitHub：版本 / 跨 Session / 共享证据
+```
+
+不得将四层混成一个角色。
+
 ## Responsibility Boundary（责任边界）
 
-### ChatGPT
+### ChatGPT — Cognitive / Governance / Orchestration
 
-负责：恢复 Governance；恢复 Current State / Reality；分析任务；定义 Scope / Out of Scope；AI Self Review；形成 Cursor-ready instruction；**仅在用户确认后**进入需确认的执行阶段；收到 Cursor 结果后做 **ChatGPT Closure Review**。
+负责：Governance Recovery；Reality / Current State Recovery；**Original Objective Recovery**；**Task Intent Continuity**；任务分析；Scope / Out of Scope；AI Self Review；AI Cognitive Integrity Check；Cursor-ready instruction；GitHub 文档审计 / 治理一致性 / 历史链分析（ChatGPT 能经 GitHub 完成的，**不得机械委托 Cursor 重复**）；收到执行结果后的**独立 Closure Review**。
 
 ```text
 Conversation Idea ≠ Execution Authorization
 ```
 
-聊天想法本身不是执行授权。不得仅凭聊天改变项目方向（DEC-012）。
+**硬规则：** ChatGPT 不得把 GitHub 文档状态误认为本地 Runtime Reality；需要本地 Reality 的检查仍必须交给 Cursor。
 
-### 用户（User Gate）
+### 用户（User Gate）— Human Decision / Authorization
 
-负责：对需要确认的重大任务做最终确认；对商业方向 / 重大项目方向做最终判断；对超出既有 Scope 的重大变化做明确授权。  
-用户确认 **≠** 放弃 Governance / Reality 检查。
+负责：原始目标；项目/商业方向；重大决策；必要授权；高风险外部不可逆行为确认。
 
-### Cursor（Execution Agent）
+**明确：** 用户**不承担**技术 Reality 核验、Runtime 验证、Git diff 判断、Commit 技术审查、Audit 编写、Cursor 输出整理等技术执行职责。  
+用户确认 **≠** 免除 ChatGPT / Cursor 的 Governance / Reality 检查。
 
-负责：按 Scope 执行；执行前验证 Reality；遵守 Forbidden Actions；验证结果；Core Documentation Impact Check；更新受影响 Core Files；更新 Execution History；生成 Audit；按任务要求 commit / push / remote verification。
+### Cursor — Local Reality Execution Agent
+
+负责：本地文件 / Runtime / Code / DB / Assets Reality 检查；按 Scope 修改；本地测试与验证；Git 操作；Formal Audit 落盘；Execution History；Core Documentation Impact Check；按任务要求 Commit / Push / Remote Verification。
+
+**不承担：** 项目最终治理裁决；Original Objective 最终解释权；商业方向决定；用 PASS 直接宣布 Project Task Closed；替代 ChatGPT Closure Review。
 
 ```text
-Cursor reports PASS ≠ Project Task automatically closed
+Cursor = Execution Agent
+Cursor ≠ Project Brain
+Cursor reports PASS ≠ Project Task Closed
 ```
 
-Cursor 的本地/执行 PASS 是证据输入，不是项目任务最终关闭。
+### GitHub — Shared Continuity Infrastructure
 
-## GitHub Role（复用既有原则）
-
-GitHub = Versioning / Continuity Infrastructure。详见 Constitution / Control Center / Authority Model。
+负责：Versioning；跨 Session 连续性；共享 baseline；Commit history；Remote evidence；ChatGPT 可读取的连续性载体。
 
 ```text
 GitHub ≠ Runtime Reality
@@ -74,28 +96,38 @@ GitHub ≠ Reality Authority
 Local Reality ≠ Git Commit ≠ GitHub main
 ```
 
-若任务要求 **Git-versioned closure**：
+若任务要求 **Git-versioned closure**：`Local Validation → Commit → Push → Remote Verification`。  
+全部完成前不得声称 Git-versioned closure = PASS。失败 → `REMOTE_VERIFICATION = DEGRADED / RETRY_REQUIRED`。
 
-```text
-Local Validation → Commit → Push → Remote Verification
-```
+## Audit Role + Process Output Separation（审计与过程输出分层）
 
-全部完成前不得声称 Git-versioned closure = PASS。  
-Remote verification 失败 → `REMOTE_VERIFICATION = DEGRADED / RETRY_REQUIRED`（如实填写）。
+### Formal Audit
 
-## Audit Role（复用既有原则）
-
-Audit = Execution Evidence（执行证据）。记录做了什么 / 没做什么 / 验证 / 文件变更 / 风险 / Git·Remote 状态。
+Audit = Execution Evidence。必须落盘：`docs/07_AUDIT/*.md`。  
+记录：做了什么 / 没做什么 / Scope / Reality Changes / Validation / Core Documentation Impact / Git 状态 / 风险 / 未完成事项。
 
 ```text
 Audit ≠ Current State
+Formal Audit ≠ ChatGPT Closure Review
 ```
 
-Audit 事实须经 Core Documentation Impact Check 后，按 Information Ownership（DEC-016）同步到对应文件。
+Audit 事实须经 Core Documentation Impact Check 后，按 Information Ownership（DEC-016）同步。
+
+### Cursor Process Output（执行过程输出）
+
+Agent 窗口中的搜索结果、中间分析、命令输出、重复扫描、阶段性判断、Debug、临时总结 = **PROCESS OUTPUT**。
+
+```text
+Cursor Process Output ≠ Formal Audit
+Process Output ≠ Current State
+Process Output ≠ Execution History
+Process Output ≠ Project Task Closed 唯一证据
+```
+
+**不要求**用户把全部过程输出转发给 ChatGPT。  
+**Audit 最小化：** 正式交付 = 必要执行/测试结果 + Formal Audit + Execution History +（若要求）Git evidence；ChatGPT 能经 GitHub 自查的内容，不要求 Cursor 再复制成长报告。
 
 ## Task State Model（状态不得混用）
-
-不得把以下状态混为一谈：
 
 ```text
 Execution Started
@@ -110,29 +142,144 @@ ChatGPT Closure Reviewed
 Project Task Closed
 ```
 
-**Project Task Closed** = 该任务规定的全部闭环条件已满足（含所需的 Sync / Git / Remote / Closure Review）。
+以下**单独任一**均 ≠ 任务完成：Cursor PASS · Execution Completed · Local Validation · Audit Generated · Git Commit · GitHub Push。  
+**Project Task Closed** = 任务规定的全部闭环条件已满足，并经 **ChatGPT Closure Review**。
+
+```text
+PHASE_N PASS ≠ PROJECT TASK CLOSED
+```
 
 ## ChatGPT Closure Review（最终闭环审查）
 
 Cursor 返回后，ChatGPT **不得**仅凭 `STATUS: PASS` 宣布任务完成。至少检查：
 
-1. Scope 是否遵守  
-2. 是否 Scope Creep  
-3. Reality 是否发生预期变化  
-4. 不允许修改的文件是否未改  
-5. Current State 是否需要/已同步  
-6. Module Registry 是否需要/已同步  
-7. Decision Log 是否需要/已同步  
-8. Architecture / Business Strategy 是否需要/已同步  
-9. Execution History 是否更新  
-10. Audit 是否存在且内部一致  
-11. Git commit 是否存在（若要求）  
-12. GitHub push 是否成功（若要求）  
-13. Remote verification 是否成功（若要求）  
-14. 是否错误启动 Entry 077 / 越权开发  
-15. 是否出现新的 Governance Drift  
+1. Scope 是否遵守；是否 Scope Creep  
+2. **Original Objective / Current Objective 是否仍对齐**  
+3. Reality 是否发生预期变化；不允许修改的文件是否未改  
+4. Current State / Module Registry / Decision Log / Architecture / Business Strategy 是否需要/已同步  
+5. Execution History 是否更新（含 Intent Continuity 字段，若适用）  
+6. Formal Audit 是否存在且内部一致  
+7. Git commit / push / remote verification（若要求）  
+8. 是否错误启动 Entry 077 / 越权开发  
+9. 是否出现新的 Governance Drift / Intent Drift  
 
 通过后才可给出：`PROJECT TASK CLOSED` / `PASS_WITH_FINDINGS` / `RETRY_REQUIRED`。
+
+---
+
+# Task Intent Continuity Model（任务意图连续性模型）
+
+> PHASE 2。每一个跨多个 Step / Phase 的正式任务必须具备可恢复意图状态链。  
+> Intent Continuity **不改变** Authority hierarchy：Reality > Current State > Decision Log > Documentation > Conversation Memory。
+
+## Required Fields
+
+```text
+ORIGINAL OBJECTIVE
+CURRENT OBJECTIVE
+SCOPE
+OUT OF SCOPE
+CURRENT PHASE
+CURRENT STEP
+COMPLETED
+FINDINGS
+DECISIONS
+PENDING
+NEXT STEP
+STOP CONDITIONS
+FINAL COMPLETION CRITERIA
+EVIDENCE
+```
+
+### ORIGINAL OBJECTIVE
+
+任务最初为什么开始。必须在任务开始时确定。  
+多步骤期间 **不得**被 Finding / Next Step / Entry 自动覆盖。  
+仅当用户明确改变任务目的时才可改变，并记录 `Original Objective Changed` + 原因。  
+ChatGPT 在每一后续 Step 进入前必须检查当前工作是否仍服务于 Original Objective。
+
+### CURRENT OBJECTIVE
+
+当前 Phase / Step 正在解决什么。允许变化，但必须证明：
+
+```text
+CURRENT OBJECTIVE → 服务于 → ORIGINAL OBJECTIVE
+```
+
+无法证明 → **STOP**。不得因“Finding 看起来更重要”自动改变总任务。
+
+### CURRENT PHASE / CURRENT STEP
+
+必须说明任务链位置。禁止只写 `Next: xxx` 而不说明：为什么现在做、属于哪个 Phase、如何服务 Original Objective。
+
+### COMPLETED / PENDING / NEXT STEP
+
+描述**任务链**，不是只描述最后一次 Cursor 操作。
+
+### STOP CONDITIONS
+
+明确：何时停止；何时不能继续；何时需用户重新授权；何为 Scope Creep；何种 Finding 应只记录不处理。
+
+### FINAL COMPLETION CRITERIA
+
+真正任务完成条件。不得把 Cursor PASS / Audit / Commit / Push 单独当作完成。
+
+### EVIDENCE
+
+每个重要状态由 Reality / Audit / Commit / History 等证据支持。
+
+## Intent Continuity Gate（意图连续性门）
+
+重大多步骤任务进入下一 Step / Phase 前，ChatGPT 必须执行：
+
+```text
+Original Objective Check
+→ Current Objective Check
+→ Scope Check
+→ Current Step Check
+→ Next Step Alignment Check
+→ Final Completion Path Check
+```
+
+必须回答：Original / Current Objective；Current Step；为何仍属 Original；Next Step 及为何仍属 Original；Finding 是否仅为 Finding；是否 Scope Creep；是否朝 Final Completion Criteria 前进。
+
+```text
+PASS → Continue
+FAIL → Stop / Re-scope
+UNCERTAIN → Recover Governance / User Clarification
+```
+
+## Finding ≠ Objective（发现 ≠ 目标）
+
+```text
+Finding ≠ Objective
+Finding ≠ Authorization
+Finding ≠ Scope Expansion
+Finding ≠ New Entry
+Finding ≠ New Phase
+```
+
+发现新问题：
+
+```text
+Finding → Impact Assessment → 是否阻碍 Original Objective？
+  YES（且在当前授权 Scope 内）→ 可处理
+  NO → 记录 Finding / Pending，不自动处理
+  OUTSIDE SCOPE → 等待用户授权
+```
+
+禁止：`Finding → 自动改变任务方向`。
+
+## Binding（绑定）
+
+多步骤正式任务的 Intent 字段必须出现在：
+
+1. Cursor-ready Instruction（开始时）  
+2. Formal Audit（`docs/07_AUDIT/*.md`）  
+3. `CURSOR_EXECUTION_HISTORY` 新记录（见模板）  
+4. Control Center **Active Task Anchor**（指针，非正文 SoT）
+
+不得只留在 Conversation Memory（DEC-019）。
 
 ---
 
