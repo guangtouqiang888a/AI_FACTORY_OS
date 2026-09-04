@@ -2694,10 +2694,10 @@
 | **Product Hypothesis** | 小微团队项目计划 + 任务进度 + 甘特图 Excel 模板（HYPOTHESIS） |
 | **Cost Estimate** | prod ≤¥3；AI ≈¥0；price hypothesis ¥9.9 |
 | **Quality Floor** | SELLABLE_QUALITY_FLOOR |
-| **Git Commit** | （提交后回填） |
-| **GitHub Push** | （提交后核验） |
-| **Remote Verification** | （提交后核验） |
-| **Final Status** | NOT_PRODUCED / NOT_PUBLISHED；ENTRY_077=NOT_STARTED |
+| **Git Commit** | `0f4a2dc1e78c7ed983247cad480f0355765b5497`（`docs: prepare first Xianyu PM/Gantt Excel experiment (no CF)`） |
+| **GitHub Push** | **RETRY_REQUIRED**（connection reset / empty reply；local ahead 3 incl. DEC-033） |
+| **Remote Verification** | **RETRY_REQUIRED** |
+| **Final Status** | NOT_PRODUCED / NOT_PUBLISHED；ENTRY_077=NOT_STARTED；remote sync pending |
 | **Entry 077** | **NOT_STARTED** |
 | **Project Development** | **PAUSED for CF/Publish**（prep objects exist） |
 
