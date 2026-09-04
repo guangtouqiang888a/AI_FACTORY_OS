@@ -1,12 +1,14 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-08-30（Entry **063**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-04（PHASE 2 Governance Implementation + Execution History Continuity Repair；**Entry 077 = NOT_STARTED**；**PROJECT_DEVELOPMENT = PAUSED**）
 
 ---
 
 ## Purpose
 
 记录 AI Factory OS 所有重要 Cursor 修改行为。
+
+多步骤 / 多 Phase 正式任务须持久化 **Intent Continuity** 字段，使未来可从 History + Governance 恢复目标、边界、进度与完成条件（见 `docs/00_GOVERNANCE/AI_FACTORY_OS_EXECUTION_PROTOCOL.md`）。
 
 ---
 
@@ -17,12 +19,32 @@
 | 字段 | 说明 |
 |------|------|
 | **Date** | 操作日期 |
-| **Objective** | 操作目标 |
+| **Objective** | 操作目标（短目标；多步骤任务可与 Current Objective 并存） |
+| **Original Objective** | 最初目标（Intent Continuity；多步骤任务必填） |
+| **Current Objective** | 当前目标（Intent Continuity；多步骤任务必填） |
+| **Current Phase** | 当前阶段（Intent Continuity） |
+| **Current Step** | 当前步骤（Intent Continuity） |
+| **Scope** | 允许范围 |
+| **Out of Scope** | 禁止范围 |
 | **Cursor Instruction Summary** | Cursor 指令摘要 |
 | **Modified Files** | 修改的文件列表 |
 | **Created Files** | 新建的文件列表 |
+| **Completed** | 已完成项 |
+| **Findings** | 发现 / 偏差 |
+| **Pending** | 未完成项 |
+| **Next Step** | 下一步 |
+| **Stop Conditions** | 停止条件 |
+| **Final Completion Criteria** | 最终完成条件 |
 | **Architecture Impact** | 对架构的影响（无 / 文档层 / 模块层 / 核心层） |
 | **Validation Result** | 验证结果 |
+| **Audit** | Formal Audit 路径（若有） |
+| **Git Commit** | 相关 commit SHA（未发生则 `N/A`） |
+| **GitHub Push** | SUCCESS / NOT_PERFORMED / FAILED / `N/A` |
+| **Remote Verification** | PASS / RETRY_REQUIRED / `N/A` |
+| **Final Status** | 本任务/本 PHASE 最终状态 |
+| **Evidence** | 证据指针（Audit / commit / 路径） |
+
+> 历史 Entry（早于 Intent Continuity 模型）不必机械回填全部新字段。新正式多步骤任务必须填写 Intent Continuity 核心字段。
 
 ---
 
@@ -32,6 +54,7 @@
 - 必须同步进入项目文档。
 - 涉及核心 OS（`0_START`）或冻结层（`9_PRODUCT` / `10_DEPLOY`）的变更，必须单独标注 **Architecture Impact: Core / Frozen Layer**。
 - 仅文档变更标注 **Architecture Impact: Documentation Only**，不影响运行代码。
+- Cursor Process Output ≠ Formal Audit ≠ Current State ≠ ChatGPT Closure Review。
 
 ---
 
@@ -2498,19 +2521,30 @@
 | 字段 | 内容 |
 |------|------|
 | **Date** | 2026-09-04 |
+| **Objective** | 在既有 Governance 落地 Intent Continuity + Collaboration Model，并完成 Formal Audit / History / Git closeout |
 | **Original Objective** | 修复长期任务连续性 + 建立合理 ChatGPT/Cursor/GitHub 协作闭环，防止多步骤丢失最初目标 |
 | **Current Objective** | 在既有 Governance 落地 Intent Continuity Model + Responsibility Boundary + Audit/Process 分层 |
 | **Current Phase** | PHASE 2 / GOVERNANCE IMPLEMENTATION |
 | **Current Step** | Git Closeout completed（commit + push + remote verification） |
-| **Scope** | Execution Protocol；Control Center；KUP；Constitution；Authority；Business Strategy 页眉；Execution History；PHASE 2 Audit |
+| **Scope** | Execution Protocol；Control Center；KUP；Constitution；Authority；Business Strategy 页眉；Execution History；PHASE 2 Audit；PHASE 1 Audit 落盘 |
 | **Out of Scope** | Entry 077；Runtime/Python/DB/`commercial_assets`；UA；Module Registry；Decision Log；Business 正文方向；新建半核心文件 |
+| **Cursor Instruction Summary** | PHASE 2 Governance Implementation：在现有治理文件落地 Intent Continuity Model、职责边界、Process/Audit 分层、Intent Gate、History 绑定；禁止 Entry 077 / Runtime / 新建半核心文件 |
+| **Modified Files** | `docs/00_GOVERNANCE/AI_FACTORY_OS_EXECUTION_PROTOCOL.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_CONTROL_CENTER.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_KNOWLEDGE_UPDATE_PROTOCOL.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_PROJECT_CONSTITUTION.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_AUTHORITY_MODEL.md`；`docs/03_BUSINESS/AI_FACTORY_OS_BUSINESS_STRATEGY.md`（页眉 only）；`docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_1_CORE_CONTINUITY_RECOVERY_AUDIT.md`（既有证据落盘，未改正文结论） |
+| **Created Files** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md`（PHASE 2 Formal Audit） |
 | **Completed** | Task Intent Continuity Model；四层职责；Finding≠Objective；Process Output≠Formal Audit；Active Task Anchor；History 模板升级；KUP 8+1 措辞澄清；BS 页眉歧义修正；Git Closeout |
-| **Findings** | 无 Runtime 变化；Git remote verification PASS（local == origin/main == ls-remote） |
+| **Findings** | 无 Runtime 变化；Git remote verification PASS（local == origin/main == ls-remote）；History 页眉/记录规范曾滞后于 PHASE 2（见 Continuity Repair） |
 | **Decisions** | 无新 DEC；沿用 DEC-016/017/019 |
 | **Pending** | ChatGPT Closure Review；整链 PROJECT TASK CLOSED 尚未宣布 |
 | **Next Step** | 等待 ChatGPT Closure Review；**STOP** — 不启动 Entry 077 |
 | **Stop Conditions** | 越出 docs governance Scope；启动 Entry 077；修改 Runtime/DB/assets；新建半核心文件 → STOP |
-| **Final Completion Criteria（本 PHASE）** | Intent Continuity + Collaboration 规则落盘；Audit；History；Impact Check；等待 Closure Review |
+| **Final Completion Criteria** | Intent Continuity + Collaboration 规则落盘；Formal Audit；History；Impact Check；Git closeout；等待 Closure Review |
+| **Architecture Impact** | Documentation Only — Governance / Execution History；无 Runtime / Python / DB / `commercial_assets` 变更 |
+| **Validation Result** | PHASE_2_STATUS = PASS_WITH_FINDINGS；INTENT_CONTINUITY / COLLABORATION_MODEL / AUDIT_OUTPUT_SEPARATION / CORE_DOCUMENTATION_SYNC = PASS |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md` |
+| **Git Commit** | `204563e6d898eb8e38158a8e5fc4412085656d36`（`docs: implement task intent continuity governance`）；stamp `f68010285516e9a7c4fe0a8157c0f004c52324f0` |
+| **GitHub Push** | **SUCCESS**（`160c159..204563e`；随后 stamp `204563e..f680102`；无 force / 无 bypass） |
+| **Remote Verification** | **PASS**（fetch + `origin/main` + `ls-remote` 对齐；PHASE 2 Scope 文件存在于 remote `main`） |
+| **Final Status** | `PASS_WITH_FINDINGS`；`PHASE_2 PASS ≠ PROJECT TASK CLOSED`；`ENTRY_077 = NOT_STARTED`；`PROJECT_DEVELOPMENT = PAUSED` |
 | **Evidence** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_GOVERNANCE_IMPLEMENTATION.md`；commit `204563e6d898eb8e38158a8e5fc4412085656d36` |
 | **Entry 077** | **NOT_STARTED** |
 | **Project Development** | **PAUSED** |
@@ -2518,6 +2552,44 @@
 **Core Documentation Continuity Check：**
 - Modified：Execution Protocol；Control Center；KUP；Constitution；Authority Model；Business Strategy（页眉 only）；Execution History；PHASE 2 Audit
 - Reviewed but Not Modified：Decision Log；Unified Architecture；Module Registry；Current State（事实未变）；History Evolution Context；Documentation Map；Runtime/DB/`commercial_assets`
+
+---
+
+### PHASE 2 CLOSEOUT REPAIR — Execution History Continuity Repair (NOT Entry 077)
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-04 |
+| **Objective** | 修复 GitHub `main` 上 Execution History 未正确体现 PHASE 2 Intent Continuity 的问题 |
+| **Original Objective** | 修复长期任务连续性与 ChatGPT↔Cursor↔GitHub 协作闭环，使复杂多步骤任务不会因执行过程变长而丢失最初目标 |
+| **Current Objective** | 仅修复 `CURSOR_EXECUTION_HISTORY.md` 连续性记录 + 生成正式 Continuity Repair Audit |
+| **Current Phase** | PHASE 2 CLOSEOUT REPAIR / DOCUMENTATION CONTINUITY REPAIR |
+| **Current Step** | 同步并验证 `docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md` |
+| **Scope** | `docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md`；`docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_EXECUTION_HISTORY_CONTINUITY_REPAIR.md` |
+| **Out of Scope** | Entry 077；Runtime/Python/DB/`commercial_assets`；Governance 重新设计；重新执行 PHASE 2；UA；Module Registry；Decision Log；Business 正文 |
+| **Cursor Instruction Summary** | PHASE 2 Execution History GitHub Continuity Repair：补齐页眉/记录规范/PHASE 2 字段；不重复创建第二条 PHASE 2 实施记录；不启动 Entry 077 |
+| **Modified Files** | `docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md` |
+| **Created Files** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_EXECUTION_HISTORY_CONTINUITY_REPAIR.md` |
+| **Completed** | 页眉日期与状态刷新；记录规范升级为 Intent Continuity 持久字段；PHASE 2 记录字段补齐；本 Repair 记录；Formal Audit |
+| **Findings** | PHASE 2 实施记录此前已存在于 `main`，但页眉仍写 2026-08-30（Entry 063），顶部规范缺 Intent Continuity 字段，PHASE 2 表缺 Git/Audit/Validation 等可恢复字段 |
+| **Pending** | ChatGPT Closure Review；Control Center Active Task Anchor 仍指向 PHASE_2（本次 Scope 禁止改其他 Governance 文件） |
+| **Next Step** | **STOP** — 等待 ChatGPT Closure Review；不启动 Entry 077 |
+| **Stop Conditions** | Scope 扩大；Entry 077；Runtime/DB/assets；重新实施 PHASE 2 → STOP |
+| **Final Completion Criteria** | PHASE 2 Intent Continuity 执行历史可恢复、可审计，并进入 GitHub 连续性基线；Formal Audit 落盘 |
+| **Architecture Impact** | Documentation Only |
+| **Validation Result** | History PHASE 2 记录完整；Intent Continuity 字段可追踪；Entry 077 NOT_STARTED；Development PAUSED |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_PHASE_2_EXECUTION_HISTORY_CONTINUITY_REPAIR.md` |
+| **Git Commit** | （本 Repair commit；提交后回填实际 SHA） |
+| **GitHub Push** | （提交后核验） |
+| **Remote Verification** | （push 后核验） |
+| **Final Status** | 进行中 → 以 Formal Audit / Git 核验为准 |
+| **Evidence** | 本记录 + Continuity Repair Audit |
+| **Entry 077** | **NOT_STARTED** |
+| **Project Development** | **PAUSED** |
+
+**Core Documentation Continuity Check：**
+- Modified：Execution History；本 Continuity Repair Audit
+- Reviewed but Not Modified：Control Center（Active Task 仍指向 PHASE_2；本 Scope 禁止改）；Authority；Constitution；Execution Protocol；KUP；Decision Log；Current State；Module Registry；UA；Business Strategy；Doc Map；Architecture Evolution Context；Runtime/DB/`commercial_assets`
 
 ---
 
