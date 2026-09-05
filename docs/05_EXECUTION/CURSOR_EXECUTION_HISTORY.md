@@ -3055,9 +3055,9 @@
 | **DB Impact** | 1 signal UPDATE；obs untouched |
 | **Runtime Impact** | Future observation signals only |
 | **Created Audit** | `docs/07_AUDIT/ENTRY_080C_XIANYU_P2C_DATA_HYGIENE_GUARD.md` |
-| **Git Commit** | content `0e6fe11…`（origin）；stamp `aa97678…`（local pending） |
-| **GitHub Push** | content **SUCCESS**；stamp **RETRY_REQUIRED**（443） |
-| **Remote Verification** | **PASS_WITH_FINDINGS**（080-C Audit on origin at `0e6fe11`；local ahead 1） |
+| **Git Commit** | content `0e6fe11…`；tip `efaf2cd…` |
+| **GitHub Push** | **SUCCESS**（`0e6fe11..efaf2cd` after retries） |
+| **Remote Verification** | **PASS_WITH_FINDINGS**（local HEAD == origin/main；session had 443 flakes） |
 | **Final Status** | **P2-C DONE**；**P2 COMPLETED_WITH_FINDINGS**；P3/P4 NOT STARTED |
 
 **Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review.
