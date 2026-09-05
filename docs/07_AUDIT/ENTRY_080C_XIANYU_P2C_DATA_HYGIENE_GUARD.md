@@ -155,9 +155,9 @@ Violated if Extension/view collector/P3 started or REAL obs deleted.
 
 | Field | Value |
 |-------|-------|
-| Git Commit | （closeout） |
-| GitHub Push | （closeout） |
-| Remote Verification | （closeout） |
+| Git Commit | `0e6fe11160ca5fc67385fd8837b0d528062ad254` |
+| GitHub Push | **SUCCESS**（`d2dae3b..0e6fe11  main -> main` after one network retry；无 force） |
+| Remote Verification | **PASS_WITH_FINDINGS**（push accepted；local HEAD == origin/main `0e6fe11…`；follow-up fetch/ls-remote intermittently flaky） |
 
 ## Final Status
 
