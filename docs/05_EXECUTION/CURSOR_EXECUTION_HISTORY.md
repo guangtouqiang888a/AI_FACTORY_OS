@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-C** P1-C Controlled Cleanup；**P1 PARTIAL**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-D** P1-D ARCHIVE / INVALIDATE；**P1 COMPLETED_WITH_FINDINGS**）
 
 ---
 
@@ -2902,6 +2902,48 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Execution History；Formal Audit 079-C；git rm 10ff
 - Reviewed but Not Modified：Business Strategy；UA；Module Registry；Runtime Python/Extension；DB
+
+---
+
+### Entry 079-D — Xianyu P1-D ARCHIVE / INVALIDATE Controlled Processing（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **079-D** |
+| **Original Objective** | 建立一个真正能够在闲鱼跑通的商业闭环：真实市场 → 采集 → 选品 → 生产 → 人工发布 → 真实反馈 → 商业学习 → 下一轮。 |
+| **Current Objective** | 对 079-B 已确认 ARCHIVE 对象做受控 ARCHIVE/INVALIDATE；不删除；不破坏引用；正式留证同步 GitHub |
+| **Current Phase** | P1 Reality Purification — **COMPLETED_WITH_FINDINGS** |
+| **Current Step** | P1-D ARCHIVE / INVALIDATE Controlled Processing |
+| **Scope** | Pre-verify `75f2`/`e601`/`8523`/`f2f8`；PHYSICAL only if safe else LOGICAL_ONLY；INVALIDATE boundary；Audit；History；必要 State/CC；Git |
+| **Out of Scope** | 删除 ARCHIVE；改 a949；DB migration/删 row；Runtime/scoring/pricing/collection；新建核心治理目录；重建 079-C 已删对象；付费 AI；P2+ |
+| **Completed** | Reality Check；四对象 ARCHIVE_LOGICAL_ONLY；INVALIDATE 边界落盘；a949 保留；NO DB WRITE；Audit 079-D；指针更新 |
+| **Findings** | 无安全 CF artifact 物理归档槽位；`e601` 有 test 硬路径；`8523`/`f2f8` 有 publish_queue + commercial/code 依赖 → 全部 LOGICAL_ONLY |
+| **Decisions** | PHYSICAL_ARCHIVE=0；保留原路径；INVALIDATE≠DELETE；NO DB WRITE；NO Runtime change |
+| **Pending** | ChatGPT Closure Review；可选未来物理归档 Entry；Human Publish / P2（另授权） |
+| **Next Step** | **STOP** — 等待 Closure Review；不进入 P2 |
+| **Stop Conditions** | 强行物理移动破坏引用；DB 删历史；删 ARCHIVE；动 a949；进 P2 → FAIL |
+| **Final Completion Criteria** | 决策矩阵落盘；INVALIDATE 清晰；a949 OK；079-C 删除未回滚；remote verified |
+| **Modified Files** | Control Center；Current State；Execution History |
+| **Archived Objects（physical）** | **NONE** |
+| **Logical-only Archived Objects** | `75f2feac9b04`；`e601c17c6977`；`8523329941d4`；`f2f8bab97df8` |
+| **Invalidated Objects** | 上列四对象 + legacy pilots + SAMPLE/TEST/SIMULATION + 未验证 keyword/price/hypothesis + 历史 Opp/Selection（≠当前事实）；已删 `10ff`/`3d32`/`5f47` 不得复活为事实 |
+| **Created Audit** | `docs/07_AUDIT/ENTRY_079D_XIANYU_P1D_ARCHIVE_INVALIDATE.md` |
+| **Architecture Impact** | Documentation Only — 无物理移动；无 Runtime/DB 变更 |
+| **Validation Result** | PASS_WITH_FINDINGS |
+| **Audit** | `docs/07_AUDIT/ENTRY_079D_XIANYU_P1D_ARCHIVE_INVALIDATE.md` |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Evidence** | 079-B + 079-C + 本 Audit |
+| **Final Status** | **P1-D ARCHIVE/INVALIDATE DONE**（logical） |
+| **P1 Overall Status** | **COMPLETED_WITH_FINDINGS**（physical ARCHIVE deferred by safety） |
+
+**Note：** P1-D 完成 ≠ 自动进入 P2。Cursor Process Output ≠ Formal Audit ≠ Current State ≠ ChatGPT Closure Review.
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Execution History；Formal Audit 079-D
+- Reviewed but Not Modified：Business Strategy；UA；Module Registry；Runtime Python/Extension；DB；a949；四 ARCHIVE 物理路径
 
 ---
 
