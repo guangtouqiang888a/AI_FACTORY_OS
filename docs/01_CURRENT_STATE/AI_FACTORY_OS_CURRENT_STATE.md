@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-05（Entry **079-D** ARCHIVE_LOGICAL_ONLY + INVALIDATE；**P1 COMPLETED_WITH_FINDINGS**；**NOT_PUBLISHED**）
+> Last updated: 2026-09-05（Entry **080-A** P2-A Reality Audit；**P2 STARTED / implementation NOT STARTED**；**NOT_PUBLISHED**）
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -131,7 +131,7 @@ PRODUCT_HYPOTHESIS ≠ MARKET_VALIDATED_PRODUCT
 |-------|------|--------|
 | **P0** | Reality 全面审计 | **COMPLETED**（Entry **078** = `PASS_WITH_FINDINGS`） |
 | P1 | Reality Purification（KEEP/ARCHIVE/INVALIDATE/DELETE 规划与执行授权） | **COMPLETED_WITH_FINDINGS**（079-B/C/D；physical ARCHIVE deferred） |
-| **P2** | Xianyu Data Foundation（含 want+view；深度≠简单改 50） | NOT STARTED |
+| **P2** | Xianyu Data Foundation（含 want+view；深度≠简单改 50） | **STARTED**（080-A Audit only；**implementation NOT STARTED**） |
 | **P3** | Keyword Discovery（Seed→…；AI Query Planner 现 NOT IMPLEMENTED） | NOT STARTED |
 | **P4** | Adaptive Collection Depth（信息增益/重复率驱动） | NOT STARTED |
 | **P5** | Xianyu Market Intelligence（分位/分布；view 缺口未解前勿误读 engagement） | NOT STARTED |
@@ -189,11 +189,12 @@ P1–P7 主体；P8–P10 增强；**P11–P14 全部**；真实发布与反馈�
 
 | Field | Value |
 |-------|-------|
-| **Current Phase** | **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS** |
+| **Current Phase** | **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**；**P2 STARTED**（Audit only） |
 | **P1-B Evidence** | Entry **079-B** |
 | **P1-C Cleanup** | Entry **079-C** — deleted `3d323bf0de83` / `5f4719b47909` / `10ff21f1efee` |
-| **P1-D Archive/Invalidate** | Entry **079-D** — all four ARCHIVE = **ARCHIVE_LOGICAL_ONLY**；INVALIDATE boundary set；**NO physical move**；**NO DB WRITE** |
-| **Stop** | **不要自动进入 P2**；等待 ChatGPT Closure Review |
+| **P1-D Archive/Invalidate** | Entry **079-D** — ARCHIVE_LOGICAL_ONLY ×4；INVALIDATE boundary |
+| **P2-A Reality Audit** | Entry **080-A** — Data Foundation Reality；`view_count=NOT_STABLELY_AVAILABLE`；**implementation NOT STARTED** |
+| **Stop** | **不要自动实施 P2-B**；等待 ChatGPT Closure Review |
 
 ---
 
@@ -542,18 +543,19 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 
 ## In Progress
 
-- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**（079-D logical ARCHIVE + INVALIDATE；physical ARCHIVE deferred）  
+- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**；**P2 STARTED**（080-A Reality Audit；**implementation NOT STARTED**）  
 - Acquisition Engine — **PARTIAL**  
 - **Candidate → Signal** — **IMPLEMENTED**（073）  
 - **Signal → Opportunity** — **IMPLEMENTED**（075）  
 - **Opportunity → Product Definition** — **IMPLEMENTED**（076）  
 - **Product Definition → Product Asset（077）** — **PRODUCED**；**NOT_PUBLISHED**  
 - **Feedback → Learning** — **NOT_STARTED**  
-- **WAITING** ChatGPT Closure Review after Entry **079-D** — **不得自动进入 P2**  
+- **WAITING** ChatGPT Closure Review after Entry **080-A** — **不得自动实施 P2-B**  
 - Product Asset **KEEP：** `a949d2e47cf1`  
 - **Deleted（079-C）：** `3d32` / `5f47` / `10ff`  
-- **ARCHIVE_LOGICAL_ONLY（079-D）：** `75f2` / `e601` / `8523` / `f2f8`（原路径保留；≠ 当前商业事实）  
-- **INVALIDATE：** legacy pilots / historical E2E / SAMPLE·TEST·SIMULATION / 未验证 keyword·price·hypothesis — 不得升格为当前闲鱼事实  
+- **ARCHIVE_LOGICAL_ONLY（079-D）：** `75f2` / `e601` / `8523` / `f2f8`  
+- **Data Foundation（080-A）：** 20 REAL obs；want 70%；view **NOT_STABLELY_AVAILABLE**；keywords=0；**≠ implemented**  
+- **INVALIDATE：** legacy pilots / SAMPLE·TEST·SIMULATION / 未验证 keyword·price·hypothesis — 不得升格为当前闲鱼事实  
 
 ---
 

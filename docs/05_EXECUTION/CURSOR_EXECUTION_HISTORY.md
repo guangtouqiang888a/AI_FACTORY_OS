@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-D** P1-D ARCHIVE / INVALIDATE；**P1 COMPLETED_WITH_FINDINGS**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **080-A** P2-A Data Foundation Reality Audit；**P2 STARTED / implementation NOT STARTED**）
 
 ---
 
@@ -2944,6 +2944,47 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Execution History；Formal Audit 079-D
 - Reviewed but Not Modified：Business Strategy；UA；Module Registry；Runtime Python/Extension；DB；a949；四 ARCHIVE 物理路径
+
+---
+
+### Entry 080-A — Xianyu P2-A Data Foundation Reality Audit（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **080-A** |
+| **Original Objective** | 跑通闲鱼真实商业闭环（市场→采集→数据基础→选品→生产→人工发布→反馈→学习）。 |
+| **Current Objective** | P2 正式启动的 Reality Audit：弄清 DB/schema/20 obs/view/want/run/dedupe/provenance/keyword 缺口；**不实现** Data Foundation |
+| **Current Phase** | **P2 STARTED** — P2-A Reality Audit；**P2 implementation = NOT STARTED** |
+| **Current Step** | P2-A Data Foundation Reality Audit（READ-ONLY） |
+| **Scope** | 只读 DB + collector/extension/import 代码 + 历史 dumps/raw；Formal Audit；History；必要 Continuity；Git |
+| **Out of Scope** | 任何 Python/JS/DB write/migration；改 scoring/pricing/collection/planner/publish；付费 AI；闲鱼外部操作；P2-B 实施；P3 |
+| **Completed** | Schema/obs/view/want/keyword/run/dedupe/provenance/platform 审计；Capability Gap；P2 推荐/禁止边界；Audit 080-A |
+| **Findings** | view=`NOT_STABLELY_AVAILABLE`；want 70% usable；keywords=0；query/image/position 未一等列；collection_log stale；evidence_level MISSING |
+| **Decisions** | P2 Audit-only；NO DB WRITE；NO Runtime change；schema change 留给 P2-B 决策 |
+| **Pending** | ChatGPT Closure Review → authorize P2-B |
+| **Next Step** | **STOP** — 不实施 P2-B；不改 collector；不实现 view_count |
+| **Stop Conditions** | 未经授权写 DB/改 Runtime/宣称 P2 completed/view solved → FAIL_SCOPE |
+| **Final Completion Criteria** | Audit 回答全部 Reality 问题；远程同步；无实现副作用 |
+| **Modified Files** | Control Center；Current State；Execution History |
+| **Created Audit** | `docs/07_AUDIT/ENTRY_080A_XIANYU_P2A_DATA_FOUNDATION_REALITY_AUDIT.md` |
+| **Architecture Impact** | Documentation Only |
+| **Validation Result** | PASS_WITH_FINDINGS |
+| **Audit** | `docs/07_AUDIT/ENTRY_080A_XIANYU_P2A_DATA_FOUNDATION_REALITY_AUDIT.md` |
+| **DB Impact** | **NO DB WRITE** |
+| **Runtime Impact** | **NONE** |
+| **AI Cost** | **¥0** |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Final Status** | **P2-A Reality Audit DONE**；P2 implementation NOT STARTED |
+| **P2 Overall Status** | **STARTED（Audit only）** |
+
+**Note：** P2 正式启动 ≠ Data Foundation 已实现。Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review.
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Execution History；Formal Audit 080-A
+- Reviewed but Not Modified：Runtime Python/Extension；DB；a949；Business Strategy 正文（仅指针层）
 
 ---
 
