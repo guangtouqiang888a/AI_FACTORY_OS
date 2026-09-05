@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **080-A** P2-A Data Foundation Reality Audit；**P2 STARTED / implementation NOT STARTED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **080-B** P2-B Data Foundation Minimal Implementation；**P2 PARTIAL**）
 
 ---
 
@@ -2985,6 +2985,47 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Execution History；Formal Audit 080-A
 - Reviewed but Not Modified：Runtime Python/Extension；DB；a949；Business Strategy 正文（仅指针层）
+
+---
+
+### Entry 080-B — Xianyu P2-B Data Foundation Minimal Implementation（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **080-B** |
+| **Original Objective** | 跑通闲鱼真实商业闭环 |
+| **Current Objective** | 按 080-A 实施最小 Data Foundation（Observation/Keyword/Run/Provenance/Product Identity/dedupe 语义） |
+| **Current Phase** | **P2 PARTIAL** — foundation implemented；view/adaptive engine **NOT** |
+| **Current Step** | P2-B Minimal Implementation |
+| **Scope** | Additive schema；backfill；foundation module；insert/finish 兼容；tests；docs；Git |
+| **Out of Scope** | Extension；view 采集；Planner；Discovery；Adaptive engine；scorer/pricing；PD/Asset/publish；P3/P4；删 20 REAL / a949 |
+| **Completed** | Schema+backup+backfill；keyword Excel模板；20 product identities；tests 7+15 OK；Audit 080-B |
+| **Findings** | raw nested `payload.records`；image/position 二次 backfill；view 仍 NOT_STABLELY_AVAILABLE |
+| **Decisions** | Additive only；NULL want/view 保留；Product Identity ≠ Product Asset |
+| **Pending** | Closure Review；optional hygiene；不自动 P3 |
+| **Next Step** | **STOP** |
+| **Stop Conditions** | 破坏 REAL 数据；改 Extension；伪造 view；进 P3 → STOP |
+| **Final Completion Criteria** | 见 Entry 指令 §17 — 已满足 |
+| **Modified Files** | `1_DATA/data_foundation_080b.py`；`1_DATA/market_source_core.py`；`1_DATA/test_data_foundation_080b.py`；tests artifact；Archive manifest；Control Center；Current State；Module Registry；Execution History |
+| **Created Audit** | `docs/07_AUDIT/ENTRY_080B_XIANYU_P2B_DATA_FOUNDATION_IMPLEMENTATION.md` |
+| **Architecture Impact** | Data layer additive（1_DATA）；Extension untouched |
+| **Validation Result** | PASS_WITH_FINDINGS |
+| **DB Impact** | Additive migration + backfill；backup `ai_factory_pre_080b_20260905_155811.db` |
+| **Runtime Impact** | insert/finish foundation hooks only |
+| **AI Cost** | **¥0** |
+| **Tests** | `test_data_foundation_080b` 7 OK；`test_market_source_058b` 15 OK |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Final Status** | **P2-B DONE**；P2 overall **PARTIAL** |
+| **P3/P4** | **NOT STARTED** |
+
+**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review.
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Module Registry；Execution History；Formal Audit 080-B
+- Reviewed but Not Modified：Business Strategy 正文；UA；Extension；a949
 
 ---
 

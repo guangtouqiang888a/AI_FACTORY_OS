@@ -5,6 +5,7 @@
 |-------|-------|
 | original_path | `D:\AI_FACTORY_OS\data\ai_factory.db` |
 | archive_path | `D:\AI_FACTORY_OS\99_ARCHIVE\database_history\ai_factory_legacy_simulation_20260830.db` |
+| Entry 080-B pre-migration backup | `99_ARCHIVE/database_history/ai_factory_pre_080b_20260905_155811.db` (Current DB snapshot before additive P2-B migration; rollback copy only) |
 | sha256 | `79dc56f986893b0e590f904e9e6ff76d90425f72d2c8335e26a33d9efbde62be` |
 | size_bytes | 208896 |
 | archived_at | 2026-08-30T18:09:50+08:00 |

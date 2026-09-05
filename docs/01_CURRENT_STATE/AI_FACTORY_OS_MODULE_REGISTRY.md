@@ -119,14 +119,15 @@ Commercial Product
 - `collector.py` — **EXTERNAL_IMPORT facade**（058D：`collector_kind=EXTERNAL_IMPORT`；非 Live）
 - `collector_abstraction.py` — Source → Adapter → Raw → Observation（058D）
 - `acquisition_capability.py` — modes / eligibility / field matrix / recommended path（058D）
-- `market_source_core.py` — Source Registry / Collection Run / Observation / collectors registry
+- `market_source_core.py` — Source Registry / Collection Run / Observation / collectors registry（+ Entry **080-B** foundation hooks）
+- `data_foundation_080b.py` — Entry **080-B** additive Data Foundation（keyword / product identity / evidence_level / backfill）
 - `connectors/xianyu_import_connector.py` — Import Adapter 实现（xlsx/csv/json/jsonl；query；sha256）
 - `xianyu_import_pilot_058c.py` — IMPORT_READY / WAITING
 - `sources.py` — column map
 - `database.py` — ensure_schema + collection_log（query 复用）
 - `market_event_core.py` / `market_signal_core.py` — Event ≠ Observation；Signal bridge PARTIAL
-- Tests：`test_acquisition_058d` / `test_xianyu_import_pilot_058c` / `test_market_source_058b`
-- `data/ai_factory.db` — observations=0；collectors ACTIVE import + LIVE NOT_AVAILABLE
+- Tests：`test_acquisition_058d` / `test_xianyu_import_pilot_058c` / `test_market_source_058b` / `test_data_foundation_080b`
+- `data/ai_factory.db` — observations=**20 REAL**；keywords=**1**；`market_product_identities`=**20**；view_count all NULL；collectors ACTIVE import + LIVE NOT_AVAILABLE
 - `data/raw/xianyu/imports/` — drop zone（等待真实文件）
 - `acquisition_engine.py` — Entry **059**：Acquisition Engine（tasks/policy/execute；不含平台 DOM）
 - `product_origin.py` — Entry **058E**：Own Product / rights / business_models（≠ Product Type）

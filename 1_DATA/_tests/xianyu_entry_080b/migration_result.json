@@ -1,0 +1,27 @@
+{
+  "entry": "080-B",
+  "backup_path": "D:\\AI_FACTORY_OS\\99_ARCHIVE\\database_history\\ai_factory_pre_080b_20260905_155811.db",
+  "preservation_ok": true,
+  "after": {
+    "row_count": 20,
+    "real_count": 20,
+    "manual_verified_count": 20,
+    "want_null_count": 6,
+    "want_zero_count": 0,
+    "view_null_count": 20,
+    "view_nonnull_count": 0,
+    "distinct_source_item_id": 20,
+    "distinct_source_url": 20,
+    "image_url_nonnull": 20,
+    "result_position_nonnull": 20,
+    "keywords_count": 1,
+    "product_identities_count": 20,
+    "obs_with_query": 20,
+    "obs_with_keyword_id": 20,
+    "obs_with_product_identity": 20
+  },
+  "tests": "1_DATA.test_data_foundation_080b — 7 OK; 1_DATA.test_market_source_058b — 15 OK",
+  "ai_cost": 0,
+  "view_count_status": "NOT_STABLELY_AVAILABLE",
+  "note": "image/position backfilled from payload.records after raw-path fix"
+}

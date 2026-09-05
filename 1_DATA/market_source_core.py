@@ -184,6 +184,13 @@ def ensure_market_source_schema() -> None:
                 pass
     seed_default_sources()
     ensure_collector_registry()
+    # Entry 080-B: additive Data Foundation columns (no recursion into base create)
+    try:
+        import data_foundation_080b as df080b  # noqa: WPS433
+
+        df080b.apply_additive_schema_only()
+    except Exception:
+        pass
 
 
 def ensure_collector_registry() -> None:
@@ -519,6 +526,30 @@ def finish_collection_run(run_id: str, stats: dict, *, status: str = "done") -> 
                 run_id,
             ),
         )
+        # 080-B optional adaptive-depth *capability* metadata (engine NOT implemented)
+        cols = {r[1] for r in conn.execute("PRAGMA table_info(collection_runs)")}
+        extras = []
+        vals: list = []
+        for key, col in (
+            ("requested_record_count", "requested_record_count"),
+            ("requested_depth", "requested_depth"),
+            ("actual_depth", "actual_depth"),
+            ("stop_reason", "stop_reason"),
+            ("newly_accepted_count", "newly_accepted_count"),
+            ("keyword_id", "keyword_id"),
+        ):
+            if col in cols and key in stats:
+                extras.append(f"{col}=?")
+                vals.append(stats.get(key))
+        if "newly_accepted_count" in cols and "newly_accepted_count" not in stats:
+            extras.append("newly_accepted_count=?")
+            vals.append(int(stats.get("accepted_count") or 0))
+        if extras:
+            vals.append(run_id)
+            conn.execute(
+                f"UPDATE collection_runs SET {', '.join(extras)} WHERE run_id=?",
+                vals,
+            )
         conn.commit()
 
 
@@ -526,6 +557,7 @@ def insert_market_observation(obs: dict) -> tuple[bool, str]:
     """
     Insert observation. Same external item on different observed_at = new row (history).
     Same source+dedupe_key+observed_at = duplicate.
+    Entry 080-B: optional foundation fields; never coerce NULL want/view → 0.
     """
     ensure_market_source_schema()
     observation_id = obs.get("observation_id") or f"mobs_{uuid.uuid4().hex[:12]}"
@@ -537,6 +569,63 @@ def insert_market_observation(obs: dict) -> tuple[bool, str]:
         title=obs.get("title"),
         price=obs.get("price"),
     )
+
+    # 080-B foundation linkage (optional)
+    collection_query = obs.get("collection_query")
+    keyword_id = obs.get("keyword_id")
+    want_count_status = obs.get("want_count_status")
+    image_url = obs.get("image_url")
+    result_position = obs.get("result_position")
+    product_identity_id = obs.get("product_identity_id")
+    evidence_level = obs.get("evidence_level")
+
+    try:
+        import data_foundation_080b as df080b  # noqa: WPS433
+
+        if evidence_level is None:
+            evidence_level = df080b.map_evidence_level(obs.get("data_origin"))
+        if not product_identity_id and obs.get("source_item_id"):
+            product_identity_id = df080b.ensure_product_identity(
+                source=obs["source"],
+                platform=obs["platform"],
+                source_item_id=str(obs["source_item_id"]),
+                canonical_url=obs.get("source_url"),
+                seen_at=observed_at,
+            )
+        if keyword_id is None and collection_query:
+            kw = df080b.upsert_keyword_foundation(
+                str(collection_query),
+                platform=obs.get("platform") or "xianyu",
+                keyword_source=df080b.KEYWORD_SOURCE_COLLECTION_QUERY,
+                discovery_class=df080b.DISCOVERY_SEED,
+                evidence_status=(
+                    df080b.EVIDENCE_STATUS_EVIDENCE_BACKED
+                    if (obs.get("data_origin") or "").upper() == ORIGIN_REAL
+                    else df080b.EVIDENCE_STATUS_UNKNOWN
+                ),
+            )
+            keyword_id = kw["id"]
+        elif keyword_id is None and obs.get("run_id"):
+            with database.get_connection() as _c:
+                run = _c.execute(
+                    "SELECT collection_query, keyword_id FROM collection_runs WHERE run_id=?",
+                    (obs.get("run_id"),),
+                ).fetchone()
+                if run:
+                    if run["keyword_id"] is not None:
+                        keyword_id = run["keyword_id"]
+                    if not collection_query and run["collection_query"]:
+                        collection_query = run["collection_query"]
+                        if keyword_id is None and collection_query:
+                            kw = df080b.upsert_keyword_foundation(
+                                str(collection_query),
+                                platform=obs.get("platform") or "xianyu",
+                                keyword_source=df080b.KEYWORD_SOURCE_COLLECTION_QUERY,
+                            )
+                            keyword_id = kw["id"]
+    except Exception:
+        pass
+
     with database.get_connection() as conn:
         existing = conn.execute(
             """
@@ -567,54 +656,85 @@ def insert_market_observation(obs: dict) -> tuple[bool, str]:
             if path_o in (ORIGIN_SAMPLE, ORIGIN_FIXTURE) or url_o == ORIGIN_SAMPLE:
                 return False, "rejected_sample_as_real"
 
+        # Explicit None preserved — never use `or 0` for want/view
+        view_count = obs.get("view_count")
+        want_count = obs.get("want_count")
+
         try:
+            cols = [
+                "observation_id", "run_id", "source_id", "source", "platform", "source_type",
+                "source_item_id", "source_url", "title", "category", "price", "currency",
+                "view_count", "want_count", "comment_count", "share_count",
+                "seller_reference", "published_at", "observed_at", "raw_reference",
+                "data_origin", "verification_status", "collector_version",
+                "normalizer_version", "content_hash", "dedupe_key",
+                "product_category", "opportunity_product_type", "notes", "created_at",
+            ]
+            vals: list = [
+                observation_id,
+                obs.get("run_id"),
+                obs["source_id"],
+                obs["source"],
+                obs["platform"],
+                obs.get("source_type") or "marketplace",
+                obs.get("source_item_id"),
+                obs.get("source_url"),
+                obs.get("title"),
+                obs.get("category"),
+                obs.get("price"),
+                obs.get("currency") or "CNY",
+                view_count,
+                want_count,
+                obs.get("comment_count"),
+                obs.get("share_count"),
+                obs.get("seller_reference"),
+                obs.get("published_at"),
+                observed_at,
+                obs.get("raw_reference"),
+                origin,
+                obs.get("verification_status") or "UNVERIFIED",
+                obs.get("collector_version") or COLLECTOR_VERSION,
+                obs.get("normalizer_version") or NORMALIZER_VERSION,
+                obs.get("content_hash"),
+                dedupe_key,
+                obs.get("product_category"),
+                obs.get("opportunity_product_type"),
+                obs.get("notes"),
+                _now_str(),
+            ]
+            # 080-B additive columns when present
+            existing_cols = {r[1] for r in conn.execute("PRAGMA table_info(market_observations)")}
+            for col, val in (
+                ("collection_query", collection_query),
+                ("keyword_id", keyword_id),
+                ("want_count_status", want_count_status),
+                ("image_url", image_url),
+                ("result_position", result_position),
+                ("product_identity_id", product_identity_id),
+                ("evidence_level", evidence_level),
+            ):
+                if col in existing_cols:
+                    cols.append(col)
+                    vals.append(val)
+
+            placeholders = ",".join("?" * len(cols))
             conn.execute(
-                """
-                INSERT INTO market_observations (
-                    observation_id, run_id, source_id, source, platform, source_type,
-                    source_item_id, source_url, title, category, price, currency,
-                    view_count, want_count, comment_count, share_count,
-                    seller_reference, published_at, observed_at, raw_reference,
-                    data_origin, verification_status, collector_version,
-                    normalizer_version, content_hash, dedupe_key,
-                    product_category, opportunity_product_type, notes, created_at
-                ) VALUES (
-                    ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
-                )
-                """,
-                (
-                    observation_id,
-                    obs.get("run_id"),
-                    obs["source_id"],
-                    obs["source"],
-                    obs["platform"],
-                    obs.get("source_type") or "marketplace",
-                    obs.get("source_item_id"),
-                    obs.get("source_url"),
-                    obs.get("title"),
-                    obs.get("category"),
-                    obs.get("price"),
-                    obs.get("currency") or "CNY",
-                    obs.get("view_count"),
-                    obs.get("want_count"),
-                    obs.get("comment_count"),
-                    obs.get("share_count"),
-                    obs.get("seller_reference"),
-                    obs.get("published_at"),
-                    observed_at,
-                    obs.get("raw_reference"),
-                    origin,
-                    obs.get("verification_status") or "UNVERIFIED",
-                    obs.get("collector_version") or COLLECTOR_VERSION,
-                    obs.get("normalizer_version") or NORMALIZER_VERSION,
-                    obs.get("content_hash"),
-                    dedupe_key,
-                    obs.get("product_category"),
-                    obs.get("opportunity_product_type"),
-                    obs.get("notes"),
-                    _now_str(),
-                ),
+                f"INSERT INTO market_observations ({','.join(cols)}) VALUES ({placeholders})",
+                vals,
             )
+            if product_identity_id and "market_product_identities" in {
+                r[0]
+                for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            }:
+                conn.execute(
+                    """
+                    UPDATE market_product_identities SET observation_count=(
+                        SELECT COUNT(*) FROM market_observations
+                        WHERE product_identity_id=?
+                    ), updated_at=? WHERE product_identity_id=?
+                    """,
+                    (product_identity_id, _now_str(), product_identity_id),
+                )
             conn.commit()
         except sqlite3.IntegrityError:
             return False, "duplicate"
