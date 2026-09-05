@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-05（Entry **078** Reality Audit；闭环缺口确认；077 NOT_PUBLISHED）  
+> Last updated: 2026-09-05（Entry **079-A** Continuity Hardening；**P0 COMPLETED** / **P1 NOT STARTED**；**NOT_PUBLISHED**）  
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -32,6 +32,167 @@
 - 相关治理文件（如 UNIFIED_ARCHITECTURE / BUSINESS_STRATEGY / 必要时 Evolution Context）
 
 **禁止：** 只改 Reality（代码等）或只改历史解释，不同步 Current State + Module Registry。
+
+---
+
+## Active Project — Xianyu Commercial Closed-Loop Project
+
+> **闲鱼真实商业闭环项目** — AI_FACTORY_OS 当前商业验证阶段中、受 Scope Control 管理的小型商业闭环项目。  
+> **先把闲鱼跑通 ≠ AI_FACTORY_OS 永久等于闲鱼。**（DEC-033 / Pilot ≠ 永久边界）
+
+### Why this project exists
+
+在不陷入无限治理/架构建设的前提下，以最低合理成本验证：真实闲鱼市场输入能否形成可重复的「生产 → 人工发布 → 真实反馈 → 学习 → 下一轮」闭环，并最终获得真实商业结果证据。
+
+### Final Objective（完整目标）
+
+```text
+真实闲鱼市场
+→ 真实数据采集
+→ 数据沉淀
+→ 数据清洗/标准化
+→ 关键词探索
+→ 采集深度自适应
+→ 闲鱼市场智能
+→ 精准选品
+→ 市场约束定价
+→ AI辅助产品生产
+→ 可销售质量门
+→ 中文发布包
+→ 人工闲鱼发布
+→ 曝光/浏览/想要/咨询
+→ 订单/支付/收入/成本
+→ 真实反馈回写数据库
+→ 商业分析
+→ 规则学习
+→ 关键词学习
+→ 采集策略学习
+→ 选品规则学习
+→ 生产策略学习
+→ 下一轮采集
+→ 下一轮闭环
+```
+
+### Definition of “闲鱼真正跑通”
+
+只有同时满足：
+
+```text
+真实市场 → 真实发布 → 真实反馈 → 真实交易/收入 → 数据回写 → 商业学习 → 下一轮决策
+```
+
+形成**可重复闭环**，才叫跑通。
+
+**不等于：** Entry 077 Product Asset PASS / Quality PASS / 文档完成 / Execution Success。
+
+### Evidence Ladder（证据阶梯）
+
+| Level | Meaning |
+|-------|---------|
+| L0 | Test Data |
+| L1 | Real Collection |
+| L2 | Real Market Statistics |
+| L3 | Real User Behavior |
+| L4 | Real Orders |
+| L5 | Real Payment / Revenue |
+
+AI 不得把低等级证据升级为高等级事实：
+
+```text
+KEYWORD_HYPOTHESIS ≠ HOT_KEYWORD_FACT
+PRICE_HYPOTHESIS ≠ MARKET_PRICE
+PRODUCT_HYPOTHESIS ≠ MARKET_VALIDATED_PRODUCT
+```
+
+### AI / Cost Principles（阶段原则）
+
+| 阶段 | AI | 付费倾向 |
+|------|-----|----------|
+| Collection / Cleaning / Adaptive Depth / Feedback writeback | No / ¥0 优先 | 禁止为每条采集烧 AI |
+| Keyword Discovery | Optional / Low | 假设须真实数据验证 |
+| Market Intelligence / Selection / Pricing | Rules first；AI assist | 不得脱离市场硬造事实 |
+| Product Production | **AI 主价值点** | 计入单位经济性 |
+| Quality | Assist | — |
+| Publish | **Human** | — |
+| Commercial Learning | Rules + optional AI | 仅真实商业事件 |
+
+> 不要在每一条采集数据上花 AI 钱。把 AI 成本集中到真正创造产品价值的位置。
+
+### Rule / AI / Human Boundary
+
+- **Rules/Stats：** 采集、分页、去重、过滤、分布、阈值候选  
+- **AI assist：** 语义关键词、创意生产、异常解释、复杂判断辅助  
+- **Human：** 最终闲鱼发布、重大异常、商业授权  
+- **AI 不得：** 伪造市场事实、把 hypothesis 写成 validated、绕过 Human Publish Gate
+
+### P0–P14 Roadmap（规划；≠ 已实现）
+
+| Phase | Name | Status |
+|-------|------|--------|
+| **P0** | Reality 全面审计 | **COMPLETED**（Entry **078** = `PASS_WITH_FINDINGS`） |
+| **P1** | Reality Purification（KEEP/ARCHIVE/INVALIDATE/DELETE 规划与执行授权） | **NOT STARTED** |
+| **P2** | Xianyu Data Foundation（含 want+view；深度≠简单改 50） | NOT STARTED |
+| **P3** | Keyword Discovery（Seed→…；AI Query Planner 现 NOT IMPLEMENTED） | NOT STARTED |
+| **P4** | Adaptive Collection Depth（信息增益/重复率驱动） | NOT STARTED |
+| **P5** | Xianyu Market Intelligence（分位/分布；view 缺口未解前勿误读 engagement） | NOT STARTED |
+| **P6** | Rule-Based Selection（可解释；非仅 AI score） | NOT STARTED |
+| **P7** | Market-Constrained Pricing（市场分布约束；9.9/19.9≠WTP） | NOT STARTED |
+| **P8** | AI Product Production（SELLABLE_QUALITY_FLOOR；成本入账） | PARTIAL（077 一次确定性生产；增强未做） |
+| **P9** | Sellable Quality Gate（可销售≠已售出） | PARTIAL（a949 floor PASS） |
+| **P10** | Chinese Publish Package（用户友好文件夹） | PARTIAL（a949 pack incomplete） |
+| **P11** | Human Xianyu Publish | NOT STARTED |
+| **P12** | Real Feedback / Revenue | NOT STARTED（events=0；evidence=0） |
+| **P13** | Commercial Learning | NOT STARTED |
+| **P14** | Rule Update → 回 P3 | NOT STARTED |
+
+Route 循环：`… → P14 → P3 → …`
+
+### Current Reality Snapshot（截至 Entry 078）
+
+```text
+Extension → Bridge TEST sink → Human verified import
+→ 20 real observations → Filter → 7 MATCH → 6 Signals
+→ 1 Opportunity → Product Definition → Product Asset a949d2e47cf1
+→ Human Publish Pack → NOT_PUBLISHED
+```
+
+### Completed（项目视角）
+
+- P0 Reality Audit（Entry 078）  
+- 观察→假设资产前半链已验证  
+- Product Definition `prod_a0638789fc2b`（draft）  
+- Product Asset `a949d2e47cf1` + Quality PASS  
+- 069B→077 paid AI ≈ ¥0  
+
+### Pending（项目视角）
+
+P1–P7 主体；P8–P10 增强；**P11–P14 全部**；真实发布与反馈。
+
+### Open Findings（输入后续 Phase；079-A 不修复）
+
+1. `view_count` 未真实采集  
+2. AI Query Planner 未实现  
+3. maxRecords≤50 / maxPages≤5 = implementation limit ≠ business threshold  
+4. min_want_count=50 = implementation default ≠ validated threshold  
+5. selection scorer = heuristic  
+6. scorer threshold 历史不一致（待未来审计）  
+7. pricing = heuristic/default/hypothesis ≠ WTP  
+8. a949 Publish Pack partial  
+9. a949 未入 publish_queue  
+10. 真实发布未发生  
+11. market_events = 0  
+12. publish_evidence = 0  
+13. Commercial Learning 未启动  
+14. PM/Gantt 商品仍为 hypothesis  
+
+### Current Phase / Next / Stop
+
+| Field | Value |
+|-------|-------|
+| **Current Phase** | **P0 COMPLETED** |
+| **Next Phase** | **P1 NOT STARTED** |
+| **Continuity Entry** | **079-A**（docs-only hardening） |
+| **Stop** | **不要自动进入 P1**；等待 ChatGPT 对连续性固化后的 GitHub Reality 做 Closure Review |
 
 ---
 
@@ -380,6 +541,7 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 
 ## In Progress
 
+- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 NOT STARTED**  
 - Acquisition Engine — **PARTIAL**（Extension IMPLEMENTED；Bridge 默认 TEST sink；DB 需 human import gate）  
 - **Candidate → Signal** — **IMPLEMENTED**（073）  
 - **Signal → Opportunity（Observation lineage）** — **IMPLEMENTED**（075）  
@@ -387,17 +549,17 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 - **Product Definition → Product Asset（Entry 077）** — **PRODUCED**；**NOT_PUBLISHED**  
 - **Feedback → Learning closed loop** — **NOT_STARTED**（publish_evidence=0；market_events=0）  
 - Model Router / AI Query Planner — **NOT_IMPLEMENTED**  
-- **WAITING** Human External Publish + real inquiry/order/成交 evidence — **不得自动发布**  
-- **Development posture：** 078 Reality 已确认；结构性重建 **STOP** 直至 ChatGPT 授权下一 Entry  
-- Product Definition `prod_a0638789fc2b` = **draft**；Product Asset `a949d2e47cf1` = **generated** ≠ Listing / Published / Market Validated  
-- **Known Reality gaps（078）：** view_count 未采集；a949 Publish Pack PARTIAL；scorer/pricing = HEURISTIC；orphan artifact shells INVALIDATE
+- **WAITING** ChatGPT Closure Review after Entry **079-A** Continuity Hardening — **不得自动进入 P1**  
+- Product Definition `prod_a0638789fc2b` = **draft**；Product Asset `a949d2e47cf1` = **generated** ≠ Listing / Published / Market Validated / Revenue  
+- **Known Reality gaps（078）：** 见上方 Active Project Open Findings  
 
 ---
 
 ## Blocked
 
+- **自动进入 P1 / P2…** — **禁止**（须另开授权 Entry）  
 - 闲鱼 **自动**发布 / 聊天 / 收款 — **禁止**（Human Final External Publish Gate）  
-- 在未授权下修改采集阈值 / 评分公式 / DB schema — **禁止**（078 STOP）  
+- 在未授权下修改采集阈值 / 评分公式 / DB schema — **禁止**  
 - PUBLIC_WEB_READ headless — **BLOCKED_BY_ACCESS_CONTROL**（060）  
 - LIVE_API — **NOT_AVAILABLE_CURRENTLY**  
 - AI Query Planner / Learning→Acquisition / Model Router — **PROPOSED**  

@@ -2,10 +2,40 @@
 
 > **SINGLE ENTRY POINT for future AI sessions（未来 AI 会话唯一入口）**  
 > Collaboration Control System v1（协作控制系统 v1）  
-> Last updated: 2026-09-05（Entry **077** PRODUCED；**NOT_PUBLISHED**）
+> Last updated: 2026-09-05（Entry **078** / **P0 COMPLETED** / **P1 NOT STARTED** / **NOT_PUBLISHED**）
 
 **Read this file first.（任何新会话必须先读本文件。）** Then follow **New Session Recovery Protocol**（及下方 Bootstrap）。  
 文档目录导航 SoT：[DOCUMENTATION_MAP](../AI_FACTORY_OS_DOCUMENTATION_MAP.md)。
+
+### Active Commercial Project Continuity Pointer（活跃商业项目连续性指针）
+
+```text
+Active Project:
+  Xianyu Commercial Closed-Loop Project
+  闲鱼真实商业闭环项目
+
+Route:
+  P0 → P1 → P2 → P3 → P4 → P5 → P6 → P7 → P8 → P9 → P10 → P11 → P12 → P13 → P14 → (回 P3)
+
+Current:
+  P0 COMPLETED  |  Entry 078 = PASS_WITH_FINDINGS
+  Entry 077 Product Asset a949d2e47cf1 = PRODUCED / NOT_PUBLISHED
+  Commercial closed loop = NOT RUN THROUGH（反馈/收入/学习未开始）
+
+Next:
+  P1 Reality Purification = NOT STARTED
+  （Entry 079-A = Continuity Hardening only — 不自动进入 P1）
+
+Important:
+  Do not infer the project solely from Entry numbers.
+  Read Current State「Active Project — Xianyu Commercial Closed-Loop Project」
+  + Business Strategy「Xianyu Commercial Closed-Loop Project」
+  + Execution History（078 / 079-A）.
+  先把闲鱼跑通 ≠ AI_FACTORY_OS 永久等于闲鱼。
+  Product Asset PASS ≠ Commercial Success ≠ Revenue Proven.
+```
+
+权威细节 SoT：**Current State**（事实）> 本指针（导航）。Audit：`docs/07_AUDIT/ENTRY_078_XIANYU_COMMERCIAL_CLOSED_LOOP_REALITY_AUDIT.md`。
 
 ### Navigation Authority ≠ Reality Authority（导航权威 ≠ Reality 权威）
 
@@ -265,19 +295,19 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 
 **Commercial Validation Preparation（商业验证准备）** — 长期战略取向标签；**不等于**「下一动作已授权」或「Runtime/商业已验证成功」。
 
-### Operational snapshot（2026-09-04 · 须与 Current State / Reality 核验）
+### Operational snapshot（2026-09-05 · 须与 Current State / Reality 核验）
 
 | 项 | 投影（须核验） |
 |----|----------------|
-| Latest completed product-path Entry | **077** = `PASS_WITH_FINDINGS`（production）；076 Definition retained |
-| Product Definition | `prod_a0638789fc2b`（`draft`）← Opportunity `aoc_19399677b7ba` |
-| Product Asset | **`a949d2e47cf1`** ← `preq_20260904_pmgantt` — **PRODUCED**；**NOT_PUBLISHED** |
-| Product Asset ≠ | Listing / Published / Market Validated / Revenue（仍为 HYPOTHESIS） |
-| Entry **077** | **PRODUCED**（awaiting Human External Publish） |
-| Development posture | 生产完成；闲鱼外部发布 **人工门禁**；不得自动发布 |
-| GitHub | `main` 已建立为版本化 / 协作连续载体；GitHub ≠ Reality Authority |
-| Pilot Observation | 仍 **NOT_STARTED**（发布后才进入） |
-| Commercial JSON full migration / Pilot sync | 历史 open item（RA-002 等）— **不得**因本文件旧文自动当作当前唯一焦点 |
+| Active Project | **Xianyu Commercial Closed-Loop Project** |
+| Project phase | **P0 COMPLETED** / **P1 NOT STARTED** |
+| Latest Reality Audit | Entry **078** = `PASS_WITH_FINDINGS` |
+| Latest Product Asset | Entry **077** `a949d2e47cf1` — **PRODUCED**；**NOT_PUBLISHED** |
+| Product Definition | `prod_a0638789fc2b`（`draft`）← `aoc_19399677b7ba` |
+| Closed loop status | **NOT RUN THROUGH**（无真实发布反馈 / 收入 / 商业学习） |
+| Continuity hardening | Entry **079-A**（docs-only；≠ P1） |
+| Development posture | **STOP 自动进入 P1** — 等待 ChatGPT Closure Review |
+| GitHub | `main` = 版本化载体；GitHub ≠ Reality Authority |
 
 ### Governance foundation history（已完成 · 非 Current Reality 清单）
 
@@ -288,25 +318,23 @@ Entry 040-A … 041-H 治理基础（DEC-013…018 等）— **Completed**（详
 
 ## Current Primary Goal
 
-1. **正确 Recovery：** 先规则与权威 → 再 Current State / Reality → 再按 Scope 读设计 / 商业 / 历史（DEC-017）。  
-2. **防止认知错误：** 不以 Control Center 旧投影、Audit alone、或 GitHub 文档状态覆盖 Reality。  
-3. **范围纪律：** Entry **077** Product Asset 已生产；**禁止**自动闲鱼发布 / 伪造成交；下一动作 = Human External Publish。  
-4. **连续性：** 有意义推进写入 `docs/0–6`（DEC-019）；长期协作规则不得只留在 Conversation Memory。
+1. **正确 Recovery：** Control Center 指针 → Current State Active Project → Reality → Business Strategy 项目节。  
+2. **项目连续性：** 知道 Xianyu Closed-Loop 的 P0–P14、当前 P0 完成、P1 未开始、为何不能宣称闭环成功。  
+3. **范围纪律：** **禁止**自动进入 P1；**禁止**自动闲鱼发布；**禁止**把 hypothesis 升格为 fact。  
+4. **连续性写入：** 有意义推进写入 `docs/0–6`（DEC-019）。
 
-**重大判断必须回溯 Core Governance（DEC-012）与 `docs/0–6`，** 不得只靠聊天改方向。  
-**Cursor PASS ≠ ChatGPT Closure Review。** 已生产 ≠ 已发布 ≠ 已盈利。
+**Cursor PASS ≠ ChatGPT Closure Review。** 已生产 ≠ 已发布 ≠ 已盈利 ≠ 闭环跑通。
 
 ---
 
 ## Current Development Focus
 
-1. **Human Final External Publish** — 使用 `a949d2e47cf1` + HUMAN_PUBLISH_PACK 人工上架闲鱼  
-2. 等待真实询盘 / 订单 / 成交证据回流（不得伪造）  
+1. **Entry 079-A Continuity Hardening** — docs/0-6 固化 P0–P14（本焦点完成后 STOP）  
+2. **下一步（未授权勿执行）：** P1 Reality Purification — 待 ChatGPT Closure Review 后另开  
 3. Trust **CURRENT_STATE + MODULE_REGISTRY + Reality**；HYPOTHESIS ≠ DIRECT_EVIDENCE  
-4. Entry **077** = **PRODUCED / NOT_PUBLISHED**  
-5. Do **not** expand into Core OS ↔ CF Runtime merge unless explicitly tasked  
-6. DEC-033：商业结果优先；AI 成本已记 0；价格假设 ¥9.9 非事实  
-7. GitHub = 版本化 / 跨工具运输 / 可追溯恢复；**≠ Reality Authority**
+4. Entry **078** = Reality Audit 完成；Entry **077** = Asset PRODUCED / NOT_PUBLISHED  
+5. DEC-033：商业结果优先；AI 成本集中在生产价值点；采集路径优先 ¥0 AI  
+6. GitHub = 版本化 / 可追溯；**≠ Reality Authority**
 
 ---
 
@@ -466,14 +494,18 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | **`NONE`**（Entry 077 生产执行已完成本地闭环；等待 ChatGPT Closure Review + Human Publish） |
-| **STATUS** | 无正在进行的 Cursor 多步骤执行；下一外部动作属人工门禁 |
-| **NOTE** | Product Asset `a949d2e47cf1` PRODUCED；**NOT_PUBLISHED**；不得自动闲鱼发布 |
-| **LAST COMMERCIAL EXECUTION（证据指针）** | Entry **077** — `preq_20260904_pmgantt` → `a949d2e47cf1` |
-| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md`；`commercial_assets/e2e_outputs/a949d2e47cf1/HUMAN_PUBLISH_PACK.md` |
+| **ACTIVE_TASK** | **`NONE`**（Entry 079-A Continuity Hardening 完成后清空；等待 ChatGPT Closure Review） |
+| **STATUS** | 无正在进行的 Cursor 多步骤 Runtime 执行；**不得自动进入 P1** |
+| **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project** |
+| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 NOT STARTED** |
+| **NOTE** | Product Asset `a949d2e47cf1` PRODUCED；**NOT_PUBLISHED**；闭环未跑通 |
+| **LAST REALITY AUDIT** | Entry **078** — `PASS_WITH_FINDINGS` |
+| **LAST CONTINUITY** | Entry **079-A** — Continuity Hardening（docs-only） |
+| **EVIDENCE POINTERS** | `docs/07_AUDIT/ENTRY_078_…REALITY_AUDIT.md`；Current State Active Project 节；Business Strategy 项目节 |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **PRODUCED** / **NOT_PUBLISHED** |
-| **PROJECT_DEVELOPMENT** | **AWAITING_HUMAN_PUBLISH** |
+| **ENTRY_078** | **COMPLETED（Audit）** |
+| **PROJECT_DEVELOPMENT** | **P0 DONE · AWAITING_CLOSURE_THEN_P1_OR_HUMAN_PUBLISH** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 

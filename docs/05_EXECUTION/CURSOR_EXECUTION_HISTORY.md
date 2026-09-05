@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **078** Closed-Loop Reality Audit；READ-ONLY）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-A** Continuity Hardening；**P0 COMPLETED** / **P1 NOT STARTED**）
 
 ---
 
@@ -2784,6 +2784,44 @@
 **Core Documentation Continuity Check：**
 - Modified：Current State；Module Registry（Extension Reality 注记）；Execution History；Formal Audit 078
 - Reviewed but Not Modified：Control Center；Constitution；Authority；Business Strategy；UA；Decision Log；KUP；EP；commercial_assets；Python/JS/DB
+
+---
+
+### Entry 079-A — Xianyu Commercial Closed-Loop Project Continuity Hardening（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **079-A** |
+| **Objective** | 将闲鱼真实商业闭环项目主规划固化进 docs/0-6，保证未来会话可恢复连续性 |
+| **Original Objective** | 建立一个真正能够在闲鱼跑通的商业闭环：真实市场采集 → 沉淀 → 选品 → 生产 → 人工发布 → 真实反馈回写 → 商业学习 → 下一轮采集。 |
+| **Current Objective** | 将 Xianyu Commercial Closed-Loop Project P0-P14 主规划和当前状态固化进 docs/0-6，使未来 AI 可独立恢复项目连续性。 |
+| **Current Phase** | **P0 COMPLETED** |
+| **Current Step** | Continuity Hardening / **P1 NOT STARTED** |
+| **Scope** | Control Center；Current State；Business Strategy；Execution History；Git commit/push/verify |
+| **Out of Scope** | Python/Extension/DB/评分定价采集发布；付费 AI；外部闲鱼动作；P1 实施；新建核心治理文件；重写 078 结论 |
+| **Cursor Instruction Summary** | Entry 079-A Continuity Hardening — docs-only；固化项目名/目标/P0-P14/证据阶梯/AI 成本/当前 Reality/停止条件 |
+| **Modified Files** | `docs/00_GOVERNANCE/AI_FACTORY_OS_CONTROL_CENTER.md`；`docs/01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md`；`docs/03_BUSINESS/AI_FACTORY_OS_BUSINESS_STRATEGY.md`；`docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md` |
+| **Created Files** | None（无新核心文件） |
+| **Completed** | Active Project Continuity Pointer；P0-P14；Evidence Ladder；AI/Cost；Current Reality；四入口一致；自检 |
+| **Findings** | 工作区仍有未跟踪 orphan artifact dirs 与 Entry 077 audit 本地脏文件 — **未纳入本 commit** |
+| **Pending** | ChatGPT Closure Review；P1 另开授权；Human Publish 另开授权 |
+| **Next Step** | **STOP — 不进入 P1**；等待 ChatGPT 对 GitHub Reality 做 Closure Review |
+| **Stop Conditions** | Runtime/DB/Asset 修改；自动进 P1；宣称商业成功 → STOP |
+| **Final Completion Criteria** | docs 可回答项目是什么/目标/P0-P14/当前位置/缺口/下一步/跑通定义；Git remote PASS |
+| **Architecture Impact** | Documentation Only |
+| **Validation Result** | Continuity self-check PASS（内容完整；状态一致；无错误「闭环成功」表述） |
+| **Audit** | N/A（本 Entry 无新建 Formal Audit；依据 Entry 078 Audit + 本 History） |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Final Status** | （closeout） |
+| **Evidence** | Control Center Active Commercial Project Continuity Pointer；Current State Active Project 节；Business Strategy §6.3 |
+| **Project Position** | **P0 COMPLETED / P1 NOT STARTED / NOT_PUBLISHED** |
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Business Strategy；Execution History
+- Reviewed but Not Modified：Authority；Constitution；UA；Module Registry；Decision Log；KUP；EP；Runtime/DB/Assets
 
 ---
 

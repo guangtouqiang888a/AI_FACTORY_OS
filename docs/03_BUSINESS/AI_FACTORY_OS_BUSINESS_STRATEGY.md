@@ -3,7 +3,7 @@
 > **Business Strategy（商业战略）** — 当前有效商业战略唯一入口  
 > Document role：Business Strategy only（DEC-016）— **不是** Core Governance Set 定义文件  
 > 历史结构版本提示：Core Governance Set v1（8+1，DEC-009）= **历史检查清单**；当前核心连续性域 = `docs/0–6`  
-> Last updated: 2026-09-04（**DEC-033** 商业最高原则硬化；**商业方向未改** · 仍为商业验证准备 + 半自动 + 数字商品优先；不启动 Entry 077）  
+> Last updated: 2026-09-05（Entry **079-A** — **Xianyu Commercial Closed-Loop Project** 连续性指针；P0 COMPLETED / P1 NOT STARTED；商业方向未改）  
 > **Update frequency: MEDIUM（中等）** — 商业方向变化时必须经 Knowledge Update Protocol（知识更新协议）更新
 
 **定位：** 本文定义「如何创造与验证商业价值」— **商业方向唯一文档归属**（DEC-016）。  
@@ -14,6 +14,8 @@
 **Entry 040-D2-B 修改原因：** 按商业知识归位分析，补充「第一收入来源 / 盈利阶段 / 禁止误判 / 长期价值闭环」摘要；**不改变**既有商业方向（仍为商业验证准备 + 半自动 + 数字商品优先）。
 
 **DEC-033 修改原因：** 固化「赚钱是最高商业目的」、最低成本/AI 成本约束、用户职责边界、Product 与商业化上下文解耦、闲鱼 Pilot ≠ 永久边界；**不改变**当前执行 Scope；**不等于**已经赚钱或已实现多平台。
+
+**Entry 079-A 修改原因：** 增加 **Xianyu Commercial Closed-Loop Project** 项目级商业执行指针与 P0–P14 路线锚定；**不改变**长期商业方向；**不等于** P1–P14 已实现或商业闭环已跑通。
 
 ---
 
@@ -180,18 +182,82 @@ Product ≠ Market ≠ Channel/Platform ≠ Commercial Model
 
 ---
 
+## 6.3 Xianyu Commercial Closed-Loop Project（闲鱼真实商业闭环项目）
+
+> **项目级商业执行指针**（Entry 079-A）。事实进度以 [CURRENT_STATE](../01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md) Active Project 节为准。  
+> 本节是**规划与原则锚定**，**不是**实现声明。
+
+### 定位
+
+| | 内容 |
+|--|------|
+| **正式名称** | Xianyu Commercial Closed-Loop Project / 闲鱼真实商业闭环项目 |
+| **性质** | AI_FACTORY_OS 当前商业验证阶段中、受 Scope Control 管理的**小型商业闭环项目** |
+| **当前执行 Scope** | **先把闲鱼跑通** |
+| **≠ 永久边界** | 先跑闲鱼 ≠ AI_FACTORY_OS 永久只做闲鱼；当前产品仍为**虚拟资料类**；闲鱼 = **Pilot Channel** |
+| **商业原则** | 商业结果优先（DEC-033）；真实数据优先；hypothesis ≠ fact；AI 成本集中在高价值生产 |
+
+### 最终完成定义（商业）
+
+```text
+真实市场 → 真实发布 → 真实反馈 → 真实交易/收入 → 数据回写 → 商业学习 → 下一轮决策
+```
+
+形成可重复闭环后，才称「闲鱼真正跑通」。  
+Entry 077 Quality/Asset PASS **≠** 商业闭环成功。Entry 078 已确认闭环**尚未跑通**。
+
+### 执行路线 P0–P14（规划状态）
+
+| P | 名称 | 规划状态 |
+|---|------|----------|
+| P0 | Reality 全面审计 | **COMPLETED**（Entry 078） |
+| P1 | Reality Purification | **NOT STARTED** |
+| P2 | Xianyu Data Foundation | NOT STARTED |
+| P3 | Keyword Discovery | NOT STARTED |
+| P4 | Adaptive Collection Depth | NOT STARTED |
+| P5 | Xianyu Market Intelligence | NOT STARTED |
+| P6 | Rule-Based Selection | NOT STARTED |
+| P7 | Market-Constrained Pricing | NOT STARTED |
+| P8 | AI Product Production | PARTIAL（一次资产；增强未做） |
+| P9 | Sellable Quality Gate | PARTIAL |
+| P10 | Chinese Publish Package | PARTIAL |
+| P11 | Human Xianyu Publish | NOT STARTED |
+| P12 | Real Feedback / Revenue | NOT STARTED |
+| P13 | Commercial Learning | NOT STARTED |
+| P14 | Rule Update → 回 P3 | NOT STARTED |
+
+### Evidence Ladder（商业判断）
+
+L0 Test → L1 Real Collection → L2 Statistics → L3 Behavior → L4 Orders → L5 Payment/Revenue。  
+禁止 AI 将低阶证据升格为高阶事实（含 KEYWORD/PRICE/PRODUCT hypothesis）。
+
+### AI 成本商业约束
+
+- 采集/清洗/深度/回写：**优先 ¥0 AI**  
+- 选品/定价：**市场与规则优先**；AI 辅助解释  
+- **生产：** AI 主价值投入点，且计入单位经济性  
+- 发布：**Human**  
+
+### 当前项目位置（商业）
+
+**P0 COMPLETED · P1 NOT STARTED · NOT_PUBLISHED · 闭环未跑通。**  
+下一步须经 ChatGPT Closure Review 后另开授权（P1 或 Human Publish），**不得**因本指针自动实施 Runtime。
+
+---
+
 ## 7. 当前商业方向（Current Business Direction）
 
 | 项 | 内容 |
 |----|------|
-| **阶段** | Commercial Validation Preparation（商业验证准备）— **尚未**升格为 Ready for Observation（因人工未最终选定渠道/价格且未发布） |
-| **主线** | Pilot 发布准备已完成 → **READY FOR HUMAN DECISION** → 人工决策后才可授权上架与观察 |
+| **阶段** | Commercial Validation Preparation + **Xianyu Commercial Closed-Loop Project**（P0 done；闭环未跑通） |
+| **主线** | P0 Reality 已完成 → **等待 Closure Review** → 另开 P1 或 Human Publish（不得自动） |
 | **产能现实** | Content Factory = Isolated Active（隔离可用）；Core OS 与 CF **未** Runtime 连接 |
-| **Pilot** | `preq_20260712_005` / `8523329941d4`；实验假设与 Minimum Publish Package **PREPARED**；Feedback/Evaluation **pending**；**观察未开始** |
-| **分发** | Distribution：**NOT YET SELECTED**（AI 建议 taobao；备选 xianyu；≠ 已发布） |
-| **价格** | 对账完成：12.9=HYPOTHESIS（建议首测）；19.9=CF CURRENT DEFAULT；9.9=对照带；**无 VALIDATED** |
+| **Active SKU（hypothesis）** | `a949d2e47cf1` / `prod_a0638789fc2b`；**NOT_PUBLISHED**；≠ Market Validated |
+| **Legacy Pilot** | `preq_20260712_005` / `8523329941d4` 仍为历史试点对象；**不得**与 077 混线 |
+| **分发** | 计划渠道 = 闲鱼（Pilot Scope）；**尚未真实发布** |
+| **价格** | a949 = ¥9.9 PRICE_HYPOTHESIS；CF 默认 19.9 等 = heuristic；**无 VALIDATED WTP / Paid Price** |
 | **迁移** | 商业状态迁移策略已就绪；**JSON 全量同步未执行**（RA-002） |
-| **不做什么（当前）** | 不自动写商业成功；不擅自 Runtime 融合；不伪造市场数据；不把「发布准备完成」写成「已上架/已验证」 |
+| **不做什么（当前）** | 不宣称闭环成功；不自动进 P1；不伪造反馈；不把 Asset PASS 写成已售出 |
 
 **下一商业动作（须人工决策 + 另开授权 Entry）：**  
 确认 Decision Pack（渠道/价格/封面/发布授权）→ 人工上架并保存证据 → Observation Start。
@@ -358,3 +424,5 @@ AI_FACTORY_OS 未来商业化可能包括：
 **Entry 041-D-A：** 补充长期商业化方向清单（战略可能性；非完成态）。  
 **Entry 041-B-B：** 新增 Capability-based Commercialization Strategy（§8.2）；DEC-014（方向 only；Runtime 不变）。  
 **2026-09-04 / DEC-033：** 商业结果优先、最低成本/AI 成本、用户职责、Commercialization Context 解耦、闲鱼 Pilot ≠ 永久边界（方向强化；当前 Scope / Runtime 不变；不启动 Entry 077）。
+
+**2026-09-05 / Entry 079-A：** 增加 §6.3 Xianyu Commercial Closed-Loop Project 项目级指针与 P0–P14 规划锚定；更新 §7 当前方向快照；**不实现 P1+**；**不宣称闭环成功**。
