@@ -366,9 +366,9 @@ VIEW_COUNT_STATUS = NOT_STABLELY_AVAILABLE
 
 | Field | Value |
 |-------|-------|
-| Git Commit | （closeout） |
-| GitHub Push | （closeout） |
-| Remote Verification | （closeout） |
+| Git Commit | `066d2a5f70e897797abc0e8f3db049d57571db2c` |
+| GitHub Push | **SUCCESS**（`47e24ec..066d2a5  main -> main`；无 force） |
+| Remote Verification | **PASS**（local HEAD == origin/main `066d2a5…`；Audit 在 origin） |
 
 ---
 
