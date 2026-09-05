@@ -2890,9 +2890,9 @@
 | **Architecture Impact** | Documentation + Asset cleanup（orphan shells only） |
 | **Validation Result** | PASS |
 | **Audit** | `docs/07_AUDIT/ENTRY_079C_XIANYU_P1C_CONTROLLED_CLEANUP.md` |
-| **Git Commit** | cleanup `1651c715916d0ab96a027a94e31f1f9f14acb5fa`；docs `87090a162a4135e7c75be9faf9dd0720d6a93194` |
-| **GitHub Push** | （push closeout） |
-| **Remote Verification** | （push closeout） |
+| **Git Commit** | cleanup `1651c715916d0ab96a027a94e31f1f9f14acb5fa`；docs `87090a162a4135e7c75be9faf9dd0720d6a93194`；tip `ff9bae5832286529b34b1ae90b721cbf3b3a6506` |
+| **GitHub Push** | **SUCCESS**（`3497fd2..ff9bae5  main -> main`；无 force） |
+| **Remote Verification** | **PASS_WITH_FINDINGS**（push accepted；local HEAD == origin/main `ff9bae5…`；follow-up ls-remote 443 timeout） |
 | **Evidence** | 079-B + 本 Audit |
 | **Final Status** | **P1-C DELETE_CANDIDATE cleanup DONE**（≠ P1 completed） |
 | **P1 Overall Status** | **PARTIAL** |
