@@ -165,7 +165,8 @@ Commercial Product
 - `1_DATA/_tests/xianyu_extension_065/` — test sink（batch, normalized_preview, validation_report）  
 - Tests：`test_xianyu_extension_065`（30 OK）  
 - Audit：`docs/07_AUDIT/XIANYU_EXTENSION_IMPLEMENTATION_ENTRY_065.md`  
-- **Status：** Extension + Bridge = **IMPLEMENTED / LIMITED**；Current DB auto-write = **NO**
+- **Status：** Extension + Bridge = **IMPLEMENTED / LIMITED**；Current DB auto-write = **NO**  
+- **Entry 078 Reality：** `want_count` 可采；`view_count` = **COLLECTION GAP**；maxRecords≤50 / maxPages≤5 = **IMPLEMENTATION_LIMIT ≠ BUSINESS_THRESHOLD**；AI Query Planner = **NOT IMPLEMENTED**；Bridge 默认 TEST sink
 
 ### Xianyu MarketObservation Import Gate（Entry 066）
 

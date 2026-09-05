@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **077** PRODUCED；**NOT_PUBLISHED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **078** Closed-Loop Reality Audit；READ-ONLY）
 
 ---
 
@@ -2737,9 +2737,9 @@
 | **Architecture Impact** | Module Layer（Track B CF adapter / Excel generator minimal） |
 | **Validation Result** | Adapter execute OK；Quality PASS；NOT_PUBLISHED |
 | **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md` |
-| **Git Commit** | `19d973dab506115020e83dcb40adb991304b681d` |
-| **GitHub Push** | （push closeout 填入） |
-| **Remote Verification** | （push closeout 填入） |
+| **Git Commit** | production `19d973dab506115020e83dcb40adb991304b681d`；stamp `8c2a72586a7912174184e79b5290070d9d9a302b` |
+| **GitHub Push** | **SUCCESS**（`5599c88..8c2a725  main -> main`；无 force） |
+| **Remote Verification** | **PASS**（local HEAD == origin/main == ls-remote `8c2a72586a7912174184e79b5290070d9d9a302b`） |
 | **Final Status** | `PASS_WITH_FINDINGS`；PRODUCED；NOT_PUBLISHED；HYPOTHESIS |
 | **Evidence** | Artifact SHA256 `07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566`；e2e_outputs；本 Audit；commit `19d973dab506115020e83dcb40adb991304b681d` |
 | **Entry 077** | **PRODUCED / NOT_PUBLISHED** |
@@ -2748,6 +2748,42 @@
 **Core Documentation Continuity Check：**
 - Modified：Current State；Control Center；Execution History；Formal Audit
 - Reviewed but Not Modified：Constitution；Authority Model；Business Strategy；UA；Module Registry；Decision Log；KUP；EP（原则未改）
+
+---
+
+### Entry 078 — Xianyu Commercial Closed-Loop Reality Audit（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **078** |
+| **Original Objective** | 建立真正可在闲鱼跑通的商业闭环并获得真实商业反馈 |
+| **Current Objective** | READ-ONLY Reality Audit：采集/关键词/DB/069B→077/选品/定价/发布/反馈/学习/AI 成本 |
+| **Current Phase** | Commercial Closed-Loop Reality Confirmation（P0） |
+| **Current Step** | Static analysis + DB read-only + Audit + docs sync + Git |
+| **Scope** | 阅读/查询/统计/只读 DB/盘点/provenance/Audit/必要 Current State·Module Registry·History |
+| **Out of Scope** | 改代码/JSON 业务数据/DB/删除/迁移/评分定价/生产发布/付费 AI/外部动作/Entry 079 |
+| **Mode** | **READ-ONLY**（调查阶段零 Runtime·DB·Asset 变更；仅 Audit + 必要 docs） |
+| **Completed** | Extension/Keyword/Limits/want/view/DB/provenance/selection/pricing/publish/feedback/learning/AI/purification 已核实；Audit 已写 |
+| **Findings** | 闭环在 Human Publish 后断开；view_count GAP；50/5 为 implementation limit；min_want=50 为 default；engagement=0.0 失真；a949 pack PARTIAL；无 Paid Price；orphan shells |
+| **Decisions** | 无新 DEC；不改阈值/公式；不 migration；不进入 079 |
+| **Pending** | ChatGPT 优先级：Human Publish vs 后续重建 Entry |
+| **Next Step** | STOP — 等待 ChatGPT；建议优先人工发布 a949 并记录真实反馈 |
+| **Stop Conditions** | 任何 Runtime/DB/Asset 修改；静默改阈值；自动发布 → STOP |
+| **Final Completion Criteria** | 25 问 Reality 有证据回答；Audit；History；必要 State；Git remote PASS |
+| **Audit** | `docs/07_AUDIT/ENTRY_078_XIANYU_COMMERCIAL_CLOSED_LOOP_REALITY_AUDIT.md` |
+| **Architecture Impact** | Documentation Only（认知 Reality 同步；无代码） |
+| **Validation Result** | READ-ONLY PASS_WITH_FINDINGS；paid AI=0 |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Final Status** | `PASS_WITH_FINDINGS` |
+| **Entry 078** | **COMPLETED（Audit）** |
+| **Project Development** | **AWAITING_HUMAN_PUBLISH**（结构性重建 STOP） |
+
+**Core Documentation Continuity Check：**
+- Modified：Current State；Module Registry（Extension Reality 注记）；Execution History；Formal Audit 078
+- Reviewed but Not Modified：Control Center；Constitution；Authority；Business Strategy；UA；Decision Log；KUP；EP；commercial_assets；Python/JS/DB
 
 ---
 

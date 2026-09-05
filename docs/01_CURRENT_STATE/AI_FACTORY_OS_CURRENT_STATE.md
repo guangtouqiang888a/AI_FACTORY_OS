@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-05（Entry **077** PRODUCED；**NOT_PUBLISHED**；HYPOTHESIS）  
+> Last updated: 2026-09-05（Entry **078** Reality Audit；闭环缺口确认；077 NOT_PUBLISHED）  
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -370,33 +370,34 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
   - Hypothesis status：**HYPOTHESIS / DERIVED DESIGN**（≠ DIRECT_EVIDENCE / ≠ market validated）  
   - Gate：ApprovalGate whitelist minimal add `preq_20260904_pmgantt`；`appr_20260904_pmgantt` = approved（CF production only）  
   - Audit：`docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md`
+- Entry **078** — Xianyu Commercial Closed-Loop Reality Audit：**PASS_WITH_FINDINGS**（READ-ONLY）  
+  - 闭环前半段（观察→假设资产）已核实；**Publish 后反馈/学习 = NOT_STARTED**  
+  - `view_count` = **COLLECTION GAP**；`maxRecords≤50` / `min_want=50` = **IMPLEMENTATION_LIMIT/DEFAULT ≠ BUSINESS_THRESHOLD**  
+  - AI Query Planner = **NOT IMPLEMENTED**；069B→077 AI paid cost = **0**  
+  - Audit：`docs/07_AUDIT/ENTRY_078_XIANYU_COMMERCIAL_CLOSED_LOOP_REALITY_AUDIT.md`
 
 ---
 
 ## In Progress
 
-- Acquisition Engine — **PARTIAL**  
+- Acquisition Engine — **PARTIAL**（Extension IMPLEMENTED；Bridge 默认 TEST sink；DB 需 human import gate）  
 - **Candidate → Signal** — **IMPLEMENTED**（073）  
 - **Signal → Opportunity（Observation lineage）** — **IMPLEMENTED**（075）  
 - **Opportunity → Product Definition** — **IMPLEMENTED**（076）  
 - **Product Definition → Product Asset（Entry 077）** — **PRODUCED**；**NOT_PUBLISHED**  
-- Model Router — **NOT_IMPLEMENTED**（072）  
-- **WAITING** Human External Publish on 闲鱼 + real inquiry/order/成交 evidence — **不得自动发布**  
-- **Development posture：** CF production for first hypothesis **done**；external publish **paused for human**  
-- **GitHub sync：** `main` = 版本化 / 协作连续载体；GitHub docs ≠ Reality Authority  
+- **Feedback → Learning closed loop** — **NOT_STARTED**（publish_evidence=0；market_events=0）  
+- Model Router / AI Query Planner — **NOT_IMPLEMENTED**  
+- **WAITING** Human External Publish + real inquiry/order/成交 evidence — **不得自动发布**  
+- **Development posture：** 078 Reality 已确认；结构性重建 **STOP** 直至 ChatGPT 授权下一 Entry  
 - Product Definition `prod_a0638789fc2b` = **draft**；Product Asset `a949d2e47cf1` = **generated** ≠ Listing / Published / Market Validated  
-- **Entry 077 lineage：**  
-  - Hypothesis：小微团队项目计划 + 任务进度 + 甘特图 Excel 模板 = **HYPOTHESIS**  
-  - `exp_20260904_pmgantt` = `produced_awaiting_human_publish`  
-  - `preq_20260904_pmgantt` = `PRODUCED` → `a949d2e47cf1`  
-  - Publish Pack：`…/a949d2e47cf1/package/publish_assistant/HUMAN_PUBLISH_PACK.md`
+- **Known Reality gaps（078）：** view_count 未采集；a949 Publish Pack PARTIAL；scorer/pricing = HEURISTIC；orphan artifact shells INVALIDATE
 
 ---
 
 ## Blocked
 
 - 闲鱼 **自动**发布 / 聊天 / 收款 — **禁止**（Human Final External Publish Gate）  
-- Cost-aware Model Router — **NOT_BUILT**  
+- 在未授权下修改采集阈值 / 评分公式 / DB schema — **禁止**（078 STOP）  
 - PUBLIC_WEB_READ headless — **BLOCKED_BY_ACCESS_CONTROL**（060）  
 - LIVE_API — **NOT_AVAILABLE_CURRENTLY**  
 - AI Query Planner / Learning→Acquisition / Model Router — **PROPOSED**  
