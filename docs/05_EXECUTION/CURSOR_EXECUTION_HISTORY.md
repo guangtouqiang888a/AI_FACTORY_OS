@@ -2737,11 +2737,11 @@
 | **Architecture Impact** | Module Layer（Track B CF adapter / Excel generator minimal） |
 | **Validation Result** | Adapter execute OK；Quality PASS；NOT_PUBLISHED |
 | **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md` |
-| **Git Commit** | （closeout 填入） |
-| **GitHub Push** | （closeout 填入） |
-| **Remote Verification** | （closeout 填入） |
+| **Git Commit** | `19d973dab506115020e83dcb40adb991304b681d` |
+| **GitHub Push** | （push closeout 填入） |
+| **Remote Verification** | （push closeout 填入） |
 | **Final Status** | `PASS_WITH_FINDINGS`；PRODUCED；NOT_PUBLISHED；HYPOTHESIS |
-| **Evidence** | Artifact SHA256 `07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566`；e2e_outputs；本 Audit |
+| **Evidence** | Artifact SHA256 `07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566`；e2e_outputs；本 Audit；commit `19d973dab506115020e83dcb40adb991304b681d` |
 | **Entry 077** | **PRODUCED / NOT_PUBLISHED** |
 | **Project Development** | **AWAITING_HUMAN_PUBLISH** |
 

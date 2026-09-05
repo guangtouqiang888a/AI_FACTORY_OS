@@ -114,7 +114,13 @@ Including Test 7 (whitelist + deny-by-default) and Test 8 (PM/Gantt quality floo
 
 ## Git Evidence
 
-Filled at commit closeout (see Execution History / Final Report).
+| Field | Value |
+|-------|-------|
+| Commit | `19d973dab506115020e83dcb40adb991304b681d` |
+| Message | `feat: produce first real Xianyu PM/Gantt Excel product asset (Entry 077)` |
+| Push / Remote | See Execution History closeout after push |
+
+Orphan dirs `3d323bf0de83` / `5f4719b47909` left **untracked** (not Product Assets).
 
 ---
 
