@@ -176,6 +176,6 @@ ChatGPT Closure Review；optional P2-C hygiene；**do not auto-start P3**.
 
 | Field | Value |
 |-------|-------|
-| Git Commit | （closeout） |
-| GitHub Push | （closeout） |
-| Remote Verification | （closeout） |
+| Git Commit | `c96e5ba79ea80b3d5f7c56a65a1c851d9cbe08a2` |
+| GitHub Push | **SUCCESS**（`0b0e83f..c96e5ba  main -> main`；无 force） |
+| Remote Verification | **PASS**（local HEAD == origin/main `c96e5ba…`；Audit 在 origin） |

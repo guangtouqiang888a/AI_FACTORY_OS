@@ -3015,9 +3015,9 @@
 | **Runtime Impact** | insert/finish foundation hooks only |
 | **AI Cost** | **¥0** |
 | **Tests** | `test_data_foundation_080b` 7 OK；`test_market_source_058b` 15 OK |
-| **Git Commit** | （closeout） |
-| **GitHub Push** | （closeout） |
-| **Remote Verification** | （closeout） |
+| **Git Commit** | `c96e5ba79ea80b3d5f7c56a65a1c851d9cbe08a2` |
+| **GitHub Push** | **SUCCESS**（`0b0e83f..c96e5ba  main -> main`；无 force） |
+| **Remote Verification** | **PASS**（local HEAD == origin/main `c96e5ba…`） |
 | **Final Status** | **P2-B DONE**；P2 overall **PARTIAL** |
 | **P3/P4** | **NOT STARTED** |
 
