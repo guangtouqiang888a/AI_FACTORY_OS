@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-B** P1-B Reality Verification formalized；**P1 NOT STARTED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-C** P1-C Controlled Cleanup；**P1 PARTIAL**）
 
 ---
 
@@ -2862,6 +2862,46 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Execution History；Formal Audit 079-B
 - Reviewed but Not Modified：Business Strategy；UA；Module Registry；Constitution；Authority；Decision Log；Runtime/DB/Assets
+
+---
+
+### Entry 079-C — Xianyu P1-C Controlled Cleanup of DELETE_CANDIDATE（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **079-C** |
+| **Original Objective** | 建立一个真正能够在闲鱼跑通的商业闭环：真实市场采集 → 沉淀 → 选品 → 生产 → 人工发布 → 真实反馈回写 → 商业学习 → 下一轮采集。 |
+| **Current Objective** | 受控删除 079-B 已确认的三个 DELETE_CANDIDATE，并正式留证同步 GitHub |
+| **Current Phase** | P1 Reality Purification — **PARTIAL** |
+| **Current Step** | P1-C Controlled Cleanup of Verified DELETE_CANDIDATE |
+| **Scope** | 仅删 `3d323bf0de83`/`5f4719b47909`/`10ff21f1efee`；Audit；History；必要 State/CC；Git |
+| **Out of Scope** | ARCHIVE 移动；其它删除；Runtime/DB；P2+；`git clean`；误删 a949/75f2/e601/8523/f2f8 |
+| **Completed** | 最终安全检查；三对象 SUCCESS 删除；a949 保留；Audit 079-C；指针更新 |
+| **Findings** | `10ff` 空目录二次清理；077 audit 本地脏行未提交；P1 未全部完成 |
+| **Decisions** | 仅授权三 DELETE_CANDIDATE；ARCHIVE 另开 |
+| **Pending** | Closure Review；ARCHIVE/INVALIDATE 后续；Human Publish |
+| **Next Step** | **STOP** — P1 remaining 需独立授权；不进入 P2 |
+| **Stop Conditions** | 超名单删除；Runtime/DB 改；宣称 P1 Completed；进 P2 → STOP |
+| **Final Completion Criteria** | 三删 SUCCESS；a949 OK；Audit+History；remote PASS；P1≠伪 Completed |
+| **Modified Files** | Control Center；Current State；Execution History |
+| **Deleted Files** | `…/3d323bf0de83/**`；`…/5f4719b47909/**`；`…/10ff21f1efee/**`（含 tracked metadata） |
+| **Created Evidence Files** | `docs/07_AUDIT/ENTRY_079C_XIANYU_P1C_CONTROLLED_CLEANUP.md` |
+| **Architecture Impact** | Documentation + Asset cleanup（orphan shells only） |
+| **Validation Result** | PASS |
+| **Audit** | `docs/07_AUDIT/ENTRY_079C_XIANYU_P1C_CONTROLLED_CLEANUP.md` |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Evidence** | 079-B + 本 Audit |
+| **Final Status** | **P1-C DELETE_CANDIDATE cleanup DONE**（≠ P1 completed） |
+| **P1 Overall Status** | **PARTIAL** |
+
+**Note：** Cursor Process Output ≠ Formal Audit ≠ Current State ≠ ChatGPT Closure Review.
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Execution History；Formal Audit 079-C；git rm 10ff
+- Reviewed but Not Modified：Business Strategy；UA；Module Registry；Runtime Python/Extension；DB
 
 ---
 

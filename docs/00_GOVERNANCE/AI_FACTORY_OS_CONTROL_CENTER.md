@@ -2,7 +2,7 @@
 
 > **SINGLE ENTRY POINT for future AI sessions（未来 AI 会话唯一入口）**  
 > Collaboration Control System v1（协作控制系统 v1）  
-> Last updated: 2026-09-05（Entry **079-B** P1-B verification evidence；**P0 COMPLETED** / **P1 NOT STARTED** / Cleanup **NOT EXECUTED** / **NOT_PUBLISHED**）
+> Last updated: 2026-09-05（Entry **079-C** P1-C cleanup；**P1 PARTIAL**；**NOT_PUBLISHED**）
 
 **Read this file first.（任何新会话必须先读本文件。）** Then follow **New Session Recovery Protocol**（及下方 Bootstrap）。  
 文档目录导航 SoT：[DOCUMENTATION_MAP](../AI_FACTORY_OS_DOCUMENTATION_MAP.md)。
@@ -20,12 +20,14 @@ Route:
 Current:
   P0 COMPLETED  |  Entry 078 = PASS_WITH_FINDINGS
   Entry 077 Product Asset a949d2e47cf1 = PRODUCED / NOT_PUBLISHED
-  Commercial closed loop = NOT RUN THROUGH（反馈/收入/学习未开始）
-  P1-B Reality Verification = formalized（Entry 079-B）；Cleanup = NOT EXECUTED
+  Commercial closed loop = NOT RUN THROUGH
+  P1-B Verification = formalized（079-B）
+  P1-C Controlled Cleanup = DONE for 3 DELETE_CANDIDATEs（079-C）
+  P1 Overall = PARTIAL（ARCHIVE physical / INVALIDATE execution remaining）
 
 Next:
-  P1 Reality Purification = NOT STARTED
-  （079-A Continuity + 079-B Verification ≠ P1 cleanup authorization）
+  P1 remaining items OR ChatGPT Closure Review
+  （不得自动 ARCHIVE / P2）
 
 Important:
   Do not infer the project solely from Entry numbers.
@@ -301,14 +303,15 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 | 项 | 投影（须核验） |
 |----|----------------|
 | Active Project | **Xianyu Commercial Closed-Loop Project** |
-| Project phase | **P0 COMPLETED** / **P1 NOT STARTED** |
+| Project phase | **P0 COMPLETED** / **P1 PARTIAL** |
 | Latest Reality Audit | Entry **078** = `PASS_WITH_FINDINGS` |
 | Latest Product Asset | Entry **077** `a949d2e47cf1` — **PRODUCED**；**NOT_PUBLISHED** |
 | Product Definition | `prod_a0638789fc2b`（`draft`）← `aoc_19399677b7ba` |
 | Closed loop status | **NOT RUN THROUGH**（无真实发布反馈 / 收入 / 商业学习） |
 | Continuity hardening | Entry **079-A**（docs-only；≠ P1） |
-| P1-B verification | Entry **079-B** — evidence formalized；**Cleanup NOT EXECUTED** |
-| Development posture | **STOP 自动 P1 Cleanup** — 等待 ChatGPT Closure Review |
+| P1-B verification | Entry **079-B** — formalized |
+| P1-C cleanup | Entry **079-C** — deleted `3d32`/`5f47`/`10ff`；ARCHIVE untouched |
+| Development posture | **STOP 自动 ARCHIVE/P2** — 等待 ChatGPT Closure Review |
 | GitHub | `main` = 版本化载体；GitHub ≠ Reality Authority |
 
 ### Governance foundation history（已完成 · 非 Current Reality 清单）
@@ -496,20 +499,22 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | **`NONE`**（Entry 079-A Continuity Hardening 完成后清空；等待 ChatGPT Closure Review） |
-| **STATUS** | 无正在进行的 Cursor 多步骤 Runtime 执行；**不得自动进入 P1** |
+| **ACTIVE_TASK** | **`NONE`**（079-C 完成后清空；等待 ChatGPT Closure Review） |
+| **STATUS** | 无正在进行的 Cursor 多步骤 Runtime 执行；**不得自动 ARCHIVE / P2** |
 | **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project** |
-| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 NOT STARTED** |
-| **NOTE** | Product Asset `a949d2e47cf1` PRODUCED；**NOT_PUBLISHED**；闭环未跑通 |
+| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 PARTIAL** |
+| **NOTE** | Product Asset `a949d2e47cf1` PRODUCED；**NOT_PUBLISHED**；三 DELETE_CANDIDATE 已删 |
 | **LAST REALITY AUDIT** | Entry **078** — `PASS_WITH_FINDINGS` |
 | **LAST CONTINUITY** | Entry **079-A** — Continuity Hardening（docs-only） |
-| **LAST P1-B EVIDENCE** | Entry **079-B** — `docs/07_AUDIT/ENTRY_079B_XIANYU_P1B_REALITY_VERIFICATION.md` |
-| **EVIDENCE POINTERS** | Entry 078 Audit；079-B Verification Audit；Current State Active Project |
+| **LAST P1-B EVIDENCE** | Entry **079-B** |
+| **LAST P1-C CLEANUP** | Entry **079-C** — `docs/07_AUDIT/ENTRY_079C_XIANYU_P1C_CONTROLLED_CLEANUP.md` |
+| **EVIDENCE POINTERS** | 078 Audit；079-B；079-C；Current State Active Project |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **PRODUCED** / **NOT_PUBLISHED** |
 | **ENTRY_078** | **COMPLETED（Audit）** |
 | **ENTRY_079-B** | **VERIFICATION FORMALIZED** |
-| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 NOT STARTED · Cleanup NOT EXECUTED** |
+| **ENTRY_079-C** | **DELETE_CANDIDATE CLEANUP DONE** |
+| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 PARTIAL · ARCHIVE remaining** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 
