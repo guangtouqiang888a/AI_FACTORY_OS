@@ -2,7 +2,7 @@
 
 > **SINGLE ENTRY POINT for future AI sessions（未来 AI 会话唯一入口）**  
 > Collaboration Control System v1（协作控制系统 v1）  
-> Last updated: 2026-09-04（**Core Documentation Continuity Hardening** — NOT Entry 077）
+> Last updated: 2026-09-05（Entry **077** PRODUCED；**NOT_PUBLISHED**）
 
 **Read this file first.（任何新会话必须先读本文件。）** Then follow **New Session Recovery Protocol**（及下方 Bootstrap）。  
 文档目录导航 SoT：[DOCUMENTATION_MAP](../AI_FACTORY_OS_DOCUMENTATION_MAP.md)。
@@ -269,13 +269,14 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 
 | 项 | 投影（须核验） |
 |----|----------------|
-| Latest completed product-path Entry | **076** = `PASS_WITH_FINDINGS` |
+| Latest completed product-path Entry | **077** = `PASS_WITH_FINDINGS`（production）；076 Definition retained |
 | Product Definition | `prod_a0638789fc2b`（`draft`）← Opportunity `aoc_19399677b7ba` |
-| Product Definition ≠ | Product Asset / Commercial Product / Listing / Published / Market Validated |
-| Entry **077** | **NOT_STARTED** — 不得擅自启动 |
-| Development posture | 商业/产品推进**暂停**，等待另开授权 Entry |
-| GitHub | `main` 已建立为版本化 / 协作连续载体；**同步本身未改变**产品/商业/架构方向 |
-| Pilot Observation | 仍 **NOT_STARTED**（见 Current State；非本投影发明） |
+| Product Asset | **`a949d2e47cf1`** ← `preq_20260904_pmgantt` — **PRODUCED**；**NOT_PUBLISHED** |
+| Product Asset ≠ | Listing / Published / Market Validated / Revenue（仍为 HYPOTHESIS） |
+| Entry **077** | **PRODUCED**（awaiting Human External Publish） |
+| Development posture | 生产完成；闲鱼外部发布 **人工门禁**；不得自动发布 |
+| GitHub | `main` 已建立为版本化 / 协作连续载体；GitHub ≠ Reality Authority |
+| Pilot Observation | 仍 **NOT_STARTED**（发布后才进入） |
 | Commercial JSON full migration / Pilot sync | 历史 open item（RA-002 等）— **不得**因本文件旧文自动当作当前唯一焦点 |
 
 ### Governance foundation history（已完成 · 非 Current Reality 清单）
@@ -288,26 +289,24 @@ Entry 040-A … 041-H 治理基础（DEC-013…018 等）— **Completed**（详
 ## Current Primary Goal
 
 1. **正确 Recovery：** 先规则与权威 → 再 Current State / Reality → 再按 Scope 读设计 / 商业 / 历史（DEC-017）。  
-2. **防止认知错误：** 不以 Control Center 旧投影、Audit  alone、或 GitHub 文档状态覆盖 Reality。  
-3. **范围纪律：** Entry **077** = **NOT_STARTED**；未授权不得推进 Product content / Publish / CF–Core 合并 / DB 迁移。  
+2. **防止认知错误：** 不以 Control Center 旧投影、Audit alone、或 GitHub 文档状态覆盖 Reality。  
+3. **范围纪律：** Entry **077** Product Asset 已生产；**禁止**自动闲鱼发布 / 伪造成交；下一动作 = Human External Publish。  
 4. **连续性：** 有意义推进写入 `docs/0–6`（DEC-019）；长期协作规则不得只留在 Conversation Memory。
 
 **重大判断必须回溯 Core Governance（DEC-012）与 `docs/0–6`，** 不得只靠聊天改方向。  
-Governance / Recovery hardening 可在授权下进行；**Reality Execution（产品内容、发布、观察、迁移）须另开授权 Entry。**
+**Cursor PASS ≠ ChatGPT Closure Review。** 已生产 ≠ 已发布 ≠ 已盈利。
 
 ---
 
 ## Current Development Focus
 
-1. Control Center + **New Session Recovery Protocol**（DEC-017）启动；状态投影须对照 Current State / Reality  
-2. DEC-011 / DEC-012：Scope 控制 + 防聊天认知漂移  
-3. Trust **CURRENT_STATE + MODULE_REGISTRY + Reality**；Blueprint / Audit / GitHub docs ≠ Production / Runtime complete  
-4. Entry **076** 已完成（Definition draft）；**等待授权**再开 Product content / Commercial / Publish Entry  
-5. Entry **077**：**NOT_STARTED** — 禁止抢跑  
-6. Do **not** expand into Core OS ↔ CF Runtime merge unless explicitly tasked  
-7. DEC-015…018：文档角色 / Ownership / Recovery / Folder≠Capability≠Product  
-8. Open historical commercial items（Pilot Observation、RA-002 migration 等）— **先读 Current State**，不得因本文件旧 bullet 自动执行  
-9. GitHub = 版本化 / 跨工具运输 / 可追溯恢复；**≠ Reality Authority**
+1. **Human Final External Publish** — 使用 `a949d2e47cf1` + HUMAN_PUBLISH_PACK 人工上架闲鱼  
+2. 等待真实询盘 / 订单 / 成交证据回流（不得伪造）  
+3. Trust **CURRENT_STATE + MODULE_REGISTRY + Reality**；HYPOTHESIS ≠ DIRECT_EVIDENCE  
+4. Entry **077** = **PRODUCED / NOT_PUBLISHED**  
+5. Do **not** expand into Core OS ↔ CF Runtime merge unless explicitly tasked  
+6. DEC-033：商业结果优先；AI 成本已记 0；价格假设 ¥9.9 非事实  
+7. GitHub = 版本化 / 跨工具运输 / 可追溯恢复；**≠ Reality Authority**
 
 ---
 
@@ -467,14 +466,14 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | **`NONE`** |
-| **STATUS** | 无正在进行的正式多步骤治理任务 |
-| **NOTE** | 商业最高原则硬化（DEC-033）已落盘；First Xianyu Experiment Preparation 已完成对象准备（NOT_PRODUCED）；不得当作正在执行的 CF/发布任务 |
-| **LAST GOVERNANCE / COMMERCIAL PREP（证据指针，非当前任务）** | Continuity → PHASE 1/2 → Closure → DEC-033 → **exp_20260904_pmgantt / preq_20260904_pmgantt preparation** |
-| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_COMMERCIAL_PRINCIPLES_HARDENING_2026-09-04.md`；`docs/07_AUDIT/AI_FACTORY_OS_FIRST_XIANYU_PRODUCT_EXPERIMENT_PREPARATION_2026-09-04.md`；DEC-033 |
+| **ACTIVE_TASK** | **`NONE`**（Entry 077 生产执行已完成本地闭环；等待 ChatGPT Closure Review + Human Publish） |
+| **STATUS** | 无正在进行的 Cursor 多步骤执行；下一外部动作属人工门禁 |
+| **NOTE** | Product Asset `a949d2e47cf1` PRODUCED；**NOT_PUBLISHED**；不得自动闲鱼发布 |
+| **LAST COMMERCIAL EXECUTION（证据指针）** | Entry **077** — `preq_20260904_pmgantt` → `a949d2e47cf1` |
+| **EVIDENCE POINTERS** | `docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md`；`commercial_assets/e2e_outputs/a949d2e47cf1/HUMAN_PUBLISH_PACK.md` |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
-| **ENTRY_077** | **NOT_STARTED** |
-| **PROJECT_DEVELOPMENT** | **PAUSED** |
+| **ENTRY_077** | **PRODUCED** / **NOT_PUBLISHED** |
+| **PROJECT_DEVELOPMENT** | **AWAITING_HUMAN_PUBLISH** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 

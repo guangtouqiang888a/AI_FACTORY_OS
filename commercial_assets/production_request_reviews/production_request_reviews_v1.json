@@ -120,25 +120,28 @@
       "product_type": "excel",
       "production_priority": "P0",
       "review_method": "human_assisted_076_lineage",
-      "decision": "prepared_awaiting_production_authorization",
-      "review_reason": "PR complete for preparation. Decision is NOT approved for CF execution. Future production Entry must set approved + update ApprovalGate whitelist if needed. THIS TASK DID NOT INVOKE CF. NOT_PRODUCED / NOT_PUBLISHED.",
-      "approved_by": null,
+      "decision": "approved",
+      "review_reason": "Authorized for CF production under Entry 077. Asset/quality/cost constraints complete; 076 provenance preserved; hypothesis remains HYPOTHESIS. CF may execute. External 闲鱼 publish remains Human Gate.",
+      "approved_by": "chatgpt_authorized_entry_077",
       "approval_checks": {
         "asset_requirements_complete": true,
         "quality_requirements_complete": true,
         "experiment_review_prepared": true,
         "category_a_cost_within_budget": true,
         "ai_cost_near_zero_policy_recorded": true,
-        "content_factory_not_invoked": true,
+        "content_factory_not_invoked": false,
         "hypothesis_not_marked_direct_evidence": true,
         "076_provenance_preserved": true,
         "legacy_attendance_pilot_not_reused": true,
-        "cf_execution_authorized": false
+        "cf_execution_authorized": true,
+        "content_factory_authorized_for_entry_077": true
       },
-      "gate_blocker_note": "ApprovalGate pilot_only whitelist={preq_20260712_005} AND this review decision != approved → CF blocked until future authorized production Entry.",
+      "gate_blocker_note": "Whitelist updated to include preq_20260904_pmgantt; decision=approved.",
       "created_at": "2026-09-04T23:28:18+08:00",
-      "approved_at": null
+      "approved_at": "2026-09-05T09:30:00+08:00",
+      "authorization_entry": "077",
+      "authorization_note": "Entry 077 production authorization based on ChatGPT Cursor instruction FIRST REAL XIANYU PRODUCT PRODUCTION 2026-09-05. Prepared objects already existed; this upgrades decision prepared_awaiting_production_authorization → approved. NOT a fabricated human click; NOT external publish authorization."
     }
   ],
-  "updated_at": "2026-09-04T23:28:18+08:00"
+  "updated_at": "2026-09-05T09:30:00+08:00"
 }

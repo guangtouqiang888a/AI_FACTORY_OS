@@ -289,7 +289,7 @@
       "production_request_id": "preq_20260904_pmgantt",
       "object_type": "production_request",
       "contract_version": "1.0",
-      "entry": "NEXT_COMMERCIAL_EXPERIMENT_PREPARATION_2026-09-04",
+      "entry": "077",
       "source_experiment_id": "exp_20260904_pmgantt",
       "source_review_id": "erev_20260904_pmgantt",
       "source_product_definition_id": "prod_a0638789fc2b",
@@ -309,9 +309,12 @@
       "validation_goal": "验证具体 PM/进度/甘特图 Excel 能否低成本生产、达到可销售质量、在闲鱼获得真实商业反馈。NOT proving Excel market existence (076).",
       "hypothesis": "【HYPOTHESIS / DERIVED DESIGN】小微团队负责人/项目负责人/个体经营者需要管理多任务、截止日期、负责人与进度，但缺少低成本、无需复杂项目管理软件的工具。一个轻量 Excel 模板（任务录入、负责人、起止日期、状态、进度、基础进度展示、简单甘特图/时间轴、项目总体进度摘要）可在闲鱼以可接受成本验证真实付费意愿。上游 prod_a0638789fc2b 仅证明 Excel 模板市场存在需求信号（含工作计划/甘特图观察），不证明本具体产品已被市场验证。≠ DIRECT_EVIDENCE。",
       "production_priority": "P0",
-      "status": "draft_prepared_awaiting_cf_authorization",
+      "status": "PRODUCED",
       "creation_method": "human_assisted_076_lineage",
-      "production_status": "NOT_PRODUCED",
+      "production_status": "PRODUCED",
+      "product_asset_id": "a949d2e47cf1",
+      "produced_at": "2026-09-05T09:45:00+08:00",
+      "next_gate": "human_final_external_publish",
       "publish_status": "NOT_PUBLISHED",
       "human_publish_required": true,
       "asset_requirements": {
@@ -389,19 +392,21 @@
       },
       "unit_economics_observation": {
         "unit_revenue": "UNKNOWN",
-        "production_cost": "UNKNOWN",
-        "ai_cost": "UNKNOWN",
-        "packaging_cost": "UNKNOWN",
+        "production_cost": 0.0,
+        "ai_cost": 0.0,
+        "packaging_cost": 0.0,
         "other_variable_cost": "UNKNOWN",
         "contribution_margin": "UNKNOWN",
-        "formula": "Unit Revenue - Production Cost - AI Cost - Packaging Cost - Other Variable Cost = Contribution Margin"
+        "formula": "Unit Revenue - Production Cost - AI Cost - Packaging Cost - Other Variable Cost = Contribution Margin",
+        "measured_at": "2026-09-05T09:45:00+08:00",
+        "note": "Entry 077 actual costs; no fabricated revenue"
       },
-      "required_output": "可打开的 xlsx + 使用说明 + publish_package（仅在未来授权生产后）",
+      "required_output": "可打开的 xlsx + 使用说明 + publish_package（Entry 077 PRODUCED; NOT published）",
       "production_constraints": {
         "phase1_virtual_materials_only": true,
         "no_future_media_runtime": true,
         "no_external_publish": true,
-        "no_cf_execution_in_this_task": true,
+        "no_cf_execution_in_this_task": false,
         "do_not_reuse_preq_20260712_005": true,
         "creator_agent_must_not_choose_direction": true
       },
@@ -412,10 +417,18 @@
         "adapter_runner": "11_CONTENT_FACTORY/adapter/adapter_runner.py",
         "note": "Reuse existing adapter. Do not rebuild."
       },
-      "created_at": "2026-09-04T23:28:18+08:00"
+      "created_at": "2026-09-04T23:28:18+08:00",
+      "updated_at": "2026-09-05T09:45:00+08:00",
+      "production_authorization": {
+        "entry": "077",
+        "authorized_at": "2026-09-05T09:30:00+08:00",
+        "approval_id": "appr_20260904_pmgantt",
+        "authority": "chatgpt_cursor_instruction_first_real_xianyu_product_production"
+      }
     }
   ],
   "entry_055_note": "Autonomous bridge PRs appended; human_assisted retained.",
-  "updated_at": "2026-09-04T23:28:18+08:00",
-  "entry_20260904_note": "Prepared preq for first Xianyu PM/Gantt Excel; NOT produced; NOT published."
+  "updated_at": "2026-09-05T09:45:00+08:00",
+  "entry_20260904_note": "Prepared preq for first Xianyu PM/Gantt Excel.",
+  "entry_077_note": "preq_20260904_pmgantt PRODUCED → product_asset a949d2e47cf1; NOT_PUBLISHED."
 }

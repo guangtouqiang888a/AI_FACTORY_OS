@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-04（Entry **076**；Collaboration Continuity Hardening note）  
+> Last updated: 2026-09-05（Entry **077** PRODUCED；**NOT_PUBLISHED**；HYPOTHESIS）  
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -360,6 +360,16 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
   - FINDING：`PRODUCT_IDEMPOTENCY_GAP`（soft dedupe）  
   - Evidence：`1_DATA/_tests/xianyu_entry_076/`  
   - Audit：`docs/07_AUDIT/ENTRY_076_OPPORTUNITY_TO_PRODUCT.md`
+- Entry **077** — First Real Xianyu Product Production：**PASS_WITH_FINDINGS**  
+  - Product Asset **`a949d2e47cf1`** ← `preq_20260904_pmgantt` ← `prod_a0638789fc2b` ← `aoc_19399677b7ba`  
+  - Artifact：`11_CONTENT_FACTORY/artifacts/products/a949d2e47cf1/templates/a949d2e47cf1.xlsx`  
+  - SHA256：`07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566`  
+  - Method：deterministic openpyxl Gantt generator；AI cost = **0**；production_cost = **0**  
+  - Quality：`SELLABLE_QUALITY_FLOOR` = **PASS**  
+  - Publish：**NOT_PUBLISHED**；Human Final External Publish Gate **holds**  
+  - Hypothesis status：**HYPOTHESIS / DERIVED DESIGN**（≠ DIRECT_EVIDENCE / ≠ market validated）  
+  - Gate：ApprovalGate whitelist minimal add `preq_20260904_pmgantt`；`appr_20260904_pmgantt` = approved（CF production only）  
+  - Audit：`docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md`
 
 ---
 
@@ -368,24 +378,24 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 - Acquisition Engine — **PARTIAL**  
 - **Candidate → Signal** — **IMPLEMENTED**（073）  
 - **Signal → Opportunity（Observation lineage）** — **IMPLEMENTED**（075）  
-- **Opportunity → Product Definition** — **IMPLEMENTED**（076）；content/Publish still blocked  
+- **Opportunity → Product Definition** — **IMPLEMENTED**（076）  
+- **Product Definition → Product Asset（Entry 077）** — **PRODUCED**；**NOT_PUBLISHED**  
 - Model Router — **NOT_IMPLEMENTED**（072）  
-- **WAITING** 授权 Product content / Commercial / Publish Entry — **不得自动执行**  
-- **Development posture：** 商业/产品推进**暂停**（post-076）；**Entry 077 = NOT_STARTED**  
-- **GitHub sync：** `main` 已建立为版本化 / 协作连续载体（infrastructure only）— **未改变** Runtime / 产品方向 / 商业方向 / 架构；GitHub docs ≠ Reality Authority  
-- **Collaboration Continuity：** ChatGPT ↔ Cursor ↔ GitHub 闭环规则已落入 Execution Protocol（docs-only）；**不**启动 Entry 077；**不**改变 Product Definition Reality  
-- Product Definition `prod_a0638789fc2b` = **draft only** ≠ Product Asset / Listing / Published / Market Validated
-- **2026-09-04 Experiment Preparation（docs + commercial_assets objects only）：**  
-  - Hypothesis：小微团队项目计划 + 任务进度 + 甘特图 Excel 模板 = **HYPOTHESIS / DERIVED DESIGN**（≠ DIRECT_EVIDENCE）  
-  - `exp_20260904_pmgantt` / `erev_20260904_pmgantt` / `sel_20260904_pmgantt` / `preq_20260904_pmgantt` / `appr_20260904_pmgantt`  
-  - Status：**NOT_PRODUCED** / **NOT_PUBLISHED**；Approval decision = `prepared_awaiting_production_authorization`（≠ CF approved）  
-  - **Entry 077 = NOT_STARTED**；CF / Product Asset / 闲鱼发布 = **未执行**
+- **WAITING** Human External Publish on 闲鱼 + real inquiry/order/成交 evidence — **不得自动发布**  
+- **Development posture：** CF production for first hypothesis **done**；external publish **paused for human**  
+- **GitHub sync：** `main` = 版本化 / 协作连续载体；GitHub docs ≠ Reality Authority  
+- Product Definition `prod_a0638789fc2b` = **draft**；Product Asset `a949d2e47cf1` = **generated** ≠ Listing / Published / Market Validated  
+- **Entry 077 lineage：**  
+  - Hypothesis：小微团队项目计划 + 任务进度 + 甘特图 Excel 模板 = **HYPOTHESIS**  
+  - `exp_20260904_pmgantt` = `produced_awaiting_human_publish`  
+  - `preq_20260904_pmgantt` = `PRODUCED` → `a949d2e47cf1`  
+  - Publish Pack：`…/a949d2e47cf1/package/publish_assistant/HUMAN_PUBLISH_PACK.md`
 
 ---
 
 ## Blocked
 
-- Product content / CF asset / Publish — **未授权**（Definition 已生成；Experiment/PR **已准备**；止于 draft_prepared；ApprovalGate 仍会拦截）  
+- 闲鱼 **自动**发布 / 聊天 / 收款 — **禁止**（Human Final External Publish Gate）  
 - Cost-aware Model Router — **NOT_BUILT**  
 - PUBLIC_WEB_READ headless — **BLOCKED_BY_ACCESS_CONTROL**（060）  
 - LIVE_API — **NOT_AVAILABLE_CURRENTLY**  

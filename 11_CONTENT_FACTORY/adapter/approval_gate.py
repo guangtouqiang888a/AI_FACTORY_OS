@@ -4,7 +4,14 @@ from __future__ import annotations
 
 from typing import Any
 
-PILOT_WHITELIST = frozenset({"preq_20260712_005"})
+# Deny-by-default authorized production whitelist.
+# Do NOT use wildcards. Add explicit production_request_id only when authorized.
+PILOT_WHITELIST = frozenset(
+    {
+        "preq_20260712_005",  # Legacy attendance Excel pilot
+        "preq_20260904_pmgantt",  # Entry 077 — first real Xianyu PM/Gantt Excel
+    }
+)
 
 
 class ApprovalGateError(Exception):
@@ -61,7 +68,7 @@ class ApprovalGate:
         if self.pilot_only and production_request_id not in self.pilot_whitelist:
             raise ApprovalGateError(
                 "PILOT_NOT_ALLOWED",
-                f"{production_request_id} is not in Pilot whitelist — only preq_20260712_005 allowed",
+                f"{production_request_id} is not in authorized production whitelist",
             )
 
         return {

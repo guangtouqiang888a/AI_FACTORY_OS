@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-04（First Xianyu Experiment Preparation；**NOT_PRODUCED**；**Entry 077 = NOT_STARTED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **077** PRODUCED；**NOT_PUBLISHED**）
 
 ---
 
@@ -2704,6 +2704,50 @@
 **Core Documentation Continuity Check：**
 - Modified：Current State；Control Center（指针）；Execution History；Audit；commercial_assets experiment/PR JSONs
 - Reviewed but Not Modified：Constitution；Business Strategy；EP；KUP；Decision Log；UA；Module Registry；PD JSON（076 保持）；CF Python（复用未改）
+
+---
+
+### Entry 077 — First Real Xianyu Product Production（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **077** |
+| **Original Objective** | 以最低合理成本尽快跑通第一个真实闲鱼商业闭环并获得真实收入/成交证据 |
+| **Current Objective** | 将 `preq_20260904_pmgantt` 生产为真实 Product Asset + Publish Pack（不自动发布） |
+| **Current Phase** | Commercial Validation Recovery — Product Definition → Production → Sellable Asset |
+| **Current Step** | Reality preflight → Gate minimal fix → Authorize → Produce → Quality → Docs/Audit → Git |
+| **Scope** | 本商品生产；PR 合法授权；ApprovalGate 最小 whitelist；现有 CF adapter；Excel；质量；Asset；Publish Pack；Audit/History/必要 Current State |
+| **Out of Scope** | 自动闲鱼发布/聊天/成交；DB migration；新建生产框架/Adapter/治理文件；第二款商品；伪造询盘/收入 |
+| **Cursor Instruction Summary** | FIRST REAL XIANYU PRODUCT PRODUCTION；deterministic/low-AI；SELLABLE_QUALITY_FLOOR；Human Publish Gate |
+| **Completed** | Gate whitelist 加入 `preq_20260904_pmgantt`；authorization；`a949d2e47cf1` 生产；质量 PASS；Publish Pack；registry；8/8 tests；Audit |
+| **Findings** | 会话中出现未注册 orphan draft `3d323bf0de83`（考勤标题空壳）— 不纳入 Asset；Cover 仍为 placeholder；PD 仍 draft；Cursor PASS ≠ Closure Review |
+| **Decisions** | 无新 DEC；复用 DEC-033 成本优先；hypothesis 保持 HYPOTHESIS |
+| **Pending** | Human External Publish；真实询盘/订单/成交观察；ChatGPT Closure Review |
+| **Next Step** | 将真实 Product Asset 交给人工完成闲鱼外部发布，并等待真实询盘/订单/成交证据 |
+| **Stop Conditions** | 自动发布；范围扩张；伪造商业结果；超过质量底线后继续过度优化 → STOP |
+| **Final Completion Criteria** | Asset+Quality+Provenance+Gate+Cost+Tests+NoExternalPublish+Docs+Audit+Git |
+| **Production Request** | `preq_20260904_pmgantt` |
+| **Product Asset** | `a949d2e47cf1` |
+| **Quality** | SELLABLE_QUALITY_FLOOR = **PASS** |
+| **Cost** | production=0；ai=0；packaging=0；publish=NOT_STARTED |
+| **AI Cost** | `0.0` |
+| **Tests** | 8/8 PASS（`regression_test_v1.py`） |
+| **Reality Changes** | Code（gate/generator/tests）；Assets（product + commercial JSON）；Docs；External=NONE；DB=NONE |
+| **Architecture Impact** | Module Layer（Track B CF adapter / Excel generator minimal） |
+| **Validation Result** | Adapter execute OK；Quality PASS；NOT_PUBLISHED |
+| **Audit** | `docs/07_AUDIT/AI_FACTORY_OS_FIRST_REAL_XIANYU_PRODUCT_PRODUCTION_2026-09-05.md` |
+| **Git Commit** | （closeout 填入） |
+| **GitHub Push** | （closeout 填入） |
+| **Remote Verification** | （closeout 填入） |
+| **Final Status** | `PASS_WITH_FINDINGS`；PRODUCED；NOT_PUBLISHED；HYPOTHESIS |
+| **Evidence** | Artifact SHA256 `07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566`；e2e_outputs；本 Audit |
+| **Entry 077** | **PRODUCED / NOT_PUBLISHED** |
+| **Project Development** | **AWAITING_HUMAN_PUBLISH** |
+
+**Core Documentation Continuity Check：**
+- Modified：Current State；Control Center；Execution History；Formal Audit
+- Reviewed but Not Modified：Constitution；Authority Model；Business Strategy；UA；Module Registry；Decision Log；KUP；EP（原则未改）
 
 ---
 

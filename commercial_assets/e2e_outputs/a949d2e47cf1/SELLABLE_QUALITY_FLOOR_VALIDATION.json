@@ -1,0 +1,25 @@
+{
+  "entry": "077",
+  "product_asset_id": "a949d2e47cf1",
+  "production_request_id": "preq_20260904_pmgantt",
+  "quality_level": "SELLABLE_QUALITY_FLOOR",
+  "result": "PASS",
+  "checks": {
+    "file_opens": true,
+    "not_corrupted": true,
+    "required_sheets_present": true,
+    "task_headers_present": true,
+    "sample_tasks_present": true,
+    "date_fields_present": true,
+    "gantt_formulas_link_to_tasks": true,
+    "summary_formulas_present": true,
+    "instructions_sheet_present": true,
+    "manual_pdf_present": true,
+    "input_areas_highlighted": true
+  },
+  "artifact_sha256": "07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566",
+  "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\a949d2e47cf1\\templates\\a949d2e47cf1.xlsx",
+  "validated_at": "2026-09-05T09:45:00+08:00",
+  "ai_cost_cny": 0.0,
+  "production_method": "deterministic_openpyxl_project_plan_gantt"
+}

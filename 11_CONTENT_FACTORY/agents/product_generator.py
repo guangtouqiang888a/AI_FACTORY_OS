@@ -60,7 +60,7 @@ class ProductGeneratorAgent(ContentAgent):
         artifact_files: list[str] = []
         errors: list[str] = []
 
-        primary = self._generate_primary(product_type, product, keyword, product_dir, logs, errors)
+        primary = self._generate_primary(product_type, product, keyword, product_dir, logs, errors, input_data)
         if primary:
             artifact_files.append(primary)
 
@@ -93,22 +93,38 @@ class ProductGeneratorAgent(ContentAgent):
         )
 
     def _generate_primary(
-        self, product_type: str, product: dict, keyword: str, product_dir: Path, logs: list, errors: list
+        self,
+        product_type: str,
+        product: dict,
+        keyword: str,
+        product_dir: Path,
+        logs: list,
+        errors: list,
+        input_data: dict | None = None,
     ) -> str | None:
         title = product.get("title", keyword)
         style = "professional"
+        input_data = input_data or {}
 
         if product_type == "PPT模板":
             sections = self._ppt_sections(keyword, product)
             out = product_dir / "templates" / f"{product['id']}.pptx"
             result = generate_ppt(title, sections, style, out)
         elif product_type == "Excel模板":
-            sheets = [
-                {"name": "数据录入", "columns": ["日期", "项目", "类别", "金额", "备注"], "sample_rows": 5, "formulas": ["SUM"]},
-                {"name": "汇总", "columns": ["类别", "合计", "占比"], "sample_rows": 3},
-            ]
             out = product_dir / "templates" / f"{product['id']}.xlsx"
-            result = generate_excel(title, sheets, out)
+            outline = " ".join(str(x) for x in (input_data.get("structure_outline") or []))
+            asset_req = input_data.get("asset_requirements") or {}
+            concept = str(asset_req.get("product_concept") or "") + " " + keyword + " " + title + " " + outline
+            if any(k in concept for k in ("甘特", "项目计划", "任务进度", "pmgantt", "Gantt")):
+                from excel_generator import generate_project_plan_gantt_excel
+
+                result = generate_project_plan_gantt_excel(title, out)
+            else:
+                sheets = [
+                    {"name": "数据录入", "columns": ["日期", "项目", "类别", "金额", "备注"], "sample_rows": 5, "formulas": ["SUM"]},
+                    {"name": "汇总", "columns": ["类别", "合计", "占比"], "sample_rows": 3},
+                ]
+                result = generate_excel(title, sheets, out)
         elif product_type == "Word模板":
             sections = self._word_sections(keyword, product)
             out = product_dir / "templates" / f"{product['id']}.docx"

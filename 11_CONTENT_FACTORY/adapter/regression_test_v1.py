@@ -202,6 +202,68 @@ def test_6_dry_run() -> None:
     _record("Test 6", "Dry Run (preq_005)", ok, detail)
 
 
+def test_7_pmgantt_whitelist_and_gate() -> None:
+    """Test 7 — Entry 077 preq_20260904_pmgantt passes gate; unrelated PR still blocked."""
+    from approval_gate import ApprovalGate, ApprovalGateError, PILOT_WHITELIST
+    from production_request_loader import ProductionRequestLoader
+
+    target = "preq_20260904_pmgantt"
+    ok_list = target in PILOT_WHITELIST and "preq_20260712_005" in PILOT_WHITELIST
+    loader = ProductionRequestLoader()
+    loaded = loader.load_input_package(target)
+    gate = ApprovalGate(pilot_only=True)
+    try:
+        result = gate.validate(loaded)
+        ok_pass = result.get("gate_status") == "passed" and loaded["approval"].get("decision") == "approved"
+    except ApprovalGateError as exc:
+        ok_pass = False
+        result = {"error": exc.code}
+
+    # still deny non-whitelisted approved PR
+    blocked = loader.load_input_package(BLOCKED_PREQ)
+    try:
+        ApprovalGate(pilot_only=True).validate(blocked)
+        ok_block = False
+        block_code = "UNEXPECTED_PASS"
+    except ApprovalGateError as exc:
+        ok_block = exc.code == "PILOT_NOT_ALLOWED"
+        block_code = exc.code
+
+    ok = ok_list and ok_pass and ok_block
+    _record(
+        "Test 7",
+        "Entry 077 PM/Gantt whitelist + deny-by-default",
+        ok,
+        f"whitelist={ok_list} gate={ok_pass} block={block_code}",
+    )
+
+
+def test_8_project_plan_gantt_excel_quality_floor() -> None:
+    """Test 8 — deterministic PM/Gantt workbook opens with required sheets."""
+    import tempfile
+    from excel_generator import generate_project_plan_gantt_excel
+    from openpyxl import load_workbook
+
+    with tempfile.TemporaryDirectory() as td:
+        out = Path(td) / "pm_gantt.xlsx"
+        result = generate_project_plan_gantt_excel("测试项目计划甘特图", out)
+        if result.get("status") != "ok":
+            _record("Test 8", "PM/Gantt Excel quality floor", False, result.get("error", "gen fail"))
+            return
+        wb = load_workbook(out, data_only=False)
+        names = set(wb.sheetnames)
+        required = {"使用说明", "任务明细", "项目摘要", "甘特图"}
+        ok_sheets = required.issubset(names)
+        ws = wb["任务明细"]
+        headers = [ws.cell(1, c).value for c in range(1, 10)]
+        ok_headers = all(
+            h in headers
+            for h in ("任务名称", "负责人", "开始日期", "截止日期", "状态", "完成进度")
+        )
+        ok = ok_sheets and ok_headers and out.exists() and out.stat().st_size > 2000
+        _record("Test 8", "PM/Gantt Excel quality floor", ok, f"sheets={sorted(names)} size={out.stat().st_size}")
+
+
 def main() -> int:
     print("=" * 60)
     print("Entry 032-C — Content Factory Adapter Regression Test v1")
@@ -214,6 +276,8 @@ def main() -> int:
     test_4_pilot_whitelist_blocking()
     test_5_missing_approval_blocking()
     test_6_dry_run()
+    test_7_pmgantt_whitelist_and_gate()
+    test_8_project_plan_gantt_excel_quality_floor()
 
     passed = sum(1 for r in _results if r["passed"])
     total = len(_results)

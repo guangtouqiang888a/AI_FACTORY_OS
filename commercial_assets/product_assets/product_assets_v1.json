@@ -346,8 +346,75 @@
       "entry": "055",
       "commercial_success": false,
       "observation_started": false
+    },
+    {
+      "object_type": "product_asset",
+      "contract_version": "1.0",
+      "product_asset_id": "a949d2e47cf1",
+      "source_production_request_id": "preq_20260904_pmgantt",
+      "source_experiment_id": "exp_20260904_pmgantt",
+      "experiment_id": "exp_20260904_pmgantt",
+      "source_product_definition_id": "prod_a0638789fc2b",
+      "source_opportunity_id": "aoc_19399677b7ba",
+      "source_selection_id": "sel_53e7c414624f",
+      "source_hypothesis_selection_id": "sel_20260904_pmgantt",
+      "approval_id": "appr_20260904_pmgantt",
+      "product_name": "小微团队项目计划 + 任务进度 + 甘特图 Excel 模板",
+      "product_type": "excel",
+      "asset_category": "office_template",
+      "hypothesis_status": "HYPOTHESIS",
+      "evidence_classification": "HYPOTHESIS_DERIVED_DESIGN",
+      "validation_context": {
+        "validation_goal": "可销售质量 + 人工发布准备",
+        "quality_level": "SELLABLE_QUALITY_FLOOR",
+        "entry": "077"
+      },
+      "artifact_information": {
+        "artifact_path": "D:\\AI_FACTORY_OS\\11_CONTENT_FACTORY\\artifacts\\products\\a949d2e47cf1",
+        "primary_file": "templates/a949d2e47cf1.xlsx",
+        "file_type": "xlsx",
+        "artifact_files": [
+          "templates\\a949d2e47cf1.xlsx",
+          "documents\\product_manual.pdf",
+          "images\\cover_placeholder.txt",
+          "package\\final_product.zip",
+          "package\\publish_assistant\\HUMAN_PUBLISH_PACK.md"
+        ],
+        "checksum_sha256": "07ae66a5f4981e79f0b519748e8a26a453fccbde3ac823e9465f26b85a44c566",
+        "quality_result_path": "SELLABLE_QUALITY_FLOOR_VALIDATION.json",
+        "dry_run": false
+      },
+      "cost_record": {
+        "production_cost_cny": 0.0,
+        "production_cost_note": "Local deterministic generation; design ceiling 3.0",
+        "ai_cost_cny": 0.0,
+        "packaging_cost_cny": 0.0,
+        "publish_cost_cny": null,
+        "publish_cost_status": "NOT_STARTED"
+      },
+      "provenance_chain": [
+        "a949d2e47cf1",
+        "prod_a0638789fc2b",
+        "aoc_19399677b7ba",
+        "sel_53e7c414624f",
+        "073_signals",
+        "070_candidate_set",
+        "069B_REAL_MANUAL_VERIFIED"
+      ],
+      "creation_method": "adapter_generated_deterministic_gantt",
+      "quality_score": 0.9,
+      "validation_status": "passed",
+      "generation_status": "completed",
+      "publish_status": "NOT_PUBLISHED",
+      "entry": "077",
+      "created_at": "2026-09-05T09:45:00+08:00",
+      "updated_at": "2026-09-05T09:45:00+08:00",
+      "commercial_success": false,
+      "observation_started": false
     }
   ],
   "entry_055_note": "Autonomous E2E assets appended; legacy pilot retained as HISTORICAL.",
-  "updated_at": "2026-08-30 16:38:33"
+  "entry_077_note": "First real Xianyu PM/Gantt Excel product asset a949d2e47cf1; NOT published; hypothesis remains HYPOTHESIS.",
+  "product_asset_count": 3,
+  "updated_at": "2026-09-05T09:45:00+08:00"
 }

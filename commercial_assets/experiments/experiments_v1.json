@@ -532,19 +532,19 @@
         "提供简单甘特图/时间轴",
         "提供项目总体进度摘要"
       ],
-      "validation_method": "Prepare Experiment → Review → Production Request → (future authorized) low-AI CF production → Quality Floor → Human publish to 闲鱼 → Observation. THIS TASK DOES NOT PRODUCE OR PUBLISH.",
+      "validation_method": "Prepare Experiment → Review → Production Request → authorized low-AI CF production (Entry 077) → Quality Floor → Human publish to 闲鱼 → Observation. THIS TASK PRODUCED Product Asset; NOT published.",
       "success_metrics": {
         "production_metric": {
-          "production_cost": "UNKNOWN",
-          "ai_cost": "UNKNOWN",
-          "packaging_cost": "UNKNOWN",
-          "publish_cost": "UNKNOWN",
+          "production_cost": 0.0,
+          "ai_cost": 0.0,
+          "packaging_cost": 0.0,
+          "publish_cost": "NOT_STARTED",
           "target_production_cost_cny_max": 3.0,
           "target_ai_cost_cny_max": 0.0,
           "ai_cost_target": "0 or near-zero; prefer deterministic Excel generator",
           "target_production_time_minutes_max": 45,
           "target_first_pass": true,
-          "note": "Targets are design constraints, not measured costs"
+          "measured_note": "Entry 077 actual: deterministic openpyxl; AI=0; production_cost=0; packaging=0"
         },
         "market_metric": {
           "inquiry_count": "NOT_STARTED",
@@ -557,15 +557,15 @@
         },
         "commercial_metric": {
           "unit_revenue": "UNKNOWN",
-          "production_cost": "UNKNOWN",
-          "ai_cost": "UNKNOWN",
-          "packaging_cost": "UNKNOWN",
+          "production_cost": 0.0,
+          "ai_cost": 0.0,
+          "packaging_cost": 0.0,
           "other_variable_cost": "UNKNOWN",
           "contribution_margin": "UNKNOWN",
           "price_hypothesis_cny": 9.9,
           "price_role": "PRICE_HYPOTHESIS",
           "price_note": "Not validated. Paid Price awaits real transaction.",
-          "note": "Unit economics defined; values UNKNOWN"
+          "note": "Unit economics defined; revenue UNKNOWN; costs measured at production"
         },
         "system_metric": {
           "reuse_priority": "templates_rules_python_excel > CF > cache > low-cost AI > high-cost AI",
@@ -576,9 +576,9 @@
         "formula": "Unit Revenue - Production Cost - AI Cost - Packaging Cost - Other Variable Cost = Contribution Margin",
         "fields": {
           "unit_revenue": "UNKNOWN",
-          "production_cost": "UNKNOWN",
-          "ai_cost": "UNKNOWN",
-          "packaging_cost": "UNKNOWN",
+          "production_cost": 0.0,
+          "ai_cost": 0.0,
+          "packaging_cost": 0.0,
           "other_variable_cost": "UNKNOWN",
           "contribution_margin": "UNKNOWN"
         }
@@ -586,6 +586,8 @@
       "quality_floor": {
         "level": "SELLABLE_QUALITY_FLOOR",
         "not": "PERFECT_QUALITY",
+        "result": "PASS",
+        "product_asset_id": "a949d2e47cf1",
         "excel_checks": [
           "file_opens",
           "not_corrupted",
@@ -612,25 +614,30 @@
         ]
       },
       "expected_cost": 3.0,
-      "expected_cost_note": "Ceiling estimate CNY; NOT incurred. AI target 0.",
+      "expected_cost_note": "Ceiling estimate CNY; Entry 077 actual production_cost=0, ai_cost=0.",
       "expected_ai_cost_cny": 0.0,
       "expected_cycle": "14 days_after_publish",
       "publish_channel_planned": "xianyu",
       "human_external_action_required": true,
-      "status": "prepared",
-      "production_status": "NOT_PRODUCED",
+      "status": "produced_awaiting_human_publish",
+      "production_status": "PRODUCED",
       "publish_status": "NOT_PUBLISHED",
+      "product_asset_id": "a949d2e47cf1",
+      "production_request_id": "preq_20260904_pmgantt",
+      "entry": "077",
       "experiment_method": "human_assisted_076_lineage",
       "legacy_exclusion": {
         "do_not_reuse_experiment": "exp_20260708_005",
         "do_not_reuse_production_request": "preq_20260712_005",
         "do_not_auto_select_attendance_product": true
       },
-      "next_action": "production_request_prepared_await_authorized_cf_execution",
-      "created_at": "2026-09-04T23:28:18+08:00"
+      "next_action": "human_final_external_publish_on_xianyu",
+      "created_at": "2026-09-04T23:28:18+08:00",
+      "updated_at": "2026-09-05T09:45:00+08:00"
     }
   ],
   "entry_055_note": "Autonomous bridge experiments appended; human_assisted experiments retained.",
-  "updated_at": "2026-09-04T23:28:18+08:00",
-  "entry_20260904_note": "First Xianyu PM/Gantt Excel experiment preparation from 076 lineage; HYPOTHESIS only; no production."
+  "updated_at": "2026-09-05T09:45:00+08:00",
+  "entry_20260904_note": "First Xianyu PM/Gantt Excel experiment preparation from 076 lineage; HYPOTHESIS only.",
+  "entry_077_note": "Product Asset a949d2e47cf1 PRODUCED; NOT_PUBLISHED; Human Final External Publish Gate holds."
 }
