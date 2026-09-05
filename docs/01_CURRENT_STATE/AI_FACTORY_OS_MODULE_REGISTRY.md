@@ -125,7 +125,7 @@ Commercial Product
 - `xianyu_import_pilot_058c.py` — IMPORT_READY / WAITING
 - `sources.py` — column map
 - `database.py` — ensure_schema + collection_log（query 复用）
-- `market_event_core.py` / `market_signal_core.py` — Event ≠ Observation；Signal bridge PARTIAL
+- `market_event_core.py` / `market_signal_core.py` — Event ≠ Observation；Signal bridge PARTIAL；Entry **080-C** observation-path NULL engagement/demand guard（NULL ≠ 0）
 - Tests：`test_acquisition_058d` / `test_xianyu_import_pilot_058c` / `test_market_source_058b` / `test_data_foundation_080b`
 - `data/ai_factory.db` — observations=**20 REAL**；keywords=**1**；`market_product_identities`=**20**；view_count all NULL；collectors ACTIVE import + LIVE NOT_AVAILABLE
 - `data/raw/xianyu/imports/` — drop zone（等待真实文件）

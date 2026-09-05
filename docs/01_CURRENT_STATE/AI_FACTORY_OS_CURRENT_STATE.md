@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-05（Entry **080-B** P2-B Data Foundation；**P2 PARTIAL**；**NOT_PUBLISHED**）
+> Last updated: 2026-09-05（Entry **080-C** P2-C Hygiene；**P2 COMPLETED_WITH_FINDINGS**；**NOT_PUBLISHED**）
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -131,7 +131,7 @@ PRODUCT_HYPOTHESIS ≠ MARKET_VALIDATED_PRODUCT
 |-------|------|--------|
 | **P0** | Reality 全面审计 | **COMPLETED**（Entry **078** = `PASS_WITH_FINDINGS`） |
 | P1 | Reality Purification（KEEP/ARCHIVE/INVALIDATE/DELETE 规划与执行授权） | **COMPLETED_WITH_FINDINGS**（079-B/C/D；physical ARCHIVE deferred） |
-| **P2** | Xianyu Data Foundation（含 want+view；深度≠简单改 50） | **PARTIAL**（080-B foundation done；view NOT_STABLELY_AVAILABLE；adaptive engine NOT） |
+| **P2** | Xianyu Data Foundation（含 want+view；深度≠简单改 50） | **COMPLETED_WITH_FINDINGS**（080-A/B/C；view still NOT_STABLELY_AVAILABLE；adaptive engine NOT） |
 | **P3** | Keyword Discovery（Seed→…；AI Query Planner 现 NOT IMPLEMENTED） | NOT STARTED |
 | **P4** | Adaptive Collection Depth（信息增益/重复率驱动） | NOT STARTED |
 | **P5** | Xianyu Market Intelligence（分位/分布；view 缺口未解前勿误读 engagement） | NOT STARTED |
@@ -189,12 +189,13 @@ P1–P7 主体；P8–P10 增强；**P11–P14 全部**；真实发布与反馈�
 
 | Field | Value |
 |-------|-------|
-| **Current Phase** | **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**；**P2 PARTIAL** |
+| **Current Phase** | **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**；**P2 COMPLETED_WITH_FINDINGS** |
 | **P1-B Evidence** | Entry **079-B** |
-| **P1-C Cleanup** | Entry **079-C** — deleted `3d323bf0de83` / `5f4719b47909` / `10ff21f1efee` |
-| **P1-D Archive/Invalidate** | Entry **079-D** — ARCHIVE_LOGICAL_ONLY ×4；INVALIDATE boundary |
+| **P1-C Cleanup** | Entry **079-C** |
+| **P1-D Archive/Invalidate** | Entry **079-D** |
 | **P2-A Reality Audit** | Entry **080-A** |
-| **P2-B Data Foundation** | Entry **080-B** — additive schema；keywords=1；product_identities=20；20 REAL preserved；view **not collected** |
+| **P2-B Data Foundation** | Entry **080-B** |
+| **P2-C Hygiene** | Entry **080-C** — NULL≠0 engagement guard；collection_log KEEP；engagement_signal misread corrected |
 | **Stop** | **不要自动进入 P3/P4**；等待 ChatGPT Closure Review |
 
 ---
@@ -544,16 +545,17 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 
 ## In Progress
 
-- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**；**P2 PARTIAL**（080-B foundation；view unsolved）  
+- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 COMPLETED_WITH_FINDINGS**；**P2 COMPLETED_WITH_FINDINGS**（080-C hygiene；view still unavailable）  
 - Acquisition Engine — **PARTIAL**  
-- **Candidate → Signal** — **IMPLEMENTED**（073）  
+- **Candidate → Signal** — **IMPLEMENTED**（073；080-C NULL engagement guard）  
 - **Signal → Opportunity** — **IMPLEMENTED**（075）  
 - **Opportunity → Product Definition** — **IMPLEMENTED**（076）  
 - **Product Definition → Product Asset（077）** — **PRODUCED**；**NOT_PUBLISHED**  
 - **Feedback → Learning** — **NOT_STARTED**  
-- **WAITING** ChatGPT Closure Review after Entry **080-B** — **不得自动进入 P3**  
+- **WAITING** ChatGPT Closure Review after Entry **080-C** — **不得自动进入 P3**  
 - Product Asset **KEEP：** `a949d2e47cf1`  
-- **Data Foundation（080-B）：** 20 REAL obs preserved；keyword `Excel模板`；20 product identities；query/want_status/image/position/evidence_level first-class；**view still NULL**  
+- **Data Foundation：** 20 REAL；keyword `Excel模板`；20 identities；**NULL want/view preserved**；engagement ≠ 0.0 misread fixed  
+- **collection_log：** KEEP（stale dual-write；not deleted）  
 - **Deleted（079-C）：** `3d32` / `5f47` / `10ff`  
 - **ARCHIVE_LOGICAL_ONLY（079-D）：** `75f2` / `e601` / `8523` / `f2f8`  
 - **INVALIDATE：** legacy pilots / SAMPLE·TEST·SIMULATION / 未验证 keyword·price·hypothesis — 不得升格为当前闲鱼事实  

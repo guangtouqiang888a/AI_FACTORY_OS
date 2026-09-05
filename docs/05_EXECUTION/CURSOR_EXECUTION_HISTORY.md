@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **080-B** P2-B Data Foundation Minimal Implementation；**P2 PARTIAL**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **080-C** P2-C Data Hygiene & NULL Guard；**P2 COMPLETED_WITH_FINDINGS**）
 
 ---
 
@@ -3026,6 +3026,45 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Module Registry；Execution History；Formal Audit 080-B
 - Reviewed but Not Modified：Business Strategy 正文；UA；Extension；a949
+
+---
+
+### Entry 080-C — Xianyu P2-C Data Hygiene & NULL Semantics Guard（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **080-C** |
+| **Original Objective** | 跑通闲鱼真实商业闭环 |
+| **Current Objective** | P2 最小卫生：collection_log 审查；NULL≠0；evidence 边界；误读防护 |
+| **Current Phase** | **P2 COMPLETED_WITH_FINDINGS** |
+| **Current Step** | P2-C Data Hygiene & NULL Semantics Guard |
+| **Scope** | Inspection；observation-path signal NULL guard；1 engagement row correction；tests；docs；Git |
+| **Out of Scope** | Extension；view 采集；Planner；Adaptive；scorer/pricing；PD/Asset；删 collection_log；P3/P4 |
+| **Reality verified** | obs=20 REAL；want NULL=6；view NULL=20；kw=1；pid=20；a949 OK |
+| **collection_log Decision** | **KEEP**（14 stale running；Runtime still starts；finish never called） |
+| **NULL Guard Decision** | observation engagement/demand/avg_want：NULL views/wants → UNAVAILABLE not 0.0 |
+| **Evidence Guard Decision** | REAL+MANUAL_VERIFIED gate retained；non-REAL skipped |
+| **Code change** | `market_signal_core.py` + tests + one-shot signal correction |
+| **Completed** | Guard；correct `sig_9a3983efb2a4`；tests；Audit 080-C |
+| **Findings** | Prior engagement=0.0 misread；collection_log dual-write unfinished；scorer view_contrib deferred |
+| **Pending** | Closure Review；不自动 P3 |
+| **Next Step** | **STOP** |
+| **AI Cost** | **¥0** |
+| **Tests** | `test_data_hygiene_080c` 6 OK；`test_candidate_to_signal_073` 7 OK |
+| **DB Impact** | 1 signal UPDATE；obs untouched |
+| **Runtime Impact** | Future observation signals only |
+| **Created Audit** | `docs/07_AUDIT/ENTRY_080C_XIANYU_P2C_DATA_HYGIENE_GUARD.md` |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Final Status** | **P2-C DONE**；**P2 COMPLETED_WITH_FINDINGS**；P3/P4 NOT STARTED |
+
+**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review.
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Execution History；Formal Audit 080-C
+- Reviewed but Not Modified：Business Strategy；UA；Extension；a949；Module Registry（optional）
 
 ---
 

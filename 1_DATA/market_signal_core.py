@@ -197,15 +197,31 @@ def _compute_deterministic_signals(
             prices.append(float(item["price"]))
 
     total_want, want_n = _sum_known(wants)
-    total_view, _view_n = _sum_known(views)
+    total_view, view_n = _sum_known(views)
     # Preserve 054 avg_want = sum(wants)/n when null_as_zero (zeros included in n)
     if null_as_zero:
         avg_want = total_want / n if n else 0.0
+        # Product lineage (054): missing views → engagement 0.0 contract
+        engagement = (total_want / total_view) if total_view > 0 else 0.0
+        engagement_unavailable = False
+        demand_unavailable = False
+        avg_want_unavailable = False
+        demand_value: float | None = total_want
     else:
-        avg_want = (total_want / want_n) if want_n else 0.0
+        # Observation lineage (080-C): NULL ≠ 0 — do not invent zero engagement/demand
+        demand_unavailable = want_n == 0
+        demand_value = None if demand_unavailable else total_want
+        avg_want_unavailable = want_n == 0
+        avg_want = (total_want / want_n) if want_n else None
+        # All view_count NULL (or only zeros with no positive total) → UNAVAILABLE, not 0.0
+        if view_n == 0 or total_view <= 0:
+            engagement = None
+            engagement_unavailable = True
+        else:
+            engagement = total_want / total_view
+            engagement_unavailable = False
 
     avg_price = sum(prices) / len(prices) if prices else 0.0
-    engagement = (total_want / total_view) if total_view > 0 else 0.0
     growth_available = False
 
     # comments/shares retained for future; not used in v1 signal set (054)
@@ -213,15 +229,32 @@ def _compute_deterministic_signals(
 
     plat = platform or _infer_platform(listings)
     note_suffix = f";{extra_notes}" if extra_notes else ""
+    eng_notes = extra_notes
+    if engagement_unavailable and not null_as_zero:
+        eng_notes = (
+            "view_count UNAVAILABLE/NULL — engagement not computed "
+            "(NULL ≠ 0; Entry 080-C)"
+            + (f";{extra_notes}" if extra_notes else "")
+        )
 
     signals = [
         _signal(
-            "demand_signal", keyword, plat, source, total_want, "want_count_sum",
-            evidence, obs_ts, notes=extra_notes,
+            "demand_signal", keyword, plat, source, demand_value, "want_count_sum",
+            evidence, obs_ts,
+            notes=(
+                ("want_count all NULL — demand UNAVAILABLE (NULL ≠ 0; Entry 080-C)"
+                 + note_suffix).strip(";")
+                if demand_unavailable
+                else extra_notes
+            ),
+            value_unavailable=demand_unavailable,
         ),
         _signal(
-            "engagement_signal", keyword, plat, source, round(engagement, 4), "want_per_view",
-            evidence, obs_ts, notes=extra_notes,
+            "engagement_signal", keyword, plat, source,
+            None if engagement_unavailable else round(float(engagement), 4),
+            "want_per_view",
+            evidence, obs_ts, notes=eng_notes,
+            value_unavailable=engagement_unavailable,
         ),
         _signal(
             "competition_signal", keyword, plat, source, float(n), "listing_count",
@@ -232,9 +265,17 @@ def _compute_deterministic_signals(
             evidence, obs_ts, notes=extra_notes,
         ),
         _signal(
-            "trend_signal", keyword, plat, source, round(avg_want, 2), "avg_want_proxy",
+            "trend_signal", keyword, plat, source,
+            None if avg_want_unavailable else round(float(avg_want), 2),
+            "avg_want_proxy",
             evidence, obs_ts,
-            notes=("Proxy from want intensity — not true time-series trend" + note_suffix).strip(";"),
+            notes=(
+                "want_count all NULL — avg_want UNAVAILABLE (NULL ≠ 0; Entry 080-C)"
+                + note_suffix
+                if avg_want_unavailable
+                else ("Proxy from want intensity — not true time-series trend" + note_suffix).strip(";")
+            ),
+            value_unavailable=avg_want_unavailable,
         ),
     ]
     if not growth_available:
@@ -284,9 +325,11 @@ def derive_signals_from_product_group(
 
 
 def resolve_observation_keyword(obs: dict) -> str | None:
-    """Keyword from explicit field or notes.query — never invented."""
+    """Keyword from explicit field, collection_query, or notes.query — never invented."""
     if obs.get("keyword"):
         return str(obs["keyword"]).strip() or None
+    if obs.get("collection_query"):
+        return str(obs["collection_query"]).strip() or None
     notes = _parse_notes(obs.get("notes"))
     q = notes.get("query")
     if q:
@@ -342,6 +385,11 @@ def _build_observation_evidence(listings: list[dict]) -> dict:
         for x in listings
         if x.get("want_count") is None and x.get("observation_id")
     ]
+    null_view = [
+        str(x.get("observation_id"))
+        for x in listings
+        if x.get("view_count") is None and x.get("observation_id")
+    ]
     return {
         "lineage": LINEAGE_OBSERVATION,
         "observation_ids": _uniq("observation_id"),
@@ -354,6 +402,7 @@ def _build_observation_evidence(listings: list[dict]) -> dict:
         "listing_count": len(listings),
         "observed_ats": _uniq("observed_at"),
         "null_want_count_observation_ids": null_want,
+        "null_view_count_observation_ids": null_view,
         "product_ids": [],  # explicit: no product substitution
     }
 

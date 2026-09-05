@@ -2,7 +2,7 @@
 
 > **SINGLE ENTRY POINT for future AI sessions（未来 AI 会话唯一入口）**  
 > Collaboration Control System v1（协作控制系统 v1）  
-> Last updated: 2026-09-05（Entry **080-B** P2-B Data Foundation；**P2 PARTIAL**；**NOT_PUBLISHED**）
+> Last updated: 2026-09-05（Entry **080-C** P2-C Hygiene；**P2 COMPLETED_WITH_FINDINGS**；**NOT_PUBLISHED**）
 
 **Read this file first.（任何新会话必须先读本文件。）** Then follow **New Session Recovery Protocol**（及下方 Bootstrap）。  
 文档目录导航 SoT：[DOCUMENTATION_MAP](../AI_FACTORY_OS_DOCUMENTATION_MAP.md)。
@@ -22,15 +22,15 @@ Current:
   Entry 077 Product Asset a949d2e47cf1 = PRODUCED / NOT_PUBLISHED / KEEP
   Commercial closed loop = NOT RUN THROUGH
   P1 = COMPLETED_WITH_FINDINGS
-  P2 = PARTIAL
-  P2-A = Reality Audit DONE（080-A）
-  P2-B = Data Foundation Minimal Implementation DONE（080-B）
-  keywords=1（Excel模板）；product_identities=20；obs linkage complete
-  view_count = NOT_STABLELY_AVAILABLE（未解决；未采集）
+  P2 = COMPLETED_WITH_FINDINGS
+  P2-A / P2-B / P2-C = DONE
+  Data Foundation = implemented + NULL hygiene
+  view_count = NOT_STABLELY_AVAILABLE（未采集；engagement ≠ 0.0 misread fixed）
+  collection_log = KEEP（stale dual-write；not deleted）
   P3 / P4 = NOT STARTED
 
 Next:
-  ChatGPT Closure Review → authorize next Entry（P2 hygiene / P3 / Human Publish）
+  ChatGPT Closure Review → authorize P3 / Human Publish / other
   （不得自动进入 P3/P4）
 
 Important:
@@ -307,13 +307,13 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 | 项 | 投影（须核验） |
 |----|----------------|
 | Active Project | **Xianyu Commercial Closed-Loop Project** |
-| Project phase | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 PARTIAL** |
-| Latest Reality Audit | Entry **078**；P2-A **080-A**；P2-B **080-B** |
+| Project phase | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 COMPLETED_WITH_FINDINGS** |
+| Latest Reality Audit | Entry **078**；P2-A **080-A**；P2-B **080-B**；P2-C **080-C** |
 | Latest Product Asset | Entry **077** `a949d2e47cf1` — **PRODUCED**；**NOT_PUBLISHED**；**KEEP** |
 | Product Definition | `prod_a0638789fc2b`（`draft`）← `aoc_19399677b7ba` |
 | Closed loop status | **NOT RUN THROUGH** |
-| Continuity chain | 079-A→D；080-A；**080-B** |
-| P2 | Foundation **implemented**；view **not solved**；adaptive engine **NOT**；**≠ P2 completed** |
+| Continuity chain | 079-A→D；080-A→**080-C** |
+| P2 | Foundation + hygiene **done**；view **still unavailable**（not forged）；**≠ view solved** |
 | Development posture | **STOP 自动 P3** — 等待 ChatGPT Closure Review |
 | GitHub | `main` = 版本化载体；GitHub ≠ Reality Authority |
 
@@ -337,10 +337,10 @@ Entry 040-A … 041-H 治理基础（DEC-013…018 等）— **Completed**（详
 
 ## Current Development Focus
 
-1. **Entry 080-B** — P2-B Data Foundation 已落地；等待 ChatGPT Closure Review  
-2. **下一步（未授权勿执行）：** P2 hygiene / P3 Keyword Discovery **或** Human Publish  
-3. Trust **CURRENT_STATE + MODULE_REGISTRY + Reality**；HYPOTHESIS ≠ DIRECT_EVIDENCE；view ≠ solved  
-4. Entry **078** / **080-A** / **080-B**；**077** = Asset KEEP；**079-B/C/D** = P1 链  
+1. **Entry 080-C** — P2-C Hygiene 已完成；等待 ChatGPT Closure Review  
+2. **下一步（未授权勿执行）：** P3 Keyword Discovery **或** Human Publish  
+3. Trust **CURRENT_STATE + MODULE_REGISTRY + Reality**；NULL view ≠ 0 engagement；HYPOTHESIS ≠ FACT  
+4. Entry **078** / **080-A/B/C**；**077** = Asset KEEP  
 5. DEC-033：商业结果优先；AI 成本集中在生产价值点；采集路径优先 ¥0 AI  
 6. GitHub = 版本化 / 可追溯；**≠ Reality Authority**
 
@@ -502,22 +502,24 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | **`NONE`**（080-B 完成后清空；等待 ChatGPT Closure Review） |
+| **ACTIVE_TASK** | **`NONE`**（080-C 完成后清空；等待 ChatGPT Closure Review） |
 | **STATUS** | 无正在进行的 Cursor Runtime 实施；**不得自动 P3/P4** |
 | **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project** |
-| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 PARTIAL** |
-| **NOTE** | Foundation OK；view not solved；闭环未跑通；a949 KEEP |
+| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 COMPLETED_WITH_FINDINGS** |
+| **NOTE** | Foundation+hygiene OK；view unavailable；闭环未跑通；a949 KEEP |
 | **LAST REALITY AUDIT** | Entry **078** |
 | **LAST P2-A AUDIT** | Entry **080-A** |
-| **LAST P2-B IMPLEMENTATION** | Entry **080-B** — `docs/07_AUDIT/ENTRY_080B_XIANYU_P2B_DATA_FOUNDATION_IMPLEMENTATION.md` |
+| **LAST P2-B IMPLEMENTATION** | Entry **080-B** |
+| **LAST P2-C HYGIENE** | Entry **080-C** — `docs/07_AUDIT/ENTRY_080C_XIANYU_P2C_DATA_HYGIENE_GUARD.md` |
 | **LAST CONTINUITY** | Entry **079-A** |
 | **LAST P1-D ARCHIVE/INVALIDATE** | Entry **079-D** |
-| **EVIDENCE POINTERS** | 078；079-B/C/D；080-A；**080-B**；Current State Active Project |
+| **EVIDENCE POINTERS** | 078；079-B/C/D；080-A/B/**C**；Current State Active Project |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **PRODUCED** / **NOT_PUBLISHED** |
 | **ENTRY_080-A** | **P2-A REALITY AUDIT DONE** |
 | **ENTRY_080-B** | **P2-B DATA FOUNDATION DONE** |
-| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 COMPLETED_WITH_FINDINGS · P2 PARTIAL · AWAITING_NEXT_AUTH** |
+| **ENTRY_080-C** | **P2-C HYGIENE / NULL GUARD DONE** |
+| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 COMPLETED_WITH_FINDINGS · P2 COMPLETED_WITH_FINDINGS · AWAITING_P3_OR_PUBLISH_AUTH** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 

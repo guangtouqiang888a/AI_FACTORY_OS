@@ -1,0 +1,18 @@
+{
+  "entry": "080-C",
+  "engagement_signal_corrected": "sig_9a3983efb2a4",
+  "engagement_value_before": 0.0,
+  "engagement_value_after": null,
+  "observation_preservation_ok": true,
+  "obs": 20,
+  "real": 20,
+  "want_null": 6,
+  "view_null": 20,
+  "keywords": 1,
+  "product_identities": 20,
+  "collection_log_decision": "KEEP",
+  "collection_log_rows": 14,
+  "collection_log_note": "All status=running totals=0; start_collection_log called without finish; dual-write legacy vs collection_runs; Runtime still depends on start — no delete",
+  "ai_cost": 0,
+  "tests": "test_data_hygiene_080c 6 OK; test_candidate_to_signal_073 7 OK"
+}
