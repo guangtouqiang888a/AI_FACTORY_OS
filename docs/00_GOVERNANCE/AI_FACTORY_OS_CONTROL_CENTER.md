@@ -2,7 +2,7 @@
 
 > **SINGLE ENTRY POINT for future AI sessions（未来 AI 会话唯一入口）**  
 > Collaboration Control System v1（协作控制系统 v1）  
-> Last updated: 2026-09-05（Entry **078** / **P0 COMPLETED** / **P1 NOT STARTED** / **NOT_PUBLISHED**）
+> Last updated: 2026-09-05（Entry **079-B** P1-B verification evidence；**P0 COMPLETED** / **P1 NOT STARTED** / Cleanup **NOT EXECUTED** / **NOT_PUBLISHED**）
 
 **Read this file first.（任何新会话必须先读本文件。）** Then follow **New Session Recovery Protocol**（及下方 Bootstrap）。  
 文档目录导航 SoT：[DOCUMENTATION_MAP](../AI_FACTORY_OS_DOCUMENTATION_MAP.md)。
@@ -21,10 +21,11 @@ Current:
   P0 COMPLETED  |  Entry 078 = PASS_WITH_FINDINGS
   Entry 077 Product Asset a949d2e47cf1 = PRODUCED / NOT_PUBLISHED
   Commercial closed loop = NOT RUN THROUGH（反馈/收入/学习未开始）
+  P1-B Reality Verification = formalized（Entry 079-B）；Cleanup = NOT EXECUTED
 
 Next:
   P1 Reality Purification = NOT STARTED
-  （Entry 079-A = Continuity Hardening only — 不自动进入 P1）
+  （079-A Continuity + 079-B Verification ≠ P1 cleanup authorization）
 
 Important:
   Do not infer the project solely from Entry numbers.
@@ -306,7 +307,8 @@ Entry 037–040 治理类继承关系见：[KNOWLEDGE_CONSOLIDATION_MAP_A](../99
 | Product Definition | `prod_a0638789fc2b`（`draft`）← `aoc_19399677b7ba` |
 | Closed loop status | **NOT RUN THROUGH**（无真实发布反馈 / 收入 / 商业学习） |
 | Continuity hardening | Entry **079-A**（docs-only；≠ P1） |
-| Development posture | **STOP 自动进入 P1** — 等待 ChatGPT Closure Review |
+| P1-B verification | Entry **079-B** — evidence formalized；**Cleanup NOT EXECUTED** |
+| Development posture | **STOP 自动 P1 Cleanup** — 等待 ChatGPT Closure Review |
 | GitHub | `main` = 版本化载体；GitHub ≠ Reality Authority |
 
 ### Governance foundation history（已完成 · 非 Current Reality 清单）
@@ -501,11 +503,13 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 | **NOTE** | Product Asset `a949d2e47cf1` PRODUCED；**NOT_PUBLISHED**；闭环未跑通 |
 | **LAST REALITY AUDIT** | Entry **078** — `PASS_WITH_FINDINGS` |
 | **LAST CONTINUITY** | Entry **079-A** — Continuity Hardening（docs-only） |
-| **EVIDENCE POINTERS** | `docs/07_AUDIT/ENTRY_078_…REALITY_AUDIT.md`；Current State Active Project 节；Business Strategy 项目节 |
+| **LAST P1-B EVIDENCE** | Entry **079-B** — `docs/07_AUDIT/ENTRY_079B_XIANYU_P1B_REALITY_VERIFICATION.md` |
+| **EVIDENCE POINTERS** | Entry 078 Audit；079-B Verification Audit；Current State Active Project |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **PRODUCED** / **NOT_PUBLISHED** |
 | **ENTRY_078** | **COMPLETED（Audit）** |
-| **PROJECT_DEVELOPMENT** | **P0 DONE · AWAITING_CLOSURE_THEN_P1_OR_HUMAN_PUBLISH** |
+| **ENTRY_079-B** | **VERIFICATION FORMALIZED** |
+| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 NOT STARTED · Cleanup NOT EXECUTED** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 

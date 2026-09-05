@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-A** Continuity Hardening；**P0 COMPLETED** / **P1 NOT STARTED**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **079-B** P1-B Reality Verification formalized；**P1 NOT STARTED**）
 
 ---
 
@@ -2822,6 +2822,46 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Business Strategy；Execution History
 - Reviewed but Not Modified：Authority；Constitution；UA；Module Registry；Decision Log；KUP；EP；Runtime/DB/Assets
+
+---
+
+### Entry 079-B — Xianyu P1-B Reality Verification Formalization（2026-09-05）
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-09-05 |
+| **Entry ID** | **079-B** |
+| **Original Objective** | 建立一个真正能够在闲鱼跑通的商业闭环：真实市场采集 → 沉淀 → 选品 → 生产 → 人工发布 → 真实反馈回写 → 商业学习 → 下一轮采集。 |
+| **Current Objective** | 将已完成的 P1-B Local Reality Verification 结果正式留证并同步 GitHub（不执行清理） |
+| **Current Phase** | P1 Reality Purification（规划）— **执行 NOT STARTED** |
+| **Current Step** | P1-B Local Reality Verification → Formalization & GitHub Sync |
+| **Scope** | Formal Audit；Execution History；必要 Control Center/Current State 指针；Git commit/push/verify |
+| **Out of Scope** | 删除/移动/归档；Runtime/DB；P1 Cleanup 执行；P2+；付费 AI；闲鱼外部动作；重写 078/079-A |
+| **Completed** | Evidence Matrix 形式化；Audit 079-B；History；指针更新；无对象删除 |
+| **Findings** | DELETE_CANDIDATE=`10ff21f1efee`/`3d323bf0de83`/`5f4719b47909`；ARCHIVE=`75f2`+历史 pilots；KEEP=`a949`；工作区仍有 untracked orphans + 077 audit dirty（未提交） |
+| **Decisions** | 仅留证；**不授权** cleanup；Recommendation ≠ Action |
+| **Pending** | ChatGPT Closure Review；P1 Cleanup 独立授权 |
+| **Next Step** | **STOP** — P1 实际清理仍未开始，需要后续独立授权 |
+| **Stop Conditions** | 删除/Runtime/DB 修改；宣称 P1 Completed；进入 P2 → STOP |
+| **Final Completion Criteria** | Audit+History on GitHub；P1 NOT STARTED；Cleanup NOT EXECUTED；remote PASS |
+| **Modified Files** | Control Center；Current State；Execution History |
+| **Created Files** | `docs/07_AUDIT/ENTRY_079B_XIANYU_P1B_REALITY_VERIFICATION.md` |
+| **Architecture Impact** | Documentation Only |
+| **Validation Result** | PASS_WITH_FINDINGS（验证完成；清理未执行；残留 dirty/untracked 未纳入 commit） |
+| **Audit** | `docs/07_AUDIT/ENTRY_079B_XIANYU_P1B_REALITY_VERIFICATION.md` |
+| **Git Commit** | （closeout） |
+| **GitHub Push** | （closeout） |
+| **Remote Verification** | （closeout） |
+| **Evidence** | 本 Audit；P1-B 会话验证矩阵 |
+| **Final Status** | **P1-B verification evidence formalized / synced**（≠ P1 completed） |
+| **P1 Status** | **NOT STARTED** |
+| **Cleanup Status** | **NOT EXECUTED** |
+
+**Note：** Cursor Process Output ≠ Formal Audit ≠ Current State ≠ ChatGPT Closure Review.
+
+**Core Documentation Continuity Check：**
+- Modified：Control Center；Current State；Execution History；Formal Audit 079-B
+- Reviewed but Not Modified：Business Strategy；UA；Module Registry；Constitution；Authority；Decision Log；Runtime/DB/Assets
 
 ---
 

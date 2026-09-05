@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-05（Entry **079-A** Continuity Hardening；**P0 COMPLETED** / **P1 NOT STARTED**；**NOT_PUBLISHED**）  
+> Last updated: 2026-09-05（Entry **079-B** P1-B Reality Verification formalized；**P0 COMPLETED** / **P1 NOT STARTED**；Cleanup **NOT EXECUTED**；**NOT_PUBLISHED**）
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -190,9 +190,10 @@ P1–P7 主体；P8–P10 增强；**P11–P14 全部**；真实发布与反馈�
 | Field | Value |
 |-------|-------|
 | **Current Phase** | **P0 COMPLETED** |
-| **Next Phase** | **P1 NOT STARTED** |
+| **Next Phase** | **P1 NOT STARTED**（P1-B verification formalized；**Cleanup NOT EXECUTED**） |
 | **Continuity Entry** | **079-A**（docs-only hardening） |
-| **Stop** | **不要自动进入 P1**；等待 ChatGPT 对连续性固化后的 GitHub Reality 做 Closure Review |
+| **P1-B Evidence** | Entry **079-B** — `docs/07_AUDIT/ENTRY_079B_XIANYU_P1B_REALITY_VERIFICATION.md` |
+| **Stop** | **不要自动进入 P1 Cleanup**；等待 ChatGPT Closure Review |
 
 ---
 
@@ -541,7 +542,7 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 
 ## In Progress
 
-- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 NOT STARTED**  
+- **Active Project：** Xianyu Commercial Closed-Loop Project — **P0 COMPLETED**；**P1 NOT STARTED**；P1-B verification **formalized**（079-B）；Cleanup **NOT EXECUTED**  
 - Acquisition Engine — **PARTIAL**（Extension IMPLEMENTED；Bridge 默认 TEST sink；DB 需 human import gate）  
 - **Candidate → Signal** — **IMPLEMENTED**（073）  
 - **Signal → Opportunity（Observation lineage）** — **IMPLEMENTED**（075）  
@@ -549,9 +550,9 @@ Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)
 - **Product Definition → Product Asset（Entry 077）** — **PRODUCED**；**NOT_PUBLISHED**  
 - **Feedback → Learning closed loop** — **NOT_STARTED**（publish_evidence=0；market_events=0）  
 - Model Router / AI Query Planner — **NOT_IMPLEMENTED**  
-- **WAITING** ChatGPT Closure Review after Entry **079-A** Continuity Hardening — **不得自动进入 P1**  
+- **WAITING** ChatGPT Closure Review after Entry **079-B** evidence sync — **不得自动执行 P1 Cleanup**  
 - Product Definition `prod_a0638789fc2b` = **draft**；Product Asset `a949d2e47cf1` = **generated** ≠ Listing / Published / Market Validated / Revenue  
-- **Known Reality gaps（078）：** 见上方 Active Project Open Findings  
+- **Known Reality gaps（078）+ P1-B classes：** 见 Active Project；DELETE_CANDIDATE=`10ff`/`3d32`/`5f47`（未删）  
 
 ---
 
