@@ -120,6 +120,6 @@ P1 Reality Purification **尚未完全结束**；剩余 ARCHIVE / INVALIDATE / �
 
 | Field | Value |
 |-------|-------|
-| Git Commit | （closeout） |
-| GitHub Push | （closeout） |
-| Remote Verification | （closeout） |
+| Git Commit | cleanup `1651c715916d0ab96a027a94e31f1f9f14acb5fa`；docs `87090a162a4135e7c75be9faf9dd0720d6a93194` |
+| GitHub Push | （push closeout） |
+| Remote Verification | （push closeout） |
