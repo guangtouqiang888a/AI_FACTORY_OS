@@ -3055,9 +3055,9 @@
 | **DB Impact** | 1 signal UPDATE；obs untouched |
 | **Runtime Impact** | Future observation signals only |
 | **Created Audit** | `docs/07_AUDIT/ENTRY_080C_XIANYU_P2C_DATA_HYGIENE_GUARD.md` |
-| **Git Commit** | `0e6fe11160ca5fc67385fd8837b0d528062ad254` |
-| **GitHub Push** | **SUCCESS**（`d2dae3b..0e6fe11  main -> main`；retried once） |
-| **Remote Verification** | **PASS_WITH_FINDINGS**（local HEAD == origin/main `0e6fe11…`） |
+| **Git Commit** | content `0e6fe11…`（origin）；stamp `aa97678…`（local pending） |
+| **GitHub Push** | content **SUCCESS**；stamp **RETRY_REQUIRED**（443） |
+| **Remote Verification** | **PASS_WITH_FINDINGS**（080-C Audit on origin at `0e6fe11`；local ahead 1） |
 | **Final Status** | **P2-C DONE**；**P2 COMPLETED_WITH_FINDINGS**；P3/P4 NOT STARTED |
 
 **Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review.

@@ -155,9 +155,9 @@ Violated if Extension/view collector/P3 started or REAL obs deleted.
 
 | Field | Value |
 |-------|-------|
-| Git Commit | `0e6fe11160ca5fc67385fd8837b0d528062ad254` |
-| GitHub Push | **SUCCESS**（`d2dae3b..0e6fe11  main -> main` after one network retry；无 force） |
-| Remote Verification | **PASS_WITH_FINDINGS**（push accepted；local HEAD == origin/main `0e6fe11…`；follow-up fetch/ls-remote intermittently flaky） |
+| Git Commit | content `0e6fe11160ca5fc67385fd8837b0d528062ad254`（on origin）；stamp tip `aa97678142cbe5403d99b17d1283a21c9c5f3836`（local） |
+| GitHub Push | **PASS_WITH_FINDINGS** — content commit **SUCCESS**（`d2dae3b..0e6fe11`）；stamp push **RETRY_REQUIRED**（GitHub 443 intermittent） |
+| Remote Verification | **PASS_WITH_FINDINGS** — origin/main has 080-C Audit + code at `0e6fe11`；local ahead 1 stamp commit pending network |
 
 ## Final Status
 
