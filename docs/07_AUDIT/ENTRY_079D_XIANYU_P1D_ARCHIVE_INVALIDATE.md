@@ -160,9 +160,9 @@
 
 | Field | Value |
 |-------|-------|
-| Git Commit | （closeout） |
-| GitHub Push | （closeout） |
-| Remote Verification | （closeout） |
+| Git Commit | `598e00e3086997c95fc7ca3bf93edc4de3cf1b03` |
+| GitHub Push | **SUCCESS**（`20a719d..598e00e  main -> main`；无 force） |
+| Remote Verification | **PASS**（push accepted；local HEAD == origin/main `598e00e…`） |
 
 ---
 
