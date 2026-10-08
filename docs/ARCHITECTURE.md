@@ -38,14 +38,26 @@ Meaning:
 - **L4** — highly dynamic active work
 - **L5** — facts, results, and historical evidence
 
-Presence of L0–L5 in this model does **not** authorize creating six matching directory trees or six matching file systems in this phase.
+Presence of L0–L5 in this model does **not** authorize creating six matching directory trees or six matching file systems.
 
-Currently materialized:
+Current materialization in the repository:
 
-- L0 → `docs/CONSTITUTION.md`
-- L1 → `docs/ARCHITECTURE.md`
+```text
+L0 → docs/CONSTITUTION.md
+L1 → docs/ARCHITECTURE.md
+L2 → docs/PRODUCT.md
+L3 → not established yet
+L4 → docs/CURRENT_STATE.md
+L5 → not established yet
+```
 
-L2–L5 are not established yet.
+Clarifications:
+
+- `docs/PRODUCT.md` is the current top-level entry for **L2 Product Knowledge**.
+- `docs/CURRENT_STATE.md` is the current navigation entry for system state under **L4 Active Work / active-state context**.
+- `docs/TASK_MODEL.md` defines the Task mechanism. It is **not** a concrete Task, and its existence does **not** mean a full L4 Task System is established.
+- **L5 Evidence System** is not established.
+- **L3 Engineering Knowledge** is not established.
 
 ## 3. Collaboration Architecture
 
@@ -116,14 +128,21 @@ Detailed change-control mechanisms are deferred.
 
 ### Core
 
-Long-lived, cross-task material that defines how the system exists.
+Long-lived, cross-task material that defines how the system exists, plus system-level navigation that currently anchors orientation.
 
 Currently:
 
-- `README.md`
-- `AGENTS.md`
-- `docs/CONSTITUTION.md`
-- `docs/ARCHITECTURE.md`
+```text
+README.md
+AGENTS.md
+docs/CONSTITUTION.md
+docs/ARCHITECTURE.md
+docs/PRODUCT.md
+docs/TASK_MODEL.md
+docs/CURRENT_STATE.md
+```
+
+`docs/CURRENT_STATE.md` is a navigation entry for dynamic content. It currently exists as a system-level core navigation file. It is **not** a Task Registry and **not** an Evidence Registry.
 
 ### Dynamic
 
@@ -133,7 +152,9 @@ Principle:
 
 > Core must not be polluted by a single active task.
 
-Dynamic layers are not created in this phase.
+Also:
+
+> Core / Dynamic separation depends on the responsibility a file carries, not only on whether its content changes over time.
 
 ## 7. Current Architecture Is Not Final
 
