@@ -3117,10 +3117,10 @@
 | **Out of Scope** | 删除历史；重建仓库；业务功能；伪造验证 |
 | **Modified Files** | `.gitignore`；`app/main.py`；`database/db.py`；`tests/test_v2_baseline.py`；Current State；ACTIVE_TASK；Control Center；Constitution；Execution Protocol；UA；DOCUMENTATION_MAP；本 History |
 | **Validation Result** | `python -m tests.verify_v2` → ALL VERIFICATION PASS；root `99_ARCHIVE/` ABSENT；`docs/99_ARCHIVE/` + `99_ARCHIVE_RUNTIME/{legacy_runtime,database_history}` PRESENT；V2 dirs PRESENT |
-| **Git Commit** | （filled after commit） |
-| **GitHub Push** | （filled after push） |
+| **Git Commit** | `cdf124b60dc919f50feeb0c59d5e1e78f345645a` — `Foundation: finalize V2 legacy migration boundaries` |
+| **GitHub Push** | **SUCCESS**（`16e666f..cdf124b` → `origin/main`） |
 | **Final Status** | EXECUTED_AWAITING_CHATGPT_REVIEW |
-| **未解决事项** | Unrelated dirty working-tree files left unstaged（archived a949 pack/validation + one audit md）；ChatGPT Closure Review 未做 |
+| **未解决事项** | Unrelated dirty working-tree files left unstaged（archived a949 pack/validation + one audit md）；ChatGPT Closure Review 未做；历史审计文中的旧路径字面量未批量改写 |
 
 ---
 
