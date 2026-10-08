@@ -20,28 +20,30 @@ DONE:
 - freeze-and-rebuild is no longer the normal evolution strategy
 - durable Task control model established
 - durable Evidence and Closure model established
+- durable Change/Migration/Compatibility/Recovery model established
 - TASK-V2-FOUNDATION-002 closed as ACCEPTED
+- TASK-V2-FOUNDATION-003 closed as ACCEPTED
 
 IN PROGRESS:
-- establish change/migration/compatibility/recovery control
-- archive old active baseline without deleting historical evidence
 - establish clean runtime/database baseline
+- preserve retired implementation as historical material without allowing runtime coupling
 
 NOT STARTED:
-- new runtime/database implementation
-- new market-intelligence implementation
-- new product implementation
+- market-intelligence implementation
+- product implementation
+- production deployment
 
 ## Authority boundary
 Runtime/data and reproducible evidence outrank documents. Legacy documents/data/code are historical until the new baseline explicitly promotes a reusable fact or component. Historical material must not silently become runtime authority.
 
 ## Foundation control boundary
-The V2 foundation now has three explicit layers:
+The V2 engineering foundation now has four explicit layers:
 1. Engineering operating model
 2. Task control
 3. Evidence and closure
+4. Change, migration, compatibility, and recovery
 
-The next required layer is change/migration/compatibility/recovery control. Runtime implementation must not start until this foundation gap is closed.
+Runtime/database work may now begin, but only through TASK-V2-FOUNDATION-004 and the controls above.
 
 ## Recovery entrypoint
 For a new AI/session with limited context, read in this order:
@@ -53,5 +55,5 @@ For a new AI/session with limited context, read in this order:
 6. only the deeper architecture/business/evidence sources required by that Task
 
 ## Next permitted work
-TASK-V2-FOUNDATION-003 is the sole current work pointer:
-Establish change, migration, compatibility, and recovery control before rebuilding runtime code or database structures.
+TASK-V2-FOUNDATION-004 is the sole current work pointer:
+Establish the clean runtime/database baseline and verification boundary.
