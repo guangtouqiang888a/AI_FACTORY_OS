@@ -3090,11 +3090,11 @@
 | **Created Files** | `app/**`；`database/**`；`config/**`；`tests/**`；`docs/05_EXECUTION/ACTIVE_TASK.md` |
 | **Architecture Impact** | Core Layer — Runtime Authority boundary change（retired Entry-driven physically archived；V2 Active Runtime established） |
 | **Validation Result** | `python -m app.main` → `AI_FACTORY_OS V2 runtime: OK`；`python -m database init\|verify\|reset` PASS；`python -m tests.verify_v2` → ALL VERIFICATION PASS |
-| **Git Commit** | （filled after commit） |
-| **GitHub Push** | （filled after push） |
-| **Remote Verification** | （filled after push） |
+| **Git Commit** | `c47f1df2eca3af876a9466ef6948562dd6b0bff2` — `Foundation: establish V2 runtime and database baseline` |
+| **GitHub Push** | （attempting） |
+| **Remote Verification** | （pending push） |
 | **Final Status** | **EXECUTED_AWAITING_CHATGPT_REVIEW** |
-| **Evidence** | Current State Runtime Reality；ACTIVE_TASK.md；this History entry；local verify command output |
+| **Evidence** | Current State Runtime Reality；ACTIVE_TASK.md；this History entry；local verify command output；commit `c47f1df…` |
 
 **Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review. 004B completion evidence is this Task’s rename + archive tree presence（not a prior separate successful 004B commit）.
 
