@@ -2,7 +2,7 @@
 
 > **文档唯一导航入口（Documentation Navigation SoT）**  
 > Entry **044-A** · Hardening · Entry **044-B** · Physical Consolidation · Entry **045** Minimal Core · Entry **046** Continuity  
-> Last updated: 2026-09-03（Entry **067**）
+> Last updated: 2026-10-08（archive boundary：`docs/99_ARCHIVE` ≠ `99_ARCHIVE_RUNTIME`）
 
 **本文件职责：** AI_FACTORY_OS 文档结构与阅读边界的**唯一导航入口**。  
 **不替代：** Reality（Code / DB / Assets / Runtime）· Current State · Authority Model · Control Center 会话协议细节。
@@ -10,6 +10,19 @@
 **关联：** 会话入口仍为 [CONTROL_CENTER](./00_GOVERNANCE/AI_FACTORY_OS_CONTROL_CENTER.md)。  
 **Recovery 权威（唯一）：** Control Center 内 **New Session Recovery Protocol（DEC-017）** + **AI Recovery Reading Boundary**；本 Map 只做导航。  
 旧索引（已归档）：[Documentation Map Reference History](./99_ARCHIVE/AI_FACTORY_OS_DOCUMENTATION_MAP_REFERENCE_HISTORY.md)。
+
+**双归档边界（现行）：**
+
+| 路径 | 职责 |
+|------|------|
+| `docs/99_ARCHIVE/` | **仅文档历史归档**（blueprint / old governance / execution docs） |
+| `99_ARCHIVE_RUNTIME/` | **代码 / 运行资产 / 数据库历史归档**（`legacy_runtime/` + `database_history/`） |
+
+```text
+docs/99_ARCHIVE  ≠  99_ARCHIVE_RUNTIME
+```
+
+根目录不得再使用易歧义名称 `99_ARCHIVE/`。
 
 ---
 
@@ -24,20 +37,20 @@
 | `05_EXECUTION/` | **仅** CURSOR_EXECUTION_HISTORY（执行连续性台账）；**不是**系统状态来源 |
 | `06_HISTORY/` | 历史解释 only（不得覆盖 Current State） |
 | `07_AUDIT/` | 验证证据；子类见下 |
-| `99_ARCHIVE/` | 冻结历史参考（默认不参与判断）；含 `blueprint_history/`（原 04_BLUEPRINT）、execution/old_history/legacy 等 |
+| `docs/99_ARCHIVE/` | 冻结**文档**历史参考（默认不参与判断）；含 `blueprint_history/`（原 04_BLUEPRINT）、execution/old_history/legacy 等 |
 
-> **注（045/046）：** 现行最小核心不再保留活动态 `04_BLUEPRINT/`。Blueprint 设计文位于 `99_ARCHIVE/blueprint_history/`（≠ Production）。
+> **注（045/046）：** 现行最小核心不再保留活动态 `04_BLUEPRINT/`。Blueprint 设计文位于 `docs/99_ARCHIVE/blueprint_history/`（≠ Production）。
 
 ### 1.1 Blueprint 归档位置（原 04_BLUEPRINT）
 
-| 子目录（在 archive 下） | 内容 |
+| 子目录（在 `docs/99_ARCHIVE` 下） | 内容 |
 |------|------|
-| `99_ARCHIVE/blueprint_history/commercial/` | 商业验证 / Experiment / Opportunity / Monetization 设计 |
-| `99_ARCHIVE/blueprint_history/runtime/` | Content Factory / Cognition / Integration / Validation Gate 设计 |
-| `99_ARCHIVE/blueprint_history/database/` | Schema / DB 演进与迁移设计 |
-| `99_ARCHIVE/blueprint_history/contract/` | 商业对象契约 |
-| `99_ARCHIVE/blueprint_history/protocol/` | 观察 / 人辅 / Review 协议 |
-| `99_ARCHIVE/blueprint_history/policy/` | 生命周期 / 状态权限策略 |
+| `docs/99_ARCHIVE/blueprint_history/commercial/` | 商业验证 / Experiment / Opportunity / Monetization 设计 |
+| `docs/99_ARCHIVE/blueprint_history/runtime/` | Content Factory / Cognition / Integration / Validation Gate 设计 |
+| `docs/99_ARCHIVE/blueprint_history/database/` | Schema / DB 演进与迁移设计 |
+| `docs/99_ARCHIVE/blueprint_history/contract/` | 商业对象契约 |
+| `docs/99_ARCHIVE/blueprint_history/protocol/` | 观察 / 人辅 / Review 协议 |
+| `docs/99_ARCHIVE/blueprint_history/policy/` | 生命周期 / 状态权限策略 |
 
 ### 1.2 `07_AUDIT/` 子类
 
@@ -62,7 +75,7 @@
 
 | 文件 | 角色 |
 |------|------|
-| [WORK_PRINCIPLES](./AI_FACTORY_OS_WORK_PRINCIPLES.md) | **Reference（现行对齐）** — 协作方法；含 Browser-Native Acquisition、Acquisition Policy、AI Cost 原则；冲突以 `00_GOVERNANCE` 为准；Archive 版见 `99_ARCHIVE/` |
+| [WORK_PRINCIPLES](./AI_FACTORY_OS_WORK_PRINCIPLES.md) | **Reference（现行对齐）** — 协作方法；含 Browser-Native Acquisition、Acquisition Policy、AI Cost 原则；冲突以 `00_GOVERNANCE` 为准；Archive 版见 `docs/99_ARCHIVE/` |
 
 **Acquisition Policy / AI Cost Gate（Entry 067）：** 实现于 `1_DATA/acquisition_engine.py` + `1_DATA/ai_cost_gate.py`；架构说明见 Unified Architecture；详细证据见 `07_AUDIT/ENTRY_067_...md`。
 
@@ -89,7 +102,7 @@
 
 | 目录 | 何时读取 |
 |------|----------|
-| `99_ARCHIVE/blueprint_history/` | 未来规划 / 契约 / 协议设计（≠ Production） |
+| `docs/99_ARCHIVE/blueprint_history/` | 未来规划 / 契约 / 协议设计（≠ Production） |
 | `05_EXECUTION/` | 执行台账与推进连续性 |
 | `06_HISTORY/` | **仅**历史形成原因 |
 | `07_AUDIT/` | 验证证据 |
@@ -98,7 +111,8 @@
 
 | 目录 | 规则 |
 |------|------|
-| `99_ARCHIVE/` | **默认不读取**（含旧 WORK_PRINCIPLES、旧 Recovery Read Order） |
+| `docs/99_ARCHIVE/` | **默认不读取**（含旧 WORK_PRINCIPLES、旧 Recovery Read Order） |
+| `99_ARCHIVE_RUNTIME/` | **默认不读取**（retired runtime / DB history；非文档 SoT） |
 
 ---
 
@@ -157,12 +171,13 @@ AI_FACTORY_OS 文档读取必须遵循以下顺序：
    - 历史背景解释
 
 7. Blueprint（归档）
-   - `99_ARCHIVE/blueprint_history/` 设计与规划参考
+   - `docs/99_ARCHIVE/blueprint_history/` 设计与规划参考
 
 禁止默认使用：
 
 - 07_AUDIT 作为系统事实来源
-- 99_ARCHIVE 作为当前规则来源
+- `docs/99_ARCHIVE` 作为当前规则来源
+- `99_ARCHIVE_RUNTIME` 作为当前 Runtime Authority
 
 原则：
 

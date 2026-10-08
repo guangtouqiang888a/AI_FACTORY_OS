@@ -131,8 +131,10 @@ def reset(settings: Settings | None = None) -> Path:
     path = settings.database_path
     if "legacy_runtime" in path.parts:
         raise RuntimeError(f"refusing to reset path that looks like legacy archive: {path}")
-    if "99_ARCHIVE" in path.parts:
-        raise RuntimeError(f"refusing to reset path under 99_ARCHIVE: {path}")
+    if "99_ARCHIVE_RUNTIME" in path.parts or (
+        "99_ARCHIVE" in path.parts and "docs" not in path.parts
+    ):
+        raise RuntimeError(f"refusing to reset path under runtime archive: {path}")
     _purge_v2_db_files(path)
     return initialize(settings)
 

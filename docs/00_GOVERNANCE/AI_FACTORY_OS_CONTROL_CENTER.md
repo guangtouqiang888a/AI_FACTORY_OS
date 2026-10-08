@@ -58,7 +58,7 @@ Important:
 
 **Recovery 权威（唯一）：** 本文件内 **New Session Recovery Protocol（DEC-017）** + 上方 **AI Recovery Reading Boundary（044-A）** + Documentation Map 导航。  
 **协作准则（现行对齐）：** [`AI_FACTORY_OS_WORK_PRINCIPLES.md`](../AI_FACTORY_OS_WORK_PRINCIPLES.md) — 冲突以本目录 Constitution / Protocol 为准。  
-归档辅助文件 `99_ARCHIVE/execution_history/reference/AI_FACTORY_OS_RECOVERY_READ_ORDER.md` **不是**现行 Recovery 权威，默认不读取。
+归档辅助文件 `docs/99_ARCHIVE/execution_history/reference/AI_FACTORY_OS_RECOVERY_READ_ORDER.md` **不是**现行 Recovery 权威，默认不读取。
 
 **长期商业方向指针（DEC-020…033）：** … + Browser Extension v1（065）；Import Gate（066）；Acquisition Policy + AI Cost Gate（067）— 成本控 estimated_cost 非 call_count；Model Router 未建；IMPORT 仍可用；Cursor ≠ 产品 AI；**DEC-033** 商业结果优先 / 最低成本含 AI / 用户发布与异常介入 / Commercialization Context 解耦 / 闲鱼 Pilot ≠ 永久边界。  
 **基础设施指针：** GitHub `main` 已作为版本化 / 跨 Session 连续性载体（见下方 GitHub Continuity Note）；**GitHub ≠ Reality Authority**。
@@ -95,13 +95,15 @@ AI 恢复上下文时，按层加载；**禁止**一次加载全部 `docs/`；**
 | EXECUTION | `05_EXECUTION/`（执行台账；Entry 连续性） |
 | HISTORY | `06_HISTORY/`（仅历史解释） |
 | AUDIT | `07_AUDIT/` |
-| BLUEPRINT（归档） | `99_ARCHIVE/blueprint_history/` — Design Reference only；≠ Production；**默认不作为 Current Reality** |
+| BLUEPRINT（归档） | `docs/99_ARCHIVE/blueprint_history/` — Design Reference only；≠ Production；**默认不作为 Current Reality** |
+| RUNTIME ARCHIVE | `99_ARCHIVE_RUNTIME/` — retired code / assets / DB history；**非**当前 Runtime Authority |
 
 ### 默认不读取
 
 | 域 | 规则 |
 |----|------|
-| ARCHIVE | `99_ARCHIVE/` — **默认不读取**；不参与现行判断（含旧 Recovery Read Order、WORK_PRINCIPLES） |
+| DOCS ARCHIVE | `docs/99_ARCHIVE/` — **默认不读取**；不参与现行判断（含旧 Recovery Read Order、WORK_PRINCIPLES） |
+| RUNTIME ARCHIVE | `99_ARCHIVE_RUNTIME/` — **默认不读取**；历史保留 only（`docs/99_ARCHIVE` ≠ `99_ARCHIVE_RUNTIME`） |
 
 完整目录职责与角色定义以 Documentation Map 为准。下方 **New Session Recovery Protocol（DEC-017）** 仍有效，并与本边界兼容。
 
@@ -448,7 +450,7 @@ Documentation Map 是文档结构唯一导航入口。
 
 以上共同构成**唯一正式 Recovery 定义**。其他文件只做引用与导航，不得平行定义冲突的恢复顺序。
 
-归档文件 `AI_FACTORY_OS_RECOVERY_READ_ORDER.md`（现位于 `99_ARCHIVE/execution_history/reference/`）**不是**现行权威来源。
+归档文件 `AI_FACTORY_OS_RECOVERY_READ_ORDER.md`（现位于 `docs/99_ARCHIVE/execution_history/reference/`）**不是**现行权威来源。
 
 ---
 
@@ -506,7 +508,7 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 | **STATUS** | **EXECUTED_AWAITING_CHATGPT_REVIEW**（V2 baseline + legacy isolation landed；**不得**自动宣称 ACCEPTED；**不得自动 P3/P4**） |
 | **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project**（商业目标未变；V2 baseline **未**实现闲鱼闭环） |
 | **PROJECT_PHASE** | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 COMPLETED_WITH_FINDINGS**；**V2 Runtime/DB baseline established** |
-| **NOTE** | Retired Entry-driven runtime → `99_ARCHIVE/legacy_runtime/`；current Runtime Authority = V2 `app/` + `database/`；闭环未跑通；a949 KEEP（archived path） |
+| **NOTE** | Retired Entry-driven runtime → `99_ARCHIVE_RUNTIME/legacy_runtime/`；docs history → `docs/99_ARCHIVE/`；current Runtime Authority = V2 `app/` + `database/`；闭环未跑通；a949 KEEP（archived path） |
 | **LAST REALITY AUDIT** | Entry **078** |
 | **LAST P2-A AUDIT** | Entry **080-A** |
 | **LAST P2-B IMPLEMENTATION** | Entry **080-B** |

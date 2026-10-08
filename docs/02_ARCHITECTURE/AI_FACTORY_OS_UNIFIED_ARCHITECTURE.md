@@ -363,7 +363,7 @@ AI_FACTORY_OS 当前存在 **Core OS 链** 与 **Content Factory + Commercial As
 |----|-----|
 | Runtime Behavior | Python 代码 |
 | Operational Data | `data/ai_factory.db`（**Current SoT** · Entry 058A clean） |
-| Legacy DB Archive | `99_ARCHIVE/database_history/`（not_current_sot） |
+| Legacy DB Archive | `99_ARCHIVE_RUNTIME/database_history/`（not_current_sot） |
 | Commercial Object | `commercial_assets/` |
 | Learning Knowledge | `7_MEMORY/` |
 | System Description | `docs/` |
@@ -684,7 +684,7 @@ Signals → Opportunity → …
 | Store | Role |
 |-------|------|
 | `data/ai_factory.db` | Current Operational DB |
-| `99_ARCHIVE/database_history/*.db` | Legacy / SAMPLE archive only |
+| `99_ARCHIVE_RUNTIME/database_history/*.db` | Legacy / SAMPLE archive only |
 | `data/raw/xianyu/` | Raw evidence（incl. `*_sample.xlsx`） |
 | `commercial_assets/` | Commercial lifecycle SoT |
 

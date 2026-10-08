@@ -303,7 +303,7 @@ LEGACY Archive  ≠  Current Operational DB
 Collector 导入   ≠  真实平台采集已证明
 ```
 
-- **Legacy：** `99_ARCHIVE/database_history/ai_factory_legacy_simulation_20260830.db`（SAMPLE/TEST_FIXTURE；not_current_sot）  
+- **Legacy：** `99_ARCHIVE_RUNTIME/database_history/ai_factory_legacy_simulation_20260830.db`（SAMPLE/TEST_FIXTURE；not_current_sot）  
 - **Current：** `data/ai_factory.db`（clean schema；products/scores=0；publish_queue 运行态可保留）  
 - **Raw：** `data/raw/xianyu/` 保留为证据（含 `*_sample.xlsx`）  
 - **禁止：** 把 Archive SAMPLE 行当 REAL；为“历史好看”伪造 REAL 标签

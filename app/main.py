@@ -1,7 +1,7 @@
 """Minimal AI_FACTORY_OS V2 runtime entrypoint.
 
 Provides health-check / startup only. Does not import or depend on
-retired Entry-driven runtime under 99_ARCHIVE/legacy_runtime/.
+retired Entry-driven runtime under 99_ARCHIVE_RUNTIME/legacy_runtime/.
 """
 
 from __future__ import annotations

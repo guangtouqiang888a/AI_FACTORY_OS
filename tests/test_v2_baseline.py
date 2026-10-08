@@ -109,8 +109,14 @@ class TestLegacyIsolation(unittest.TestCase):
         self.assertEqual(offenders, [], msg="\n".join(offenders))
 
     def test_legacy_runtime_archive_present(self) -> None:
-        archive = REPO_ROOT / "99_ARCHIVE" / "legacy_runtime"
+        archive = REPO_ROOT / "99_ARCHIVE_RUNTIME" / "legacy_runtime"
         self.assertTrue(archive.is_dir())
+        self.assertTrue((REPO_ROOT / "99_ARCHIVE_RUNTIME" / "database_history").is_dir())
+        self.assertTrue((REPO_ROOT / "docs" / "99_ARCHIVE").is_dir())
+        self.assertFalse(
+            (REPO_ROOT / "99_ARCHIVE").exists(),
+            msg="ambiguous root 99_ARCHIVE/ must not exist",
+        )
         for name in (
             "0_START",
             "1_DATA",
@@ -130,6 +136,11 @@ class TestLegacyIsolation(unittest.TestCase):
             self.assertFalse(
                 (REPO_ROOT / name).exists(),
                 msg=f"legacy path still at Active Workspace root: {name}",
+            )
+        for name in ("2_COGNITION", "4_PRODUCT", "5_CONTENT", "data", "logs", "output"):
+            self.assertFalse(
+                (REPO_ROOT / name).exists(),
+                msg=f"residual still at Active Workspace root: {name}",
             )
 
 

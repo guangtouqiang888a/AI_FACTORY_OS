@@ -16,12 +16,12 @@ env/
 .env.*
 !.env.example
 
-# Runtime / local outputs
+# Legacy local outputs (archived under 99_ARCHIVE_RUNTIME; keep ignore if recreated at root)
 output/
 logs/
-
-# Local SQLite / runtime DB (not Own Product assets)
 data/
+
+# Local SQLite / runtime DB patterns (V2 db also covered; tracked archive DBs use -f if needed)
 **/*.db
 **/*.sqlite
 **/*.sqlite3
@@ -36,11 +36,16 @@ Desktop.ini
 *~
 
 # Retired Entry-driven runtime memory state (archived)
-99_ARCHIVE/legacy_runtime/7_MEMORY/core_state.json
-99_ARCHIVE/legacy_runtime/7_MEMORY/event_log.jsonl
-99_ARCHIVE/legacy_runtime/7_MEMORY/runtime_policy.json
-99_ARCHIVE/legacy_runtime/7_MEMORY/runtime_policy_snapshot.json
-99_ARCHIVE/legacy_runtime/7_MEMORY/policy_patch.json
+99_ARCHIVE_RUNTIME/legacy_runtime/7_MEMORY/core_state.json
+99_ARCHIVE_RUNTIME/legacy_runtime/7_MEMORY/event_log.jsonl
+99_ARCHIVE_RUNTIME/legacy_runtime/7_MEMORY/runtime_policy.json
+99_ARCHIVE_RUNTIME/legacy_runtime/7_MEMORY/runtime_policy_snapshot.json
+99_ARCHIVE_RUNTIME/legacy_runtime/7_MEMORY/policy_patch.json
+
+# Archived local operational dirs (gitignored historical locals)
+99_ARCHIVE_RUNTIME/legacy_runtime/data/
+99_ARCHIVE_RUNTIME/legacy_runtime/logs/
+99_ARCHIVE_RUNTIME/legacy_runtime/output/
 
 # V2 local SQLite runtime state (never commit)
 database/runtime/

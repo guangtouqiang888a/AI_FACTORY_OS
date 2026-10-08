@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-10-08（**TASK-V2-FOUNDATION-004** V2 Runtime/Database baseline + 004B legacy isolation）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-10-08（**TASK-V2-ARCHIVE-BOUNDARY-001** finalize dual-archive boundaries）
 
 ---
 
@@ -3096,7 +3096,31 @@
 | **Final Status** | **EXECUTED_AWAITING_CHATGPT_REVIEW** |
 | **Evidence** | Current State Runtime Reality；ACTIVE_TASK.md；this History entry；`python -m tests.verify_v2` PASS；land `c47f1df…` / tip `5129f93…` |
 
-**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review. 004B was **not** previously completed locally（prior BLOCKED）；isolation evidence is this Task’s `git mv` into `99_ARCHIVE/legacy_runtime/`. Merge with remote Foundation 001–003 required；Current State / ACTIVE_TASK conflicts resolved to V2 Foundation format + 004 execution facts.
+**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review. 004B was **not** previously completed locally（prior BLOCKED）；isolation evidence is this Task’s `git mv` into `99_ARCHIVE/legacy_runtime/`（later renamed to `99_ARCHIVE_RUNTIME/legacy_runtime/` by TASK-V2-ARCHIVE-BOUNDARY-001）. Merge with remote Foundation 001–003 required；Current State / ACTIVE_TASK conflicts resolved to V2 Foundation format + 004 execution facts.
+
+---
+
+### TASK-V2-ARCHIVE-BOUNDARY-001 — Finalize V2 legacy migration boundaries
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-10-08 |
+| **Task ID** | TASK-V2-ARCHIVE-BOUNDARY-001 |
+| **Original Objective** | 消除根目录 `99_ARCHIVE/` 与 `docs/99_ARCHIVE/` 同名歧义；收口旧 Runtime / DB history / 文档归档边界 |
+| **Current Objective** | Same — executed |
+| **原问题** | 根目录与 docs 下同名 `99_ARCHIVE` 造成结构歧义；旧残留目录边界不清 |
+| **发现** | 双 `99_ARCHIVE`：根目录含 `legacy_runtime/` + `database_history/`；`docs/99_ARCHIVE/` 为文档历史。根目录仍有空目录 `2_COGNITION`/`4_PRODUCT`/`5_CONTENT`（未跟踪）及 gitignored `data/`/`logs/`/`output/`（本地旧运行残留；GitHub main 无） |
+| **最终目录决策** | `docs/99_ARCHIVE/` = 文档历史 only；根 `99_ARCHIVE/` → `99_ARCHIVE_RUNTIME/`（`legacy_runtime/` + `database_history/`）；代码归档不得进 docs；文档历史不得进 RUNTIME |
+| **实际迁移** | `git mv 99_ARCHIVE → 99_ARCHIVE_RUNTIME`；空目录与 gitignored `data/logs/output` 移入 `99_ARCHIVE_RUNTIME/legacy_runtime/` |
+| **历史文件删除** | **无** |
+| **Scope** | 结构治理 / 引用修正 / 验证 / commit+push；无新业务功能 |
+| **Out of Scope** | 删除历史；重建仓库；业务功能；伪造验证 |
+| **Modified Files** | `.gitignore`；`app/main.py`；`database/db.py`；`tests/test_v2_baseline.py`；Current State；ACTIVE_TASK；Control Center；Constitution；Execution Protocol；UA；DOCUMENTATION_MAP；本 History |
+| **Validation Result** | `python -m tests.verify_v2` → ALL VERIFICATION PASS；root `99_ARCHIVE/` ABSENT；`docs/99_ARCHIVE/` + `99_ARCHIVE_RUNTIME/{legacy_runtime,database_history}` PRESENT；V2 dirs PRESENT |
+| **Git Commit** | （filled after commit） |
+| **GitHub Push** | （filled after push） |
+| **Final Status** | EXECUTED_AWAITING_CHATGPT_REVIEW |
+| **未解决事项** | Unrelated dirty working-tree files left unstaged（archived a949 pack/validation + one audit md）；ChatGPT Closure Review 未做 |
 
 ---
 

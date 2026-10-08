@@ -90,7 +90,8 @@ Current state:
 EXECUTED_AWAITING_CHATGPT_REVIEW
 
 Cursor execution result (not independent acceptance):
-- 004B isolation landed: listed Entry-driven dirs `git mv` → `99_ARCHIVE/legacy_runtime/`（content not deleted/edited）
+- 004B isolation landed: listed Entry-driven dirs `git mv` → archive（content not deleted/edited）
+- Archive boundary finalized: root `99_ARCHIVE/` → `99_ARCHIVE_RUNTIME/`; `docs/99_ARCHIVE/` kept for docs history only
 - V2 Runtime: `app/main.py` healthcheck prints `AI_FACTORY_OS V2 runtime: OK`
 - V2 Database: SQLite `schema_metadata` identity `ai_factory_os_v2` version `1`
 - Verification: `python -m tests.verify_v2` PASS

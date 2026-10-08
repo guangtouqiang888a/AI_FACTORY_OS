@@ -634,7 +634,7 @@ Market → Opportunity → Selection → Experiment → Production 的商业判�
 ### Database Provenance / Current SoT（DEC-028 / Entry 058A）
 
 1. Current Operational DB = `data/ai_factory.db` only  
-2. Legacy / SAMPLE DBs → `99_ARCHIVE/database_history/` 且 `not_current_sot=true`  
+2. Legacy / SAMPLE DBs → `99_ARCHIVE_RUNTIME/database_history/` 且 `not_current_sot=true`  
 3. 入库前须 provenance；sample/test/fixture URL 或文件名不得标 REAL  
 4. 「有行」≠「真实市场数据」；Collector 成功 ≠ 真实平台采集已证明  
 5. 初始化 Current DB 必须走现有 `ensure_schema` / additive ensure_* — 禁止手搓不一致空库  
