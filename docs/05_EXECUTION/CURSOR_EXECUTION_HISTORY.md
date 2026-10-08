@@ -3090,13 +3090,13 @@
 | **Created Files** | `app/**`；`database/**`；`config/**`；`tests/**`；`docs/05_EXECUTION/ACTIVE_TASK.md` |
 | **Architecture Impact** | Core Layer — Runtime Authority boundary change（retired Entry-driven physically archived；V2 Active Runtime established） |
 | **Validation Result** | `python -m app.main` → `AI_FACTORY_OS V2 runtime: OK`；`python -m database init\|verify\|reset` PASS；`python -m tests.verify_v2` → ALL VERIFICATION PASS |
-| **Git Commit** | `c47f1df2eca3af876a9466ef6948562dd6b0bff2` — `Foundation: establish V2 runtime and database baseline` |
-| **GitHub Push** | （attempting） |
-| **Remote Verification** | （pending push） |
+| **Git Commit** | land `c47f1df2eca3af876a9466ef6948562dd6b0bff2`；tip after merge `8a0428529c733d58d9eda74b241137d96def8e60` |
+| **GitHub Push** | **SUCCESS**（`f0a1ec2..8a04285` → `origin/main`） |
+| **Remote Verification** | **PASS**（local HEAD == origin/main == `8a04285…`；ahead/behind 0/0） |
 | **Final Status** | **EXECUTED_AWAITING_CHATGPT_REVIEW** |
-| **Evidence** | Current State Runtime Reality；ACTIVE_TASK.md；this History entry；local verify command output；commit `c47f1df…` |
+| **Evidence** | Current State Runtime Reality；ACTIVE_TASK.md；this History entry；`python -m tests.verify_v2` PASS；commits `c47f1df…` / tip `8a04285…` |
 
-**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review. 004B completion evidence is this Task’s rename + archive tree presence（not a prior separate successful 004B commit）.
+**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review. 004B was **not** previously completed locally（prior BLOCKED）；isolation evidence is this Task’s `git mv` into `99_ARCHIVE/legacy_runtime/`. Merge with remote Foundation 001–003 required；Current State / ACTIVE_TASK conflicts resolved to V2 Foundation format + 004 execution facts.
 
 ---
 
