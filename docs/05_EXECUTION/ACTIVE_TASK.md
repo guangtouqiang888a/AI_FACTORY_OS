@@ -6,80 +6,83 @@ Purpose: Keep the current engineering unit recoverable without loading historica
 
 ## Last closed Task
 
-TASK-V2-FOUNDATION-002
+TASK-V2-FOUNDATION-003
 
-Title: Establish Task control, state, acceptance, evidence, and closure mechanism.
+Title: Establish change, migration, compatibility, and recovery control.
 
 Final state:
 ACCEPTED
 
 Closure result:
-The Task contract was satisfied. The repository now contains the authoritative Task control model and the Evidence and Closure Model. The implementation change was reviewed after implementation; GitHub's platform rule prevented the PR author from submitting a formal APPROVE review, so no false independent GitHub approval is claimed.
+The Task contract was satisfied. AI_FACTORY_OS now has an explicit control model for structural change classification, impact assessment, schema/data migration, API compatibility, deprecation, dependency changes, rollback/recovery, historical evidence preservation, and C2/C3 acceptance.
 
 Evidence:
-- Task control model: docs/05_EXECUTION/TASK_CONTROL_MODEL.md
-- Evidence/closure model: docs/05_EXECUTION/EVIDENCE_CLOSURE_MODEL.md
-- Foundation PRs: #2 and #3
-- Closure commit for evidence model: 228ca1765f94b6030d47e7358f13da7c54dd6c6b
-- No runtime or database files were changed by these foundation Tasks.
+- Change/migration/recovery model: docs/05_EXECUTION/CHANGE_MIGRATION_RECOVERY_MODEL.md
+- Foundation PR: #5
+- Closure commit: f98d06c7df8504362b5e4f8d717fab7b5ca0d413
+- No runtime or database implementation files were changed by this Task.
 
 Findings:
-- GitHub does not allow a PR author to approve their own PR. This is now an explicit platform constraint rather than a hidden assumption.
-- Future R2/R3 changes should use a genuinely separate review authority where practical; otherwise the closure record must explicitly disclose the limitation.
+- C2/C3 work requires stronger evidence and recovery controls than ordinary isolated changes.
+- The next runtime/database work must be treated as structural work and must therefore use these controls.
 
 ## Current Task
 
-TASK-V2-FOUNDATION-003
+TASK-V2-FOUNDATION-004
 
-Title: Establish change, migration, compatibility, and recovery control.
+Title: Establish the clean runtime/database baseline and verification boundary.
 
 Why:
-The project must evolve without returning to freeze-and-rebuild. Runtime, database, APIs, dependencies, and external contracts need a durable way to change safely.
+The engineering control foundation is now in place. The project needs a new runtime/data baseline that is isolated from the retired Entry-driven implementation and can evolve through the V2 controls.
 
 Goal:
-Define the minimum change-control mechanism that lets AI_FACTORY_OS introduce structural changes while preserving compatibility, migration traceability, rollback/recovery, and historical evidence.
+Create the smallest executable baseline for AI_FACTORY_OS, with a clear runtime boundary, database boundary, configuration boundary, automated verification boundary, and recovery path.
 
 Scope:
-- Change classification and impact assessment
-- Schema/data migration rules
-- API/contract compatibility rules
-- Deprecation and removal rules
-- Rollback/recovery expectations
-- Relationship between Change and Task
-- Required evidence for structural changes
+- Define the new runtime/application boundary
+- Define the initial database boundary
+- Establish minimal project configuration
+- Establish deterministic automated verification entrypoint
+- Establish clean separation from retired implementation
+- Record initial schema/version identity where applicable
+- Establish local recovery/reset procedure for the new baseline
 
 Non-scope:
-- Runtime/database implementation
-- Market intelligence implementation
-- Product implementation
-- CI implementation
-- Legacy archive migration
+- Xianyu market intelligence
+- Keyword collection
+- Product generation
+- Business rules beyond baseline health checks
+- Production deployment
+- Legacy migration into the new runtime
 
 Dependencies:
-- TASK-V2-FOUNDATION-002
+- TASK-V2-FOUNDATION-003
 - docs/05_EXECUTION/TASK_CONTROL_MODEL.md
 - docs/05_EXECUTION/EVIDENCE_CLOSURE_MODEL.md
+- docs/05_EXECUTION/CHANGE_MIGRATION_RECOVERY_MODEL.md
 
 Risk class:
 R2
 
 Acceptance criteria:
-1. Structural changes have an explicit impact classification.
-2. Schema/data changes require migration planning and verification.
-3. API/contract changes define compatibility and deprecation expectations.
-4. Rollback/recovery is addressed before R2/R3 changes are accepted.
-5. Change records remain linked to their parent Task.
-6. Historical evidence is preserved during evolution.
-7. The model explicitly prevents “freeze-and-rebuild” from becoming the default response to change.
+1. New runtime boundary is explicit and does not depend on retired runtime code.
+2. New database boundary is explicit and version-identifiable.
+3. Configuration/secrets are separated from source-controlled code.
+4. A deterministic automated verification command exists and passes.
+5. The baseline can be initialized/recovered without manual reconstruction of project history.
+6. No market-intelligence or product behavior is smuggled into the baseline.
+7. Current State and evidence point to the new baseline unambiguously.
 
 Validation:
-- Repository review of the resulting change-control model.
-- Confirm no runtime or database implementation is changed.
-- Confirm the active Task is the sole current work pointer.
+- Repository inspection of runtime/database/configuration boundaries.
+- Execute the deterministic verification command.
+- Confirm retired runtime remains historical only.
+- Confirm no business behavior beyond health/baseline checks is introduced.
 
 Expected evidence:
 - Commit(s)
 - Pull request/review
+- Test/verification output
 - Final closure review
 - Updated Current State and Active Task
 
