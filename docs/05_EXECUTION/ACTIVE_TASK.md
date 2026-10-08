@@ -87,16 +87,12 @@ Expected evidence:
 - Updated Current State and Active Task
 
 Current state:
-EXECUTED_AWAITING_CHATGPT_REVIEW
+EXECUTED_AWAITING_CHATGPT_REVIEW — legacy freeze + workspace sync land applied
 
 Cursor execution result (not independent acceptance):
-- 004B isolation landed: listed Entry-driven dirs `git mv` → archive（content not deleted/edited）
-- Archive boundary finalized: root `99_ARCHIVE/` → `99_ARCHIVE_RUNTIME/`; `docs/99_ARCHIVE/` kept for docs history only
-- V2 Runtime: `app/main.py` healthcheck prints `AI_FACTORY_OS V2 runtime: OK`
-- V2 Database: SQLite `schema_metadata` identity `ai_factory_os_v2` version `1`
-- Verification: `python -m tests.verify_v2` PASS
-- Reset: `python -m database reset`（V2 paths only）
-- Foundation land commit: `c47f1df2eca3af876a9466ef6948562dd6b0bff2`
+- 004B isolation + archive boundary + V2 baseline already on main
+- Freeze/sync land: preserve remaining local dirty legacy/audit edits；archive legacy `.cursor/rules.py`；empty working tree；HEAD == origin/main
+- V2 verification: `python -m tests.verify_v2` PASS
 
 Commands:
 ```text
@@ -107,10 +103,5 @@ python -m database reset
 python -m tests.verify_v2
 ```
 
-Findings:
-- Prior local claim that 004B was already complete was false; isolation was executed in this Task.
-- Unmoved root paths remain `BOUNDARY_REVIEW_REQUIRED`: `2_COGNITION/`, `4_PRODUCT/`, `5_CONTENT/`, `data/`, `logs/`, `output/`.
-- Unrelated dirty working-tree files were left unstaged and are not part of Task evidence.
-
 Next:
-STOP. ChatGPT Closure Review decides ACCEPTED or not. Do not start the next Task until authorized.
+STOP. ChatGPT Closure Review decides ACCEPTED or not. Do not start business development until authorized.

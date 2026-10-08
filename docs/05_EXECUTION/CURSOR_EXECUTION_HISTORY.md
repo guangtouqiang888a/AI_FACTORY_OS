@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-10-08（**TASK-V2-ARCHIVE-BOUNDARY-001** finalize dual-archive boundaries）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-10-08（**TASK-V2-FREEZE-SYNC-001** freeze legacy + sync workspace）
 
 ---
 
@@ -3120,7 +3120,24 @@
 | **Git Commit** | `cdf124b60dc919f50feeb0c59d5e1e78f345645a` — `Foundation: finalize V2 legacy migration boundaries` |
 | **GitHub Push** | **SUCCESS**（`16e666f..cdf124b` → `origin/main`） |
 | **Final Status** | EXECUTED_AWAITING_CHATGPT_REVIEW |
-| **未解决事项** | Unrelated dirty working-tree files left unstaged（archived a949 pack/validation + one audit md）；ChatGPT Closure Review 未做；历史审计文中的旧路径字面量未批量改写 |
+| **未解决事项** | ChatGPT Closure Review 未做；历史审计文中的旧路径字面量未批量改写 |
+
+---
+
+### TASK-V2-FREEZE-SYNC-001 — Freeze legacy system and synchronize workspace
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-10-08 |
+| **Task ID** | TASK-V2-FREEZE-SYNC-001 |
+| **Objective** | 一次性冻结旧系统 + 清空工作区未提交差异 + 与 origin/main 完全同步 |
+| **发现** | HEAD 已 == origin/main；结构已双归档。阻塞空 status 的仅 3 个已跟踪脏文件（legacy a949 pack/validation + Entry 077 audit stamp）。`.cursor/rules.py` 含旧 Entry 四层逻辑。 |
+| **处置** | 3 脏文件**保留并提交**（不 reset/discard）；legacy rules `git mv` → `99_ARCHIVE_RUNTIME/legacy_runtime/cursor_rules_production_grade_v1.py`；写入最小 V2 `.cursor/rules.py`；不新建第三套 `archive/`；不移动整个 `docs/` |
+| **历史删除** | **否** |
+| **Validation** | `python -m tests.verify_v2` → ALL VERIFICATION PASS |
+| **Git Commit** | （filled after commit） |
+| **GitHub Push** | （filled after push） |
+| **Final Status** | EXECUTED_AWAITING_CHATGPT_REVIEW |
 
 ---
 

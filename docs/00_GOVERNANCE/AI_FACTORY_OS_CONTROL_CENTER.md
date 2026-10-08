@@ -504,8 +504,8 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | **TASK-V2-FOUNDATION-004** — see [ACTIVE_TASK.md](../05_EXECUTION/ACTIVE_TASK.md) |
-| **STATUS** | **EXECUTED_AWAITING_CHATGPT_REVIEW**（V2 baseline + legacy isolation landed；**不得**自动宣称 ACCEPTED；**不得自动 P3/P4**） |
+| **ACTIVE_TASK** | **TASK-V2-FOUNDATION-004** + freeze/sync land — see [ACTIVE_TASK.md](../05_EXECUTION/ACTIVE_TASK.md) |
+| **STATUS** | **LEGACY_FROZEN_SYNCED_AWAITING_CHATGPT_REVIEW**（**不得**自动宣称 ACCEPTED；**不得**开始新业务开发） |
 | **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project**（商业目标未变；V2 baseline **未**实现闲鱼闭环） |
 | **PROJECT_PHASE** | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 COMPLETED_WITH_FINDINGS**；**V2 Runtime/DB baseline established** |
 | **NOTE** | Retired Entry-driven runtime → `99_ARCHIVE_RUNTIME/legacy_runtime/`；docs history → `docs/99_ARCHIVE/`；current Runtime Authority = V2 `app/` + `database/`；闭环未跑通；a949 KEEP（archived path） |

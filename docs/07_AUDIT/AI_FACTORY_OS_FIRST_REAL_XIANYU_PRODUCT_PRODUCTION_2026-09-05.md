@@ -118,7 +118,7 @@ Including Test 7 (whitelist + deny-by-default) and Test 8 (PM/Gantt quality floo
 |-------|-------|
 | Commit | `19d973dab506115020e83dcb40adb991304b681d` |
 | Message | `feat: produce first real Xianyu PM/Gantt Excel product asset (Entry 077)` |
-| Push / Remote | See Execution History closeout after push |
+| Push / Remote | **SUCCESS / PASS** — tip `8c2a72586a7912174184e79b5290070d9d9a302b`（includes production `19d973d` + docs stamp） |
 
 Orphan dirs `3d323bf0de83` / `5f4719b47909` left **untracked** (not Product Assets).
 

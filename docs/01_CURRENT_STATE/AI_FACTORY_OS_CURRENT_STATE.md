@@ -1,13 +1,13 @@
 # AI_FACTORY_OS Current State
 
-Status: V2 BASELINE ESTABLISHED — archive boundary finalized (Cursor-executed; ChatGPT Closure Review pending)
+Status: LEGACY FROZEN + V2 BASELINE SYNCED（Cursor freeze/sync land；ChatGPT Closure Review pending）
 Last verified: 2026-10-08
 
 ## Current position
-V2 Active Workspace is isolated from retired Entry-driven runtime and from documentation history archives. Dual archive names are disambiguated: `docs/99_ARCHIVE/` ≠ `99_ARCHIVE_RUNTIME/`.
+Legacy Entry-driven system is frozen under `99_ARCHIVE_RUNTIME/`. Document history remains under `docs/99_ARCHIVE/`. Active V2 workspace is `app/` `database/` `config/` `tests/` plus root continuity files. Local workspace is intended to stay synchronized with `origin/main` after the freeze/sync land.
 
 ## Current objective
-Operate from the V2 runtime/database baseline and evolve product/runtime capabilities only through authorized Tasks and V2 engineering controls.
+Hold the frozen legacy / V2 baseline boundary. No new business capability work until authorized after Closure Review.
 
 ## Locked engineering model
 Human Owner → Product/Goal → Task → ChatGPT architecture/review → Cursor implementation → Automated validation → Closure review → Release → Real-world evidence → Learning.
@@ -18,23 +18,19 @@ DONE:
 - concise root Agent Map established
 - repository remains the durable source of record
 - freeze-and-rebuild is no longer the normal evolution strategy
-- durable Task control model established
-- durable Evidence and Closure model established
-- durable Change/Migration/Compatibility/Recovery model established
-- TASK-V2-FOUNDATION-002 closed as ACCEPTED
-- TASK-V2-FOUNDATION-003 closed as ACCEPTED
-- TASK-V2-FOUNDATION-004 Cursor execution: V2 `app/` + `database/` + `config/` + `tests/` baseline verified
-- Archive boundary finalized: root `99_ARCHIVE/` renamed to `99_ARCHIVE_RUNTIME/`; `docs/99_ARCHIVE/` retained for document history
+- durable Task / Evidence / Change-Migration-Recovery models established
+- TASK-V2-FOUNDATION-002 / 003 ACCEPTED
+- TASK-V2-FOUNDATION-004 V2 runtime/database baseline landed
+- Archive boundary: `docs/99_ARCHIVE/` ≠ `99_ARCHIVE_RUNTIME/`
+- Legacy freeze + local/GitHub sync land（this Task）
 
 IN PROGRESS:
-- ChatGPT Closure Review for TASK-V2-FOUNDATION-004 / archive-boundary land（Cursor evidence ≠ ACCEPTED）
+- ChatGPT Closure Review（Cursor evidence ≠ ACCEPTED）
 
 NOT STARTED:
-- market-intelligence implementation
-- product implementation
-- production deployment
+- market-intelligence / product / production deployment
 
-## Active V2 boundaries
+## Active V2 retained
 
 | Role | Path |
 |------|------|
@@ -42,66 +38,45 @@ NOT STARTED:
 | V2 Database | `database/` |
 | V2 Config | `config/` |
 | V2 Tests | `tests/` |
-| Document history archive | `docs/99_ARCHIVE/` |
-| Code / runtime assets / DB history archive | `99_ARCHIVE_RUNTIME/` |
+| Agent map | `AGENTS.md` |
+| Requirements file | `requirements.txt`（root retained；V2 baseline uses stdlib） |
+| Cursor local boundary | `.cursor/`（V2 rules；legacy rules archived） |
+
+## Archive boundaries（minimal dual system — do not add a third）
+
+| Path | Role |
+|------|------|
+| `docs/99_ARCHIVE/` | LEGACY DOCUMENTATION history only |
+| `99_ARCHIVE_RUNTIME/` | LEGACY runtime code / commercial assets / DB history |
 
 ```text
 docs/99_ARCHIVE  ≠  99_ARCHIVE_RUNTIME
 ```
 
-- `docs/99_ARCHIVE/` — frozen **documentation** history only（blueprint / old governance / execution history docs）. Never place code or DB files here.
-- `99_ARCHIVE_RUNTIME/` — retired **runtime code**, commercial assets, and **database history**. Never place documentation SoT here.
+No root `99_ARCHIVE/`. No parallel `archive/` tree.
+
+Active `docs/00`–`07` remain the documentation workspace for V2 navigation and evidence; historical Entry-era material inside them is not Runtime Authority. Deep frozen doc copies remain in `docs/99_ARCHIVE/`.
 
 ## Runtime Reality（V2 Active Authority）
 
 ```text
-V2 Runtime entrypoint:  python -m app.main
-V2 Database entrypoint: python -m database init|verify|reset
-Verification:           python -m tests.verify_v2
-Reset:                  python -m database reset
-
-schema_identity=ai_factory_os_v2
-schema_version=1
-storage=database/runtime/ai_factory_v2.db (local SQLite; gitignored)
-config=config/settings.py (secrets via env / gitignored .env only)
+python -m app.main
+python -m database init|verify|reset
+python -m tests.verify_v2
 ```
 
 Facts:
-- V2 does not import retired Entry-driven packages under `99_ARCHIVE_RUNTIME/legacy_runtime/`.
-- V2 does not read archived legacy DBs under `99_ARCHIVE_RUNTIME/database_history/` or `99_ARCHIVE_RUNTIME/legacy_runtime/data/`.
-- Root `99_ARCHIVE/` no longer exists as a current directory name.
-- Retired runtime is not current Runtime Authority.
+- V2 does not import `99_ARCHIVE_RUNTIME/legacy_runtime/`.
+- V2 does not read archived legacy DBs.
+- Retired runtime is frozen historical material only.
 
-## Retired Entry-driven Runtime（historical only）
+## Frozen legacy runtime
 
 ```text
 99_ARCHIVE_RUNTIME/
-  ├── legacy_runtime/
-  │     0_START/ 1_DATA/ 2_COGNITION/ 3_DECISION/ 4_PRODUCT/ 5_CONTENT/
-  │     6_EXECUTION/ 7_MEMORY/ 8_CONFIG/ 9_PRODUCT/ 10_DEPLOY/
-  │     11_CONTENT_FACTORY/ commercial_assets/
-  │     data/ logs/ output/   # local gitignored operational residue (moved off root)
-  └── database_history/       # archived legacy SQLite / manifests (≠ V2 DB)
+  ├── legacy_runtime/     # Entry-driven code + assets + local ops residue
+  └── database_history/   # legacy SQLite / manifests
 ```
 
-## Authority boundary
-Runtime/data and reproducible evidence outrank documents. Legacy documents/data/code are historical until the new baseline explicitly promotes a reusable fact or component. Historical material must not silently become runtime authority.
-
-## Foundation control boundary
-The V2 engineering foundation now has four explicit layers:
-1. Engineering operating model
-2. Task control
-3. Evidence and closure
-4. Change, migration, compatibility, and recovery
-
-## Recovery entrypoint
-For a new AI/session with limited context, read in this order:
-1. AGENTS.md
-2. this file
-3. docs/00_GOVERNANCE/AI_FACTORY_OS_ENGINEERING_OPERATING_MODEL.md
-4. docs/05_EXECUTION/ACTIVE_TASK.md
-5. the authoritative model(s) named by the active Task
-6. only the deeper architecture/business/evidence sources required by that Task
-
 ## Next permitted work
-STOP after archive-boundary land/push. No further Task until ChatGPT Closure Review and new authorization.
+STOP. No new AI_FACTORY_OS business development until ChatGPT Closure Review and new authorization.
