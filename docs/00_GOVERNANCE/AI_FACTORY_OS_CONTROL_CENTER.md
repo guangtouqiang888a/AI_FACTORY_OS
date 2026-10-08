@@ -502,24 +502,25 @@ Cursor 返回后：须经 **ChatGPT Closure Review** 才可宣布 Project Task C
 
 | Field | Value |
 |-------|-------|
-| **ACTIVE_TASK** | **`NONE`**（080-C 完成后清空；等待 ChatGPT Closure Review） |
-| **STATUS** | 无正在进行的 Cursor Runtime 实施；**不得自动 P3/P4** |
-| **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project** |
-| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 COMPLETED_WITH_FINDINGS** |
-| **NOTE** | Foundation+hygiene OK；view unavailable；闭环未跑通；a949 KEEP |
+| **ACTIVE_TASK** | **TASK-V2-FOUNDATION-004** — see [ACTIVE_TASK.md](../05_EXECUTION/ACTIVE_TASK.md) |
+| **STATUS** | **EXECUTED_AWAITING_CHATGPT_REVIEW**（V2 baseline + legacy isolation landed；**不得**自动宣称 ACCEPTED；**不得自动 P3/P4**） |
+| **ACTIVE_PROJECT** | **Xianyu Commercial Closed-Loop Project**（商业目标未变；V2 baseline **未**实现闲鱼闭环） |
+| **PROJECT_PHASE** | **P0 COMPLETED** / **P1 COMPLETED_WITH_FINDINGS** / **P2 COMPLETED_WITH_FINDINGS**；**V2 Runtime/DB baseline established** |
+| **NOTE** | Retired Entry-driven runtime → `99_ARCHIVE/legacy_runtime/`；current Runtime Authority = V2 `app/` + `database/`；闭环未跑通；a949 KEEP（archived path） |
 | **LAST REALITY AUDIT** | Entry **078** |
 | **LAST P2-A AUDIT** | Entry **080-A** |
 | **LAST P2-B IMPLEMENTATION** | Entry **080-B** |
 | **LAST P2-C HYGIENE** | Entry **080-C** — `docs/07_AUDIT/ENTRY_080C_XIANYU_P2C_DATA_HYGIENE_GUARD.md` |
+| **LAST V2 FOUNDATION** | **TASK-V2-FOUNDATION-004**（含 004B isolation 落盘） |
 | **LAST CONTINUITY** | Entry **079-A** |
 | **LAST P1-D ARCHIVE/INVALIDATE** | Entry **079-D** |
-| **EVIDENCE POINTERS** | 078；079-B/C/D；080-A/B/**C**；Current State Active Project |
+| **EVIDENCE POINTERS** | 078；079-B/C/D；080-A/B/**C**；Current State Runtime Reality；ACTIVE_TASK.md；Execution History TASK-004 |
 | **INTENT / PROTOCOL POINTER** | [EXECUTION_PROTOCOL — Task Intent Continuity Model](AI_FACTORY_OS_EXECUTION_PROTOCOL.md) |
 | **ENTRY_077** | **PRODUCED** / **NOT_PUBLISHED** |
 | **ENTRY_080-A** | **P2-A REALITY AUDIT DONE** |
 | **ENTRY_080-B** | **P2-B DATA FOUNDATION DONE** |
 | **ENTRY_080-C** | **P2-C HYGIENE / NULL GUARD DONE** |
-| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 COMPLETED_WITH_FINDINGS · P2 COMPLETED_WITH_FINDINGS · AWAITING_P3_OR_PUBLISH_AUTH** |
+| **PROJECT_DEVELOPMENT** | **P0 DONE · P1 COMPLETED_WITH_FINDINGS · P2 COMPLETED_WITH_FINDINGS · V2 BASELINE LANDED · AWAITING_CHATGPT_REVIEW** |
 
 若当前无正式多步骤任务，应写：`ACTIVE_TASK = NONE`。
 

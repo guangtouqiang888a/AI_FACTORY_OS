@@ -1,7 +1,7 @@
 # AI_FACTORY_OS Current State
 
 > Collaboration Control — factual state only  
-> Last updated: 2026-09-05（Entry **080-C** P2-C Hygiene；**P2 COMPLETED_WITH_FINDINGS**；**NOT_PUBLISHED**）
+> Last updated: 2026-10-08（**TASK-V2-FOUNDATION-004** — Legacy Runtime Isolation + V2 Runtime/Database baseline；Cursor execution evidence；ChatGPT Closure Review 未做）
 > Authority: below Runtime / Code / DB / Assets (see Authority Model)
 
 **Document Role（041-F / DEC-016）：**  
@@ -224,19 +224,56 @@ Entry **041-H**：Architecture Structure Clarification（DEC-018）。
 
 ## Runtime Reality（must not overwrite）
 
+### V2 Active Runtime（current Runtime Authority）
+
 ```
-Track A — Core OS Runtime
-  0_START / 10_DEPLOY (Active HTTP entry, not Production Ready)
-  → 1_DATA → 3_DECISION → 6_EXECUTION → 7_MEMORY
+V2 Runtime entrypoint:  python -m app.main
+V2 Database entrypoint: python -m database init|verify|reset
+Verification:           python -m tests.verify_v2
+Reset:                  python -m database reset
 
-Track B — Content Factory / Commercial Capability
-  adapter_runner → 11_CONTENT_FACTORY + commercial_assets
-
-性质: Intentional Isolation + Unfinished Convergence
-禁止误读: 已融合 / 已统一 Runtime / 已完成自动商业闭环
+Identity: schema_identity=ai_factory_os_v2 / schema_version=1
+Storage:  database/runtime/ai_factory_v2.db (local SQLite; gitignored)
+Config:   config/settings.py (+ optional env / .env; secrets not in source)
 ```
 
-Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)（041-D 校正后）.
+**事实（TASK-V2-FOUNDATION-004）：**
+
+- V2 Runtime / Database baseline **已建立**（最小健康检查 + schema_metadata；无 Xianyu / 关键词 / 产品生成 / 商业规则实现）。
+- V2 **不依赖** retired Entry-driven Runtime；**不读取** legacy `data/ai_factory.db`；**不迁移**旧数据。
+- 当前 Runtime Authority = **V2**（`app/` + `database/`），不是 archived Entry-driven tree。
+
+### Retired Entry-driven Runtime（historical preserve only）
+
+```
+99_ARCHIVE/legacy_runtime/
+  ├── 0_START/
+  ├── 1_DATA/
+  ├── 3_DECISION/
+  ├── 6_EXECUTION/
+  ├── 7_MEMORY/
+  ├── 8_CONFIG/
+  ├── 9_PRODUCT/
+  ├── 10_DEPLOY/
+  ├── 11_CONTENT_FACTORY/
+  └── commercial_assets/
+```
+
+**事实（004B isolation，随 TASK-004 正式落盘）：**
+
+- Retired Entry-driven runtime **已与 V2 Active Workspace 物理隔离**（`git mv`；内容未改、未删）。
+- `99_ARCHIVE/legacy_runtime/` = retired runtime **历史保留区**（可追溯；非当前 Runtime Authority）。
+- Prior dual-track（Track A / Track B）描述仍为**历史 Reality**；默认不再视为当前可执行 Runtime。
+
+### Boundary review still required（not moved）
+
+```
+2_COGNITION/   4_PRODUCT/   5_CONTENT/   data/   logs/   output/
+```
+
+未列入 004B 明确迁移清单 → **保留原位** → `BOUNDARY_REVIEW_REQUIRED`（不得凭感觉移动）。
+
+Authority for module status: [MODULE_REGISTRY](AI_FACTORY_OS_MODULE_REGISTRY.md)（041-D 校正后；Registry 细项未在本 Task 全量重写）.
 
 ---
 

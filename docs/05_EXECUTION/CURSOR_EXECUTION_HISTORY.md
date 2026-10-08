@@ -1,6 +1,6 @@
 # Cursor Execution History
 
-> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-09-05（Entry **080-C** P2-C Data Hygiene & NULL Guard；**P2 COMPLETED_WITH_FINDINGS**）
+> Project Intelligence Layer — Cursor 执行历史规范 | 最后更新：2026-10-08（**TASK-V2-FOUNDATION-004** V2 Runtime/Database baseline + 004B legacy isolation）
 
 ---
 
@@ -3065,6 +3065,38 @@
 **Core Documentation Continuity Check：**
 - Modified：Control Center；Current State；Execution History；Formal Audit 080-C
 - Reviewed but Not Modified：Business Strategy；UA；Extension；a949；Module Registry（optional）
+
+---
+
+### TASK-V2-FOUNDATION-004 — V2 Runtime/Database baseline + 004B isolation land
+
+| 字段 | 内容 |
+|------|------|
+| **Date** | 2026-10-08 |
+| **Original Objective** | 正式落盘 004B Legacy Runtime Boundary Isolation，并建立最小可运行 V2 Runtime + Database baseline |
+| **Current Objective** | Same — executed；awaiting ChatGPT Closure Review |
+| **Current Phase** | Complete（Cursor execution）；Acceptance pending |
+| **Current Step** | STOP after commit/push |
+| **Scope** | `git mv` listed legacy dirs → `99_ARCHIVE/legacy_runtime/`；create `app/` `database/` `config/` `tests/`；update Current State / ACTIVE_TASK / Control Center pointer / Execution History；verify；commit+push main |
+| **Out of Scope** | Delete/edit legacy content；Xianyu/keywords/products/commercial rules；old DB migration；new orphan core governance files；PR；force-push；claim ACCEPTED |
+| **Cursor Instruction Summary** | TASK-V2-FOUNDATION-004：isolation + V2 baseline in one pass；report PASS/FAIL matrix；stop |
+| **Findings** | 004B **had not** been completed locally（prior BLOCKED — dirty tree）；isolation executed now as Phase 1. Dirty unrelated files left unstaged：`docs/07_AUDIT/...PRODUCT_PRODUCTION...` + local mods under archived `commercial_assets/...a949...`. `2_COGNITION` / `4_PRODUCT` / `5_CONTENT` / `data/` / `logs/` / `output/` **not moved** → `BOUNDARY_REVIEW_REQUIRED`. Root `requirements.txt` left unchanged（legacy deps）；V2 uses stdlib only. |
+| **Completed** | Legacy dirs renamed into `99_ARCHIVE/legacy_runtime/`；V2 healthcheck；SQLite schema_metadata v1；init/verify/reset；`python -m tests.verify_v2` PASS；docs pointers updated |
+| **Pending** | ChatGPT independent review / ACCEPTED；no further Task |
+| **Next Step** | **STOP** |
+| **Stop Conditions** | Verification PASS + commit + push attempted；do not start next Task |
+| **Final Completion Criteria** | Isolation + V2 baseline + verification + git land（Cursor）；Acceptance = ChatGPT only |
+| **Modified Files** | `.gitignore`；`docs/01_CURRENT_STATE/AI_FACTORY_OS_CURRENT_STATE.md`；`docs/00_GOVERNANCE/AI_FACTORY_OS_CONTROL_CENTER.md`；`docs/05_EXECUTION/CURSOR_EXECUTION_HISTORY.md`；legacy paths → `99_ARCHIVE/legacy_runtime/**`（rename only） |
+| **Created Files** | `app/**`；`database/**`；`config/**`；`tests/**`；`docs/05_EXECUTION/ACTIVE_TASK.md` |
+| **Architecture Impact** | Core Layer — Runtime Authority boundary change（retired Entry-driven physically archived；V2 Active Runtime established） |
+| **Validation Result** | `python -m app.main` → `AI_FACTORY_OS V2 runtime: OK`；`python -m database init\|verify\|reset` PASS；`python -m tests.verify_v2` → ALL VERIFICATION PASS |
+| **Git Commit** | （filled after commit） |
+| **GitHub Push** | （filled after push） |
+| **Remote Verification** | （filled after push） |
+| **Final Status** | **EXECUTED_AWAITING_CHATGPT_REVIEW** |
+| **Evidence** | Current State Runtime Reality；ACTIVE_TASK.md；this History entry；local verify command output |
+
+**Note：** Cursor Process Output ≠ Formal Audit ≠ ChatGPT Closure Review. 004B completion evidence is this Task’s rename + archive tree presence（not a prior separate successful 004B commit）.
 
 ---
 

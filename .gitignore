@@ -35,9 +35,12 @@ Desktop.ini
 *.swp
 *~
 
-# AI_FACTORY_OS runtime memory state
-7_MEMORY/core_state.json
-7_MEMORY/event_log.jsonl
-7_MEMORY/runtime_policy.json
-7_MEMORY/runtime_policy_snapshot.json
-7_MEMORY/policy_patch.json
+# Retired Entry-driven runtime memory state (archived)
+99_ARCHIVE/legacy_runtime/7_MEMORY/core_state.json
+99_ARCHIVE/legacy_runtime/7_MEMORY/event_log.jsonl
+99_ARCHIVE/legacy_runtime/7_MEMORY/runtime_policy.json
+99_ARCHIVE/legacy_runtime/7_MEMORY/runtime_policy_snapshot.json
+99_ARCHIVE/legacy_runtime/7_MEMORY/policy_patch.json
+
+# V2 local SQLite runtime state (never commit)
+database/runtime/
